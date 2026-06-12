@@ -28,8 +28,10 @@ const MARKETS = {
   uk: { lang: 'en', name: 'United Kingdom', flag: '🇬🇧', langName: 'in English', money: v => `£${v}` },
   us: { lang: 'en', name: 'United States', flag: '🇺🇸', langName: 'in English', money: v => `$${v}` }
 };
-const PREVIEW = !process.env.DEPLOY;
-const STAGING = !!process.env.STAGING;
+/* Domyslnie: produkcja (czyste URL-e) + bezpiecznie (noindex + baner demo), bez zmiennych w panelu.
+   PREVIEW=1 -> linki z index.html (podglad z dysku). LAUNCH=1 -> zdejmuje noindex+baner (oficjalny start). */
+const PREVIEW = !!process.env.PREVIEW;
+const STAGING = !process.env.LAUNCH;
 
 /* ---------- i18n szablonów ---------- */
 const STR = {
