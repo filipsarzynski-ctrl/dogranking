@@ -805,34 +805,73 @@ function articlePage(a) {
 }
 
 /* ---------- intro: wybór rynku ---------- */
+/* STRONA STARTOWA = czysta BRAMKA wyboru kraju.
+   Samodzielny dokument BEZ nagłówka/nawigacji/stopki — jedyne wyjście dalej to wybór rynku. */
 function rootPage() {
   const counts = Object.fromEntries(Object.keys(MARKETS).map(k => [k, Object.values(PRODUCTS[k] || {}).reduce((a, v) => a + v.length, 0)]));
-  const body = `
-<div class="intro">
-  <h1 class="sr">BEKON — dogranking.com</h1>
-  <img src="${href('/', 'logo.png')}" alt="BEKON — dogranking.com" style="width:min(440px,85vw);height:auto;margin:0 auto 10px;display:block">
-  <p class="lead" style="margin:0 auto">Niezależne oceny produktów dla psów · Independent dog product ratings</p>
-  <div class="continue" id="cont"></div>
-  <h2 style="margin-top:36px">Wybierz swój rynek · Choose your market</h2>
-  <p class="meta">Produkty, ceny i sklepy różnią się między krajami — pokazujemy tylko to, co kupisz u siebie.<br>Products, prices and shops differ by country — we only show what's available where you live.</p>
-  <div class="mktgrid">
-${Object.entries(MARKETS).map(([k, v]) => `    <a class="mktcard" href="${href('/', k + '/')}" data-mkt="${k}"><span class="flag">${v.flag}</span><b>${v.name}</b><span>${counts[k]} ${k === 'pl' ? 'ocenionych produktów · po polsku' : 'rated products · in English'}</span></a>`).join('\n')}
+  const cards = Object.entries(MARKETS).map(([k, v]) =>
+    `      <a class="gate-card" href="${href('/', k + '/')}" data-mkt="${k}"><span class="flag">${v.flag}</span><b>${v.name}</b><span class="sub">${counts[k]} ${k === 'pl' ? 'ocenionych produktów · po polsku' : 'rated products · in English'}</span></a>`).join('\n');
+  const html = `<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<title>DogRanking — wybierz kraj · choose your country</title>
+<meta name="description" content="Niezależne oceny produktów dla psów. Wybierz swój kraj, by zobaczyć karmy i produkty dostępne na Twoim rynku. Independent dog product ratings — choose your country.">
+${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}<link rel="canonical" href="${SITE}/">
+<link rel="alternate" hreflang="pl-PL" href="${SITE}/pl/">
+<link rel="alternate" hreflang="en-GB" href="${SITE}/uk/">
+<link rel="alternate" hreflang="en-US" href="${SITE}/us/">
+<link rel="alternate" hreflang="x-default" href="${SITE}/">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:#F7F2E9;color:#221D15;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 20px;text-align:center;background-image:radial-gradient(rgba(34,29,21,.04) 1px,transparent 1px);background-size:24px 24px}
+.gate{max-width:760px;width:100%}
+.gate-logo{width:min(420px,80vw);height:auto;margin:0 auto 8px;display:block}
+.gate-tag{color:#6E6557;font-size:1.05rem;margin-bottom:30px}
+.gate-h{font-family:Georgia,serif;font-size:clamp(1.4rem,3.5vw,2rem);margin-bottom:8px}
+.gate-note{font-family:-apple-system,'Segoe UI',sans-serif;font-size:.85rem;color:#6E6557;max-width:520px;margin:0 auto 26px;line-height:1.5}
+.gate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:620px){.gate-grid{grid-template-columns:1fr}}
+.gate-card{background:#FFFDF8;border:1.5px solid #E3DAC8;border-radius:16px;padding:28px 20px;text-decoration:none;color:#221D15;transition:.13s;display:block}
+.gate-card:hover{border-color:#BC5436;transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(34,29,21,.4)}
+.gate-card .flag{font-size:2.4rem;display:block;margin-bottom:12px}
+.gate-card b{font-size:1.15rem;display:block}
+.gate-card .sub{display:block;font-family:-apple-system,sans-serif;font-size:.8rem;color:#6E6557;margin-top:6px}
+.gate-saved{display:none;background:#EAF0E6;border:1px solid #C9D6BF;color:#3F5934;border-radius:12px;padding:11px 18px;font-family:-apple-system,sans-serif;font-size:.92rem;margin:0 auto 22px;max-width:460px}
+.gate-saved a{color:#3F5934;font-weight:700;text-decoration:none}
+.gate-foot{margin-top:34px;font-family:-apple-system,sans-serif;font-size:.74rem;color:#9b9282}
+.staging{position:fixed;top:0;left:0;right:0;background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem}
+</style>
+<script type="application/ld+json">${JSON.stringify(ORG)}</script>
+</head>
+<body>
+${STAGING ? `<div class="staging">${STR.pl.staging}</div>` : ''}
+<main class="gate">
+  <h1 class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">DogRanking — niezależne oceny produktów dla psów</h1>
+  <img class="gate-logo" src="logo.png" alt="BEKON — dogranking.com">
+  <p class="gate-tag">Niezależne oceny produktów dla psów · Independent dog product ratings</p>
+  <div class="gate-saved" id="saved"></div>
+  <h2 class="gate-h">Wybierz swój kraj · Choose your country</h2>
+  <p class="gate-note">Produkty, ceny i sklepy różnią się między krajami — pokazujemy tylko to, co kupisz u siebie.<br>Products, prices and shops differ by country — we only show what's available where you live.</p>
+  <div class="gate-grid">
+${cards}
   </div>
-</div>
+  <p class="gate-foot">🐩 Degustację i testy prowadzi Bekon · pudel miniaturowy</p>
+</main>
 <script>
-(function(){
-  try{
-    var links=document.querySelectorAll('.mktcard');
-    links.forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('dr_mkt',a.dataset.mkt);});});
-    var saved=localStorage.getItem('dr_mkt');
-    if(saved){var t=document.querySelector('.mktcard[data-mkt="'+saved+'"]');
-      if(t){var c=document.getElementById('cont');
-        c.innerHTML='👋 '+(saved==='pl'?'Ostatnio wybrany rynek':'Your saved market')+': <a href="'+t.getAttribute('href')+'">'+t.querySelector('b').textContent+' →</a>';
-        c.style.display='block';t.style.borderColor='var(--terra)';}}
-  }catch(e){}
-})();
-</script>`;
-  return { url: '/', html: page({ title: 'DogRanking — choose your market | wybierz rynek', desc: 'Independent dog product ratings for Poland, the UK and the US. Niezależne oceny produktów dla psów — wybierz swój rynek.', canonical: '/', body, jsonld: [ORG], mkt: 'pl', alts: { pl: '/pl/', uk: '/uk/', us: '/us/' } }) };
+(function(){try{
+  document.querySelectorAll('.gate-card').forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('dr_mkt',a.dataset.mkt);});});
+  var s=localStorage.getItem('dr_mkt');
+  if(s){var t=document.querySelector('.gate-card[data-mkt="'+s+'"]');
+    if(t){var c=document.getElementById('saved');
+      c.innerHTML='👋 '+(s==='pl'?'Ostatnio wybrany kraj':'Your saved country')+': <a href="'+t.getAttribute('href')+'">'+t.querySelector('b').textContent+' →</a>';
+      c.style.display='block';t.style.borderColor='#BC5436';}}
+}catch(e){}})();
+</script>
+</body></html>`;
+  return { url: '/', html };
 }
 
 /* ---------- robots / llms / sitemap ---------- */
