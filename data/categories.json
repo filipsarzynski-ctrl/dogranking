@@ -1,0 +1,75 @@
+{
+  "_uwaga": "Taksonomia kategorii wg taksonomia-kategorii.md. status: live/beta/soon/edu. Pola *En = wersja dla rynków UK/US (slugi angielskie!).",
+  "categories": [
+    {
+      "slug": "karmy", "slugEn": "dog-food", "name": "Karmy", "nameEn": "Dog food", "icon": "🍖", "status": "live", "bekon": "🥣",
+      "desc": "Sucha, mokra, świeża, liofilizowana, BARF — 10 form, jeden algorytm. Porównujemy w suchej masie i po koszcie za 1000 kcal.",
+      "descEn": "Dry, wet, fresh, freeze-dried, raw — 10 formats, one algorithm. We compare on a dry-matter basis and by cost per 1,000 kcal.",
+      "criteria": ["Skład w suchej masie vs progi FEDIAF 2024", "Wiarygodność producenta wg WSAVA", "Koszt za 1000 kcal — jedyna uczciwa miara między formami"],
+      "criteriaEn": ["Dry-matter composition vs FEDIAF/AAFCO thresholds", "Manufacturer credibility per WSAVA criteria", "Cost per 1,000 kcal — the only fair measure across formats"]
+    },
+    {
+      "slug": "przysmaki-i-gryzaki", "slugEn": "treats-and-chews", "name": "Przysmaki i gryzaki", "nameEn": "Treats & chews", "icon": "🦴", "status": "soon", "bekon": "🥣",
+      "desc": "Od przysmaków treningowych po gryzaki dentystyczne. Za twardy gryzak łamie zęby — sprawdzamy to testem paznokcia.",
+      "descEn": "From training treats to dental chews. Too-hard chews fracture teeth — we check with the thumbnail test.",
+      "criteria": ["Skład i kaloryczność (przysmaki to też kalorie!)", "Twardość: test paznokcia stomatologów weterynaryjnych", "Gryzaki dentystyczne: tylko pieczęć VOHC traktujemy jako dowód"],
+      "criteriaEn": ["Composition and calories (treats count too!)", "Hardness: the veterinary dentists' thumbnail test", "Dental chews: only the VOHC seal counts as evidence"]
+    },
+    {
+      "slug": "pielegnacja", "slugEn": "grooming", "name": "Pielęgnacja i grooming", "nameEn": "Grooming", "icon": "🪮", "status": "beta", "bekon": "🎾",
+      "desc": "Szczotki, grzebienie, szampony, pazury, zęby. Testuje Bekon — pudel, czyli najbardziej wymagająca sierść na rynku.",
+      "descEn": "Brushes, combs, shampoos, nails, teeth. Tested on Bekon — a poodle, i.e. the most demanding coat there is.",
+      "criteria": ["Materiały i wykonanie (piny, rączka, trwałość)", "Skuteczność na sierści kędzierzawej — test na Bekonie", "Szampony: pH skóry psa, skład INCI"],
+      "criteriaEn": ["Materials and build (pins, handle, durability)", "Performance on a curly coat — tested on Bekon", "Shampoos: canine skin pH, INCI ingredients"]
+    },
+    {
+      "slug": "akcesoria", "slugEn": "walking-gear", "name": "Szelki, smycze, obroże", "nameEn": "Harnesses, leads & collars", "icon": "🦮", "status": "soon", "bekon": "🎾",
+      "desc": "Akcesoria spacerowe oceniane wg badań biomechaniki, nie marketingu. Szelki Y wcale nie są automatycznie lepsze — sprawdzamy dane.",
+      "descEn": "Walking gear rated on biomechanics research, not marketing. Y-harnesses are not automatically better — we check the data.",
+      "criteria": ["Biomechanika: badania ruchu barku (Lafuente i in.)", "Wytrzymałość szwów i okuć — pomiary własne", "Dopasowanie do budowy psa (warstwa dopasowania)"],
+      "criteriaEn": ["Biomechanics: shoulder-motion studies (Lafuente et al.)", "Stitching and hardware strength — our own measurements", "Fit for the dog's build (match layer)"]
+    },
+    {
+      "slug": "zabawki", "slugEn": "toys", "name": "Zabawki", "nameEn": "Toys", "icon": "🎾", "status": "soon", "bekon": "🎾",
+      "desc": "Zabawki dla psów nie mają ŻADNYCH obowiązkowych norm bezpieczeństwa. Dlatego sprawdzamy materiały, twardość i trwałość za producentów.",
+      "descEn": "Dog toys have NO mandatory safety standards. So we check materials, hardness and durability ourselves.",
+      "criteria": ["Materiały: ftalany, BPA (badania migracji do śliny)", "Twardość — test paznokcia (ochrona zębów)", "Trwałość: test niszczenia z Bekonem"],
+      "criteriaEn": ["Materials: phthalates, BPA (saliva-migration studies)", "Hardness — thumbnail test (protecting teeth)", "Durability: destruction-tested with Bekon"]
+    },
+    {
+      "slug": "tech", "slugEn": "tech", "name": "Tech dla psa", "nameEn": "Dog tech", "icon": "📡", "status": "soon", "bekon": "🎾",
+      "desc": "Lokalizatory GPS, kamery, automatyczne karmidła, fontanny. Wszystko mierzalne: dokładność, bateria, koszty abonamentu.",
+      "descEn": "GPS trackers, cameras, automatic feeders, fountains. All measurable: accuracy, battery, subscription costs.",
+      "criteria": ["Pomiar dokładności GPS w terenie", "Realny czas pracy baterii vs deklaracje", "Koszt całkowity: urządzenie + abonament w 3 lata"],
+      "criteriaEn": ["Field-measured GPS accuracy", "Real battery life vs claims", "Total cost: device + 3 years of subscription"]
+    },
+    {
+      "slug": "podroz", "slugEn": "travel", "name": "Podróż i auto", "nameEn": "Travel & car", "icon": "🚗", "status": "soon", "bekon": "🎾",
+      "desc": "Foteliki, pasy i transportery. Center for Pet Safety przetestowało ~400 produktów — certyfikat ma kilkanaście. Reszta to deklaracje.",
+      "descEn": "Car seats, belts and crates. The Center for Pet Safety has tested ~400 products — about a dozen hold its certificate. The rest is claims.",
+      "criteria": ["Crash-testy: certyfikat CPS jako twarde kryterium", "Montaż i stabilność w aucie", "Materiały i wentylacja transporterów"],
+      "criteriaEn": ["Crash tests: CPS certification as a hard criterion", "In-car installation and stability", "Crate materials and ventilation"]
+    },
+    {
+      "slug": "dom", "slugEn": "home", "name": "Dom: legowiska i miski", "nameEn": "Home: beds & bowls", "icon": "🛏️", "status": "soon", "bekon": "🎾",
+      "desc": "Legowiska, miski (w tym slow-feedery), klatki, schodki. Plus obalanie mitów: podwyższone miski nie chronią przed skrętem żołądka.",
+      "descEn": "Beds, bowls (incl. slow feeders), crates, steps. Plus myth-busting: raised bowls do not protect against bloat (GDV).",
+      "criteria": ["Materiały i zmywalność", "Miski: fakty vs mity (badanie Glickmana o GDV)", "Schodki/rampy dla jamników i seniorów"],
+      "criteriaEn": ["Materials and washability", "Bowls: facts vs myths (Glickman's GDV study)", "Steps/ramps for dachshunds and seniors"]
+    },
+    {
+      "slug": "zdrowie", "slugEn": "health", "name": "Zdrowie i profilaktyka", "nameEn": "Health & prevention", "icon": "🩺", "status": "edu", "bekon": "none",
+      "desc": "Kleszcze, pchły, odrobaczanie — wyłącznie przewodniki edukacyjne po substancjach czynnych, konsultowane z weterynarzem. Nie rankingujemy leków.",
+      "descEn": "Ticks, fleas, worming — educational guides to active substances only, vet-reviewed. We do not rank medicines.",
+      "criteria": ["Przewodnik po substancjach czynnych (fipronil, imidaklopryd, izoksazoliny)", "Leki na receptę: tylko edukacja, zero linków zakupowych (prawo farmaceutyczne)", "Zawsze: skonsultuj z lekarzem weterynarii"],
+      "criteriaEn": ["A guide to active substances (fipronil, imidacloprid, isoxazolines)", "Prescription medicines: education only, no shopping links", "Always: consult your veterinarian"]
+    },
+    {
+      "slug": "ubezpieczenia", "slugEn": "insurance", "name": "Ubezpieczenia psa", "nameEn": "Pet insurance", "icon": "🛡️", "status": "edu", "bekon": "none",
+      "desc": "W UK ubezpieczonych jest 25% psów, w Polsce rynek dopiero raczkuje. Porównania zakresów i wyłączeń — najpierw edukacyjnie.",
+      "descEn": "In the UK, 25% of dogs are insured. We compare what policies actually cover: exclusions, limits, waiting periods.",
+      "criteria": ["Co naprawdę pokrywa polisa (wyłączenia, limity, karencje)", "Rankingi najpierw dla rynków UK/US", "PL: przegląd dostępnych opcji bez rekomendacji"],
+      "criteriaEn": ["What a policy really covers (exclusions, limits, waiting periods)", "Rankings launching for UK/US first", "Pre-existing and breed-specific conditions explained"]
+    }
+  ]
+}

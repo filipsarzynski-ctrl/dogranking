@@ -1,0 +1,107 @@
+{
+  "_uwaga": "DANE DEMONSTRACYJNE — przed publikacją każdy rekord zweryfikować z realną etykietą (źródło prawdy: baza-karm.xlsx). verified:false = nie publikować na produkcji.",
+  "foods": [
+    {
+      "slug": "wiejska-zagroda-adult-indyk-wolowina",
+      "name": "Wiejska Zagroda Adult Indyk z wołowiną",
+      "brand": "Wiejska Zagroda",
+      "type": "sucha", "life": "dorosły",
+      "score": 93, "pillars": [33, 23, 22, 15],
+      "proteinDM": 32.2, "fatDM": 15.6, "kcal": 375, "priceZlKg": 22,
+      "verified": false,
+      "test": {
+        "date": "2026-06-11",
+        "granulaMm": 12,
+        "zapach": "wyraźnie mięsny, bez nuty zjełczałego tłuszczu",
+        "tekstura": "twarda, sucha granula; nie kruszy się w palcach, nie zostawia tłustego filmu",
+        "bekon": 3,
+        "bekonNote": "Zjadł natychmiast i szukał więcej. Test smakowitości: 5 granulek podanych jako przysmak — bez zmiany diety.",
+        "uwagi": "Worek 2 kg, partia z bieżącej produkcji. Skład na etykiecie zgodny z deklaracją na stronie producenta."
+      },
+      "verdict": "Polska karma z krótkim, w pełni nazwanym składem (indyk i wołowina jako pierwsze składniki), białkiem 32% w suchej masie — wyraźnie powyżej progu FEDIAF dla psów dorosłych — i bez strączkowych w czołówce. Producent przejrzysty, konserwowanie naturalne. Nasza najwyższa ocena na polskim rynku.",
+      "pros": ["Nazwane źródła białka (indyk, wołowina)", "Białko 32,2% DM — wysoko ponad próg FEDIAF (21%)", "Bez sztucznych barwników i konserwantów", "Polska produkcja, krótki łańcuch"],
+      "cons": ["Brak deklarowanej ilości EPA/DHA", "Brak prób żywieniowych (deklaracja: formulated)"],
+      "faq": [
+        {"q": "Czy Wiejska Zagroda Adult jest dobra dla szczeniąt?", "a": "Nie — to receptura dla psów dorosłych (deklaracja adult). Dla szczeniąt wybierz wariant z deklaracją growth lub all life stages, z wapniem do 1,8% suchej masy."},
+        {"q": "Ile białka ma Wiejska Zagroda Adult Indyk z wołowiną?", "a": "29% w analizie gwarantowanej, co po przeliczeniu na suchą masę (10% wilgotności) daje 32,2% — wyraźnie powyżej minimum FEDIAF 2024 dla psów dorosłych (21% DM)."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Fera.pl", "u": "https://fera.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
+    },
+    {
+      "slug": "acana-wild-prairie",
+      "name": "Acana Wild Prairie",
+      "brand": "Champion Petfoods",
+      "type": "sucha", "life": "wszystkie etapy",
+      "score": 88, "pillars": [32, 21, 21, 14],
+      "proteinDM": 37.5, "fatDM": 19.3, "kcal": 388, "priceZlKg": 42,
+      "verified": false,
+      "test": {
+        "date": "2026-06-11",
+        "granulaMm": 13,
+        "zapach": "intensywny, rybno-mięsny — wyczuwalny zaraz po otwarciu worka",
+        "tekstura": "nieregularne, gęste granule; lekko tłuste w dotyku (wyższy tłuszcz)",
+        "bekon": 3,
+        "bekonNote": "Duże zainteresowanie od pierwszego powąchania. Test smakowitości: 5 granulek jako przysmak — bez zmiany diety.",
+        "uwagi": "Worek 2 kg. Strączkowe (soczewica) na 4. pozycji składu — odnotowane w wadach."
+      },
+      "verdict": "Wysokomięsna karma z nazwanymi źródłami białka i deklarowanym EPA/DHA. Dwa zastrzeżenia: strączkowe w czołówce składu (kontekst śledztwa FDA ws. DCM) i wapń przy górnej granicy normy dla wszystkich etapów życia — dla szczeniąt dużych ras wybierz wariant z niższym wapniem.",
+      "pros": ["Białko 37,5% DM z nazwanych źródeł drobiowych i rybnych", "Deklarowane EPA/DHA ze źródeł morskich", "Naturalne konserwowanie"],
+      "cons": ["Strączkowe wysoko w składzie (kontekst DCM — zob. Wiedza)", "Wapń 1,82% DM — przy limicie dla wzrostu", "Wysoka cena za kg"],
+      "faq": [
+        {"q": "Czy Acana Wild Prairie jest bezpieczna przy ryzyku DCM?", "a": "FDA nie potwierdziła związku przyczynowego karm grain-free z DCM, ale Wild Prairie zawiera strączkowe w czołówce składu. U ras predysponowanych (doberman, dog niemiecki, golden retriever) zalecamy ostrożność i konsultację z weterynarzem."}
+      ],
+      "shops": [{"n": "Fera.pl", "u": "https://fera.pl/"}, {"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}]
+    },
+    {
+      "slug": "royal-canin-medium-adult",
+      "name": "Royal Canin Medium Adult",
+      "brand": "Royal Canin",
+      "type": "sucha", "life": "dorosły",
+      "score": 73, "pillars": [16, 20, 24, 13],
+      "proteinDM": 27.6, "fatDM": 15.5, "kcal": 383, "priceZlKg": 27,
+      "verified": false,
+      "test": {
+        "date": "2026-06-11",
+        "granulaMm": 14,
+        "zapach": "neutralny, lekko tłuszczowy — mało mięsny",
+        "tekstura": "regularne, jednolite granule (powtarzalność produkcji widoczna gołym okiem)",
+        "bekon": 2,
+        "bekonNote": "Zjadł po chwili wahania, nie dopominał się o więcej. Test smakowitości: 5 granulek jako przysmak — bez zmiany diety.",
+        "uwagi": "Worek 4 kg. Etykieta podaje pełną analizę z dodatkami — wzorcowa przejrzystość deklaracji."
+      },
+      "verdict": "Odwrotność wielu konkurentów: skład z ogólnikami (nienazwane białka drobiowe), ale wzorcowy filar producenta — nutrycjoniści w zespole, próby żywieniowe, własne zakłady i pełna kontrola jakości. Solidny, przewidywalny wybór, choć za skład płaci się tu oceną.",
+      "pros": ["Próby żywieniowe (feeding trial), nie tylko formulacja", "Wzorcowa kontrola jakości i R&D producenta", "Stabilna, powtarzalna receptura"],
+      "cons": ["Ogólnikowe nazwy składników (białko drobiowe bez gatunku)", "Niska pozycja mięsa w składzie", "Brak deklarowanego EPA/DHA w tym wariancie"],
+      "faq": [
+        {"q": "Dlaczego Royal Canin ma niską ocenę składu, a wysoką producenta?", "a": "Nasz algorytm rozdziela jakość receptury (filar A) od wiarygodności producenta (filar C). Royal Canin używa ogólnikowych nazw składników, co obniża filar A, ale prowadzi próby żywieniowe i wzorcową kontrolę jakości, co daje niemal maksymalny filar C."}
+      ],
+      "shops": [{"n": "Ceneo", "u": "https://www.ceneo.pl/"}, {"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}]
+    },
+    {
+      "slug": "piper-animals-jagniecina",
+      "name": "Piper Animals Jagnięcina z marchewką",
+      "brand": "Dolina Noteci (Piper)",
+      "type": "mokra", "life": "dorosły",
+      "score": 82, "pillars": [32, 19, 19, 12],
+      "proteinDM": 38.0, "fatDM": 22.0, "kcal": 110, "priceZlKg": 23,
+      "verified": false,
+      "test": {
+        "date": "2026-06-11",
+        "granulaMm": 0,
+        "zapach": "naturalny, mięsny — wyraźne kawałki mięsa, nie pasztet jednolity",
+        "tekstura": "duże kawałki w galarecie; widać włókna mięsa — skład potwierdza się wizualnie",
+        "bekon": 3,
+        "bekonNote": "Entuzjazm pełny — mokra karma zawsze wygrywa smakowitością. Test: 1 łyżka jako dodatek do miski, bez zmiany diety.",
+        "uwagi": "Puszka 400 g, polska produkcja. UWAGA do porównań: 8% białka na etykiecie to 38% w suchej masie — mokrych karm nie wolno porównywać z suchymi bez przeliczenia."
+      },
+      "verdict": "Polska mokra karma z krótkim składem i wysokim udziałem nazwanego mięsa (jagnięcina). W suchej masie: 38% białka — więcej niż większość karm suchych. Koszt za 1000 kcal jest jednak ~3,5× wyższy niż dobrej karmy suchej — to cena formy mokrej, nie wada produktu.",
+      "pros": ["Krótki, nazwany skład — jagnięcina jako pierwszy składnik", "38% białka w suchej masie", "Wysoka smakowitość (mokra forma)", "Polska produkcja"],
+      "cons": ["Koszt za 1000 kcal ~3,5× wyższy niż karmy suchej", "Brak deklarowanego EPA/DHA", "Jako jedyne żywienie wymaga dużych objętości dziennych"],
+      "faq": [
+        {"q": "Czy mokra karma jest lepsza od suchej?", "a": "Żadna forma nie jest z definicji lepsza. Mokra ma wyższą smakowitość i nawodnienie, sucha — niższy koszt za 1000 kcal i wygodę. Porównuj skład w suchej masie: ta karma ma 38% białka DM, czyli więcej niż większość karm suchych."},
+        {"q": "Ile kosztuje żywienie psa mokrą karmą Piper?", "a": "Przy 110 kcal/100 g i cenie ~23 zł/kg koszt 1000 kcal to około 21 zł — dla psa 15 kg (ok. 700–900 kcal dziennie) wychodzi 15–19 zł dziennie. Karma sucha o podobnej jakości to 4–6 zł dziennie."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Fera.pl", "u": "https://fera.pl/"}]
+    }
+  ]
+}

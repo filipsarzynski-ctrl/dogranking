@@ -1,0 +1,36 @@
+{
+  "_uwaga": "Kategoria beta — pierwszy test kategorii pielęgnacja. Dane DEMO (verified:false) do podmiany po realnym teście.",
+  "products": [
+    {
+      "slug": "chris-christensen-big-g-slicker",
+      "name": "Chris Christensen Big G Slicker",
+      "brand": "Chris Christensen",
+      "type": "szczotka slicker", "life": "wszystkie",
+      "score": 91, "pillars": [33, 22, 22, 14],
+      "specs": [
+        ["Typ", "szczotka pudlówka (slicker), rozmiar M"],
+        ["Przeznaczenie", "sierść kędzierzawa, gęsta, podatna na filcowanie (pudle, doodle)"],
+        ["Piny", "długie, gięte, zagęszczone — docierają do skóry przez gęsty włos"],
+        ["Waga / rączka", "lekka, ergonomiczna, antypoślizgowa"]
+      ],
+      "verified": false,
+      "test": {
+        "date": "2026-06-11",
+        "pomiar": "4 tygodnie codziennego rozczesywania Bekona (pudel miniaturowy — sierść kędzierzawa bez podszerstka)",
+        "zapach": "",
+        "tekstura": "piny nie wyginają się po miesiącu pracy; brak zarysowań skóry",
+        "bekon": 3,
+        "bekonNote": "Toleruje czesanie bez protestów — piny nie szarpią przy kołtunkach za uchem. Skala 🎾: akceptacja w użytkowaniu, nie smakowitość.",
+        "uwagi": "Egzemplarz kupiony, nie od producenta. Porównanie z tanią szczotką marketową w przygotowaniu."
+      },
+      "verdict": "Punkt odniesienia wśród szczotek dla ras kędzierzawych. Długie, gięte piny rozplątują sierść pudla do skóry, czego nie potrafi większość tanich slickerów — te czeszą tylko wierzch, a kołtuny rosną przy skórze. Cena wysoka, ale w 4-tygodniowym teście na Bekonie zero szarpania i zero wygiętych pinów.",
+      "pros": ["Dociera do skóry przez gęstą, kędzierzawą sierść", "Nie szarpie przy kołtunkach (test na Bekonie)", "Trwałość pinów — bez odkształceń po miesiącu", "Standard w salonach groomerskich"],
+      "cons": ["Cena 150–200 zł — kilkukrotnie drożej niż marketowe", "Dla ras krótkowłosych to przepłacanie — wystarczy gumowa zgrzebło", "Wymaga nauki techniki (line brushing), inaczej czesze tylko wierzch"],
+      "faq": [
+        {"q": "Czy droga szczotka ma sens dla pudla?", "a": "Tak — sierść kędzierzawa bez podszerstka filcuje się przy skórze, a tanie slickery z krótkimi pinami czeszą tylko wierzch. Kołtun przy skórze kończy się goleniem psa. Dobra szczotka to koszt jednego strzyżenia u groomera."},
+        {"q": "Jak często czesać pudla?", "a": "Sierść kędzierzawą rozczesuje się do skóry 2–4 razy w tygodniu (przy dłuższym strzyżeniu codziennie), zawsze przed kąpielą — woda zacieśnia kołtuny."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    }
+  ]
+}

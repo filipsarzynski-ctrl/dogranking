@@ -1,0 +1,106 @@
+{
+  "_uwaga": "Artykuły Wiedza (PL). grade = siła dowodów A/B/C/D wg skali z research-uzupelniajacy-wiarygodnosc.md. Wersje EN w przygotowaniu.",
+  "articles": [
+    {
+      "id": "etykieta", "cat": "Podstawy", "mins": 6, "grade": "B",
+      "title": "Jak czytać etykietę karmy w 5 minut",
+      "teaser": "Analiza gwarantowana podaje wartości razem z wodą, a kolejność składników można legalnie „ustawić”. Pięć kroków, które to obnażają.",
+      "lead": "Etykieta karmy potrafi powiedzieć dużo — pod warunkiem, że wiesz, gdzie patrzeć i czego na niej celowo nie napisano.",
+      "body": [
+        "<strong>Krok 1. Przelicz na suchą masę.</strong> Analiza gwarantowana podaje wartości „as fed” — razem z wodą. Sucha karma z 33% białka i 10% wilgotności ma 36,7% białka w suchej masie; mokra z 8% białka i 80% wody — aż 40%. Bez tego przeliczenia porównujesz jabłka z pomarańczami. Wzór: % składnika ÷ (100 − % wilgotności) × 100.",
+        "<strong>Krok 2. Sprawdź deklarację kompletności.</strong> Szukaj „karma pełnoporcjowa” oraz etapu życia (FEDIAF/AAFCO). „Testowana w próbach żywieniowych” to mocniejszy dowód niż „opracowana zgodnie z normami” — pierwsza była realnie podawana psom, druga istnieje na papierze.",
+        "<strong>Krok 3. Czytaj pierwsze 5 składników — ale uważaj na dwa triki.</strong> Świeże mięso na pierwszym miejscu zawiera ~70% wody — po jej odparowaniu może spaść na czwartą pozycję. Drugi trik to ingredient splitting: rozbicie jednego surowca na frakcje (groch, białko grochu, skrobia grochowa), żeby żadna nie wylądowała na szczycie listy.",
+        "<strong>Krok 4. Szukaj nazwanych źródeł.</strong> „Mączka z kurczaka” mówi wszystko, „mięso i produkty pochodzenia zwierzęcego” — nic. To drugie pozwala producentowi zmieniać surowiec z partii na partię.",
+        "<strong>Krok 5. Pamiętaj, czego na etykiecie nie ma.</strong> Strawności, biodostępności, jakości kontroli produkcji. Dlatego nasz algorytm ocenia też producenta (kryteria WSAVA) — nie tylko etykietę."
+      ],
+      "src": "Tufts Petfoodology (Guaranteed Analysis) · FEDIAF 2024 · WSAVA Global Nutrition Toolkit"
+    },
+    {
+      "id": "bialko", "cat": "Normy żywieniowe", "mins": 5, "grade": "B",
+      "title": "Ile białka naprawdę potrzebuje pies?",
+      "teaser": "„Im więcej, tym lepiej” i „za dużo szkodzi” — oba zdania są nieprawdziwe. Liczy się sucha masa, źródło i strawność.",
+      "lead": "Co mówią normy FEDIAF i badania — i dlaczego karma „30% białka” może odżywiać gorzej niż karma z 26%.",
+      "body": [
+        "Dorosły pies potrzebuje minimum ok. 18–21% białka w suchej masie (FEDIAF 2024: 21 g/100 g DM przy niskiej aktywności; AAFCO: 18%). Szczenięta w fazie wczesnego wzrostu — 25 g. To poziomy minimalne z marginesem bezpieczeństwa, nie cele.",
+        "Ważniejsza od ilości jest jakość: strawność i profil aminokwasowy. Białka zwierzęce osiągają wskaźniki jakości 0,92–1,0; kukurydza ~0,41. Dlatego karma „30% białka” zbudowana na zbożach może odżywiać gorzej niż karma 26% oparta na nazwanym mięsie i podrobach.",
+        "Mit „nadmiar białka uszkadza nerki” został podważony już w 1975 r. (Kronfeld) i nie znajduje potwierdzenia u zdrowych psów. Restrykcja białka ma sens wyłącznie przy zdiagnozowanej chorobie nerek (stadium 3–4 wg IRIS), zawsze pod kontrolą weterynarza.",
+        "<strong>Wnioski:</strong> porównuj białko w suchej masie; patrz na źródło, nie tylko liczbę; nie bój się wysokiego białka u zdrowego psa."
+      ],
+      "src": "FEDIAF 2024 (tab. III-3a) · AAFCO Nutrient Profiles · IRIS 2023 · badania DIAAS/PDCAAS (PMC9624197)"
+    },
+    {
+      "id": "dcm", "cat": "Kontrowersje", "mins": 7, "grade": "C",
+      "title": "Grain-free a serce psa: co wiemy o DCM po 8 latach",
+      "teaser": "560 psów w zgłoszeniach FDA, zero potwierdzonej przyczynowości. Problemem nie jest brak zbóż, tylko góra strączkowych w składzie.",
+      "lead": "W 2018 r. FDA ogłosiła śledztwo w sprawie związku karm grain-free z kardiomiopatią rozstrzeniową (DCM). Po ośmiu latach odpowiedź brzmi: to skomplikowane — i właśnie dlatego warto ją znać.",
+      "body": [
+        "Fakty: do 2019 r. FDA zebrała zgłoszenia dotyczące 560 psów (119 zgonów). 91% diet było grain-free, a 93% zawierało groch lub soczewicę. Ale zgłoszenia to nie dowód przyczynowości — FDA nigdy nie uznała żadnej karmy za niebezpieczną i od grudnia 2022 nie aktualizuje śledztwa.",
+        "Co pokazały badania? Tauryna okazała się NIE być głównym mechanizmem (wyjątek: predysponowane golden retrievery). Prospektywne 18-miesięczne badanie z 2025 r. nie wykazało pogorszenia funkcji serca u zdrowych psów na grain-free. Przegląd z 2025 r. wskazuje, że problem dotyczy raczej konkretnych formulacji z wysokim udziałem strączkowych niż samego braku zbóż.",
+        "Część chorych psów poprawiała się po zmianie diety — czasem na inną grain-free. To kolejny argument, że winowajcą nie jest etykietka „grain-free”, lecz konkretne receptury.",
+        "<strong>Jak to oceniamy:</strong> „grain-free” samo w sobie nie obniża oceny. Obniża ją wysoki udział grochu, soczewicy czy ciecierzycy w czołówce składu — zwłaszcza u producentów bez nutrycjonisty i prób żywieniowych. Jeśli masz dobermana, doga lub goldena, zachowaj szczególną ostrożność."
+      ],
+      "src": "FDA DCM Investigation · Freeman i wsp., JAVMA 2018 · PMC12408985 (2025) · MDPI Vet Sci 2025 · Tufts Petfoodology"
+    },
+    {
+      "id": "maczka", "cat": "Składniki", "mins": 5, "grade": "B",
+      "title": "Mączka mięsna i produkty uboczne: niesłusznie oskarżone?",
+      "teaser": "„Mączka” brzmi źle, a bywa lepsza niż „świeże mięso na pierwszym miejscu”. Problemem nie jest kategoria, lecz anonimowość.",
+      "lead": "Nauka mówi: to zależy — i częściej, niż myślisz, mączki są lepsze niż ich opinia.",
+      "body": [
+        "Mączka mięsna to mięso po usunięciu wody i części tłuszczu — skoncentrowane białko. Świeże mięso ma ~70% wody, więc jego realny udział w suchej karmie jest niewielki. Badania strawności pokazują, że po ekstruzji mączka z nazwanego źródła wypada porównywalnie ze świeżym mięsem.",
+        "Produkty uboczne to m.in. wątroba, serca, żołądki — często gęstsze odżywczo niż mięśnie. Problemem nie jest kategoria, lecz anonimowość: „mięso i produkty pochodzenia zwierzęcego” bez podania gatunku pozwala zmieniać surowiec między partiami i uniemożliwia diety eliminacyjne u alergików.",
+        "<strong>Nasza zasada punktacji:</strong> nazwana mączka („mączka z łososia”) — bez kary. Nienazwane ogólniki — wyraźna kara. „Świeży kurczak na pierwszym miejscu” — sprawdzamy, co jest na drugim i trzecim."
+      ],
+      "src": "AAFCO (by-products) · VCA Hospitals · badania strawności po ekstruzji (PMC9219525) · The Science Dog"
+    },
+    {
+      "id": "senior", "cat": "Etapy życia", "mins": 5, "grade": "B",
+      "title": "Senior na diecie: największy mit żywienia starszych psów",
+      "teaser": "Starszemu psu nie trzeba ograniczać białka. Trzeba mu go dać więcej — i to dobrej jakości.",
+      "lead": "Przez dekady powtarzano: starszemu psu trzeba ograniczyć białko, „żeby oszczędzać nerki”. Dziś wiemy, że jest odwrotnie — i ten mit ma realne ofiary.",
+      "body": [
+        "Między 7. a 12. rokiem życia pies traci 15–25% masy mięśniowej. Starszy organizm gorzej wykorzystuje białko — zapotrzebowanie rośnie nawet o połowę. Nutrycjoniści zalecają zdrowym seniorom ok. 28–30% białka w suchej masie, czyli więcej niż wymagane minimum dla dorosłych.",
+        "Skąd mit? Z ekstrapolacji badań na szczurach i z logiki „chore nerki = mniej białka, więc mniej białka = zdrowsze nerki”. U zdrowych psów nie ma dowodów na ochronny efekt restrykcji — hipotezę podważono już w 1975 r. Ograniczenie białka jest uzasadnione dopiero przy zdiagnozowanej przewlekłej chorobie nerek (a i wtedy fundamentem terapii jest fosfor, nie białko).",
+        "<strong>Czego szukać w karmie dla seniora:</strong> wysokie, strawne białko zwierzęce; EPA/DHA ze źródeł morskich (stawy, funkcje poznawcze); kontrolowana kaloryczność przy spadku aktywności. W naszym algorytmie niskie białko w karmie „senior” to minus, nie plus."
+      ],
+      "src": "FEDIAF 2024 · przeglądy żywienia geriatrycznego · IRIS 2023 · Kronfeld 1975"
+    },
+    {
+      "id": "wapn", "cat": "Etapy życia", "mins": 6, "grade": "B",
+      "title": "Szczenię dużej rasy: dlaczego nadmiar wapnia szkodzi",
+      "teaser": "Szczenię przez pół roku nie umie „odmówić” wapnia — wchłania wszystko. U dużych ras kończy się to chorobami stawów.",
+      "lead": "U szczeniąt dużych ras więcej nie znaczy lepiej. Nadmiar wapnia i kalorii to udokumentowana przyczyna chorób ortopedycznych.",
+      "body": [
+        "Szczenię przez pierwsze ~6 miesięcy życia słabo reguluje wchłanianie wapnia — przyswaja go nawet wtedy, gdy dostaje za dużo. U ras szybko rosnących (dog, labrador, owczarek) prowadzi to do zaburzeń rozwoju kości: osteochondrozy, dysplazji. Klasyczne badania Hazewinkela na dogach niemieckich wykazały, że zarówno przekarmianie, jak i sam nadmiar wapnia wywołują zmiany kliniczne.",
+        "Dlatego normy ustalają górne limity: dla wzrostu maksymalnie 1,6–1,8 g wapnia/100 g suchej masy (FEDIAF), a AAFCO od 2016 r. wymaga osobnej deklaracji dla szczeniąt ras powyżej ~31 kg dorosłej masy. Optymalny stosunek wapnia do fosforu: ok. 1,2–1,4:1.",
+        "<strong>Praktyka:</strong> szczenię dużej rasy karm karmą „large breed puppy” z kontrolowaną energią i wapniem przy dolnej granicy normy; utrzymuj szczupłą sylwetkę (wolniejszy wzrost = zdrowsze stawy); nie suplementuj wapnia „na zapas” — to najgorsze, co można zrobić."
+      ],
+      "src": "Badania Hazewinkel i wsp. · dvm360 (DOD in large-breed puppies) · FEDIAF 2024 · Royal Canin Academy (Ca/P)"
+    },
+    {
+      "id": "barf", "cat": "Kontrowersje", "mins": 7, "grade": "B",
+      "title": "BARF pod lupą: co mówią badania o surowym karmieniu",
+      "teaser": "Salmonella w 20–48% próbek i 60% domowych diet poważnie niezbilansowanych. Surowe nie jest „złe” — jest trudne.",
+      "lead": "Surowa dieta ma zagorzałych zwolenników i spektakularne anegdoty. Badania mówią chłodniej: są dwa realne ryzyka i niewiele udowodnionych korzyści.",
+      "body": [
+        "<strong>Ryzyko 1 — patogeny.</strong> W komercyjnych surowych karmach Salmonellę wykrywano w 20–48% próbek; psy karmione surowo wydalają ją ~30× częściej. To zagrożenie nie tyle dla psa (często bezobjawowy nosiciel), ile dla domowników — zwłaszcza dzieci i osób z obniżoną odpornością. Stąd zgodne ostrzeżenia WSAVA, FDA i CDC.",
+        "<strong>Ryzyko 2 — niezbilansowanie.</strong> W europejskim badaniu 95 domowych diet BARF aż 60% miało poważne niedobory lub nadmiary (wapń, Ca:P, witamina D, jod, cynk, miedź). U szczeniąt opisano przypadki zaburzeń wzrostu. To nie jest argument „surowe = złe”, tylko „domowe bilansowanie jest trudne”.",
+        "Korzyści (lepsza sierść, mniejsze stolce) są raportowane przez opiekunów i częściowo tłumaczone wyższą strawnością — ale brakuje twardych dowodów na długoterminową przewagę zdrowotną nad dobrą karmą gotowaną czy suchą.",
+        "<strong>Jak oceniamy surowe karmy komercyjne:</strong> wymagamy dowodu kompletności (FEDIAF/AAFCO) i kontroli patogenów (np. HPP, badania partii). Bez tego — maksymalnie 2 łapki i zawsze ostrzeżenie przy szczeniętach."
+      ],
+      "src": "PMC7156072 (przegląd RMBD) · PMC9495138 (badanie 95 diet) · WSAVA Raw Meat Toolkit · stanowiska FDA/CVMA"
+    },
+    {
+      "id": "stawy", "cat": "Zdrowie", "mins": 5, "grade": "A",
+      "title": "Omega-3 kontra glukozamina: co naprawdę działa na stawy",
+      "teaser": "Metaanaliza 72 badań kontra 89% braku efektu. W karmach „na stawy” tylko jeden dodatek ma za sobą dowody.",
+      "lead": "W karmach „na stawy” królują dwa dodatki. Tylko jeden z nich ma za sobą dowody.",
+      "body": [
+        "<strong>Omega-3 (EPA/DHA ze źródeł morskich)</strong> to najlepiej udokumentowany nutraceutyk w osteoartrozie psów. Metaanaliza 72 badań (2022) potwierdza efekt przeciwbólowy; wytyczne AAHA 2022 oceniają omega-3 najwyżej spośród dodatków; w jednym badaniu skuteczna dawka (~69 mg EPA+DHA/kg/dobę) dorównywała lekom przeciwzapalnym. Ważne: psy słabo konwertują roślinne ALA (np. z siemienia lnianego) — liczy się olej rybny lub algowy z zadeklarowaną ilością EPA/DHA.",
+        "<strong>Glukozamina i chondroityna</strong> wypadają odwrotnie: metaanalizy pokazują brak efektu w ~89% porównań, a nowsze wytyczne wręcz odradzają poleganie na nich w terapii bólu. Obecność glukozaminy w karmie nie szkodzi — ale nie jest powodem, by dopłacać.",
+        "Dlatego w naszym algorytmie deklarowane EPA/DHA podnosi ocenę i dopasowanie dla psów z problemami stawowymi oraz seniorów, a glukozamina... nie podnosi niczego."
+      ],
+      "src": "MDPI IJMS 2022 (metaanaliza omega-3) · AAHA Pain Management Guidelines 2022 · JSAP 2024 · badanie force-plate 2023"
+    }
+  ]
+}

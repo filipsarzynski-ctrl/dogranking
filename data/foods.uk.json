@@ -1,0 +1,75 @@
+{
+  "_note": "UK market DEMO data (verified:false) — verify against real labels before indexing. No 'test' object = page shows 'label-based review, hands-on test pending' (we have not tested these with Bekon yet — honesty first).",
+  "foods": [
+    {
+      "slug": "eden-original-cuisine", "name": "Eden Original Cuisine 80/20", "brand": "Eden Holistic Pet Foods",
+      "type": "dry", "life": "all life stages", "score": 93, "pillars": [34, 23, 22, 14],
+      "proteinDM": 41.0, "fatDM": 21.0, "kcal": 392, "priceKg": 6.5, "verified": false,
+      "verdict": "A high-meat (80/20) British recipe with fully named animal sources and no legumes high in the ingredient list. Protein at 41% dry matter is among the highest of any UK kibble. Premium price — but the cost per 1,000 kcal is moderated by high energy density.",
+      "pros": ["Named animal sources throughout", "41% protein DM — far above FEDIAF/AAFCO minimums", "No legumes in the top of the ingredient list", "UK-made, transparent sourcing"],
+      "cons": ["Premium price per kg", "Very high protein is unnecessary (not harmful) for low-activity dogs"],
+      "faq": [{"q": "Is Eden 80/20 suitable for puppies?", "a": "Yes — it is formulated for all life stages. For large-breed puppies, check the calcium level against the 1.8% dry-matter cap before choosing any all-life-stages food."}],
+      "shops": [{"n": "VioVet", "u": "https://www.viovet.co.uk/"}, {"n": "Amazon UK", "u": "https://www.amazon.co.uk/"}]
+    },
+    {
+      "slug": "aatu-chicken", "name": "AATU 80/20 Chicken", "brand": "AATU (Pet Food UK)",
+      "type": "dry", "life": "adult", "score": 90, "pillars": [33, 22, 21, 14],
+      "proteinDM": 36.0, "fatDM": 18.0, "kcal": 381, "priceKg": 9.0, "verified": false,
+      "verdict": "Single-protein, 80/20 recipe built on named free-run chicken with a long list of botanicals. Strong choice for elimination-style feeding when chicken is tolerated. One of the priciest dry foods on the UK market per 1,000 kcal.",
+      "pros": ["Single animal protein — useful for sensitive dogs (if chicken-tolerant)", "Named sources, no grain fillers", "High meat inclusion (80%)"],
+      "cons": ["Among the most expensive UK kibbles per 1,000 kcal", "Contains chicken — excluded for the most common protein allergy"],
+      "faq": [{"q": "Is AATU good for dogs with allergies?", "a": "It is single-protein, which helps elimination feeding — but chicken is the most common canine food allergen. For suspected chicken allergy choose a novel-protein or hydrolysed diet instead."}],
+      "shops": [{"n": "Zooplus UK", "u": "https://www.zooplus.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}]
+    },
+    {
+      "slug": "canagan-free-run-chicken", "name": "Canagan Free-Run Chicken", "brand": "Canagan",
+      "type": "dry", "life": "adult", "score": 88, "pillars": [32, 22, 20, 14],
+      "proteinDM": 36.7, "fatDM": 18.9, "kcal": 386, "priceKg": 7.0, "verified": false,
+      "verdict": "A well-executed grain-free British recipe with named chicken as the lead ingredient. Note: peas sit high in the ingredient list — relevant to the FDA's (unresolved) DCM context, so predisposed breeds should discuss it with a vet.",
+      "pros": ["Named free-run chicken first", "36.7% protein DM", "Widely available across UK retailers"],
+      "cons": ["Peas high in the ingredient list (DCM context — see Knowledge)", "Contains chicken — excluded for chicken-allergic dogs"],
+      "faq": [{"q": "Is grain-free food like Canagan safe for my dog's heart?", "a": "The FDA never confirmed causality between grain-free diets and DCM, but legume-heavy recipes remain under discussion. For Dobermanns, Great Danes and Golden Retrievers we suggest discussing diet choice with your vet."}],
+      "shops": [{"n": "Pets at Home", "u": "https://www.petsathome.com/"}, {"n": "Zooplus UK", "u": "https://www.zooplus.co.uk/"}]
+    },
+    {
+      "slug": "butternut-box-chicken", "name": "Butternut Box — Chicken You Can Count On", "brand": "Butternut Box",
+      "type": "fresh (subscription)", "life": "all life stages", "score": 88, "pillars": [32, 21, 21, 14],
+      "proteinDM": 38.0, "fatDM": 20.0, "kcal": 125, "priceKg": 6.0, "verified": false,
+      "verdict": "Gently cooked fresh food delivered on subscription, with named ingredients you can see in the tray. Digestibility of fresh diets is well-documented; the trade-off is cost per 1,000 kcal several times that of a good kibble.",
+      "pros": ["Gently cooked, named ingredients", "High palatability — useful for fussy eaters", "Portions pre-calculated per dog"],
+      "cons": ["Cost per 1,000 kcal several times higher than kibble", "Requires freezer space", "Contains chicken in this recipe"],
+      "faq": [{"q": "Is fresh food like Butternut Box better than kibble?", "a": "Fresh diets show higher digestibility in studies (mostly industry-funded), but 'better health outcomes' remain unproven. Nutritionally complete kibble and fresh food can both feed a dog well — the honest difference is palatability versus price."}],
+      "shops": [{"n": "butternutbox.com", "u": "https://butternutbox.com/"}]
+    },
+    {
+      "slug": "lilys-kitchen-chicken-duck", "name": "Lily's Kitchen Chicken & Duck", "brand": "Lily's Kitchen (Nestlé Purina)",
+      "type": "dry", "life": "adult", "score": 84, "pillars": [30, 21, 20, 13],
+      "proteinDM": 28.9, "fatDM": 15.6, "kcal": 365, "priceKg": 7.5, "verified": false,
+      "verdict": "A natural-positioned recipe with named fresh chicken and duck, now under the Purina umbrella (which strengthens the manufacturer pillar: QC and nutritional staff). Protein is moderate rather than high; botanicals are marketing more than evidence.",
+      "pros": ["Named meat sources, no meat meal ambiguity", "Strong manufacturer infrastructure (Purina QC)", "Wide availability"],
+      "cons": ["Moderate protein for the price point", "Botanical additives without clinical evidence", "Contains chicken"],
+      "faq": [{"q": "Did Lily's Kitchen change after the Purina acquisition?", "a": "Recipes remained branded the same; manufacturing and quality-control infrastructure is now part of Nestlé Purina. In our algorithm that improves pillar C (manufacturer credibility) — recipe scoring is unchanged."}],
+      "shops": [{"n": "Zooplus UK", "u": "https://www.zooplus.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}]
+    },
+    {
+      "slug": "burns-original-chicken-rice", "name": "Burns Original Chicken & Brown Rice", "brand": "Burns Pet Nutrition",
+      "type": "dry", "life": "adult", "score": 79, "pillars": [26, 21, 20, 12],
+      "proteinDM": 20.7, "fatDM": 8.4, "kcal": 340, "priceKg": 4.8, "verified": false,
+      "verdict": "A deliberately simple, low-fat recipe from a vet-founded British brand — one of the few mainstream foods genuinely suitable after pancreatitis (fat 8.4% DM). Protein sits at the FEDIAF minimum: adequate for low-activity adults, not a high-performance diet.",
+      "pros": ["Low fat (8.4% DM) — suitable after pancreatitis", "Simple, short ingredient list", "Vet-founded brand with feeding support line"],
+      "cons": ["Protein at the regulatory minimum", "Rice-heavy recipe — meat is not the first ingredient", "Contains chicken"],
+      "faq": [{"q": "Is Burns good for a dog with a sensitive stomach?", "a": "Its low fat and simple recipe make it one of the safer mainstream choices for digestive issues, including recovery after pancreatitis. For diagnosed conditions, confirm with your vet — therapeutic diets may be more appropriate."}],
+      "shops": [{"n": "Pets at Home", "u": "https://www.petsathome.com/"}, {"n": "Amazon UK", "u": "https://www.amazon.co.uk/"}]
+    },
+    {
+      "slug": "harringtons-complete", "name": "Harringtons Complete Chicken & Rice", "brand": "Harringtons (Inspired Pet Nutrition)",
+      "type": "dry", "life": "adult", "score": 68, "pillars": [22, 18, 17, 11],
+      "proteinDM": 24.4, "fatDM": 11.1, "kcal": 355, "priceKg": 2.4, "verified": false,
+      "verdict": "The UK's budget-natural benchmark. Meat meal is named (chicken meal — fine by our methodology), but cereals dominate the recipe. At £2.40/kg it is hard to beat on cost per 1,000 kcal; just know what you are buying: an adequate food, not an excellent one.",
+      "pros": ["Best-in-class cost per 1,000 kcal", "Named chicken meal (not anonymous 'meat and animal derivatives')", "No artificial colours"],
+      "cons": ["Cereal-led recipe — meat is not the main ingredient", "Moderate protein quality mix (animal + vegetable)", "Manufacturer publishes little nutritional data"],
+      "faq": [{"q": "Is Harringtons a good cheap dog food?", "a": "It is one of the better budget options: named meat meal, no artificial colours, complete nutrition. Mid-shelf foods beat it on meat content — but at roughly double the cost per 1,000 kcal."}],
+      "shops": [{"n": "Amazon UK", "u": "https://www.amazon.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}]
+    }
+  ]
+}
