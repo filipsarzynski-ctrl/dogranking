@@ -62,7 +62,8 @@
           "n": "Ceneo",
           "u": "https://www.ceneo.pl/"
         }
-      ]
+      ],
+      "flavor": "Indyk z wołowiną"
     },
     {
       "slug": "acana-wild-prairie",
@@ -117,7 +118,8 @@
           "n": "zooplus.pl",
           "u": "https://www.zooplus.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak, indyk, ryby (Prairie)"
     },
     {
       "slug": "royal-canin-medium-adult",
@@ -172,7 +174,8 @@
           "n": "zooplus.pl",
           "u": "https://www.zooplus.pl/"
         }
-      ]
+      ],
+      "flavor": "Drób (Medium Adult)"
     },
     {
       "slug": "piper-animals-jagniecina",
@@ -232,7 +235,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Jagnięcina z marchewką"
     },
     {
       "slug": "orijen-original",
@@ -278,7 +282,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak, indyk, ryby (Original)"
     },
     {
       "slug": "farmina-nd-ancestral-kurczak-granat",
@@ -322,7 +327,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak z granatem"
     },
     {
       "slug": "taste-of-the-wild-high-prairie",
@@ -367,7 +373,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Bizon i dziczyzna"
     },
     {
       "slug": "carnilove-salmon-turkey-adult",
@@ -412,7 +419,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Łosoś z indykiem"
     },
     {
       "slug": "belcando-adult-gf-poultry",
@@ -456,7 +464,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Drób (GF Poultry)"
     },
     {
       "slug": "wolf-of-wilderness-taste-of-canada",
@@ -501,7 +510,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Wołowina, dorsz, indyk (Canada)"
     },
     {
       "slug": "purizon-adult-kurczak-ryba",
@@ -547,7 +557,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak i ryba"
     },
     {
       "slug": "brit-care-adult-medium-lamb-rice",
@@ -588,7 +599,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Jagnięcina z ryżem"
     },
     {
       "slug": "josera-optiness-adult",
@@ -631,7 +643,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Drób (Optiness)"
     },
     {
       "slug": "fitmin-medium-maintenance",
@@ -673,7 +686,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak"
     },
     {
       "slug": "calibra-adult-medium-lamb",
@@ -714,7 +728,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Jagnięcina"
     },
     {
       "slug": "happy-dog-sensible-montana",
@@ -755,7 +770,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Konina (Montana)"
     },
     {
       "slug": "purina-pro-plan-medium-adult",
@@ -800,7 +816,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak (OptiBalance)"
     },
     {
       "slug": "hills-science-plan-adult-medium",
@@ -843,7 +860,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak"
     },
     {
       "slug": "eukanuba-adult-medium-kurczak",
@@ -886,7 +904,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak"
     },
     {
       "slug": "dog-chow-adult-kurczak",
@@ -927,7 +946,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak"
     },
     {
       "slug": "pan-miesko-pelnoporcjowa",
@@ -977,7 +997,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Mix mięs"
     },
     {
       "slug": "lukullus-naturkost",
@@ -1027,7 +1048,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Mix mięs"
     },
     {
       "slug": "rocco-classic-wolowina-dziczyzna",
@@ -1076,7 +1098,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Wołowina z dziczyzną"
     },
     {
       "slug": "wolf-of-wilderness-adult-jagniecina-mokra",
@@ -1125,7 +1148,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Jagnięcina"
     },
     {
       "slug": "animonda-grancarno-adult-wolowina",
@@ -1173,7 +1197,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Wołowina"
     },
     {
       "slug": "brit-pate-meat-wolowina-indyk",
@@ -1222,7 +1247,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Wołowina z indykiem"
     },
     {
       "slug": "carnilove-wild-meat-kaczka-bazant",
@@ -1271,7 +1297,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kaczka z bażantem"
     },
     {
       "slug": "applaws-adult-kurczak-mokra",
@@ -1320,7 +1347,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak"
     },
     {
       "slug": "wiejska-zagroda-kurczak-mono-mokra",
@@ -1370,7 +1398,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Kurczak (mono)"
     },
     {
       "slug": "royal-canin-mini-adult-mokra",
@@ -1420,7 +1449,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Drób w sosie"
     },
     {
       "slug": "pedigree-adult-wolowina-galaretka",
@@ -1468,7 +1498,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Wołowina w galaretce"
     },
     {
       "slug": "cesar-teryna-wolowina-watrobka",
@@ -1516,7 +1547,8 @@
           "n": "Fera.pl",
           "u": "https://fera.pl/"
         }
-      ]
+      ],
+      "flavor": "Wołowina z wątróbką"
     },
     {
       "slug": "puffi-jagniecina-mokra",
@@ -1554,6 +1586,255 @@
         {
           "q": "Czy Puffi Jagnięcina (mokra) wypada drogo?",
           "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 12 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Fera.pl",
+          "u": "https://fera.pl/"
+        }
+      ],
+      "flavor": "Jagnięcina"
+    },
+    {
+      "slug": "carnilove-lamb-wild-boar-adult",
+      "name": "Carnilove Lamb & Wild Boar Adult",
+      "brand": "VAFO (Carnilove)",
+      "type": "sucha",
+      "life": "dorosły",
+      "flavor": "Jagnięcina z dzikiem (bez ryby i drobiu)",
+      "score": 71,
+      "pillars": [
+        32,
+        12,
+        16,
+        11
+      ],
+      "proteinDM": 36.7,
+      "fatDM": 17.8,
+      "kcal": 360,
+      "priceZlKg": 17,
+      "verified": false,
+      "verdict": "Wariant tej samej linii Carnilove, ale bez ryby i bez drobiu — jagnięcina i dzik jako jedyne źródła białka. To dobry przykład, jak smak zmienia profil: brak deklarowanego EPA/DHA (nie ma ryby) obniża jeden element oceny względem wariantu z łososiem, za to znika alergen drobiowy.",
+      "pros": [
+        "Nazwane źródło mięsa w składzie",
+        "Wysokie białko: 36.7% w suchej masie",
+        "Receptura bez zbóż",
+        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+      ],
+      "cons": [
+        "Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)"
+      ],
+      "faq": [
+        {
+          "q": "Czym ten wariant różni się od innych smaków tej linii?",
+          "a": "To wariant „Jagnięcina z dzikiem (bez ryby i drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+        },
+        {
+          "q": "Ile białka ma Carnilove Lamb & Wild Boar Adult?",
+          "a": "Na etykiecie 33%, co w suchej masie (wilgotność 10%) daje 36.7% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Fera.pl",
+          "u": "https://fera.pl/"
+        }
+      ]
+    },
+    {
+      "slug": "orijen-six-fish",
+      "name": "Orijen Six Fish",
+      "brand": "Champion Petfoods",
+      "type": "sucha",
+      "life": "dorosły",
+      "flavor": "Sześć ryb (bez drobiu)",
+      "score": 79,
+      "pillars": [
+        32,
+        16,
+        18,
+        13
+      ],
+      "proteinDM": 43.2,
+      "fatDM": 20.5,
+      "kcal": 353,
+      "priceZlKg": 24,
+      "verified": false,
+      "verdict": "Rybny wariant Orijen — sześć gatunków ryb zamiast drobiu. Bardzo wysokie białko i naturalnie bogate EPA/DHA z ryb; brak kurczaka czyni go opcją przy alergii na drób. Strączkowe wciąż obecne (kontekst DCM), jak w całej linii.",
+      "pros": [
+        "Nazwane źródło mięsa w składzie",
+        "Wysokie białko: 43.2% w suchej masie",
+        "Receptura bez zbóż",
+        "Deklarowane EPA/DHA ze źródeł morskich",
+        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+      ],
+      "cons": [
+        "Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)"
+      ],
+      "faq": [
+        {
+          "q": "Czym ten wariant różni się od innych smaków tej linii?",
+          "a": "To wariant „Sześć ryb (bez drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+        },
+        {
+          "q": "Ile białka ma Orijen Six Fish?",
+          "a": "Na etykiecie 38%, co w suchej masie (wilgotność 12%) daje 43.2% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Fera.pl",
+          "u": "https://fera.pl/"
+        }
+      ]
+    },
+    {
+      "slug": "brit-care-adult-salmon-potato",
+      "name": "Brit Care Adult Salmon & Potato",
+      "brand": "VAFO (Brit)",
+      "type": "sucha",
+      "life": "dorosły",
+      "flavor": "Łosoś z ziemniakami (grain-free, hipoalergiczny)",
+      "score": 80,
+      "pillars": [
+        33,
+        18,
+        16,
+        13
+      ],
+      "proteinDM": 27.8,
+      "fatDM": 16.7,
+      "kcal": 357,
+      "priceZlKg": 15,
+      "verified": false,
+      "verdict": "Grain-free, monobiałkowy wariant Brit Care z łososiem i ziemniakami — bez kurczaka i bez zbóż, projektowany pod psy wrażliwe i alergiczne. W odróżnieniu od wariantu Lamb & Rice jest bezzbożowy i ma rybie EPA/DHA, ale ziemniak zamiast ryżu.",
+      "pros": [
+        "Nazwane źródło mięsa w składzie",
+        "Receptura bez zbóż",
+        "Deklarowane EPA/DHA ze źródeł morskich",
+        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+      ],
+      "cons": [],
+      "faq": [
+        {
+          "q": "Czym ten wariant różni się od innych smaków tej linii?",
+          "a": "To wariant „Łosoś z ziemniakami (grain-free, hipoalergiczny)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+        },
+        {
+          "q": "Ile białka ma Brit Care Adult Salmon & Potato?",
+          "a": "Na etykiecie 25%, co w suchej masie (wilgotność 10%) daje 27.8% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Fera.pl",
+          "u": "https://fera.pl/"
+        }
+      ]
+    },
+    {
+      "slug": "wiejska-zagroda-dzik-jablko",
+      "name": "Wiejska Zagroda Dzik z jabłkiem",
+      "brand": "Wiejska Zagroda",
+      "type": "sucha",
+      "life": "dorosły",
+      "flavor": "Dzik z jabłkiem (bez drobiu)",
+      "score": 73,
+      "pillars": [
+        35,
+        14,
+        13,
+        11
+      ],
+      "proteinDM": 33,
+      "fatDM": 19.8,
+      "kcal": 368,
+      "priceZlKg": 14,
+      "verified": false,
+      "verdict": "Wariant z dziczyzną tej samej polskiej linii — bez drobiu, bezzbożowy, z nietypowym źródłem białka (dzik) przydatnym przy nietolerancjach. Inny smak niż „Indyk z wołowiną\", więc i inny profil alergenów; ocena zbliżona, bo skład i producent te same.",
+      "pros": [
+        "Nazwane źródło mięsa w składzie",
+        "Wysokie białko: 33% w suchej masie",
+        "Receptura bez zbóż",
+        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+      ],
+      "cons": [
+        "Producent bez prób żywieniowych / nutrycjonisty w deklaracji"
+      ],
+      "faq": [
+        {
+          "q": "Czym ten wariant różni się od innych smaków tej linii?",
+          "a": "To wariant „Dzik z jabłkiem (bez drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+        },
+        {
+          "q": "Ile białka ma Wiejska Zagroda Dzik z jabłkiem?",
+          "a": "Na etykiecie 30%, co w suchej masie (wilgotność 9%) daje 33% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Fera.pl",
+          "u": "https://fera.pl/"
+        }
+      ]
+    },
+    {
+      "slug": "animonda-grancarno-kurczak-indyk",
+      "name": "Animonda GranCarno Adult Kurczak z indykiem",
+      "brand": "Animonda",
+      "type": "mokra",
+      "life": "dorosły",
+      "flavor": "Kurczak z indykiem",
+      "score": 77,
+      "pillars": [
+        35,
+        14,
+        17,
+        11
+      ],
+      "proteinDM": 47.7,
+      "fatDM": 29.5,
+      "kcal": 100,
+      "priceZlKg": 12,
+      "verified": false,
+      "verdict": "Drobiowy wariant GranCarno — w odróżnieniu od wersji czysto wołowej zawiera kurczaka i indyka, więc nie nadaje się przy alergii na drób. Skład i jakość producenta te same; różnica to źródło białka i alergeny.",
+      "pros": [
+        "Nazwane źródło mięsa w składzie",
+        "Wysokie białko: 47.7% w suchej masie",
+        "Receptura bez zbóż"
+      ],
+      "cons": [
+        "Zawiera drób — wykluczona przy alergii na kurczaka"
+      ],
+      "faq": [
+        {
+          "q": "Czym ten wariant różni się od innych smaków tej linii?",
+          "a": "To wariant „Kurczak z indykiem\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+        },
+        {
+          "q": "Ile białka ma Animonda GranCarno Adult Kurczak z indykiem?",
+          "a": "Na etykiecie 10.5%, co w suchej masie (wilgotność 78%) daje 47.7% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
