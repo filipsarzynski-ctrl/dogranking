@@ -25,6 +25,7 @@ const PRODUCTS = {
   us: Object.assign({ karmy: J('foods.us.json').foods }, pickCats(J('products.us.json')))
 };
 const ARTS = J('articles.pl.json').articles;
+const BEKON = J('bekon.json').posts;
 const MARKETS = {
   pl: { lang: 'pl', name: 'Polska', flag: '🇵🇱', langName: 'po polsku', money: v => `${v} zł` },
   uk: { lang: 'en', name: 'United Kingdom', flag: '🇬🇧', langName: 'in English', money: v => `£${v}` },
@@ -169,6 +170,20 @@ nav a:hover{color:var(--ink)}
 .mktswitch{margin-left:auto;font-family:-apple-system,sans-serif;font-size:.82rem}
 .mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
 .mktswitch a:hover{color:var(--terra)}
+/* oś czasu Bekona */
+.tl{position:relative;margin:34px 0 0;padding-left:0}
+.tl::before{content:"";position:absolute;left:19px;top:8px;bottom:8px;width:3px;background:linear-gradient(var(--gold),var(--line))}
+.tlitem{position:relative;padding:0 0 38px 56px}
+.tlitem::before{content:"🐾";position:absolute;left:2px;top:-2px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;font-size:1rem;background:var(--card);border:3px solid var(--gold);border-radius:50%}
+.tlitem:last-child{padding-bottom:0}
+.tldate{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;color:var(--terra);text-transform:uppercase;letter-spacing:.04em}
+.tlage{font-family:-apple-system,sans-serif;font-size:.78rem;color:var(--muted);margin-left:8px;text-transform:none;letter-spacing:0;font-weight:400}
+.tlcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-top:8px}
+.tlcard h3{margin:0 0 8px;font-size:1.2rem}
+.tlcard p{margin:0;color:var(--ink)}
+.tlphoto{width:100%;max-height:440px;object-fit:cover;border-radius:12px;margin:0 0 14px;display:block}
+.tlph{aspect-ratio:3/2;background:#F1EADC;border:2px dashed #C9C0AE;border-radius:12px;margin:0 0 14px;display:flex;align-items:center;justify-content:center;text-align:center;color:#8B816C;font-family:-apple-system,sans-serif;font-size:.85rem;padding:18px}
+@media(max-width:560px){.tlitem{padding-left:48px}.tl::before{left:15px}.tlitem::before{width:32px;height:32px;left:0}}
 main{padding:42px 0 70px}
 h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin-bottom:14px}
 h2{font-size:1.35rem;margin:34px 0 12px}
@@ -193,11 +208,12 @@ ul.pc li{padding:3px 0}
 .crumb a{color:var(--muted);text-decoration:none}
 .crumb a:hover{color:var(--terra)}
 footer{border-top:1px solid var(--line);background:var(--card);padding:26px 0;font-size:.8rem;color:var(--muted);font-family:-apple-system,sans-serif;text-align:center}
-.rankrow{display:grid;grid-template-columns:40px 1fr auto auto;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin:10px 0;text-decoration:none;color:var(--ink)}
+.rankrow{display:grid;grid-template-columns:40px 1fr 120px 185px;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin:10px 0;text-decoration:none;color:var(--ink)}
 .rankrow:hover{border-color:var(--ink)}
 .rankrow .num{font-size:1.3rem;color:var(--line);font-weight:700}
-.rankrow .gobtn{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;color:var(--terra);white-space:nowrap}
-@media(max-width:640px){.rankrow{grid-template-columns:30px 1fr}}
+.rankrow>span:nth-child(3){justify-self:start}
+.rankrow .gobtn{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;color:var(--terra);white-space:nowrap;justify-self:end;text-align:right}
+@media(max-width:760px){.rankrow{grid-template-columns:30px 1fr;gap:8px 12px}.rankrow>span:nth-child(3),.rankrow .gobtn{grid-column:2;justify-self:start;text-align:left}}
 .pawwrap{position:relative;display:inline-block;line-height:0;vertical-align:middle}
 .paw{width:20px;height:20px;display:inline-block;margin-right:3px;fill:#DCD2BD}
 .pawbase{white-space:nowrap}
@@ -325,7 +341,7 @@ ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padd
 <header><div class="bar">
   <a class="mark" href="${H(mkt + '/')}"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
   <nav>
-    <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
+    <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
   </nav>
   <div class="mktswitch">${Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a href="${H(k + '/')}" title="${v.name}">${v.flag}</a>`).join(' ')}</div>
 </div></header>
@@ -935,6 +951,51 @@ function articlePage(a) {
   return { url, html: page({ title: `${a.title} | DogRanking Wiedza`, desc: a.teaser.slice(0, 155), canonical: url, body, jsonld, mkt: 'pl' }) };
 }
 
+/* ---------- Bekon: oś czasu życia (wszystkie rynki) ---------- */
+const BEKON_STR = {
+  pl: {
+    crumbHome: 'DogRanking PL', crumb: 'Bekon',
+    eyebrow: 'Bekon · pudel miniaturowy', h1pre: 'Całe życie Bekona,', h1em: 'chwila po chwili',
+    lead: 'Bekon to nie tylko maskotka i główny degustator DogRanking — to ważna część mojego życia. Tu zbieram najważniejsze momenty od pierwszego dnia, ze zdjęciami i historiami.',
+    title: 'Bekon — oś czasu życia | DogRanking', desc: 'Historia Bekona, pudla miniaturowego i głównego testera DogRanking — najważniejsze chwile od szczeniaka, ze zdjęciami.',
+    phNote: 'Tu pojawi się zdjęcie'
+  },
+  en: {
+    crumbHome: 'DogRanking', crumb: 'Bekon',
+    eyebrow: 'Bekon · miniature poodle', h1pre: "Bekon's whole life,", h1em: 'moment by moment',
+    lead: "Bekon is more than the mascot and chief taster of DogRanking — he's an important part of my life. Here I collect the milestones from day one, with photos and stories.",
+    title: 'Bekon — life timeline | DogRanking', desc: "The story of Bekon, a miniature poodle and DogRanking's chief tester — milestones from puppyhood, with photos.",
+    phNote: 'Photo coming here'
+  }
+};
+function bekonPage(mkt) {
+  const m = MARKETS[mkt]; const S = BEKON_STR[m.lang];
+  const url = `/${mkt}/bekon/`;
+  const alts = { pl: '/pl/bekon/', uk: '/uk/bekon/', us: '/us/bekon/' };
+  const items = BEKON.map(b => {
+    const media = b.photo
+      ? `<img class="tlphoto" src="${href(url, b.photo)}" alt="${b.title[m.lang]}" loading="lazy">`
+      : `<div class="tlph">${S.phNote}</div>`;
+    return `<div class="tlitem">
+  <div class="tldate">${b.displayDate[m.lang]}<span class="tlage">· ${b.age[m.lang]}</span></div>
+  <div class="tlcard">${media}<h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p></div>
+</div>`;
+  }).join('\n');
+  const jsonld = [ORG, {
+    '@context': 'https://schema.org', '@type': 'ItemList', name: S.title,
+    itemListElement: BEKON.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.title[m.lang] }))
+  }];
+  const body = `
+<p class="crumb"><a href="${href(url, mkt + '/')}">${S.crumbHome}</a> › ${S.crumb}</p>
+<div class="eyebrow">${S.eyebrow}</div>
+<h1>${S.h1pre} <em style="color:var(--terra)">${S.h1em}</em></h1>
+<p class="lead">${S.lead}</p>
+<div class="tl">
+${items}
+</div>`;
+  return { url, html: page({ title: S.title, desc: S.desc, canonical: url, body, jsonld, mkt, alts }) };
+}
+
 /* ---------- intro: wybór rynku ---------- */
 /* STRONA STARTOWA = czysta BRAMKA wyboru kraju.
    Samodzielny dokument BEZ nagłówka/nawigacji/stopki — jedyne wyjście dalej to wybór rynku. */
@@ -1060,7 +1121,7 @@ try { fs.rmSync(OUT, { recursive: true, force: true }); } catch (e) { /* brak pr
 const pages = [rootPage()];
 pages.push(knowledgeHub(), ...ARTS.map(articlePage));
 for (const mkt of Object.keys(MARKETS)) {
-  pages.push(homeMkt(mkt), methodPage(mkt), aboutPage(mkt), principlesPage(mkt));
+  pages.push(homeMkt(mkt), methodPage(mkt), aboutPage(mkt), principlesPage(mkt), bekonPage(mkt));
   for (const cat of CATS) {
     pages.push(categoryHub(cat, mkt));
     for (const p of ((PRODUCTS[mkt] || {})[cat.slug] || [])) pages.push(productPage(p, cat, mkt));
@@ -1094,7 +1155,14 @@ const FAVICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 fs.writeFileSync(path.join(OUT, 'logo.svg'), FAVICON);
 /* statyczne pliki (logo) → dist root */
 const STATIC = path.join(__dirname, 'static');
-if (fs.existsSync(STATIC)) for (const f of fs.readdirSync(STATIC)) fs.copyFileSync(path.join(STATIC, f), path.join(OUT, f));
+function copyStatic(src, dst) {
+  for (const e of fs.readdirSync(src, { withFileTypes: true })) {
+    const s = path.join(src, e.name), d = path.join(dst, e.name);
+    if (e.isDirectory()) { fs.mkdirSync(d, { recursive: true }); copyStatic(s, d); }
+    else try { fs.writeFileSync(d, fs.readFileSync(s)); } catch (err) { console.warn(`pominięto static: ${e.name} (${err.code})`); }
+  }
+}
+if (fs.existsSync(STATIC)) copyStatic(STATIC, OUT);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), ROBOTS);
 fs.writeFileSync(path.join(OUT, 'llms.txt'), LLMS);
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sitemap(pages.map(p => p.url)));
