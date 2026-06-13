@@ -16,11 +16,13 @@ const SITE = 'https://www.dogranking.com';
 const TODAY = new Date().toISOString().slice(0, 10);
 const OUT = path.join(__dirname, 'dist');
 const J = f => JSON.parse(fs.readFileSync(path.join(__dirname, 'data', f), 'utf8'));
+const NONFOOD_CATS = ['przysmaki-i-gryzaki','pielegnacja','akcesoria','zabawki'];
+const pickCats = obj => { const o = {}; for (const k of NONFOOD_CATS) if (Array.isArray(obj[k])) o[k] = obj[k]; return o; };
 const CATS = J('categories.json').categories;
 const PRODUCTS = {
   pl: { karmy: J('foods.pl.json').foods, pielegnacja: J('products.pielegnacja.json').products, 'przysmaki-i-gryzaki': J('products.przysmaki-i-gryzaki.json').products, akcesoria: J('products.akcesoria.json').products, zabawki: J('products.zabawki.json').products },
-  uk: { karmy: J('foods.uk.json').foods },
-  us: { karmy: J('foods.us.json').foods }
+  uk: Object.assign({ karmy: J('foods.uk.json').foods }, pickCats(J('products.uk.json'))),
+  us: Object.assign({ karmy: J('foods.us.json').foods }, pickCats(J('products.us.json')))
 };
 const ARTS = J('articles.pl.json').articles;
 const MARKETS = {
