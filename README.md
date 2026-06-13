@@ -18,6 +18,8 @@ STAGING=1 to baner demo + noindex. Przed oficjalnym startem (po weryfikacji dany
 
 Po spieciu kazdy commit do main = automatyczny deploy. Na koncu przeniesc custom domain dogranking.com na ten projekt i usunac stary projekt direct-upload.
 
-## Aktualizacje tresci
+## Aktualizacje tresc
+
+rebuild nudge 2152i
 
 Edycja plikow w data/ (nowy produkt = nowy rekord JSON), commit, strona przebuduje sie sama.
