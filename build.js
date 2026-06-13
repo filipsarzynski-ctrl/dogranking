@@ -18,7 +18,7 @@ const OUT = path.join(__dirname, 'dist');
 const J = f => JSON.parse(fs.readFileSync(path.join(__dirname, 'data', f), 'utf8'));
 const CATS = J('categories.json').categories;
 const PRODUCTS = {
-  pl: { karmy: J('foods.pl.json').foods, pielegnacja: J('products.pielegnacja.json').products },
+  pl: { karmy: J('foods.pl.json').foods, pielegnacja: J('products.pielegnacja.json').products, 'przysmaki-i-gryzaki': J('products.przysmaki-i-gryzaki.json').products, akcesoria: J('products.akcesoria.json').products, zabawki: J('products.zabawki.json').products },
   uk: { karmy: J('foods.uk.json').foods },
   us: { karmy: J('foods.us.json').foods }
 };
@@ -38,6 +38,8 @@ const STR = {
   pl: {
     nav: ['Start', 'Kategorie', 'Metodologia'], review: 'Recenzja', reviewTitle: 'recenzja i ocena', rated: 'Ocena', updated: 'Zaktualizowano',
     demo: 'DEMO — dane do weryfikacji', goodChoice: n => `Czy ${n} to dobry wybór?`,
+    flavorRow: 'Wariant (smak)',
+    variantBox: 'Ta ocena dotyczy <strong>konkretnego wariantu smakowego</strong>. Producenci często sprzedają tę samą linię w wielu smakach (np. łosoś, jagnięcina, kurczak), a każdy ma inny skład, profil odżywczy i alergeny — więc i inną ocenę. Sprawdzaj wariant, który realnie kupujesz.',
     nutrition: 'Wartości odżywcze (w suchej masie)', spec: 'Specyfikacja', param: 'Parametr', value: 'Wartość', ctx: 'Próg / kontekst',
     form: 'Forma karmy', formNote: 'porównujemy formy po przeliczeniu na suchą masę', protein: 'Białko', fat: 'Tłuszcz', energy: 'Energia',
     min: 'min', cost1000: 'Koszt 1000 kcal', cost1000note: 'jedyna uczciwa miara między formą suchą a mokrą',
@@ -77,6 +79,8 @@ const STR = {
   },
   en: {
     nav: ['Home', 'Categories', 'Methodology'], review: 'Review', reviewTitle: 'review & rating', rated: 'Rating', updated: 'Updated',
+    flavorRow: 'Variant (flavour)',
+    variantBox: 'This rating is for a <strong>specific flavour variant</strong>. Brands often sell the same line in several flavours (salmon, lamb, chicken…), each with a different recipe, nutrient profile and allergens — and therefore a different score. Always check the exact variant you are buying.',
     demo: 'DEMO — data pending verification', goodChoice: n => `Is ${n} a good choice?`,
     nutrition: 'Nutrition (dry-matter basis)', spec: 'Specification', param: 'Parameter', value: 'Value', ctx: 'Threshold / context',
     form: 'Food format', formNote: 'formats compared on a dry-matter basis', protein: 'Protein', fat: 'Fat', energy: 'Energy',
@@ -357,12 +361,14 @@ function productPage(p, cat, mkt) {
 <table>
 <tr><th>${S.param}</th><th>${S.value}</th><th>${S.ctx}</th></tr>
 <tr><td>${S.form}</td><td><strong>${p.type}</strong></td><td>${S.formNote}</td></tr>
+${p.flavor ? `<tr><td>${S.flavorRow}</td><td><strong>${p.flavor}</strong></td><td>—</td></tr>` : ''}
 <tr><td>${S.protein}</td><td><strong>${p.proteinDM}% DM</strong></td><td>FEDIAF/AAFCO ${S.min} ${p.life === 'dorosły' || p.life === 'adult' ? '18–21' : '22,5–25'}%</td></tr>
 <tr><td>${S.fat}</td><td>${p.fatDM}% DM</td><td>${S.min} ${p.life === 'dorosły' || p.life === 'adult' ? '5,5' : '8,5'}%</td></tr>
 <tr><td>${S.energy}</td><td>${p.kcal} kcal ME/100 g</td><td>—</td></tr>
 ${k1000 ? `<tr><td><strong>${S.cost1000}</strong></td><td><strong>~${m.money(k1000)}</strong></td><td>${S.cost1000note}</td></tr>` : ''}
 </table>
-<p class="meta">${S.dmNote} <a href="${href(url, methodPath)}">${S.howCalc}</a></p>` : `
+<p class="meta">${S.dmNote} <a href="${href(url, methodPath)}">${S.howCalc}</a></p>
+<div class="protocol" style="background:#FAF0E2;border-color:#ECD9B8;color:#7a5c1e">ℹ️ ${S.variantBox}</div>` : `
 <h2>${S.spec}</h2>
 <table>
 <tr><th>${S.param}</th><th>${S.value}</th></tr>
