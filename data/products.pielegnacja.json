@@ -168,6 +168,98 @@
         {"q": "Spray bez silikonów czy z silikonami?", "a": "Silikony dają najlepszy poślizg przy kołtunach, ale obciążają sierść i wymagają dokładniejszego zmywania. Do codziennej profilaktyki lekki spray bez silikonów wystarcza; silikonowy rozkołtuniacz trzymaj na sytuacje awaryjne."}
       ],
       "shops": [{"n": "ZooArt", "u": "https://zooart.com.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
+    },
+    {
+      "slug": "moser-max45-maszynka",
+      "name": "Moser Max45 (typ 1245) — maszynka do strzyżenia",
+      "brand": "Moser",
+      "type": "maszynka groomerska", "life": "wszystkie",
+      "score": 86, "pillars": [32, 21, 22, 11],
+      "specs": [
+        ["Typ", "profesjonalna maszynka sieciowa, silnik 45 W, 2 biegi (2400/3000 obr/min)"],
+        ["W zestawie", "ostrze 1 mm, nakładki 10 i 16 mm, szczoteczka, olej; system tłumienia drgań"],
+        ["Przeznaczenie", "całościowe strzyżenie psów (też gęsta sierść pudla), kotów, koni"],
+        ["Ostrza", "wymienne (dostępne 1/5 mm)"],
+        ["Cena orientacyjna", "od ok. 545 zł"]
+      ],
+      "verified": false,
+      "verdict": "Maszynka klasy profesjonalnej, która radzi sobie z gęstą, kędzierzawą sierścią pudla tam, gdzie tanie domowe modele się zacinają. Mocny silnik, dwa biegi i tłumienie drgań to komfort i trwałość na lata. Cena i kabel to główne ograniczenia — oraz nagrzewające się ostrze, które trzeba kontrolować, by nie poparzyć skóry.",
+      "pros": ["Mocny silnik radzi sobie z gęstą sierścią (pudel, doodle)", "Dwa biegi i skuteczne tłumienie drgań", "Wymienne ostrza — różne długości cięcia", "Trwałość klasy profesjonalnej"],
+      "cons": ["Wysoka cena", "Sieciowa (kabel) — mniej wygodna przy ruchliwym psie", "Głośna dla wrażliwych psów", "Ostrze nagrzewa się przy długim strzyżeniu — kontrolować temperaturę"],
+      "faq": [
+        {"q": "Czy warto strzyc psa w domu maszynką?", "a": "Przy rasach wymagających częstego strzyżenia (pudel, bichon, doodle) maszynka zwraca się po kilku wizytach u groomera. Wymaga jednak nauki techniki i cierpliwości — na początek warto łączyć domowe podstrzyganie z okresową wizytą u profesjonalisty."},
+        {"q": "Jak nie poparzyć psa nagrzanym ostrzem?", "a": "Rób przerwy, dotykaj ostrza wierzchem dłoni (jeśli za gorące dla Ciebie — za gorące dla psa), używaj sprayu chłodząco-smarującego do ostrzy i nie pracuj zbyt długo jednym ostrzem bez przerwy."}
+      ],
+      "shops": [{"n": "Germapol", "u": "https://germapol.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "nozyczki-groomerskie-zaokraglone",
+      "name": "Nożyczki groomerskie z zaokrąglonymi końcami",
+      "brand": "canilove / ABC-ZOO",
+      "type": "nożyczki groomerskie", "life": "wszystkie",
+      "score": 80, "pillars": [29, 21, 18, 12],
+      "specs": [
+        ["Typ", "nożyczki do wykończeń (łapy, pysk, okolice oczu); proste i gięte (curved)"],
+        ["Materiał", "stal nierdzewna (część japońska), antypoślizgowa rączka"],
+        ["Bezpieczeństwo", "zaokrąglona końcówka — mniejsze ryzyko ukłucia przy pysku/oczach"],
+        ["Akcesoria", "dostępne też degażówki w zestawach"],
+        ["Cena orientacyjna", "od ok. 20–30 zł (domowe) do 80–150+ zł (pro)"]
+      ],
+      "verified": false,
+      "verdict": "Element wyposażenia, o którym łatwo zapomnieć, dopóki nie trzeba przyciąć włosa przy oczach albo między palcami. Zaokrąglone końce to konkretne bezpieczeństwo — przy szarpnięciu psa nie wbiją się w skórę. Klucz to jakość stali: tanie nożyczki szybko tępieją i zamiast ciąć, gniotą włos.",
+      "pros": ["Zaokrąglone końce — bezpieczne przy pysku, łapach i oczach", "Precyzja przy wykończeniach (najtrudniejsze miejsca)", "Stal nierdzewna, antypoślizgowa rączka", "Niedrogie wersje domowe na start"],
+      "cons": ["Tanie nożyczki szybko tępieją (gniotą zamiast ciąć)", "Pies musi być spokojny — ryzyko skaleczenia przy szarpnięciu", "Wymagają regularnego ostrzenia i oliwienia"],
+      "faq": [
+        {"q": "Po co osobne nożyczki z zaokrąglonymi końcami?", "a": "Do najwrażliwszych miejsc: włosów przy oczach, w uszach, na pysku i między palcami. Ostry szpic zwykłych nożyczek przy nagłym ruchu psa może zranić — zaokrąglona końcówka to ryzyko mocno ogranicza."},
+        {"q": "Nożyczki czy maszynka?", "a": "To narzędzia uzupełniające. Maszynka szybko skraca sierść na dużych powierzchniach, nożyczki służą do precyzyjnych wykończeń (łapy, pysk, okolice oczu i odbytu), gdzie maszynka jest zbyt zgrubna lub niebezpieczna."}
+      ],
+      "shops": [{"n": "canilove.pl", "u": "https://canilove.pl/"}, {"n": "groomer.com.pl", "u": "https://www.groomer.com.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "beaphar-szampon-puppy",
+      "name": "Beaphar Shampoo Puppy — szampon dla szczeniąt",
+      "brand": "Beaphar",
+      "type": "szampon dla szczeniąt", "life": "szczenię",
+      "score": 76, "pillars": [26, 19, 19, 12],
+      "specs": [
+        ["Typ", "łagodny szampon dla szczeniąt i wrażliwej skóry, 250 ml"],
+        ["Skład", "rumianek + aloes (kojące, połysk); naturalne pH; bez parabenów"],
+        ["Stosowanie", "od wieku wskazanego na etykiecie (zwykle od ~8 tyg.); unikać oczu"],
+        ["Dostępność", "szeroka — też apteki"],
+        ["Cena orientacyjna", "ok. 15–25 zł / 250 ml"]
+      ],
+      "verified": false,
+      "verdict": "Łagodny, tani szampon na pierwsze kąpiele szczeniaka: rumianek i aloes koją delikatną skórę, pH jest dobrane do psa, a formuła obywa się bez parabenów. To kosmetyk pielęgnacyjny, nie leczniczy — przy łupieżu, świądzie czy infekcji potrzebny będzie preparat z polecenia weterynarza.",
+      "pros": ["Łagodna formuła o pH dla skóry szczenięcia", "Rumianek i aloes — kojące, dają połysk", "Bez parabenów, niska cena", "Szeroka dostępność (sklepy i apteki)"],
+      "cons": ["Stosować dopiero od wieku wskazanego na etykiecie", "Nie zastępuje szamponów leczniczych przy problemach skórnych", "Unikać kontaktu z oczami"],
+      "faq": [
+        {"q": "Od kiedy można kąpać szczeniaka?", "a": "Zwykle nie wcześniej niż ok. 8 tygodnia życia i tylko gdy to konieczne — młode szczenięta słabo regulują temperaturę. Zawsze sprawdź wiek wskazany na etykiecie szamponu i dbaj o dokładne osuszenie po kąpieli."},
+        {"q": "Czy szczeniak potrzebuje osobnego szamponu?", "a": "Tak — skóra szczeniaka jest delikatniejsza, więc szampon dla szczeniąt ma łagodniejszą formułę i delikatniejszy zapach. Nigdy nie używaj ludzkiego szamponu: jego pH jest dobrane pod naszą, kwaśniejszą skórę."}
+      ],
+      "shops": [{"n": "apetete.pl", "u": "https://apetete.pl/"}, {"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "furminator-deshedding",
+      "name": "FURminator deShedding Tool",
+      "brand": "FURminator",
+      "type": "deshedder (wyczesywanie podszerstka)", "life": "wszystkie",
+      "score": 72, "pillars": [27, 16, 19, 10],
+      "specs": [
+        ["Typ", "narzędzie do wyczesywania martwego podszerstka — ostrze ze stali nierdzewnej"],
+        ["Skuteczność", "redukcja wypadania nawet do 90% u ras z podszerstkiem"],
+        ["Rozmiary", "S (do 9 kg) / M (9–23 kg) / L (>23 kg); wersje sierść krótka/długa"],
+        ["OSTRZEŻENIE", "NIE dla ras BEZ podszerstka (pudel, bichon, yorki) — wycina okrywę!"],
+        ["Cena orientacyjna", "ok. 90–160 zł"]
+      ],
+      "verified": false,
+      "verdict": "Bardzo skuteczne narzędzie — ale tylko dla właściwej sierści. Na psach z gęstym podszerstkiem (husky, owczarek, labrador) potrafi ograniczyć linienie nawet o 90%. Na rasach jednowarstwowych, jak nasz tester pudel, robi krzywdę: wycina i uszkadza okrywę włosową. Niska ocena oddaje to ryzyko niewłaściwego użycia.",
+      "pros": ["Bardzo skuteczny przy linieniu ras z podszerstkiem", "Redukcja wypadania nawet o 90%", "Skin Guard i przycisk FURejector (wygodne zrzucanie włosa)", "Trwałe, stalowe ostrze"],
+      "cons": ["NIE dla ras bez podszerstka (pudel, bichon, yorki, maltańczyk) — wycina okrywę!", "Zbyt mocne/częste użycie przerzedza sierść i drażni skórę", "Nie używać na sierści mokrej lub zmierzwionej", "Nie dla skóry z ranami i podrażnieniami"],
+      "faq": [
+        {"q": "Czy FURminator nadaje się dla pudla?", "a": "Nie. Pudel, bichon, yorki czy maltańczyk to rasy jednowarstwowe (bez podszerstka) — FURminator zamiast wyczesywać luźny podszerstek wycina i uszkadza ich włos okrywowy. Dla takich ras właściwe są szczotka slicker i grzebień."},
+        {"q": "Dla jakich psów FURminator jest dobry?", "a": "Dla ras z gęstym podszerstkiem, które obficie linieją: husky, malamut, owczarek niemiecki, labrador, golden, corgi. Używaj 1–2 razy w tygodniu na suchej, rozczesanej sierści, bez nadmiernego docisku."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     }
   ]
 }

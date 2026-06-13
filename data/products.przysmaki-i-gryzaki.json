@@ -167,6 +167,98 @@
         {"q": "Czym zastąpić twardy gryzak dla intensywnego gryzacza?", "a": "Gumowymi gryzakami z kauczuku (Kong Extreme, West Paw, Goughnuts) — uginają się pod naciskiem zamiast łamać zęby, a nadziewane jedzeniem zajmują psa równie długo."}
       ],
       "shops": [{"n": "4dogsoriginal.com", "u": "https://4dogsoriginal.com/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "purina-dentalife",
+      "name": "Purina DentaLife paski dentystyczne",
+      "brand": "Purina",
+      "type": "gryzak dentystyczny", "life": "dorosły",
+      "score": 66, "pillars": [16, 24, 16, 10],
+      "specs": [
+        ["Typ", "porowaty pasek dentystyczny — kolczasta struktura czyści też zęby trzonowe"],
+        ["Skład", "zboża/kukurydza, niska zawartość tłuszczu, bez cukru, bez sztucznych barwników i aromatów"],
+        ["Dawkowanie", "wg wagi: S (7–12 kg), M (12–25 kg — 1 szt./dzień), L (25–40 kg)"],
+        ["VOHC", "TAK — pieczęć VOHC za ograniczanie kamienia (zweryfikować na etykiecie PL)"],
+        ["Cena orientacyjna", "ok. 15–25 zł / opak. (Large ~142 g)"]
+      ],
+      "verified": false,
+      "verdict": "Druga obok Dentastix opcja dentystyczna z pieczęcią VOHC szeroko dostępna w Polsce. Porowata, kolczasta struktura dociera do zębów trzonowych, a miękkość czyni ją bezpieczną dla zębów. Ten sam kompromis co u konkurenta: dowód kliniczny jest, ale skład oparty na zbożach to nie jest dobre żywienie — to narzędzie higieny.",
+      "pros": ["Pieczęć VOHC — kliniczny dowód ograniczania kamienia", "Porowata struktura czyści trudno dostępne zęby trzonowe", "Miękka, bezpieczna dla zębów (przechodzi test paznokcia)", "Dawkowanie dobrane do wagi psa"],
+      "cons": ["Skład oparty na zbożach/kukurydzy — odżywczo słabo", "Nie dla psów z alergią na zboża", "Kalorie doliczać do dziennej dawki"],
+      "faq": [
+        {"q": "DentaLife czy Dentastix?", "a": "Oba mają pieczęć VOHC i podobny, zbożowy skład. DentaLife stawia na porowatą strukturę docierającą do zębów trzonowych, Dentastix jest tańszy i dostępny dosłownie wszędzie. Różnica jest kosmetyczna — w obu przypadkach kupujesz narzędzie higieny, nie wartość odżywczą."},
+        {"q": "Czy gryzak dentystyczny zastąpi szczotkowanie?", "a": "Nie. Codzienne szczotkowanie pastą enzymatyczną pozostaje złotym standardem; gryzak z VOHC to wartościowy dodatek w dni, gdy mycie się nie uda."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "zooexpress.pl", "u": "https://zooexpress.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "przelyk-wolowy-suszony",
+      "name": "Przełyk wołowy suszony (MACED / John Dog)",
+      "brand": "MACED",
+      "type": "gryzak naturalny monobiałkowy", "life": "dorosły",
+      "score": 79, "pillars": [29, 20, 18, 12],
+      "specs": [
+        ["Skład", "100% suszony przełyk wołowy — bez konserwantów i wybielaczy"],
+        ["Analiza", "białko ~64% · tłuszcz ~27% · popiół 3% · włókno 1,2% · wilgotność ~10%"],
+        ["Formy", "paski, cięty 12 cm, długi do 50 cm; suszenie niskotemperaturowe + pasteryzacja"],
+        ["Twardość", "miększy od poroża/kości — niższe ryzyko dla zębów"],
+        ["Cena orientacyjna", "ok. 10–25 zł zależnie od formy/gramatury"]
+      ],
+      "verified": false,
+      "verdict": "Naturalny gryzak monobiałkowy z polskiej produkcji: jeden składnik, miękki na tyle, by nie zagrażać zębom jak poroże, i smaczny dla większości psów. Trzeba tylko pamiętać o wysokim tłuszczu (~27%) — to gryzak okazjonalny, nie codzienny dodatek dla psa z tendencją do tycia.",
+      "pros": ["Monobiałko — dobre dla alergików i diet eliminacyjnych", "Polska produkcja, bez konserwantów i wybielaczy", "Miększy od poroża/kości — niższe ryzyko złamania zęba", "Dostępny w kilku formach (paski, cięty, długi)"],
+      "cons": ["Wysoki tłuszcz (~27%) — ostrożnie przy trzustce i nadwadze", "Intensywny zapach", "Zjadany szybciej niż twarde gryzaki — krócej zajmuje"],
+      "faq": [
+        {"q": "Czy przełyk wołowy jest bezpieczniejszy niż poroże?", "a": "Tak, dla zębów zdecydowanie — jest na tyle miękki, że przechodzi test paznokcia, więc nie grozi złamaniem łamacza jak twarde poroże czy ser himalajski. Wadą jest wysoki tłuszcz, którego poroże nie ma."},
+        {"q": "Jak często podawać naturalne gryzaki mięsne?", "a": "Traktuj je jako element dziennej racji, nie dodatek ponad nią — przy ~27% tłuszczu kaloryczność jest wysoka. Dla psa aktywnego kilka razy w tygodniu, dla psa z nadwagą rzadziej i w mniejszej formie."}
+      ],
+      "shops": [{"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "johndog.pl", "u": "https://johndog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "carnilove-true-fresh-liofilizat",
+      "name": "Carnilove True Fresh — przysmaki liofilizowane",
+      "brand": "Carnilove",
+      "type": "przysmak liofilizowany (freeze-dried)", "life": "wszystkie",
+      "score": 83, "pillars": [31, 20, 20, 12],
+      "specs": [
+        ["Skład", "90–96% świeżego mięsa (np. kaczka 90% + 4% czerwone owoce); bez zbóż, ziemniaków, soli i cukru"],
+        ["Koncentracja", "100 g liofilizatu ≈ 300 g świeżego mięsa"],
+        ["Zastosowanie", "trening lub topper na karmę"],
+        ["Twardość", "lekkie, kruche — bezpieczne dla zębów"],
+        ["Cena orientacyjna", "ok. 18–30 zł / 40–60 g"]
+      ],
+      "verified": false,
+      "verdict": "Liofilizacja to najwyższa półka przysmaków treningowych: zachowuje niemal pełną wartość świeżego mięsa, a wysoka zawartość (90–96%) i brak zbóż czynią je czystym, monoproteinowym wyborem. Skoncentrowane, więc lekkie i wygodne — pamiętaj tylko, że gram liofilizatu to sporo kalorii.",
+      "pros": ["90–96% świeżego mięsa — bardzo czysty skład", "Grain-free, bez soli, cukru i ziemniaków", "Świetny do treningu i jako topper na karmę", "Lekki, wygodny, intensywny smak"],
+      "cons": ["Wysoka kaloryczność na gram — dawkować ostrożnie", "Cena za gram wyższa niż przysmaków suszonych", "Małe opakowanie szybko się kończy"],
+      "faq": [
+        {"q": "Czym różni się liofilizat od mięsa suszonego?", "a": "Liofilizacja (suszenie sublimacyjne w niskiej temperaturze i próżni) zachowuje więcej składników odżywczych i naturalny smak niż klasyczne suszenie ciepłem. Stąd wyższa cena i intensywniejszy aromat — atut na treningu."},
+        {"q": "Czy liofilizat może być toperem na co dzień?", "a": "Może, ale to kalorie — rozkrusz niewielką ilość na karmę zamiast dosypywać garść. Dla wybrednych psów to skuteczny sposób, by zachęcić do zjedzenia miski."}
+      ],
+      "shops": [{"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "zooexpress.pl", "u": "https://zooexpress.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "poroze-jelenia-gryzak",
+      "name": "Poroże jelenia — gryzak naturalny",
+      "brand": "4Dogs / BIOTOP",
+      "type": "gryzak długotrwały (twardy)", "life": "dorosły",
+      "score": 54, "pillars": [25, 7, 12, 10],
+      "specs": [
+        ["Skład", "pełny kawałek poroża; szpik bogaty w białko, kolagen, wapń, fosfor, magnez"],
+        ["Warianty", "twardość HARD, rozmiary S/M/L (np. Hard M ~12 cm, Hard L ~15 cm)"],
+        ["Twardość", "BARDZO TWARDY — NIE przechodzi testu paznokcia (grupa ryzyka jak ser himalajski)"],
+        ["VOHC", "nie"],
+        ["Cena orientacyjna", "ok. 30–37 zł"]
+      ],
+      "verified": false,
+      "verdict": "Trwałość poroża jest legendarna — starcza na tygodnie i prawie nie pachnie. Tę samą cechę okupuje twardość, która dyskwalifikuje je u nas tak samo jak ser himalajski: to materiał twardszy niż psi ząb, a złamany łamacz to bolesny i drogi problem. Niska ocena to świadomy wybór — bezpieczeństwo uzębienia przed czasem żucia.",
+      "pros": ["Wyjątkowo trwałe — wiele tygodni żucia", "Prawie bezwonne, nie brudzi", "Naturalne źródło minerałów i kolagenu", "Dostępne warianty twardości i rozmiaru"],
+      "cons": ["Twardsze niż ząb psa — wysokie ryzyko złamania łamacza", "Ryzyko ostrych odłamków przy starciu do kikuta", "Niewskazane dla intensywnych gryzaczy i seniorów", "Wymaga stałego nadzoru i wymiany przed zużyciem"],
+      "faq": [
+        {"q": "Dlaczego poroże dostaje niską ocenę mimo naturalnego składu?", "a": "Bo w naszej metodologii bezpieczeństwo zębów waży więcej niż czas żucia. Poroże nie przechodzi testu paznokcia (nie zostawisz w nim wgniecenia) — to twardość, przy której stomatolodzy weterynaryjni widują złamane łamacze z odsłoniętą miazgą."},
+        {"q": "Czym bezpiecznie zastąpić poroże?", "a": "Gumowymi gryzakami z kauczuku (KONG Extreme, West Paw, Goughnuts) — uginają się pod naciskiem, a nadziewane jedzeniem zajmują psa równie długo bez ryzyka dla zębów."}
+      ],
+      "shops": [{"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "johndog.pl", "u": "https://johndog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     }
   ]
 }

@@ -161,6 +161,98 @@
         {"q": "Czy flexi można przypiąć do obroży?", "a": "Nie powinno się. Pies rozpędzony na kilku metrach generuje przy końcu linki szarpnięcie, które na obroży uderza w kręgosłup szyjny i tchawicę. Smycz automatyczna tylko z szelkami — najlepiej typu Y."}
       ],
       "shops": [{"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
+    },
+    {
+      "slug": "baskerville-ultra-muzzle",
+      "name": "Baskerville Ultra Muzzle 2.0 — kaganiec fizjologiczny",
+      "brand": "Baskerville",
+      "type": "kaganiec fizjologiczny", "life": "wszystkie",
+      "score": 87, "pillars": [31, 24, 20, 12],
+      "specs": [
+        ["Typ", "kaganiec koszykowy (fizjologiczny) z elastycznego TPR"],
+        ["Funkcja", "pies może swobodnie ziać, pić i przyjmować przysmaki"],
+        ["Regulacja", "3-stopniowa; możliwość przemodelowania pod ciepłą wodą; 6 rozmiarów"],
+        ["Bezpieczeństwo", "dobór rozmiaru wg pomiaru krytyczny — za mały blokuje ziajanie"],
+        ["Cena orientacyjna", "ok. 40–60 zł"]
+      ],
+      "verified": false,
+      "verdict": "Wzorzec bezpiecznego kagańca: koszykowa konstrukcja pozwala psu ziać, pić i brać nagrody, co przy treningu i upale jest warunkiem zdrowia, a nie wygody. Kluczowa jest jedna rzecz — pomiar. Kaganiec fizjologiczny dobrany na oko i za mały blokuje termoregulację i staje się niebezpieczny.",
+      "pros": ["Fizjologiczny — pozwala ziać, pić i jeść (bezpieczeństwo termiczne)", "Lekki, wytrzymały TPR z możliwością przemodelowania", "3-stopniowa regulacja i 6 rozmiarów", "Standard rekomendowany przez behawiorystów"],
+      "cons": ["Dobór rozmiaru wg pomiaru jest krytyczny — za mały blokuje ziajanie", "Wymaga wcześniejszego, stopniowego oswajania psa", "Nie do pozostawiania psa bez nadzoru na dłużej"],
+      "faq": [
+        {"q": "Czy kaganiec jest okrutny?", "a": "Nie, jeśli jest fizjologiczny i dobrze dobrany. Koszykowy kaganiec pozwala psu w pełni ziać, pić i jeść — pies funkcjonuje normalnie. Okrutne są kagańce tubowe (zaciskające pysk), które uniemożliwiają ziajanie; tych unikaj poza krótką wizytą u weterynarza."},
+        {"q": "Jak przyzwyczaić psa do kagańca?", "a": "Stopniowo i z nagrodami: najpierw pies dostaje przysmak przez kaganiec, potem zakłada go na sekundy, z czasem na dłużej podczas przyjemnych aktywności. Kaganiec ma kojarzyć się z dobrym, nie z karą."}
+      ],
+      "shops": [{"n": "bitiba.pl", "u": "https://www.bitiba.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "legowisko-ortopedyczne-memory-foam",
+      "name": "Legowisko ortopedyczne memory foam",
+      "brand": "zooplus / Austin",
+      "type": "legowisko ortopedyczne", "life": "wszystkie",
+      "score": 82, "pillars": [29, 21, 20, 12],
+      "specs": [
+        ["Typ", "materac/legowisko z litą pianką wiskoelastyczną (memory foam)"],
+        ["Funkcja", "dopasowuje się do ciała, odciąża stawy i kręgosłup — seniory, dysplazja, duże rasy"],
+        ["Rozmiary", "S/M/L (np. 72×50, 100×65, 117×72 cm)"],
+        ["Pokrowiec", "zwykle zdejmowany do prania"],
+        ["Cena orientacyjna", "ok. 130–400 zł zależnie od rozmiaru"]
+      ],
+      "verified": false,
+      "verdict": "Dla psa seniora albo z dysplazją lite legowisko z pianki memory to nie luksus, lecz realna ulga dla stawów — pianka rozkłada nacisk zamiast tworzyć twarde punkty podparcia. Cały sekret tkwi w grubości i gęstości wkładu: tani „memory foam” to często cienki płatek, który po miesiącu siada.",
+      "pros": ["Realne odciążenie stawów i kręgosłupa (seniory, dysplazja)", "Pianka dopasowuje się do ciała i temperatury", "Kilka rozmiarów dla różnych ras", "Zdejmowane pokrowce do prania"],
+      "cons": ["Tani „memory foam” bywa cienkim płatkiem, nie litą płytą — sprawdzać grubość/gęstość", "Psy gryzące mogą rozszarpać piankę (ryzyko połknięcia)", "Cięższe modele niewygodne do prania", "Pianka grzeje — latem część psów jej unika"],
+      "faq": [
+        {"q": "Po czym poznać dobre legowisko ortopedyczne?", "a": "Po wkładzie: lita płyta pianki memory o grubości min. 6–8 cm i wyczuwalnej gęstości (wolno wraca do kształtu po naciśnięciu). Cienka warstwa pianki na zwykłej gąbce nie daje efektu ortopedycznego i szybko się zapada."},
+        {"q": "Dla jakiego psa warto kupić legowisko ortopedyczne?", "a": "Dla seniorów, psów dużych i ciężkich ras, po urazach, z dysplazją lub zapaleniem stawów. Młody, zdrowy pies też skorzysta, ale korzyść jest największa tam, gdzie stawy już wymagają odciążenia."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "truelove-szelki-step-in",
+      "name": "Truelove Mini / Daily Plus — szelki step-in",
+      "brand": "Truelove",
+      "type": "szelki step-in (małe psy)", "life": "wszystkie",
+      "score": 77, "pillars": [28, 18, 19, 12],
+      "specs": [
+        ["Typ", "szelki step-in (pies wchodzi w nie, zapinane na grzbiecie)"],
+        ["Materiały", "lekka tkanina poliamidowa; Daily Plus wyściełane neoprenem, klamra SBS, odblaski"],
+        ["Rozmiary", "od XS/Mini (psy <1,5 kg) do M"],
+        ["Przeznaczenie", "małe i miniaturowe rasy niezbyt mocno ciągnące"],
+        ["Cena orientacyjna", "ok. 40–80 zł"]
+      ],
+      "verified": false,
+      "verdict": "Lekka, wygodna opcja dla bardzo małych psów, którym pełne szelki Ruffwear bywają za ciężkie. Neoprenowa wyściółka chroni przed otarciami, a step-in ułatwia zakładanie psom nielubiącym wkładania głowy w szelki. Dla psa ciągnącego lub eskapisty lepiej wybrać konstrukcję Y z lepszą kontrolą.",
+      "pros": ["Lekkie — dobre dla miniatur i bardzo małych ras", "Neoprenowa wyściółka (Daily Plus) chroni przed otarciami", "Łatwe zakładanie typu step-in", "Elementy odblaskowe, przystępna cena"],
+      "cons": ["Step-in bywa mniej antyucieczkowy niż konstrukcja H/Y", "Cienkie paski mogą uciskać przy ciągnięciu", "Rozmiarówka 'chińska' — trzeba dokładnie mierzyć"],
+      "faq": [
+        {"q": "Szelki step-in czy typu Y dla małego psa?", "a": "Dla spokojnego, niewielkiego psa step-in są wygodne i wystarczające. Jeśli pies ciągnie albo potrafi się wyślizgnąć, lepsza jest konstrukcja Y (np. Ruffwear, Curli) z lepszą kontrolą i mniejszym ryzykiem ucieczki."},
+        {"q": "Jak zmierzyć małego psa do szelek?", "a": "Zmierz obwód klatki tuż za przednimi łapami i porównaj z tabelą producenta — przy markach azjatyckich rozmiarówka bywa zaniżona, więc wybieraj wg obwodu, nie wg deklarowanej wagi."}
+      ],
+      "shops": [{"n": "tiptop24.pl", "u": "https://tiptop24.pl/"}, {"n": "johndog.pl", "u": "https://johndog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "mata-hamak-samochodowy",
+      "name": "Mata-hamak samochodowy na tylną kanapę",
+      "brand": "Keko / Hubuform",
+      "type": "mata samochodowa (hamak)", "life": "wszystkie",
+      "score": 73, "pillars": [26, 16, 19, 12],
+      "specs": [
+        ["Typ", "mata-hamak ochronny na tylne siedzenia auta"],
+        ["Materiały", "gruby, wodoodporny i antypoślizgowy materiał odporny na pazury"],
+        ["Konstrukcja", "paski na zagłówki tworzą hamak; wersje na 2/3 lub całą kanapę"],
+        ["Wymiary", "np. 145×130 cm (uniwersalna), 137×61 cm (mniejsze auta)"],
+        ["Cena orientacyjna", "od ok. 69 zł"]
+      ],
+      "verified": false,
+      "verdict": "Praktyczna ochrona tapicerki i — w formie hamaka — bariera, która ogranicza zsuwanie się psa w przestrzeń za fotelami. Ważne zastrzeżenie: to ochrona wnętrza auta, a nie psa przy zderzeniu. Bezpieczeństwo w wypadku dają wyłącznie atestowane szelki samochodowe lub transporter — hamak ich nie zastępuje.",
+      "pros": ["Chroni tapicerkę przed sierścią, błotem i pazurami", "Forma hamaka ogranicza upadki psa w przestrzeń za fotelami", "Wodoodporna i łatwa do czyszczenia", "Antypoślizgowy spód"],
+      "cons": ["NIE zastępuje pasów/szelek samochodowych ani transportera (brak ochrony przy zderzeniu)", "Tańszy materiał bywa śliski mimo deklaracji", "Wymaga dopasowania do modelu auta"],
+      "faq": [
+        {"q": "Czy hamak samochodowy zabezpiecza psa w razie wypadku?", "a": "Nie. Hamak chroni tapicerkę i ogranicza ślizganie, ale przy zderzeniu pies leci do przodu jak niezapięty pasażer. Bezpieczeństwo dają atestowane szelki samochodowe przypięte do pasa albo solidny, przymocowany transporter."},
+        {"q": "Jak bezpiecznie wozić psa samochodem?", "a": "Najbezpieczniejszy jest transporter zamocowany w bagażniku lub na podłodze za fotelem, ewentualnie atestowane szelki samochodowe. Hamak warto dołożyć do ochrony wnętrza, ale traktować go jako dodatek, nie system bezpieczeństwa."}
+      ],
+      "shops": [{"n": "keko.pl", "u": "https://www.keko.pl/"}, {"n": "hubuform.pl", "u": "https://hubuform.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
     }
   ]
 }

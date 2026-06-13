@@ -160,6 +160,98 @@
         {"q": "Jak bezpiecznie szarpać się z psem?", "a": "Ciągnij poziomo, nie w górę (chroni kręgosłup szyjny), nie wyrywaj zabawki gwałtownie skrętem, rób przerwy przy dużym pobudzeniu i przerwij przy pierwszym dotknięciu zębami ręki. U szczeniąt w wymianie zębów — bardzo delikatnie."}
       ],
       "shops": [{"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "kong-extreme",
+      "name": "KONG Extreme (czarny)",
+      "brand": "KONG",
+      "type": "gryzak do nadziewania dla niszczycieli", "life": "wszystkie",
+      "score": 91, "pillars": [33, 23, 23, 12],
+      "specs": [
+        ["Materiał", "najtwardsza wersja klasycznego KONG-a z wzmocnionego kauczuku naturalnego"],
+        ["Funkcja", "otwór do nadziewania; nieprzewidywalny odbój; mrożenie wydłuża zabawę"],
+        ["Rozmiary", "M (psy 7–16 kg) do XXL — dobierać do wagi psa"],
+        ["Bezpieczeństwo", "elastyczny — ugina się zamiast łamać zęby (inaczej niż poroże)"],
+        ["Cena orientacyjna", "ok. 35–80 zł zależnie od rozmiaru"]
+      ],
+      "verified": false,
+      "verdict": "Odpowiedź KONG-a dla psów, które zwykłego czerwonego Classica niszczą w tydzień: czarna mieszanka jest wyraźnie twardsza, a wciąż elastyczna, więc ugina się pod zębami zamiast je łamać. Nadziany i zamrożony to godziny zajęcia. Nawet Extreme nie jest niezniszczalny — kontroluj i wymieniaj przy uszkodzeniu.",
+      "pros": ["Najtwardsza guma KONG dla mocno gryzących psów", "Bezpieczna dla zębów — ugina się, nie łamie (inaczej niż poroże)", "Do nadziewania i mrożenia — świetny enrichment", "Sprawdzona marka i pełna rozmiarówka"],
+      "cons": ["Za mały rozmiar to ryzyko połknięcia — dobierać z zapasem", "Nawet Extreme nie jest w 100% niezniszczalny dla skrajnych gryzaczy", "Droższy od bezmarkowych gryzaków"],
+      "faq": [
+        {"q": "KONG Classic czy Extreme?", "a": "Czerwony Classic wystarcza większości psów; czarny Extreme jest dla tych, którzy Classica szybko niszczą — twardszy, ale wciąż elastyczny i bezpieczny dla zębów. Dla szczeniąt jest osobna, miększa wersja (różowa/niebieska Puppy)."},
+        {"q": "Dlaczego twardy KONG jest OK, a twarde poroże nie?", "a": "Bo KONG, choć twardy, jest elastyczny — ugina się pod zębami. Poroże i ser himalajski są sztywne i twardsze niż ząb, więc przy mocnym ugryzieniu łamią łamacze. To różnica między 'twardy' a 'nieustępliwy'."}
+      ],
+      "shops": [{"n": "psiedobre.pl", "u": "https://psiedobre.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "goughnuts-gryzak-gwarancja",
+      "name": "Goughnuts — gryzak z dożywotnią gwarancją",
+      "brand": "Goughnuts",
+      "type": "gryzak supertrwały dla niszczycieli", "life": "dorosły",
+      "score": 88, "pillars": [33, 23, 20, 12],
+      "specs": [
+        ["Materiały", "mocna guma; czerwona warstwa wewnętrzna jako wskaźnik zużycia"],
+        ["Gwarancja", "dożywotnia — producent wymienia uszkodzony egzemplarz"],
+        ["Warianty", "pierścień, sztyft, szarpak; rozmiary wg wagi psa"],
+        ["Bezpieczeństwo", "gdy widać czerwoną warstwę → odebrać i wymienić"],
+        ["Cena orientacyjna", "zależna od wariantu (w PL gł. import przez Amazon)"]
+      ],
+      "verified": false,
+      "verdict": "Gryzak dla najmocniejszych szczęk z dwoma rozwiązaniami, których brakuje konkurencji: dożywotnią gwarancją i czerwonym wskaźnikiem bezpieczeństwa — gdy pies dogryzie się do czerwonej warstwy, czas na wymianę. W Polsce dostępny głównie przez Amazon, co wydłuża dostawę i utrudnia realizację gwarancji.",
+      "pros": ["Dożywotnia gwarancja producenta na zniszczenie", "Czerwony wskaźnik bezpieczeństwa zużycia", "Naprawdę wytrzymały — dla pitbulli, owczarków, molosów", "Kilka form (pierścień, sztyft, szarpak)"],
+      "cons": ["W PL dostępny głównie przez Amazon — dłuższa dostawa", "Realizacja gwarancji utrudniona (brak lokalnego serwisu)", "Wyższa cena; twarde warianty dobierać rozmiarem i nadzorować"],
+      "faq": [
+        {"q": "Jak działa czerwony wskaźnik Goughnuts?", "a": "Wewnątrz gryzaka jest czerwona warstwa. Dopóki pies gryzie czarną/zewnętrzną gumę, jest bezpiecznie; gdy przegryzie się na tyle, że widać czerwień, należy zabawkę odebrać i wymienić (producent realizuje gwarancję)."},
+        {"q": "Goughnuts czy West Paw dla niszczyciela?", "a": "Oba to czołówka z gwarancją. Goughnuts jest cięższy i ma wskaźnik zużycia, West Paw Zogoflex lżejszy, łatwiejszy do mycia i lepiej dostępny w PL. Dla skrajnych gryzaczy Goughnuts bywa wytrzymalszy."}
+      ],
+      "shops": [{"n": "goughnuts.pl", "u": "https://goughnuts.pl/"}, {"n": "Amazon.pl", "u": "https://www.amazon.pl/"}]
+    },
+    {
+      "slug": "lickimat-soother",
+      "name": "LickiMat (Soother / Buddy / Tuff) — mata do lizania",
+      "brand": "LickiMat",
+      "type": "mata enrichment / antystresowa", "life": "wszystkie",
+      "score": 81, "pillars": [27, 21, 21, 12],
+      "specs": [
+        ["Materiał", "kauczuk TPR jakości spożywczej, bez BPA, nietoksyczny"],
+        ["Warianty", "Soother (wypustki), Buddy (większa), Tuff (sztywniejsza dla gryzaczy), Mini"],
+        ["Funkcja", "na pastę, jogurt, mokrą karmę — spowalnia jedzenie, uspokaja; można mrozić"],
+        ["Bezpieczeństwo", "to NIE gryzak — gryzące psy mogą odgryźć kawałki TPR (nadzór)"],
+        ["Cena orientacyjna", "ok. 33–37 zł"]
+      ],
+      "verified": false,
+      "verdict": "Tani, skuteczny sposób na wyciszenie psa: monotonne lizanie pasty z wypustek obniża pobudzenie i pomaga przy wizytach u weterynarza, kąpieli czy zostawaniu samemu. Spowalnia też łapczywe jedzenie. To narzędzie enrichment, nie gryzak — dla psów gryzących wybierz twardszą wersję Tuff i pilnuj.",
+      "pros": ["Działa uspokajająco (lizanie obniża stres)", "Spowalnia łapczywe jedzenie", "Materiał spożywczy bez BPA, można mrozić", "Tani, łatwy do mycia enrichment"],
+      "cons": ["To nie gryzak — psy gryzące mogą odgryźć i połknąć kawałki TPR", "Wymaga regularnego mycia (pleśń w wypustkach)", "Miękka wersja nieodporna na zęby — dla gryzaczy tylko Tuff"],
+      "faq": [
+        {"q": "Czym smarować matę do lizania?", "a": "Mokrą karmą, pastą mięsną, naturalnym jogurtem bez cukru, twarożkiem, rozgniecionym bananem lub masłem orzechowym BEZ ksylitolu (ksylitol jest dla psa toksyczny). Posmarowaną matę można zamrozić, by wydłużyć zabawę."},
+        {"q": "Dlaczego lizanie uspokaja psa?", "a": "Powtarzalne lizanie wyzwala wydzielanie śliny i angażuje psa w monotonną, kojącą czynność, co pomaga obniżyć pobudzenie. Stąd popularność mat przy fajerwerkach, w transporterze czy podczas obcinania pazurów."}
+      ],
+      "shops": [{"n": "slow-dog.pl", "u": "https://slow-dog.pl/"}, {"n": "groomershop.eu", "u": "https://groomershop.eu/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "trixie-flip-board",
+      "name": "Trixie Dog Activity Flip Board",
+      "brand": "Trixie",
+      "type": "łamigłówka logiczna (poziom 2)", "life": "wszystkie",
+      "score": 74, "pillars": [25, 18, 19, 12],
+      "specs": [
+        ["Typ", "plansza-puzzle 23×3 cm, poziom trudności 2"],
+        ["Mechanizmy", "podważanie klapek, przesuwanie, podnoszenie stożków odsłania przysmaki"],
+        ["Materiał", "plastik z antypoślizgowymi nóżkami — to NIE gryzak"],
+        ["Bezpieczeństwo", "używać pod nadzorem (ryzyko połknięcia odgryzionych elementów)"],
+        ["Cena orientacyjna", "ok. 30–60 zł"]
+      ],
+      "verified": false,
+      "verdict": "Solidny, niedrogi punkt wejścia w łamigłówki: kilka różnych mechanizmów na jednej planszy daje psu zróżnicowane zadania węchowo-manualne. Minus to ograniczona regrywalność — bystry pies opanuje poziom 2 szybko i trzeba sięgnąć po trudniejszą zabawkę. Plastik wyłącznie pod nadzorem.",
+      "pros": ["Kilka mechanizmów otwierania w jednej planszy", "Dobra stymulacja umysłowa i spowalnianie jedzenia", "Antypoślizgowe nóżki, przystępna cena", "Dobry start w świat łamigłówek"],
+      "cons": ["Plastik — nie jest gryzakiem; mocny pies rozgryzie elementy (ryzyko połknięcia)", "Mała regrywalność — po opanowaniu przestaje być wyzwaniem", "Wymaga obecności opiekuna"],
+      "faq": [
+        {"q": "Co zrobić, gdy pies za szybko rozwiązuje łamigłówkę?", "a": "Utrudniaj: zasłaniaj komory dodatkowymi elementami, używaj mniej aromatycznych przysmaków, albo przejdź na wyższy poziom (np. Trixie poziom 3 lub Nina Ottosson). Rotacja kilku zabawek utrzymuje świeżość."},
+        {"q": "Czy łamigłówkę można zostawić psu samemu?", "a": "Nie — to zabawka pod nadzorem. Pies zdeterminowany, by dobrać się do przysmaków, potrafi odgryźć plastikowe klapki czy stożki, a połknięty fragment grozi niedrożnością. Po zabawie chowamy planszę."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "maxizoo.pl", "u": "https://www.maxizoo.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
     }
   ]
 }
