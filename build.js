@@ -42,6 +42,17 @@ const STR = {
     demo: 'DEMO — dane do weryfikacji', goodChoice: n => `Czy ${n} to dobry wybór?`,
     flavorRow: 'Wariant (smak)',
     variantBox: 'Ta ocena dotyczy <strong>konkretnego wariantu smakowego</strong>. Producenci często sprzedają tę samą linię w wielu smakach (np. łosoś, jagnięcina, kurczak), a każdy ma inny skład, profil odżywczy i alergeny — więc i inną ocenę. Sprawdzaj wariant, który realnie kupujesz.',
+    prof: {
+      h: '🐶 Dopasuj do swojego psa', sub: 'Łapki opisują jakość karmy. Wybierz profil psa, a my przeliczymy dopasowanie i pokażemy ostrzeżenia.',
+      age: 'Wiek', ageOpts: [['dorosly', 'Dorosły (1–7 lat)'], ['szczenie', 'Szczenię'], ['senior', 'Senior (7+)']],
+      size: 'Rozmiar', sizeOpts: [['maly', 'Mały / toy (do 10 kg)'], ['sredni', 'Średni (10–25 kg)'], ['duzy', 'Duży / olbrzymi (25+ kg)']],
+      health: 'Zdrowie', healthOpts: [['ok', 'Zdrowy'], ['alergia', 'Alergia na drób/kurczaka'], ['nadwaga', 'Nadwaga'], ['trzustka', 'Po zapaleniu trzustki'], ['stawy', 'Problemy ze stawami'], ['nerki', 'Choroba nerek']],
+      reset: 'Wyczyść profil', matchLbl: 'Dopasowanie', blocked: 'Niezalecana przy tym profilu',
+      legend: '<strong>Jak to czytać:</strong> łapki 🐾 = jakość karmy (niezależna od psa). Dopasowanie % = jak karma pasuje do profilu, który wybrałeś. Ostrzeżenia pokazujemy zawsze. Przy chorobach dieta zawsze pod kontrolą weterynarza — dopasowanie nie zastępuje porady lekarskiej.',
+      wAllergy: 'Zawiera drób — wyklucz przy alergii na kurczaka', wPanc: 'Tłuszcz powyżej 15% suchej masy — niewskazana po zapaleniu trzustki',
+      wPup: 'Receptura dla psów dorosłych — szczenię potrzebuje karmy „growth"/„wszystkie etapy życia"', wKidney: 'Choroba nerek wymaga diety renalnej z obniżonym fosforem — dobór tylko z weterynarzem',
+      wLegume: 'Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)'
+    },
     nutrition: 'Wartości odżywcze (w suchej masie)', spec: 'Specyfikacja', param: 'Parametr', value: 'Wartość', ctx: 'Próg / kontekst',
     form: 'Forma karmy', formNote: 'porównujemy formy po przeliczeniu na suchą masę', protein: 'Białko', fat: 'Tłuszcz', energy: 'Energia',
     min: 'min', cost1000: 'Koszt 1000 kcal', cost1000note: 'jedyna uczciwa miara między formą suchą a mokrą',
@@ -83,6 +94,17 @@ const STR = {
     nav: ['Home', 'Categories', 'Methodology'], review: 'Review', reviewTitle: 'review & rating', rated: 'Rating', updated: 'Updated',
     flavorRow: 'Variant (flavour)',
     variantBox: 'This rating is for a <strong>specific flavour variant</strong>. Brands often sell the same line in several flavours (salmon, lamb, chicken…), each with a different recipe, nutrient profile and allergens — and therefore a different score. Always check the exact variant you are buying.',
+    prof: {
+      h: '🐶 Match to your dog', sub: 'Paws describe food quality. Pick your dog’s profile and we’ll compute the match and flag warnings.',
+      age: 'Age', ageOpts: [['dorosly', 'Adult (1–7 yrs)'], ['szczenie', 'Puppy'], ['senior', 'Senior (7+)']],
+      size: 'Size', sizeOpts: [['maly', 'Small / toy (up to 10 kg)'], ['sredni', 'Medium (10–25 kg)'], ['duzy', 'Large / giant (25+ kg)']],
+      health: 'Health', healthOpts: [['ok', 'Healthy'], ['alergia', 'Poultry/chicken allergy'], ['nadwaga', 'Overweight'], ['trzustka', 'After pancreatitis'], ['stawy', 'Joint problems'], ['nerki', 'Kidney disease']],
+      reset: 'Clear profile', matchLbl: 'Match', blocked: 'Not recommended for this profile',
+      legend: '<strong>How to read this:</strong> paws 🐾 = food quality (independent of your dog). Match % = how the food fits the profile you chose. Warnings are always shown. With medical conditions, diet always under veterinary supervision — match is not medical advice.',
+      wAllergy: 'Contains poultry — exclude for chicken allergy', wPanc: 'Fat above 15% dry matter — unsuitable after pancreatitis',
+      wPup: 'Adult recipe — a puppy needs a “growth”/“all life stages” food', wKidney: 'Kidney disease needs a renal diet with restricted phosphorus — choose only with your vet',
+      wLegume: 'Legumes high in the recipe (FDA DCM context — see Knowledge)'
+    },
     demo: 'DEMO — data pending verification', goodChoice: n => `Is ${n} a good choice?`,
     nutrition: 'Nutrition (dry-matter basis)', spec: 'Specification', param: 'Parameter', value: 'Value', ctx: 'Threshold / context',
     form: 'Food format', formNote: 'formats compared on a dry-matter basis', protein: 'Protein', fat: 'Fat', energy: 'Energy',
@@ -196,6 +218,21 @@ footer{border-top:1px solid var(--line);background:var(--card);padding:26px 0;fo
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;font-family:-apple-system,sans-serif}
 .chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;font-size:.82rem;color:var(--muted);text-decoration:none}
 .chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.profile{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin:16px 0 6px;font-family:-apple-system,sans-serif}
+.profile h3{margin:0 0 12px;font-family:'Fraunces',Georgia,serif;font-size:1.05rem}
+.pf-row{display:flex;gap:18px;flex-wrap:wrap}
+.pf-g{flex:1;min-width:150px}
+.pf-g label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.pf-g select{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--paper);font:inherit;font-size:.9rem;color:var(--ink)}
+.pf-reset{margin-top:12px;font-size:.82rem;color:var(--terra);background:none;border:0;cursor:pointer;padding:0;display:none}
+.match{margin-top:8px;font-family:-apple-system,sans-serif;font-size:.82rem}
+.match b{font-weight:700}
+.mbar{height:7px;background:var(--line-soft,#EEE7D8);border-radius:4px;margin-top:4px;max-width:200px;overflow:hidden}
+.mbar i{display:block;height:100%;border-radius:4px;background:var(--sage)}
+.match.bad .mbar i{background:var(--terra)}
+.warnline{background:#FAF0E2;border:1px solid #ECD9B8;color:#8A5A1E;border-radius:8px;padding:7px 12px;font-size:.8rem;font-family:-apple-system,sans-serif;margin-top:8px}
+.rankrow.blocked{opacity:.5}
+.matchlegend{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:14px 18px;font-family:-apple-system,sans-serif;font-size:.84rem;color:var(--muted);margin-top:10px}
 /* intro / market picker */
 .intro{max-width:760px;margin:0 auto;text-align:center;padding:40px 0}
 .intro .logo-big{width:110px;height:110px;margin:0 auto 18px}
@@ -443,6 +480,88 @@ function rankRows(products, cat, mkt, fromUrl) {
 </a>`).join('');
 }
 
+/* ---------- atrybuty do dopasowania (wyliczane z pól rekordu) ---------- */
+function matchAttrs(p) {
+  const txt = (p.name + ' ' + (p.flavor || '') + ' ' + (p.verdict || '') + ' ' + (p.pros || []).join(' ') + ' ' + (p.cons || []).join(' ')).toLowerCase();
+  const noPoultry = (p.pros || []).some(x => /bez kurczaka|bez drobiu|no chicken|chicken-free|poultry-free/i.test(x));
+  const chicken = !noPoultry && /(kurcz|drob|drób|indyk|kacz|poultry|chicken|turkey|duck)/.test(txt);
+  const legumesHigh = (p.cons || []).some(x => /strączkow|legume/i.test(x));
+  const grainFree = /bez zbóż|grain-free|bezzboż/.test(txt);
+  const epaDha = (p.pros || []).some(x => /epa|dha/i.test(x));
+  const life = /wszystkie etapy|all life stages/i.test(p.life || '') ? 'all' : (/szczen|puppy/i.test(p.life || '') ? 'puppy' : 'adult');
+  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life };
+}
+function foodMatchPanel(products, mkt) {
+  const m = MARKETS[mkt]; const S = STR[m.lang]; const P = S.prof;
+  const data = products.map(matchAttrs);
+  const sel = (id, opts) => `<div class="pf-g"><label>${P[id]}</label><select id="pf-${id}">${opts.map(o => `<option value="${o[0]}">${o[1]}</option>`).join('')}</select></div>`;
+  const jsTexts = JSON.stringify({ matchLbl: P.matchLbl, blocked: P.blocked, money: mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$'), prot: S.protein.toLowerCase(), tested: S.testedByUs, label: S.labelBased, see: S.seeReview, seeL: S.seeReviewLabel, paws: '', wAllergy: P.wAllergy, wPanc: P.wPanc, wPup: P.wPup, wKidney: P.wKidney, wLegume: P.wLegume });
+  // funkcja rysująca łapki w JS (te same kształty co serwerowe)
+  return `
+<div class="profile">
+  <h3>${P.h}</h3>
+  <p class="meta" style="margin:0 0 12px">${P.sub}</p>
+  <div class="pf-row">${sel('age', P.ageOpts)}${sel('size', P.sizeOpts)}${sel('health', P.healthOpts)}</div>
+  <button class="pf-reset" id="pf-reset">${P.reset}</button>
+</div>
+<div class="matchlegend" id="pf-legend" style="display:none">${P.legend}</div>
+<script>
+(function(){
+  var FOODS=${JSON.stringify(data)}, T=${jsTexts};
+  var PAW='<svg viewBox="0 0 24 24" style="width:18px;height:18px;display:inline-block;margin-right:2px;vertical-align:middle" aria-hidden="true"><circle cx="5" cy="10.2" r="2.2"/><circle cx="9.4" cy="6.9" r="2.4"/><circle cx="14.6" cy="6.9" r="2.4"/><circle cx="19" cy="10.2" r="2.2"/><path d="M12 11.4c3.1 0 5.7 2.3 5.7 5 0 1.8-1.4 3.2-3.3 3.2-.9 0-1.5-.3-2.4-.3s-1.5.3-2.4.3c-1.9 0-3.3-1.4-3.3-3.2 0-2.7 2.6-5 5.7-5z"/></svg>';
+  function paws(sc){var f=sc>=90?5:sc>=80?4.5:sc>=70?4:sc>=60?3.5:sc>=50?3:sc>=30?2:1;var full=Math.floor(f),half=f%1?1:0;
+    var fill='<span style="display:inline-block;white-space:nowrap;overflow:hidden;width:'+(f*20)+'%;position:absolute;left:0;top:0">'+Array(5).fill('<span style="fill:var(--gold)">'+PAW+'</span>').join('')+'</span>';
+    return '<span style="position:relative;display:inline-block;line-height:0">'+fill+'<span style="white-space:nowrap;fill:#DCD2BD">'+Array(5).fill(PAW).join('')+'</span></span>';}
+  function calc(f,P){
+    var w=[],b=null,pct=72;
+    if(P.age==='szczenie'&&f.life==='adult') b=T.wPup;
+    if(!b&&P.health==='alergia'&&f.ch) b=T.wAllergy;
+    if(!b&&P.health==='trzustka'&&f.fd>15) b=T.wPanc;
+    if(!b){
+      if(P.health==='nerki'){w.push(T.wKidney);pct-=18;}
+      if(P.age==='senior'){pct+=f.pd>=28?8:-5;pct+=f.ed?6:0;}
+      if(P.age==='szczenie')pct+=6;
+      if(P.size==='maly')pct+=f.t==='sucha'?3:0;
+      if(P.size==='duzy')pct+=f.ed?5:0;
+      if(P.health==='nadwaga')pct+=f.fd<=12?12:-8;
+      if(P.health==='stawy')pct+=f.ed?12:-3;
+      if(f.lg){pct-=4;w.push(T.wLegume);}
+      pct+=(f.sc-70)/6; pct=Math.max(40,Math.min(98,Math.round(pct)));
+    }
+    return {b:b,pct:pct,w:w};
+  }
+  function render(P){
+    var list=FOODS.map(function(f){return {f:f,m:calc(f,P)};});
+    list.sort(function(a,b){if(!!a.m.b!==!!b.m.b)return a.m.b?1:-1; if(a.m.b)return b.f.sc-a.f.sc; return (b.m.pct-a.m.pct)||(b.f.sc-a.f.sc);});
+    var html=list.map(function(it,i){var f=it.f,mm=it.m;
+      var meta=f.t+(f.pd?' · '+T.prot+' '+f.pd+'% DM':'')+(f.pr?' · ~'+f.pr+' '+T.money+' / 1000 kcal':'')+(f.fl?' · '+f.fl:'');
+      var match = mm.b
+        ? '<div class="match bad"><b style="color:var(--terra)">✕ '+T.blocked+'</b></div>'
+        : '<div class="match'+(mm.pct<55?' bad':'')+'"><b>'+T.matchLbl+': '+mm.pct+'%</b><div class="mbar"><i style="width:'+mm.pct+'%"></i></div></div>';
+      var warn=(mm.b?[mm.b]:mm.w).map(function(x){return '<div class="warnline">⚠ '+x+'</div>';}).join('');
+      return '<a class="rankrow'+(mm.b?' blocked':'')+'" href="'+f.s+'/">'
+        +'<span class="num">'+String(i+1).padStart(2,'0')+'</span>'
+        +'<span><strong>'+f.n+'</strong><br><span class="meta">'+meta+' · '+(f.test?T.tested:T.label)+'</span>'+match+warn+'</span>'
+        +'<span>'+paws(f.sc)+'</span>'
+        +'<span class="gobtn">'+(f.test?T.see:T.seeL)+'</span></a>';
+    }).join('');
+    document.getElementById('ranklist').innerHTML=html;
+    document.getElementById('pf-legend').style.display='block';
+    document.getElementById('pf-reset').style.display='inline-block';
+  }
+  function readP(){return {age:document.getElementById('pf-age').value,size:document.getElementById('pf-size').value,health:document.getElementById('pf-health').value};}
+  ['pf-age','pf-size','pf-health'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('change',function(){
+    var p=readP();render(p);try{localStorage.setItem('dr_dog',JSON.stringify(p));}catch(e){}
+  });});
+  var rst=document.getElementById('pf-reset');if(rst)rst.addEventListener('click',function(){
+    document.getElementById('pf-age').value='dorosly';document.getElementById('pf-size').value='sredni';document.getElementById('pf-health').value='ok';
+    location.reload();
+  });
+  try{var saved=JSON.parse(localStorage.getItem('dr_dog')||'null');if(saved){document.getElementById('pf-age').value=saved.age;document.getElementById('pf-size').value=saved.size;document.getElementById('pf-health').value=saved.health;render(saved);}}catch(e){}
+})();
+</script>`;
+}
+
 /* ---------- hub kategorii ---------- */
 function categoryHub(cat, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang];
@@ -461,7 +580,8 @@ function categoryHub(cat, mkt) {
     content = `
 <h2 id="ranking">${S.rankingH}</h2>
 <p class="meta">${S.updated}: ${TODAY} · ${S.metaRank(products.length)}</p>
-${rankRows(products, cat, mkt, url)}
+${foodMatchPanel(products, mkt)}
+<div id="ranklist">${rankRows(products, cat, mkt, url)}</div>
 <h2>${S.formsH}</h2>
 <div class="answer">${S.formsTxt}</div>
 <table><tr><th>${S.formCol}</th><th>${S.formNoteCol}</th></tr>${FOOD_FORMS[m.lang].map(f => `<tr><td><strong>${f[0]}</strong></td><td>${f[1]}</td></tr>`).join('')}</table>`;
