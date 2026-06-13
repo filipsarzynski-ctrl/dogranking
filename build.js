@@ -45,6 +45,7 @@ const STR = {
     prof: {
       h: '🐶 Dopasuj do swojego psa', sub: 'Łapki opisują jakość karmy. Wybierz profil psa, a my przeliczymy dopasowanie i pokażemy ostrzeżenia.',
       age: 'Wiek', ageOpts: [['dorosly', 'Dorosły (1–7 lat)'], ['szczenie', 'Szczenię'], ['senior', 'Senior (7+)']],
+      form: 'Forma karmy', formOpts: [['all', 'Wszystkie formy'], ['sucha', 'Tylko sucha'], ['mokra', 'Tylko mokra']],
       size: 'Rozmiar', sizeOpts: [['maly', 'Mały / toy (do 10 kg)'], ['sredni', 'Średni (10–25 kg)'], ['duzy', 'Duży / olbrzymi (25+ kg)']],
       health: 'Zdrowie', healthOpts: [['ok', 'Zdrowy'], ['alergia', 'Alergia na drób/kurczaka'], ['nadwaga', 'Nadwaga'], ['trzustka', 'Po zapaleniu trzustki'], ['stawy', 'Problemy ze stawami'], ['nerki', 'Choroba nerek']],
       reset: 'Wyczyść profil', matchLbl: 'Dopasowanie', blocked: 'Niezalecana przy tym profilu',
@@ -97,6 +98,7 @@ const STR = {
     prof: {
       h: '🐶 Match to your dog', sub: 'Paws describe food quality. Pick your dog’s profile and we’ll compute the match and flag warnings.',
       age: 'Age', ageOpts: [['dorosly', 'Adult (1–7 yrs)'], ['szczenie', 'Puppy'], ['senior', 'Senior (7+)']],
+      form: 'Food format', formOpts: [['all', 'All formats'], ['sucha', 'Dry only'], ['mokra', 'Wet only']],
       size: 'Size', sizeOpts: [['maly', 'Small / toy (up to 10 kg)'], ['sredni', 'Medium (10–25 kg)'], ['duzy', 'Large / giant (25+ kg)']],
       health: 'Health', healthOpts: [['ok', 'Healthy'], ['alergia', 'Poultry/chicken allergy'], ['nadwaga', 'Overweight'], ['trzustka', 'After pancreatitis'], ['stawy', 'Joint problems'], ['nerki', 'Kidney disease']],
       reset: 'Clear profile', matchLbl: 'Match', blocked: 'Not recommended for this profile',
@@ -501,7 +503,7 @@ function foodMatchPanel(products, mkt) {
 <div class="profile">
   <h3>${P.h}</h3>
   <p class="meta" style="margin:0 0 12px">${P.sub}</p>
-  <div class="pf-row">${sel('age', P.ageOpts)}${sel('size', P.sizeOpts)}${sel('health', P.healthOpts)}</div>
+  <div class="pf-row">${sel('form', P.formOpts)}${sel('age', P.ageOpts)}${sel('size', P.sizeOpts)}${sel('health', P.healthOpts)}</div>
   <button class="pf-reset" id="pf-reset">${P.reset}</button>
 </div>
 <div class="matchlegend" id="pf-legend" style="display:none">${P.legend}</div>
@@ -531,7 +533,8 @@ function foodMatchPanel(products, mkt) {
     return {b:b,pct:pct,w:w};
   }
   function render(P){
-    var list=FOODS.map(function(f){return {f:f,m:calc(f,P)};});
+    var pool = (P.form&&P.form!=='all') ? FOODS.filter(function(f){return f.t===P.form;}) : FOODS;
+    var list=pool.map(function(f){return {f:f,m:calc(f,P)};});
     list.sort(function(a,b){if(!!a.m.b!==!!b.m.b)return a.m.b?1:-1; if(a.m.b)return b.f.sc-a.f.sc; return (b.m.pct-a.m.pct)||(b.f.sc-a.f.sc);});
     var html=list.map(function(it,i){var f=it.f,mm=it.m;
       var meta=f.t+(f.pd?' · '+T.prot+' '+f.pd+'% DM':'')+(f.pr?' · ~'+f.pr+' '+T.money+' / 1000 kcal':'')+(f.fl?' · '+f.fl:'');
@@ -549,15 +552,15 @@ function foodMatchPanel(products, mkt) {
     document.getElementById('pf-legend').style.display='block';
     document.getElementById('pf-reset').style.display='inline-block';
   }
-  function readP(){return {age:document.getElementById('pf-age').value,size:document.getElementById('pf-size').value,health:document.getElementById('pf-health').value};}
-  ['pf-age','pf-size','pf-health'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('change',function(){
+  function readP(){return {form:document.getElementById('pf-form').value,age:document.getElementById('pf-age').value,size:document.getElementById('pf-size').value,health:document.getElementById('pf-health').value};}
+  ['pf-form','pf-age','pf-size','pf-health'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('change',function(){
     var p=readP();render(p);try{localStorage.setItem('dr_dog',JSON.stringify(p));}catch(e){}
   });});
   var rst=document.getElementById('pf-reset');if(rst)rst.addEventListener('click',function(){
-    document.getElementById('pf-age').value='dorosly';document.getElementById('pf-size').value='sredni';document.getElementById('pf-health').value='ok';
-    location.reload();
+    document.getElementById('pf-form').value='all';document.getElementById('pf-age').value='dorosly';document.getElementById('pf-size').value='sredni';document.getElementById('pf-health').value='ok';
+    try{localStorage.removeItem('dr_dog');}catch(e){} location.reload();
   });
-  try{var saved=JSON.parse(localStorage.getItem('dr_dog')||'null');if(saved){document.getElementById('pf-age').value=saved.age;document.getElementById('pf-size').value=saved.size;document.getElementById('pf-health').value=saved.health;render(saved);}}catch(e){}
+  try{var saved=JSON.parse(localStorage.getItem('dr_dog')||'null');if(saved){if(saved.form)document.getElementById('pf-form').value=saved.form;document.getElementById('pf-age').value=saved.age;document.getElementById('pf-size').value=saved.size;document.getElementById('pf-health').value=saved.health;render(saved);}}catch(e){}
 })();
 </script>`;
 }
