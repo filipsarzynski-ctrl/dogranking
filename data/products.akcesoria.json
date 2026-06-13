@@ -1,0 +1,166 @@
+{
+  "_uwaga": "Kategoria beta. Dane z researchu web 2026-06-13 (zooplus.pl, kakadu.pl, sklepy PL) — verified:false do potwierdzenia. Bez obiektu test = 'test w przygotowaniu'. Filary: A materiały/wykonanie 35, B bezpieczeństwo i dowody 25, C wiarygodność producenta 25, D ergonomia i wartość 15.",
+  "products": [
+    {
+      "slug": "ruffwear-front-range",
+      "name": "Ruffwear Front Range Harness",
+      "brand": "Ruffwear",
+      "type": "szelki typu Y (guard)", "life": "wszystkie",
+      "score": 90, "pillars": [33, 23, 22, 12],
+      "specs": [
+        ["Konstrukcja", "typ Y (guard) — omija łopatki, nie blokuje wykroku przednich łap"],
+        ["Materiały", "poliester ripstop z certyfikatem bluesign®, wyściółka przy szyi i mostku, odblaski"],
+        ["Zapięcia smyczy", "2 punkty: aluminiowe kółko V na grzbiecie + pętla na mostku (nauka niepоciągania)"],
+        ["Rozmiary", "XXS–L/XL (obwód klatki ~33–107 cm), regulacja w 4 punktach"],
+        ["Cena orientacyjna", "ok. 193–232 zł"]
+      ],
+      "verified": false,
+      "verdict": "Wzorzec szelek typu Y: konstrukcja zostawia łopatkom pełną swobodę (pies nie ma obojczyków — bark trzymają wyłącznie mięśnie), materiały są klasy outdoorowej, a przedni punkt zapięcia pomaga w treningu luźnej smyczy. Drogo, ale to zakup na lata i na każdą pogodę.",
+      "pros": ["Biomechanicznie poprawny kształt Y — rekomendowany przez fizjoterapeutów", "4-punktowa regulacja i 5 rozmiarów — pasuje na większość sylwetek", "Dwa punkty zapięcia, w tym przedni do nauki niepоciągania", "Bardzo trwałe materiały z certyfikatem bluesign®"],
+      "cons": ["Cena ~200 zł — kilkukrotnie więcej niż marketowe", "Ograniczona regulacja przy nietypowych sylwetkach (np. charty)", "Wyściółka dłużej schnie po deszczu"],
+      "faq": [
+        {"q": "Dlaczego szelki typu Y, a nie norweskie?", "a": "Pies nie ma obojczyków — łopatka jest zawieszona na mięśniach i potrzebuje swobody ruchu. Poziomy pas szelek norweskich biegnie w poprzek barku i może ograniczać wykrok oraz uciskać tkanki. Pasy szelek Y biegną wzdłuż mostka i omijają staw barkowy."},
+        {"q": "Jak dobrać rozmiar szelek?", "a": "Mierzy się obwód klatki tuż za przednimi łapami i obwód szyi u nasady. Dobrze dopasowane szelki: dwa palce wchodzą pod każdy pas, a przedni pas nie podjeżdża pod pachy ani na gardło."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "prodog.pl", "u": "https://www.prodog.pl/"}, {"n": "dogtrotter.pl", "u": "https://dogtrotter.pl/"}]
+    },
+    {
+      "slug": "smycz-biothane-przepinana",
+      "name": "Smycz przepinana z biothane (manufaktury PL)",
+      "brand": "REVERSE / ACCDOG / Dogcessories",
+      "type": "smycz przepinana / treningowa", "life": "wszystkie",
+      "score": 84, "pillars": [31, 21, 18, 14],
+      "specs": [
+        ["Materiał", "BioThane® — taśma poliestrowa powlekana PU/PVC, wodoodporna, wytrzymałość setki kg"],
+        ["Konstrukcja", "2 karabińczyki + kółka — długość regulowana np. 1,2–3,5 m; wersje treningowe 5–20 m"],
+        ["Szerokości", "13/16/19/25 mm — dobierane do wielkości psa"],
+        ["Higiena", "nie nasiąka błotem i zapachami, mycie pod kranem"],
+        ["Cena orientacyjna", "ok. 40–70 zł (manufaktury od ~80 zł na wymiar)"]
+      ],
+      "verified": false,
+      "verdict": "Najbardziej uniwersalna smycz, jaką można kupić: przepinana zastępuje krótką miejską, długą spacerową i wersję przez ramię, a biothane jest praktycznie niezniszczalny i higieniczny. Polskie manufaktury szyją na wymiar w cenie sklepowej sieciówki — rzadki przypadek, gdy lokalnie znaczy lepiej i taniej.",
+      "pros": ["Wodoodporna, nie nasiąka błotem — mycie pod kranem", "Przepinanie: 3 smycze w jednej", "Mokra nie ślizga się w dłoni jak parciana", "Polskie manufaktury robią wymiary na zamówienie"],
+      "cons": ["Sztywniejsza od liny i taśmy — wymaga dotarcia", "Cienkie szerokości mogą ciąć dłoń przy szarpnięciu dużego psa"],
+      "faq": [
+        {"q": "Do czego przypinać długą linkę treningową?", "a": "Zawsze do szelek (najlepiej do kółka na grzbiecie), nigdy do obroży — pies rozpędzony na 10 metrach generuje przy zatrzymaniu siłę, która na obroży uderza prosto w kręgi szyjne i tchawicę. I nie owijaj linki wokół dłoni."},
+        {"q": "Czym jest biothane i czy jest trwalszy od liny?", "a": "To amerykańska taśma poliestrowa zalana poliuretanem — wytrzymałość na zerwanie liczona w setkach kilogramów, zero nasiąkania. Lina jest przyjemniejsza w dłoni, ale chłonie wodę i zapachy; biothane po roku w błocie wygląda jak nowy."}
+      ],
+      "shops": [{"n": "reverse.sklep.pl", "u": "https://reverse.sklep.pl/"}, {"n": "accdog.pl", "u": "https://www.accdog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "outward-hound-fun-feeder",
+      "name": "Outward Hound Fun Feeder",
+      "brand": "Outward Hound",
+      "type": "miska spowalniająca", "life": "wszystkie",
+      "score": 81, "pillars": [27, 22, 20, 12],
+      "specs": [
+        ["Typ", "miska z labiryntem wypustek — wydłuża posiłek nawet 10-krotnie"],
+        ["Materiał", "tworzywo bez BPA, PVC i ftalanów; antypoślizgowy spód; zmywarka OK"],
+        ["Rozmiary", "Tiny/XS (~15 cm), Mini/S (~21 cm), M/L (~29 cm); różne wzory = różna trudność"],
+        ["Funkcja zdrowotna", "profilaktyka łapczywego jedzenia, połykania powietrza i rozszerzenia/skrętu żołądka"],
+        ["Cena orientacyjna", "ok. 34–90 zł zależnie od rozmiaru"]
+      ],
+      "verified": false,
+      "verdict": "Najprostsza profilaktyka, jaką można kupić za kilkadziesiąt złotych: spowolnienie posiłku ogranicza połykanie powietrza i wymioty po jedzeniu, co u dużych ras głębokoklatkowych ma znaczenie przy ryzyku skrętu żołądka. Bonus: posiłek staje się mini-łamigłówką węchową.",
+      "pros": ["Realnie spowalnia jedzenie (nawet 10×)", "Bezpieczne tworzywo bez BPA/PVC/ftalanów", "Trzy rozmiary i różne poziomy trudności labiryntu", "Można myć w zmywarce"],
+      "cons": ["Zdeterminowany pies przesuwa miskę po podłodze lub podgryza brzegi", "Najtrudniejsze wzory potrafią sfrustrować psa", "Mokra karma zalega w zakamarkach labiryntu"],
+      "faq": [
+        {"q": "Dla jakich psów miska spowalniająca jest najważniejsza?", "a": "Dla łapczywie jedzących oraz dużych ras o głębokiej klatce (dog, owczarek, wyżeł) — szybkie jedzenie i połykanie powietrza to czynniki ryzyka rozszerzenia i skrętu żołądka, stanu bezpośrednio zagrażającego życiu."},
+        {"q": "Czy miska spowalniająca męczy psa psychicznie?", "a": "Tak, w dobrym sensie: wydobywanie karmy z labiryntu to praca węchowo-logiczna. Dla psów szybko się nudzących warto rotować miskę z matą węchową i zabawkami do nadziewania."}
+      ],
+      "shops": [{"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "obroza-biothane-cocollar",
+      "name": "Obroża biothane (Co-Collar / manufaktury PL)",
+      "brand": "Co-Collar",
+      "type": "obroża", "life": "wszystkie",
+      "score": 80, "pillars": [30, 19, 17, 14],
+      "specs": [
+        ["Materiał", "BioThane® 16/19/25 mm, okucia mosiężne lub stalowe"],
+        ["Warianty", "klasyczna na dziurki, fastex z blokadą, półzaciskowa (martingale) dla psów 'wyślizgujących się'"],
+        ["Rozmiary", "szyte na wymiar lub zakresy obwodu szyi ~25–65 cm"],
+        ["Higiena", "wodoodporna, mycie szmatką, zero konserwacji"],
+        ["Cena orientacyjna", "ok. 40–125 zł"]
+      ],
+      "verified": false,
+      "verdict": "Estetyka skórzanej obroży bez jej wad: biothane nie nasiąka, nie pęka i nie wymaga pielęgnacji, a polskie manufaktury szyją na dokładny wymiar szyi. Pamiętaj o roli obroży: nośnik adresówki i opcja dla psów chodzących na luźnej smyczy — pies ciągnący powinien chodzić w szelkach Y.",
+      "pros": ["Wygląd skóry, trwałość tworzywa — zero konserwacji", "Szycie na wymiar w polskich manufakturach", "Wariant półzaciskowy zabezpiecza psy wyślizgujące się z obroży", "Łatwa dezynfekcja — istotne przy chorobach skóry"],
+      "cons": ["Mniej 'oddycha' niż taśma — przy ciągłym noszeniu sprawdzać skórę", "Sztywna do czasu dotarcia", "Droższa niż nylonowa z marketu"],
+      "faq": [
+        {"q": "Obroża czy szelki?", "a": "Jeśli pies ciągnie — szelki typu Y, bez dyskusji: nacisk obroży na tchawicę, krtań i tarczycę przy ciągnięciu jest dobrze udokumentowany. Obroża zostaje jako nośnik adresówki i wygodna opcja dla psów chodzących przy nodze."},
+        {"q": "Dla jakich psów obroża półzaciskowa?", "a": "Dla ras o szyi szerszej niż głowa (charty, niektóre szpice) i psów-eskapistów, które cofając się wyślizgują z klasycznej obroży. Prawidłowo ustawiony martingale dociąga się tylko do obwodu szyi — nie dusi."}
+      ],
+      "shops": [{"n": "cocollar.pl", "u": "https://cocollar.pl/"}, {"n": "dogcessories.pl", "u": "https://dogcessories.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "trixie-miska-skladana-podrozna",
+      "name": "Trixie składana miska podróżna (silikon)",
+      "brand": "Trixie",
+      "type": "miska podróżna", "life": "wszystkie",
+      "score": 76, "pillars": [25, 19, 20, 12],
+      "specs": [
+        ["Typ", "miska turystyczna składana 'na harmonijkę', z karabińczykiem do plecaka"],
+        ["Materiał", "silikon spożywczy — niełamliwy, zmywarka OK"],
+        ["Pojemności", "0,25 l / 0,5 l / 1 l / 2 l"],
+        ["Waga", "kilkadziesiąt gramów, płaska po złożeniu"],
+        ["Cena orientacyjna", "od ok. 13 zł (0,5 l)"]
+      ],
+      "verified": false,
+      "verdict": "Produkt, którego jedyną wadą jest to, że łatwo o nim zapomnieć: waży tyle co nic, kosztuje kilkanaście złotych i rozwiązuje problem wody na każdym spacerze w upał. Silikon spożywczy, karabińczyk do plecaka — tu po prostu nie ma czego zepsuć.",
+      "pros": ["Cena od kilkunastu złotych", "Płaska po złożeniu, karabińczyk w zestawie", "Silikon spożywczy bez ostrych krawędzi", "Mycie w zmywarce"],
+      "cons": ["Lekka — duży, łapczywy pies potrafi ją przewrócić", "Kolor często wysyłany losowo", "Wymaga regularnego mycia (biofilm w zagięciach)"],
+      "faq": [
+        {"q": "Ile wody pies potrzebuje na spacerze w upał?", "a": "Orientacyjnie 50–100 ml na kg masy ciała dziennie, a w upał i przy wysiłku znacznie więcej. Na dłuższy letni spacer zabieraj minimum 0,5 l dla psa średniej wielkości i pój go co 20–30 minut małymi porcjami."},
+        {"q": "Miska składana czy butelka-poidło?", "a": "Butelka z poidłem (30–60 zł) jest wygodniejsza do pojenia w marszu, miska — uniwersalniejsza (woda i karma) i tańsza. Przy dłuższych wyprawach najlepiej mieć obie."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "zoopoint.pl", "u": "https://zoopoint.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "julius-k9-idc-power",
+      "name": "Julius-K9 IDC Power",
+      "brand": "Julius-K9",
+      "type": "szelki norweskie", "life": "dorosły",
+      "score": 76, "pillars": [30, 14, 20, 12],
+      "specs": [
+        ["Konstrukcja", "szelki norweskie — poziomy pas przez mostek + pas za łopatkami"],
+        ["Materiały", "wytrzymała taśma, klamra testowana na 350 kg, odblaski, rzepy na naszywki, uchwyt na grzbiecie"],
+        ["Rozmiary", "Baby–4 (od miniatur po molosy)"],
+        ["Uwaga biomechaniczna", "poziomy pas może ograniczać ruch łopatki — fizjoterapeuci odradzają psom sportowym i szczeniętom"],
+        ["Cena orientacyjna", "ok. 72 zł (Baby) do 153–197 zł"]
+      ],
+      "verified": false,
+      "verdict": "Solidność wykonania bez zarzutu — klamra z crash-testów, mocny uchwyt, kultowy wygląd. Punktację obniża konstrukcja: poziomy pas szelek norweskich biegnie w poprzek barku i może ograniczać wykrok, co fizjoterapeuci psów podnoszą od lat. Dobre do spokojnych spacerów dorosłych psów; do sportu, treningu i dla szczeniąt wybierz typ Y.",
+      "pros": ["Klamra testowana na 350 kg, bardzo solidne szycie", "Błyskawiczne zakładanie (przez głowę + jedno zapięcie)", "Mocny uchwyt na grzbiecie — przydatny u psów seniorów", "Pełna rozmiarówka od miniatur po molosy"],
+      "cons": ["Poziomy pas przez mostek ogranicza swobodę łopatki", "Niewskazane dla szczeniąt i psów sportowych", "Łatwo o złe dopasowanie — pas zsuwa się na staw barkowy"],
+      "faq": [
+        {"q": "Czy szelki norweskie są szkodliwe?", "a": "To zależy od psa i użycia. Przy spokojnych spacerach dorosłego psa prawidłowo dopasowane szelki norweskie nie wyrządzą krzywdy. Problem narasta u psów intensywnie ciągnących, sportowych i rosnących — tam stałe ograniczanie wykroku może utrwalać wadliwy wzorzec ruchu."},
+        {"q": "Po czym poznać źle dopasowane szelki norweskie?", "a": "Poziomy pas leży na stawie barkowym zamiast poniżej szyi na mostku, albo tylny pas uciska tuż za pachami. Jeśli przy wykroku pas wyraźnie napina się na łopatce — szelki ograniczają ruch."}
+      ],
+      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "flexi-new-comfort",
+      "name": "Flexi New Comfort",
+      "brand": "Flexi",
+      "type": "smycz automatyczna", "life": "dorosły",
+      "score": 62, "pillars": [26, 10, 16, 10],
+      "specs": [
+        ["Typ", "smycz automatyczna zwijana (taśma lub linka), blokada jedną ręką"],
+        ["Rozmiary", "S (5 m, do 15 kg), M (5 m, do 25 kg), L (5–8 m, do 60 kg)"],
+        ["Mechanizm", "niemiecka produkcja, regulowana rączka, solidny zwijacz"],
+        ["Zasady bezpieczeństwa", "tylko do szelek, nigdy do obroży; nie dla szczeniąt; nie przy jezdni"],
+        ["Cena orientacyjna", "ok. 49–120 zł"]
+      ],
+      "verified": false,
+      "verdict": "Mechanicznie to najlepsza smycz automatyczna na rynku — i właśnie dlatego trzeba uczciwie opisać granice samej koncepcji: stałe napięcie linki uczy psa ciągnięcia, cienka linka potrafi skaleczyć, a 8 metrów przy jezdni to o 7 za dużo. Narzędzie wyłącznie na otwarte tereny, dla spokojnych, dorosłych psów, przypinane do szelek.",
+      "pros": ["Najsolidniejszy mechanizm zwijający w segmencie", "Daje psu swobodę węszenia na otwartym terenie", "Wygodna, regulowana rączka", "Blokada obsługiwana jedną ręką"],
+      "cons": ["Stałe napięcie linki uczy psa ciągnięcia — opinia zgodna wśród trenerów", "Linka przy zaplątaniu może poparzyć lub przeciąć skórę", "8 m zasięgu = pies przy jezdni poza kontrolą", "Nie nadaje się do nauki chodzenia przy nodze"],
+      "faq": [
+        {"q": "Dlaczego trenerzy odradzają smycze flexi?", "a": "Bo mechanizm działa tylko przy stale napiętej lince — pies uczy się, że napięcie smyczy to norma, co sabotuje naukę chodzenia na luźnej smyczy. Do swobody na otwartym terenie bezpieczniejsza jest linka treningowa 10 m przypięta do szelek."},
+        {"q": "Czy flexi można przypiąć do obroży?", "a": "Nie powinno się. Pies rozpędzony na kilku metrach generuje przy końcu linki szarpnięcie, które na obroży uderza w kręgosłup szyjny i tchawicę. Smycz automatyczna tylko z szelkami — najlepiej typu Y."}
+      ],
+      "shops": [{"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
+    }
+  ]
+}

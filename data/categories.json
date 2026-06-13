@@ -9,7 +9,7 @@
       "criteriaEn": ["Dry-matter composition vs FEDIAF/AAFCO thresholds", "Manufacturer credibility per WSAVA criteria", "Cost per 1,000 kcal — the only fair measure across formats"]
     },
     {
-      "slug": "przysmaki-i-gryzaki", "slugEn": "treats-and-chews", "name": "Przysmaki i gryzaki", "nameEn": "Treats & chews", "icon": "🦴", "status": "soon", "bekon": "🥣",
+      "slug": "przysmaki-i-gryzaki", "slugEn": "treats-and-chews", "name": "Przysmaki i gryzaki", "nameEn": "Treats & chews", "icon": "🦴", "status": "beta", "bekon": "🥣",
       "desc": "Od przysmaków treningowych po gryzaki dentystyczne. Za twardy gryzak łamie zęby — sprawdzamy to testem paznokcia.",
       "descEn": "From training treats to dental chews. Too-hard chews fracture teeth — we check with the thumbnail test.",
       "criteria": ["Skład i kaloryczność (przysmaki to też kalorie!)", "Twardość: test paznokcia stomatologów weterynaryjnych", "Gryzaki dentystyczne: tylko pieczęć VOHC traktujemy jako dowód"],
@@ -23,14 +23,14 @@
       "criteriaEn": ["Materials and build (pins, handle, durability)", "Performance on a curly coat — tested on Bekon", "Shampoos: canine skin pH, INCI ingredients"]
     },
     {
-      "slug": "akcesoria", "slugEn": "walking-gear", "name": "Szelki, smycze, obroże", "nameEn": "Harnesses, leads & collars", "icon": "🦮", "status": "soon", "bekon": "🎾",
+      "slug": "akcesoria", "slugEn": "walking-gear", "name": "Szelki, smycze, obroże", "nameEn": "Harnesses, leads & collars", "icon": "🦮", "status": "beta", "bekon": "🎾",
       "desc": "Akcesoria spacerowe oceniane wg badań biomechaniki, nie marketingu. Szelki Y wcale nie są automatycznie lepsze — sprawdzamy dane.",
       "descEn": "Walking gear rated on biomechanics research, not marketing. Y-harnesses are not automatically better — we check the data.",
       "criteria": ["Biomechanika: badania ruchu barku (Lafuente i in.)", "Wytrzymałość szwów i okuć — pomiary własne", "Dopasowanie do budowy psa (warstwa dopasowania)"],
       "criteriaEn": ["Biomechanics: shoulder-motion studies (Lafuente et al.)", "Stitching and hardware strength — our own measurements", "Fit for the dog's build (match layer)"]
     },
     {
-      "slug": "zabawki", "slugEn": "toys", "name": "Zabawki", "nameEn": "Toys", "icon": "🎾", "status": "soon", "bekon": "🎾",
+      "slug": "zabawki", "slugEn": "toys", "name": "Zabawki", "nameEn": "Toys", "icon": "🎾", "status": "beta", "bekon": "🎾",
       "desc": "Zabawki dla psów nie mają ŻADNYCH obowiązkowych norm bezpieczeństwa. Dlatego sprawdzamy materiały, twardość i trwałość za producentów.",
       "descEn": "Dog toys have NO mandatory safety standards. So we check materials, hardness and durability ourselves.",
       "criteria": ["Materiały: ftalany, BPA (badania migracji do śliny)", "Twardość — test paznokcia (ochrona zębów)", "Trwałość: test niszczenia z Bekonem"],

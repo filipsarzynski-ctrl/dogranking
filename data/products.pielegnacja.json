@@ -31,6 +31,143 @@
         {"q": "Jak często czesać pudla?", "a": "Sierść kędzierzawą rozczesuje się do skóry 2–4 razy w tygodniu (przy dłuższym strzyżeniu codziennie), zawsze przed kąpielą — woda zacieśnia kołtuny."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "chris-christensen-poodle-buttercomb-004",
+      "name": "Chris Christensen Poodle Buttercomb #004",
+      "brand": "Chris Christensen",
+      "type": "grzebień groomerski", "life": "wszystkie",
+      "score": 89, "pillars": [34, 21, 22, 12],
+      "specs": [
+        ["Typ", "grzebień metalowy 24,5 cm (9 5/8\"), szeroki rozstaw zębów"],
+        ["Materiały", "zęby ze stali nierdzewnej osadzone w mosiężnym rdzeniu, wykonanie ręczne"],
+        ["Przeznaczenie", "szaty kędzierzawe i wełniste (pudel, bichon, doodle) — kontrola rozczesania do skóry"],
+        ["Cena orientacyjna", "ok. 200–250 zł (tańszy wariant Fine/Coarse 7,5\" ~198 zł)"]
+      ],
+      "verified": false,
+      "verdict": "Naturalne dopełnienie slickera: po rozczesaniu szczotką grzebień weryfikuje, czy naprawdę dotarłeś do skóry — jeśli zęby przechodzą przez sierść bez oporu, nie ma kołtunów. Zaokrąglone zęby w mosiężnym rdzeniu dają poślizg, którego nie mają tłoczone grzebienie z marketu. Cena bolesna, ale to narzędzie na dekady.",
+      "pros": ["Idealny poślizg — nie tnie i nie wyrywa włosa", "Stal + mosiądz: nie elektryzuje sierści", "Test grzebieniem to jedyna pewna kontrola rozczesania do skóry", "Praktycznie niezniszczalny"],
+      "cons": ["Ok. 200–250 zł za grzebień — najwyższa półka cenowa", "Klasyczny format bez rączki wymaga przyzwyczajenia", "Dla ras krótkowłosych zbędny"],
+      "faq": [
+        {"q": "Po co grzebień, skoro mam dobrego slickera?", "a": "Slicker rozczesuje, grzebień kontroluje. W gęstej, kędzierzawej szacie kołtun przy skórze łatwo przeoczyć — grzebień, który nie przechodzi gładko, natychmiast go zdradza. Groomerzy nazywają to 'line combing' po 'line brushing'."},
+        {"q": "Czym różni się Buttercomb od grzebienia za 20 zł?", "a": "Sposobem wykonania zębów: w Buttercomb są zaokrąglone do samego rdzenia i osadzone w mosiądzu, więc ślizgają się po włosie. Tanie grzebienie mają zęby wycinane/tłoczone z ostrymi krawędziami, które tną i łamią włos."}
+      ],
+      "shops": [{"n": "GroomerShop.pl", "u": "https://www.groomershop.pl/"}, {"n": "Germapol", "u": "https://sklep.germapol.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "virbac-cet-pasta-enzymatyczna",
+      "name": "Virbac C.E.T. enzymatyczna pasta do zębów",
+      "brand": "Virbac",
+      "type": "higiena jamy ustnej", "life": "wszystkie",
+      "score": 86, "pillars": [30, 23, 22, 11],
+      "specs": [
+        ["Typ", "weterynaryjna pasta enzymatyczna dla psów i kotów, 70 g"],
+        ["System enzymatyczny", "oksydaza glukozowa + laktoperoksydaza + tiocyjanian potasu (patent C.E.T.)"],
+        ["Skład bazowy", "sorbitol, fosforan dwuwapniowy, krzemionka, gliceryna, aromat drobiowy; bez fluoru i ksylitolu"],
+        ["Stosowanie", "nie wymaga spłukiwania; smak drobiowy akceptowany przez psy"],
+        ["Cena orientacyjna", "ok. 66 zł / 70 g"]
+      ],
+      "verified": false,
+      "verdict": "Standard weterynaryjny w higienie zębów psa. Podwójny system enzymatyczny ogranicza bakterie nawet przy niedoskonałym szczotkowaniu, a smak drobiowy sprawia, że większość psów traktuje mycie jak przysmak. Dla ras miniaturowych — z ich genetyczną skłonnością do kamienia — to wydatek ważniejszy niż niejeden suplement.",
+      "pros": ["Enzymy pracują też tam, gdzie szczoteczka nie dotarła", "Bez fluoru i ksylitolu — bezpieczna przy połykaniu", "Smak drobiowy ułatwia przyzwyczajenie psa", "Marka weterynaryjna z dorobkiem badawczym"],
+      "cons": ["Ok. 66 zł za 70 g — drogo jak na pastę", "Zawiera dwutlenek tytanu i benzoesan sodu (dopuszczone, ale kosmetycznie dyskusyjne)", "Bez szczotkowania sama pasta zdziała niewiele"],
+      "faq": [
+        {"q": "Dlaczego nie można myć psu zębów ludzką pastą?", "a": "Ludzka pasta zawiera fluor i często ksylitol — oba toksyczne dla psa przy połykaniu, a pies pastę zawsze połyka. Pasty weterynaryjne są projektowane do połykania i nie wymagają spłukiwania."},
+        {"q": "Jak często szczotkować psu zęby?", "a": "Złoty standard to codziennie — płytka mineralizuje się w kamień w 48–72 godziny. Realne minimum to 3 razy w tygodniu. Rasy małe i miniaturowe (pudle, yorki) mają genetycznie większą skłonność do kamienia, więc u nich regularność jest kluczowa."}
+      ],
+      "shops": [{"n": "ZooArt", "u": "https://zooart.com.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "dremel-7020-pet-grooming",
+      "name": "Dremel 7020 Pet Grooming Kit",
+      "brand": "Dremel",
+      "type": "szlifierka do pazurów", "life": "wszystkie",
+      "score": 84, "pillars": [29, 22, 21, 12],
+      "specs": [
+        ["Typ", "elektryczny pilnik rotacyjny do pazurów z osłoną prowadzącą (paw guard)"],
+        ["Zasilanie", "4×AA (6V); cicha praca, prowadnica kąta 45°"],
+        ["W zestawie", "4 tarcze szlifujące o gradacji 60/120"],
+        ["Alternatywa", "Dremel 7760 PawControl z akumulatorem Li-Ion (~250–350 zł, gł. Amazon.pl)"],
+        ["Cena orientacyjna", "ok. 198 zł"]
+      ],
+      "verified": false,
+      "verdict": "Bezpieczna alternatywa dla cążek: szlifowanie nie niesie ryzyka przycięcia żywej części pazura, a krawędź zostaje gładka zamiast ostrej. Szczególnie cenny przy ciemnych pazurach, w których nie widać matrycy. Wymaga tylko cierpliwego przyzwyczajenia psa do wibracji — to proces na tygodnie, nie minuty.",
+      "pros": ["Zero ryzyka przycięcia 'żywego' — najczęstszego wypadku z cążkami", "Gładka krawędź pazura zamiast ostrej po cięciu", "Osłona z otworem prowadzącym i kąt 45° dla początkujących", "Cichszy niż klasyczne szlifierki"],
+      "cons": ["Baterie AA zamiast akumulatora (model 7760 ma Li-Ion)", "Wolniejsze niż cążki — sesja trwa dłużej", "Pies musi zostać oswojony z dźwiękiem i wibracją"],
+      "faq": [
+        {"q": "Szlifierka czy cążki — co lepsze dla psa?", "a": "Dla większości opiekunów szlifierka jest bezpieczniejsza: przy ciemnych pazurach nie widać, gdzie kończy się martwa część, a jedno za głębokie cięcie cążkami boli i zraża psa na lata. Szlifowanie zdejmuje pazur warstwami i daje pełną kontrolę."},
+        {"q": "Jak przyzwyczaić psa do szlifierki?", "a": "Etapami, z nagrodami: najpierw sam widok i dźwięk urządzenia, potem dotyk wyłączonego, dopiero po dniach — krótkie szlifowanie jednego pazura. Sesje po kilka minut, zawsze zakończone przysmakiem."}
+      ],
+      "shops": [{"n": "Media Expert", "u": "https://www.mediaexpert.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}, {"n": "Amazon.pl", "u": "https://www.amazon.pl/"}]
+    },
+    {
+      "slug": "vetoquinol-otifree",
+      "name": "Vetoquinol Otifree — płyn do czyszczenia uszu",
+      "brand": "Vetoquinol Biowet",
+      "type": "higiena uszu", "life": "wszystkie",
+      "score": 83, "pillars": [28, 21, 22, 12],
+      "specs": [
+        ["Typ", "roztwór do higieny uszu psów i kotów, 60/160 ml"],
+        ["Skład", "nalewka z kwiatów nagietka, olejek bazyliowy, neutralne podłoże — bez konserwantów"],
+        ["Aplikacja", "butelka z gumowym aplikatorem — bezpieczne podanie do kanału słuchowego"],
+        ["Produkcja", "Vetoquinol Biowet, Gorzów Wielkopolski (Polska)"],
+        ["Cena orientacyjna", "ok. 55 zł / 160 ml; 60 ml ok. 34 zł"]
+      ],
+      "verified": false,
+      "verdict": "Weterynaryjny standard pielęgnacji uszu, produkowany w Polsce, ze składem roślinnym bez konserwantów. Obowiązkowy u ras z wiszącym, owłosionym uchem (pudle, spaniele, doodle), gdzie woskowina zalega i kanał słabo wentyluje. Granica jest jasna: to profilaktyka — zapalenie ucha leczy weterynarz, nie płyn.",
+      "pros": ["Skład roślinny bez konserwantów", "Gumowy aplikator — bezpieczne i wygodne podanie", "Skutecznie rozpuszcza woskowinę przy regularnym stosowaniu", "Polska produkcja, dostępny w każdej lecznicy"],
+      "cons": ["Nie leczy infekcji — przy zapaleniu konieczny weterynarz", "Zapach bazylii nie każdemu psu odpowiada", "Cena za litr wysoka (ok. 344 zł/l)"],
+      "faq": [
+        {"q": "Jak często czyścić psu uszy?", "a": "Tylko gdy widać zabrudzenie — zwykle co 1–4 tygodnie zależnie od rasy. Nadgorliwe czyszczenie zdrowego ucha niszczy naturalną barierę ochronną. Rasy z wiszącym uchem i włosami w kanale (pudel!) wymagają częstszej kontroli."},
+        {"q": "Po czym poznać, że to już zapalenie, a nie brud?", "a": "Niepokojące objawy: intensywny zapach, ciemnobrązowa lub ropna wydzielina, zaczerwienienie, ból przy dotyku, potrząsanie głową. Wtedy żaden płyn pielęgnacyjny nie pomoże — potrzebna wizyta u weterynarza i celowane leczenie."}
+      ],
+      "shops": [{"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "aptekazwierzat.pl", "u": "https://aptekazwierzat.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+    },
+    {
+      "slug": "iv-san-bernard-banana-shampoo",
+      "name": "Iv San Bernard Banana Shampoo (Traditional Line)",
+      "brand": "Iv San Bernard",
+      "type": "szampon", "life": "wszystkie",
+      "score": 79, "pillars": [27, 19, 21, 12],
+      "specs": [
+        ["Typ", "szampon odżywczo-oczyszczający z fitokeratyną, koncentrat 1:3–1:5"],
+        ["INCI (kluczowe)", "Sodium Laureth Sulfate (SLES), Cocamidopropyl Betaine, Sodium Cocoyl Hydrolyzed Wheat Protein"],
+        ["pH", "producent deklaruje 'przyjazne skórze psa' — bez wartości liczbowej (skóra psa ~pH 7)"],
+        ["Certyfikat", "Safe Pet Cosmetics; istnieje wariant Banana SLS&SLES Free"],
+        ["Cena orientacyjna", "ok. 83 zł / 500 ml (koncentrat); 3 l ok. 269 zł"]
+      ],
+      "verified": false,
+      "verdict": "Salonowy klasyk do szat kędzierzawych: fitokeratyna realnie ułatwia rozczesywanie po kąpieli, a koncentrat 1:5 czyni cenę uczciwszą, niż wygląda. Dwie rysy: baza myjąca to SLES (łagodny, ale nie bezsiarczanowy — producent ma osobny wariant SLS/SLES Free) i brak liczbowej deklaracji pH, którą u kosmetyków dla psów chcielibyśmy widzieć zawsze.",
+      "pros": ["Fitokeratyna zapobiega kołtunieniu — kluczowe u pudli i doodli", "Koncentrat 1:3–1:5 — bardzo wydajny", "Certyfikat Safe Pet Cosmetics", "Profesjonalna marka groomerska dostępna w PL"],
+      "cons": ["SLES w składzie — wrażliwa skóra może preferować wariant SLS/SLES Free", "Brak liczbowej deklaracji pH", "Intensywny bananowy zapach nie dla każdego (psiego) nosa"],
+      "faq": [
+        {"q": "Dlaczego nie można myć psa ludzkim szamponem?", "a": "Skóra psa ma pH ok. 7 (neutralne), ludzka ok. 5,5 (kwaśne). Ludzkie szampony są zakwaszone pod nasz naskórek — u psa naruszają barierę hydrolipidową, prowadząc do przesuszenia, swędzenia i nawracających infekcji."},
+        {"q": "Jak często kąpać pudla?", "a": "Przy regularnym rozczesywaniu co 3–6 tygodni; groomerskie szaty utrzymywane w dłuższym włosie nawet co 2–3 tygodnie. Zawsze rozczesz sierść PRZED kąpielą — woda zacieśnia istniejące kołtuny."}
+      ],
+      "shops": [{"n": "Amici Group", "u": "https://amicigroup.pl/"}, {"n": "GroomerShop.pl", "u": "https://www.groomershop.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
+    },
+    {
+      "slug": "over-zoo-silk-spray",
+      "name": "OVER Zoo Silk Spray",
+      "brand": "OVER Zoo",
+      "type": "spray do rozczesywania", "life": "wszystkie",
+      "score": 74, "pillars": [24, 18, 18, 14],
+      "specs": [
+        ["Typ", "spray ułatwiający rozczesywanie / przeciw kołtunom, bez spłukiwania, 250 ml"],
+        ["INCI", "Aqua, Cetyl Alcohol, Cetearyl Alcohol, Stearalkonium Chloride, PEG-20 Stearate, Polyquaternium-7, Citric Acid, Parfum"],
+        ["Formuła", "na woskach roślinnych, bez silikonów, antystatyczna"],
+        ["Stosowanie", "na suchą lub wilgotną sierść przed rozczesywaniem"],
+        ["Cena orientacyjna", "ok. 14–27 zł / 250 ml"]
+      ],
+      "verified": false,
+      "verdict": "Budżetowy bohater pielęgnacji: za kilkanaście złotych dostajesz prosty, bezsilikonowy spray, który realnie zmniejsza tarcie przy rozczesywaniu. Profesjonalne rozkołtuniacze (Hydra, iGroom) dają więcej poślizgu, ale kosztują kilkukrotnie więcej. Zasada żelazna dla szat kędzierzawych: nigdy nie czesać 'na sucho' bez sprayu.",
+      "pros": ["Bardzo niska cena (od ~14 zł)", "Prosty skład bez silikonów", "Działa antystatycznie — sierść się nie elektryzuje", "Polska marka, dostępność w każdym sklepie zoologicznym"],
+      "cons": ["Mniej poślizgu niż profesjonalne rozkołtuniacze silikonowe", "Wyczuwalny zapach perfumowany", "Przy mocno sfilcowanych kołtunach to za mało"],
+      "faq": [
+        {"q": "Dlaczego nie wolno rozczesywać suchej sierści bez sprayu?", "a": "Suchy włos ma podniesione łuski i duże tarcie — szczotka go łamie i wyrywa zamiast rozplątywać, a pies kojarzy czesanie z bólem. Mgiełka sprayu wygładza łuskę włosa i zmniejsza tarcie o kilkadziesiąt procent."},
+        {"q": "Spray bez silikonów czy z silikonami?", "a": "Silikony dają najlepszy poślizg przy kołtunach, ale obciążają sierść i wymagają dokładniejszego zmywania. Do codziennej profilaktyki lekki spray bez silikonów wystarcza; silikonowy rozkołtuniacz trzymaj na sytuacje awaryjne."}
+      ],
+      "shops": [{"n": "ZooArt", "u": "https://zooart.com.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
     }
   ]
 }
