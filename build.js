@@ -41,6 +41,17 @@ const STR = {
   pl: {
     nav: ['Start', 'Kategorie', 'Metodologia'], review: 'Recenzja', reviewTitle: 'recenzja i ocena', rated: 'Ocena', updated: 'Zaktualizowano',
     demo: 'DEMO — dane do weryfikacji', goodChoice: n => `Czy ${n} to dobry wybór?`,
+    calc: {
+      navlink: 'Kalkulator kosztów', slug: 'kalkulator',
+      h: 'Kalkulator kosztu żywienia psa',
+      lead: 'Cena za kilogram myli — sucha karma ma ~3,5× więcej kalorii niż mokra, więc „tańsza za kg" bywa droższa w misce. Policz realny koszt dzienny i miesięczny dla swojego psa.',
+      answer: 'Dzienne zapotrzebowanie liczymy ze wzoru weterynaryjnego: zapotrzebowanie spoczynkowe RER = 70 × (masa w kg)^0,75, pomnożone przez współczynnik aktywności (MER). Następnie dzielimy je przez kaloryczność karmy i mnożymy przez cenę — to daje uczciwy koszt, niezależny od formy.',
+      weight: 'Masa psa (kg)', activity: 'Aktywność / stan',
+      actOpts: [['1.6', 'Dorosły, sterylizowany (typowy)'], ['1.8', 'Dorosły, aktywny'], ['1.4', 'Skłonność do tycia / mało ruchu'], ['1.0', 'Odchudzanie'], ['2.5', 'Szczenię / pies pracujący']],
+      food: 'Karma', result: 'Wynik', kcalDay: 'Dzienne zapotrzebowanie', gramsDay: 'Porcja dzienna', perDay: 'Koszt dzienny', perMonth: 'Koszt miesięczny', perYear: 'Koszt roczny',
+      note: 'Szacunek orientacyjny dla zdrowego dorosłego psa — rzeczywiste potrzeby zależą od rasy, metabolizmu i stanu zdrowia. Skonsultuj dawkowanie z weterynarzem; przy chorobach stosuj zalecenia lekarskie.',
+      pickFood: 'Wybierz karmę z rankingu', cardTitle: 'Policz koszt karmienia', cardCta: 'Otwórz kalkulator →'
+    },
     flavorRow: 'Wariant (smak)',
     variantBox: 'Ta ocena dotyczy <strong>konkretnego wariantu smakowego</strong>. Producenci często sprzedają tę samą linię w wielu smakach (np. łosoś, jagnięcina, kurczak), a każdy ma inny skład, profil odżywczy i alergeny — więc i inną ocenę. Sprawdzaj wariant, który realnie kupujesz.',
     prof: {
@@ -48,10 +59,10 @@ const STR = {
       age: 'Wiek', ageOpts: [['dorosly', 'Dorosły (1–7 lat)'], ['szczenie', 'Szczenię'], ['senior', 'Senior (7+)']],
       form: 'Forma karmy', formOpts: [['all', 'Wszystkie formy'], ['sucha', 'Tylko sucha'], ['mokra', 'Tylko mokra']],
       size: 'Rozmiar', sizeOpts: [['maly', 'Mały / toy (do 10 kg)'], ['sredni', 'Średni (10–25 kg)'], ['duzy', 'Duży / olbrzymi (25+ kg)']],
-      health: 'Zdrowie', healthOpts: [['ok', 'Zdrowy'], ['alergia', 'Alergia na drób/kurczaka'], ['nadwaga', 'Nadwaga'], ['trzustka', 'Po zapaleniu trzustki'], ['stawy', 'Problemy ze stawami'], ['nerki', 'Choroba nerek']],
+      health: 'Zdrowie', healthOpts: [['ok', 'Zdrowy'], ['alergia_kurczak', 'Alergia na kurczaka'], ['alergia_drob', 'Alergia na drób (każdy)'], ['nadwaga', 'Nadwaga'], ['trzustka', 'Po zapaleniu trzustki'], ['stawy', 'Problemy ze stawami'], ['nerki', 'Choroba nerek']],
       reset: 'Wyczyść profil', matchLbl: 'Dopasowanie', blocked: 'Niezalecana przy tym profilu',
       legend: '<strong>Jak to czytać:</strong> łapki 🐾 = jakość karmy (niezależna od psa). Dopasowanie % = jak karma pasuje do profilu, który wybrałeś. Ostrzeżenia pokazujemy zawsze. Przy chorobach dieta zawsze pod kontrolą weterynarza — dopasowanie nie zastępuje porady lekarskiej.',
-      wAllergy: 'Zawiera drób — wyklucz przy alergii na kurczaka', wPanc: 'Tłuszcz powyżej 15% suchej masy — niewskazana po zapaleniu trzustki',
+      wAllergy: 'Zawiera kurczaka — wyklucz przy alergii na kurczaka', wAllergyP: 'Zawiera drób — wyklucz przy alergii na drób', wPanc: 'Tłuszcz powyżej 15% suchej masy — niewskazana po zapaleniu trzustki',
       wPup: 'Receptura dla psów dorosłych — szczenię potrzebuje karmy „growth"/„wszystkie etapy życia"', wKidney: 'Choroba nerek wymaga diety renalnej z obniżonym fosforem — dobór tylko z weterynarzem',
       wLegume: 'Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)'
     },
@@ -94,6 +105,17 @@ const STR = {
   },
   en: {
     nav: ['Home', 'Categories', 'Methodology'], review: 'Review', reviewTitle: 'review & rating', rated: 'Rating', updated: 'Updated',
+    calc: {
+      navlink: 'Cost calculator', slug: 'calculator',
+      h: 'Dog feeding cost calculator',
+      lead: 'Price per kilo misleads — dry food has ~3.5× the calories of wet, so “cheaper per kg” can cost more in the bowl. Work out the real daily and monthly cost for your dog.',
+      answer: 'Daily energy uses the veterinary formula: resting requirement RER = 70 × (body weight kg)^0.75, multiplied by an activity factor (MER). We divide that by the food’s calorie density and multiply by price — giving a fair cost independent of format.',
+      weight: 'Dog weight (kg)', activity: 'Activity / status',
+      actOpts: [['1.6', 'Adult, neutered (typical)'], ['1.8', 'Adult, active'], ['1.4', 'Prone to weight gain / low activity'], ['1.0', 'Weight loss'], ['2.5', 'Puppy / working dog']],
+      food: 'Food', result: 'Result', kcalDay: 'Daily energy need', gramsDay: 'Daily portion', perDay: 'Cost per day', perMonth: 'Cost per month', perYear: 'Cost per year',
+      note: 'Rough estimate for a healthy adult dog — real needs depend on breed, metabolism and health. Confirm portions with your vet; follow medical advice for conditions.',
+      pickFood: 'Pick a food from the ranking', cardTitle: 'Calculate feeding cost', cardCta: 'Open the calculator →'
+    },
     flavorRow: 'Variant (flavour)',
     variantBox: 'This rating is for a <strong>specific flavour variant</strong>. Brands often sell the same line in several flavours (salmon, lamb, chicken…), each with a different recipe, nutrient profile and allergens — and therefore a different score. Always check the exact variant you are buying.',
     prof: {
@@ -101,10 +123,10 @@ const STR = {
       age: 'Age', ageOpts: [['dorosly', 'Adult (1–7 yrs)'], ['szczenie', 'Puppy'], ['senior', 'Senior (7+)']],
       form: 'Food format', formOpts: [['all', 'All formats'], ['sucha', 'Dry only'], ['mokra', 'Wet only']],
       size: 'Size', sizeOpts: [['maly', 'Small / toy (up to 10 kg)'], ['sredni', 'Medium (10–25 kg)'], ['duzy', 'Large / giant (25+ kg)']],
-      health: 'Health', healthOpts: [['ok', 'Healthy'], ['alergia', 'Poultry/chicken allergy'], ['nadwaga', 'Overweight'], ['trzustka', 'After pancreatitis'], ['stawy', 'Joint problems'], ['nerki', 'Kidney disease']],
+      health: 'Health', healthOpts: [['ok', 'Healthy'], ['alergia_kurczak', 'Chicken allergy'], ['alergia_drob', 'Any poultry allergy'], ['nadwaga', 'Overweight'], ['trzustka', 'After pancreatitis'], ['stawy', 'Joint problems'], ['nerki', 'Kidney disease']],
       reset: 'Clear profile', matchLbl: 'Match', blocked: 'Not recommended for this profile',
       legend: '<strong>How to read this:</strong> paws 🐾 = food quality (independent of your dog). Match % = how the food fits the profile you chose. Warnings are always shown. With medical conditions, diet always under veterinary supervision — match is not medical advice.',
-      wAllergy: 'Contains poultry — exclude for chicken allergy', wPanc: 'Fat above 15% dry matter — unsuitable after pancreatitis',
+      wAllergy: 'Contains chicken — exclude for chicken allergy', wAllergyP: 'Contains poultry — exclude for poultry allergy', wPanc: 'Fat above 15% dry matter — unsuitable after pancreatitis',
       wPup: 'Adult recipe — a puppy needs a “growth”/“all life stages” food', wKidney: 'Kidney disease needs a renal diet with restricted phosphorus — choose only with your vet',
       wLegume: 'Legumes high in the recipe (FDA DCM context — see Knowledge)'
     },
@@ -181,8 +203,12 @@ nav a:hover{color:var(--ink)}
 .tlcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-top:8px}
 .tlcard h3{margin:0 0 8px;font-size:1.2rem}
 .tlcard p{margin:0;color:var(--ink)}
-.tlphoto{width:100%;max-height:440px;object-fit:cover;border-radius:12px;margin:0 0 14px;display:block}
-.tlph{aspect-ratio:3/2;background:#F1EADC;border:2px dashed #C9C0AE;border-radius:12px;margin:0 0 14px;display:flex;align-items:center;justify-content:center;text-align:center;color:#8B816C;font-family:-apple-system,sans-serif;font-size:.85rem;padding:18px}
+.tlgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.tlgrid.one{grid-template-columns:1fr;max-width:560px}
+.tlfig{margin:0}
+.tlmedia{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;background:#000}
+.tlfig figcaption{font-family:-apple-system,sans-serif;font-size:.8rem;color:var(--muted);margin-top:6px;line-height:1.4}
+@media(max-width:560px){.tlgrid{grid-template-columns:1fr}}
 @media(max-width:560px){.tlitem{padding-left:48px}.tl::before{left:15px}.tlitem::before{width:32px;height:32px;left:0}}
 main{padding:42px 0 70px}
 h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin-bottom:14px}
@@ -341,7 +367,7 @@ ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padd
 <header><div class="bar">
   <a class="mark" href="${H(mkt + '/')}"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
   <nav>
-    <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
+    <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + S.calc.slug + '/')}">${S.calc.navlink}</a><a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
   </nav>
   <div class="mktswitch">${Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a href="${H(k + '/')}" title="${v.name}">${v.flag}</a>`).join(' ')}</div>
 </div></header>
@@ -478,7 +504,7 @@ ${p.pillars.map((v, i) => `<tr><td>${labels[i]}</td><td><strong>${v}</strong></t
 ${testSection}
 <h2>${S.faqH}</h2>
 ${p.faq.map(x => `<h3>${x.q}</h3><p>${x.a}</p>`).join('')}
-
+${relatedKnowledge(p, cat, mkt, url)}
 <h2>${S.buyH}</h2>
 <p class="shops">${p.shops.map(s => `<a href="${s.u}" rel="sponsored nofollow" target="_blank">${s.n} →</a>`).join('')}</p>
 <p class="disclosure">${S.disclosure}</p>`;
@@ -498,22 +524,45 @@ function rankRows(products, cat, mkt, fromUrl) {
 </a>`).join('');
 }
 
+/* ---------- powiązane artykuły z Wiedzy (tylko PL, karmy) ---------- */
+function relatedKnowledge(p, cat, mkt, url) {
+  if (mkt !== 'pl' || cat.slug !== 'karmy') return '';
+  const txt = (p.verdict + ' ' + (p.cons || []).join(' ') + ' ' + (p.pros || []).join(' ') + ' ' + (p.flavor || '')).toLowerCase();
+  const ids = [];
+  if (/strączkow|grain|groch/i.test(txt)) ids.push('dcm');
+  if (/epa|dha|staw/i.test(txt)) ids.push('stawy');
+  if (/surow|barf/i.test(txt + p.type)) ids.push('barf');
+  if (/senior/i.test(txt)) ids.push('senior');
+  ids.push('etykieta', 'bialko'); // zawsze przydatne
+  const seen = {}, picks = [];
+  for (const id of ids) { if (seen[id]) continue; seen[id] = 1; const a = ARTS.find(x => x.id === id); if (a) picks.push(a); if (picks.length === 3) break; }
+  if (!picks.length) return '';
+  return `
+<h2>Z naszej Wiedzy</h2>
+<div class="catgrid">
+${picks.map(a => `<a class="catcard" href="${href(url, `pl/wiedza/${a.id}/`)}"><span class="meta">${a.cat} · ${a.mins} min · ${gradeBadge(a.grade)}</span><h3>${a.title}</h3><p>${a.teaser}</p></a>`).join('\n')}
+</div>`;
+}
+
 /* ---------- atrybuty do dopasowania (wyliczane z pól rekordu) ---------- */
 function matchAttrs(p) {
   const txt = (p.name + ' ' + (p.flavor || '') + ' ' + (p.verdict || '') + ' ' + (p.pros || []).join(' ') + ' ' + (p.cons || []).join(' ')).toLowerCase();
-  const noPoultry = (p.pros || []).some(x => /bez kurczaka|bez drobiu|no chicken|chicken-free|poultry-free/i.test(x));
-  const chicken = !noPoultry && /(kurcz|drob|drób|indyk|kacz|poultry|chicken|turkey|duck)/.test(txt);
+  // KURCZAK (konkretnie) vs DRÓB (dowolny: indyk, kaczka, gęś...) — dwa różne alergeny
+  const noChicken = /bez kurczaka|chicken-free|no chicken/.test(txt);
+  const noPoultry = /bez drobiu|poultry-free/.test(txt);
+  const chicken = !noChicken && /(kurcz|chicken)/.test(txt);
+  const poultry = !noPoultry && /(kurcz|chicken|dr[oó]b|poultry|indyk|turkey|kacz|duck|g[eę]ś|goose)/.test(txt);
   const legumesHigh = (p.cons || []).some(x => /strączkow|legume/i.test(x));
   const grainFree = /bez zbóż|grain-free|bezzboż/.test(txt);
   const epaDha = (p.pros || []).some(x => /epa|dha/i.test(x));
   const life = /wszystkie etapy|all life stages/i.test(p.life || '') ? 'all' : (/szczen|puppy/i.test(p.life || '') ? 'puppy' : 'adult');
-  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life };
+  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, po: poultry ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life };
 }
 function foodMatchPanel(products, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang]; const P = S.prof;
   const data = products.map(matchAttrs);
   const sel = (id, opts) => `<div class="pf-g"><label>${P[id]}</label><select id="pf-${id}">${opts.map(o => `<option value="${o[0]}">${o[1]}</option>`).join('')}</select></div>`;
-  const jsTexts = JSON.stringify({ matchLbl: P.matchLbl, blocked: P.blocked, money: mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$'), prot: S.protein.toLowerCase(), tested: S.testedByUs, label: S.labelBased, see: S.seeReview, seeL: S.seeReviewLabel, paws: '', wAllergy: P.wAllergy, wPanc: P.wPanc, wPup: P.wPup, wKidney: P.wKidney, wLegume: P.wLegume });
+  const jsTexts = JSON.stringify({ matchLbl: P.matchLbl, blocked: P.blocked, money: mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$'), prot: S.protein.toLowerCase(), tested: S.testedByUs, label: S.labelBased, see: S.seeReview, seeL: S.seeReviewLabel, paws: '', wAllergy: P.wAllergy, wAllergyP: P.wAllergyP, wPanc: P.wPanc, wPup: P.wPup, wKidney: P.wKidney, wLegume: P.wLegume });
   // funkcja rysująca łapki w JS (te same kształty co serwerowe)
   return `
 <div class="profile">
@@ -533,7 +582,8 @@ function foodMatchPanel(products, mkt) {
   function calc(f,P){
     var w=[],b=null,pct=72;
     if(P.age==='szczenie'&&f.life==='adult') b=T.wPup;
-    if(!b&&P.health==='alergia'&&f.ch) b=T.wAllergy;
+    if(!b&&P.health==='alergia_kurczak'&&f.ch) b=T.wAllergy;
+    if(!b&&P.health==='alergia_drob'&&f.po) b=T.wAllergyP;
     if(!b&&P.health==='trzustka'&&f.fd>15) b=T.wPanc;
     if(!b){
       if(P.health==='nerki'){w.push(T.wKidney);pct-=18;}
@@ -603,7 +653,8 @@ ${foodMatchPanel(products, mkt)}
 <div id="ranklist">${rankRows(products, cat, mkt, url)}</div>
 <h2>${S.formsH}</h2>
 <div class="answer">${S.formsTxt}</div>
-<table><tr><th>${S.formCol}</th><th>${S.formNoteCol}</th></tr>${FOOD_FORMS[m.lang].map(f => `<tr><td><strong>${f[0]}</strong></td><td>${f[1]}</td></tr>`).join('')}</table>`;
+<table><tr><th>${S.formCol}</th><th>${S.formNoteCol}</th></tr>${FOOD_FORMS[m.lang].map(f => `<tr><td><strong>${f[0]}</strong></td><td>${f[1]}</td></tr>`).join('')}</table>
+<a class="catcard" style="margin-top:8px" href="${href(url, `${mkt}/${S.calc.slug}/`)}"><span class="ic">🧮</span><h3>${S.calc.cardTitle}</h3><p>${S.calc.lead}</p><span style="color:var(--terra);font-weight:600;font-family:-apple-system,sans-serif">${S.calc.cardCta}</span></a>`;
   } else if (products.length) {
     content = `
 <h2 id="ranking">${S.betaH}</h2>
@@ -947,6 +998,7 @@ function articlePage(a) {
 <p class="lead-a">${a.lead}</p>
 <div class="body">${a.body.map(p => `<p>${p}</p>`).join('')}</div>
 <div class="src"><strong>Źródła:</strong> ${a.src}</div>
+<div class="protocol" style="margin-top:24px"><strong>Wykorzystaj to w praktyce:</strong> sprawdź <a href="${href(url, 'pl/karmy/')}" style="color:inherit;font-weight:700">ranking karm dostępnych w Polsce →</a> ${/strączkow|dcm|grain|groch/i.test(a.title + a.teaser) ? 'i odfiltruj receptury ze strączkowymi w panelu „Dopasuj do swojego psa".' : 'i dopasuj karmę do wieku, rozmiaru i zdrowia swojego psa.'} Jak liczymy oceny — zob. <a href="${href(url, 'pl/metodologia/')}" style="color:inherit;font-weight:700">metodologia</a>.</div>
 </div>`;
   return { url, html: page({ title: `${a.title} | DogRanking Wiedza`, desc: a.teaser.slice(0, 155), canonical: url, body, jsonld, mkt: 'pl' }) };
 }
@@ -973,12 +1025,18 @@ function bekonPage(mkt) {
   const url = `/${mkt}/bekon/`;
   const alts = { pl: '/pl/bekon/', uk: '/uk/bekon/', us: '/us/bekon/' };
   const items = BEKON.map(b => {
-    const media = b.photo
-      ? `<img class="tlphoto" src="${href(url, b.photo)}" alt="${b.title[m.lang]}" loading="lazy">`
-      : `<div class="tlph">${S.phNote}</div>`;
+    const list = b.media || [];
+    const fig = it => {
+      const cap = it.caption ? `<figcaption>${it.caption[m.lang]}</figcaption>` : '';
+      const inner = it.type === 'video'
+        ? `<video class="tlmedia" controls preload="none" playsinline poster="${href(url, it.poster)}"><source src="${href(url, it.src)}" type="video/mp4"></video>`
+        : `<img class="tlmedia" src="${href(url, it.src)}" alt="${(it.caption ? it.caption[m.lang] : b.title[m.lang])}" loading="lazy">`;
+      return `<figure class="tlfig">${inner}${cap}</figure>`;
+    };
+    const media = list.length ? `<div class="tlgrid${list.length === 1 ? ' one' : ''}">${list.map(fig).join('')}</div>` : '';
     return `<div class="tlitem">
   <div class="tldate">${b.displayDate[m.lang]}<span class="tlage">· ${b.age[m.lang]}</span></div>
-  <div class="tlcard">${media}<h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p></div>
+  <div class="tlcard"><h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p>${media}</div>
 </div>`;
   }).join('\n');
   const jsonld = [ORG, {
@@ -994,6 +1052,65 @@ function bekonPage(mkt) {
 ${items}
 </div>`;
   return { url, html: page({ title: S.title, desc: S.desc, canonical: url, body, jsonld, mkt, alts }) };
+}
+
+/* ---------- kalkulator kosztu żywienia ---------- */
+function calcPage(mkt) {
+  const m = MARKETS[mkt]; const S = STR[m.lang]; const C = S.calc;
+  const url = `/${mkt}/${C.slug}/`;
+  const foods = ((PRODUCTS[mkt] || {}).karmy || []).filter(f => f.kcal && (f.priceKg || f.priceZlKg))
+    .map(f => ({ n: f.name + (f.flavor ? ' — ' + f.flavor : ''), kcal: f.kcal, price: f.priceKg || f.priceZlKg }))
+    .sort((a, b) => a.n.localeCompare(b.n));
+  const moneySym = mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$');
+  const methodPath = `${mkt}/${m.lang === 'pl' ? 'metodologia' : 'methodology'}/`;
+  const foodCat = m.lang === 'pl' ? 'karmy' : 'dog-food';
+  const dayWord = m.lang === 'pl' ? '/dzień' : '/day';
+  const body = `
+<p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › ${C.h}</p>
+<div class="eyebrow">${m.lang === 'pl' ? 'Narzędzie' : 'Tool'}</div>
+<h1>${C.h}</h1>
+<p class="lead">${C.lead}</p>
+<div class="answer">${C.answer}</div>
+<div class="profile">
+  <div class="pf-row">
+    <div class="pf-g"><label>${C.weight}</label><input id="cw" type="number" min="1" max="90" step="0.5" value="15" style="width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--paper);font:inherit;font-size:.9rem;color:var(--ink)"></div>
+    <div class="pf-g"><label>${C.activity}</label><select id="ca">${C.actOpts.map(o => `<option value="${o[0]}"${o[0] === '1.6' ? ' selected' : ''}>${o[1]}</option>`).join('')}</select></div>
+    <div class="pf-g" style="flex:2"><label>${C.food}</label><select id="cf"><option value="">${C.pickFood}</option>${foods.map(f => `<option value="${f.kcal}|${f.price}">${f.n}</option>`).join('')}</select></div>
+  </div>
+</div>
+<table id="cres" style="display:none">
+<tr><th>${C.result}</th><th></th></tr>
+<tr><td>${C.kcalDay}</td><td><strong id="r-kcal"></strong></td></tr>
+<tr><td>${C.gramsDay}</td><td id="r-g"></td></tr>
+<tr><td><strong>${C.perDay}</strong></td><td><strong id="r-day"></strong></td></tr>
+<tr><td>${C.perMonth}</td><td id="r-month"></td></tr>
+<tr><td>${C.perYear}</td><td id="r-year"></td></tr>
+</table>
+<p class="meta" id="cnote" style="display:none">${C.note} <a href="${href(url, methodPath)}">${S.howCalc}</a></p>
+<p class="meta" style="margin-top:14px"><a href="${href(url, `${mkt}/${foodCat}/`)}" style="color:var(--terra);font-weight:600;text-decoration:none">${m.lang === 'pl' ? 'Pełny ranking karm →' : 'Full food ranking →'}</a></p>
+<script>
+(function(){
+  var sym='${moneySym}', dayW='${dayWord}';
+  function fmt(v){return (Math.round(v*100)/100).toLocaleString('${m.lang === 'pl' ? 'pl-PL' : 'en-GB'}',{minimumFractionDigits:2,maximumFractionDigits:2})+' '+sym;}
+  function calc(){
+    var w=parseFloat(document.getElementById('cw').value), act=parseFloat(document.getElementById('ca').value), fv=document.getElementById('cf').value;
+    if(!w||!fv){document.getElementById('cres').style.display='none';document.getElementById('cnote').style.display='none';return;}
+    var parts=fv.split('|'), kcal100=parseFloat(parts[0]), priceKg=parseFloat(parts[1]);
+    var mer=Math.round(70*Math.pow(w,0.75)*act);
+    var grams=mer/(kcal100/100);
+    var costDay=(grams/1000)*priceKg;
+    document.getElementById('r-kcal').textContent=mer+' kcal'+dayW;
+    document.getElementById('r-g').textContent=Math.round(grams)+' g'+dayW;
+    document.getElementById('r-day').textContent=fmt(costDay);
+    document.getElementById('r-month').textContent=fmt(costDay*30.4);
+    document.getElementById('r-year').textContent=fmt(costDay*365);
+    document.getElementById('cres').style.display='';document.getElementById('cnote').style.display='';
+  }
+  ['cw','ca','cf'].forEach(function(id){var e=document.getElementById(id);if(e){e.addEventListener('input',calc);e.addEventListener('change',calc);}});
+})();
+</script>`;
+  const titles = { pl: 'Kalkulator kosztu karmienia psa (zł/dzień) | DogRanking', uk: 'Dog feeding cost calculator (£/day) | DogRanking', us: 'Dog feeding cost calculator ($/day) | DogRanking' };
+  return { url, html: page({ title: titles[mkt], desc: C.lead.slice(0, 155), canonical: url, body, jsonld: [ORG], mkt }) };
 }
 
 /* ---------- intro: wybór rynku ---------- */
@@ -1122,6 +1239,7 @@ const pages = [rootPage()];
 pages.push(knowledgeHub(), ...ARTS.map(articlePage));
 for (const mkt of Object.keys(MARKETS)) {
   pages.push(homeMkt(mkt), methodPage(mkt), aboutPage(mkt), principlesPage(mkt), bekonPage(mkt));
+  if (((PRODUCTS[mkt] || {}).karmy || []).some(f => f.kcal && (f.priceKg || f.priceZlKg))) pages.push(calcPage(mkt));
   for (const cat of CATS) {
     pages.push(categoryHub(cat, mkt));
     for (const p of ((PRODUCTS[mkt] || {})[cat.slug] || [])) pages.push(productPage(p, cat, mkt));
