@@ -197,19 +197,17 @@ nav a:hover{color:var(--ink)}
 .mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
 .mktswitch a:hover{color:var(--terra)}
 header{position:relative}
-.navd{display:flex;align-items:center}
-.navd>summary{display:none;list-style:none;cursor:pointer;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--ink)}
-.navd>summary::-webkit-details-marker{display:none}
-.navd>summary:hover{background:var(--paper)}
-.navd>nav{display:flex}
+.navt{display:none}
+.burger{display:none;cursor:pointer;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--ink)}
+.burger:hover{background:var(--paper)}
 @media(max-width:760px){
   .bar{gap:8px;min-height:54px}
-  .navd>summary{display:inline-flex;margin-left:auto;order:2}
+  .burger{display:inline-flex;margin-left:auto;order:2}
   .social{order:3;margin-left:0}
   .mktswitch{order:4;margin-left:2px}
-  .navd:not([open])>nav{display:none}
-  .navd[open]>nav{display:flex;flex-direction:column;gap:2px;position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 14px 26px -18px rgba(34,29,21,.45);padding:8px 16px 14px;z-index:30}
-  .navd[open]>nav a{padding:12px 10px;border-radius:8px;font-size:1.02rem}
+  nav{display:none;order:5;width:100%}
+  .navt:checked ~ nav{display:flex;flex-direction:column;gap:2px;position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 14px 26px -18px rgba(34,29,21,.45);padding:8px 16px 14px;z-index:30}
+  .navt:checked ~ nav a{padding:12px 10px;border-radius:8px;font-size:1.02rem}
 }
 /* ===== Bekon: oś czasu życia ===== */
 .bekpanel{position:relative;overflow:hidden;background:linear-gradient(135deg,#FBF5EA,#F2E5CC);border:1px solid var(--line);border-radius:22px;padding:32px 36px;margin:6px 0 4px;box-shadow:0 10px 30px -18px rgba(34,25,15,.35)}
@@ -473,9 +471,11 @@ ${ld}
 ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem">${S.staging}</div>` : ''}
 <header><div class="bar">
   <a class="mark" href="${H('index.html')}" aria-label="DogRanking — wybierz kraj"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
-  <details class="navd"><summary class="burger" aria-label="Menu" title="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></summary><nav>
+  <input type="checkbox" id="navtoggle" class="navt" aria-label="Menu">
+  <label for="navtoggle" class="burger" title="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
+  <nav>
     <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + S.calc.slug + '/')}">${S.calc.navlink}</a><a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
-  </nav></details>
+  </nav>
   <div class="social">${SOCIAL}</div>
   <div class="mktswitch">${Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a href="${H(k + '/')}" title="${v.name}">${v.flag}</a>`).join(' ')}</div>
 </div></header>
