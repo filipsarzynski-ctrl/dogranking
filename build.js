@@ -192,24 +192,41 @@ nav a:hover{color:var(--ink)}
 .mktswitch{margin-left:auto;font-family:-apple-system,sans-serif;font-size:.82rem}
 .mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
 .mktswitch a:hover{color:var(--terra)}
-/* oś czasu Bekona */
-.tl{position:relative;margin:34px 0 0;padding-left:0}
-.tl::before{content:"";position:absolute;left:19px;top:8px;bottom:8px;width:3px;background:linear-gradient(var(--gold),var(--line))}
-.tlitem{position:relative;padding:0 0 38px 56px}
-.tlitem::before{content:"🐾";position:absolute;left:2px;top:-2px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;font-size:1rem;background:var(--card);border:3px solid var(--gold);border-radius:50%}
+/* ===== Bekon: oś czasu życia ===== */
+.bekhero{display:flex;gap:34px;align-items:center;margin:4px 0 6px;flex-wrap:wrap}
+.bekhero-txt{flex:1 1 340px}
+.bekhero-txt h1{margin-bottom:12px}
+.bekavatar{flex:0 0 auto;margin:0;width:200px;height:200px;border-radius:50%;overflow:hidden;border:6px solid var(--card);box-shadow:0 14px 36px -8px rgba(34,25,15,.3);transform:rotate(2.5deg);position:relative}
+.bekavatar::after{content:"🐾";position:absolute;right:-4px;bottom:8px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:var(--gold);border-radius:50%;border:4px solid var(--paper);font-size:1.1rem;transform:rotate(-2.5deg)}
+.bekavatar img{width:100%;height:100%;object-fit:cover;display:block}
+.bekfacts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.bekfact{font-family:-apple-system,sans-serif;font-size:.84rem;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 14px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 2px 5px -2px rgba(34,25,15,.12)}
+.bekfact b{font-weight:400;font-size:1.05rem;line-height:1}
+.tl{position:relative;margin:42px 0 0;padding-left:0}
+.tl::before{content:"";position:absolute;left:21px;top:16px;bottom:34px;width:2px;background:linear-gradient(var(--gold) 0%,var(--gold) 72%,transparent);opacity:.5}
+.tlyear{position:relative;font-family:-apple-system,sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.14em;color:var(--muted);margin:0 0 24px;padding-left:62px}
+.tlyear::before{content:"";position:absolute;left:15px;top:50%;width:14px;height:14px;background:var(--gold);border:3px solid var(--paper);border-radius:50%;transform:translateY(-50%)}
+.tlitem{position:relative;padding:0 0 42px 62px}
+.tlitem::before{content:"🐾";position:absolute;left:4px;top:1px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:1rem;background:var(--card);border:2px solid var(--gold);border-radius:50%;box-shadow:0 3px 8px -2px rgba(34,25,15,.18)}
 .tlitem:last-child{padding-bottom:0}
-.tldate{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;color:var(--terra);text-transform:uppercase;letter-spacing:.04em}
-.tlage{font-family:-apple-system,sans-serif;font-size:.78rem;color:var(--muted);margin-left:8px;text-transform:none;letter-spacing:0;font-weight:400}
-.tlcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-top:8px}
-.tlcard h3{margin:0 0 8px;font-size:1.2rem}
+.tldate{display:inline-block;font-family:-apple-system,sans-serif;font-size:.72rem;font-weight:700;color:#fff;background:var(--terra);text-transform:uppercase;letter-spacing:.06em;padding:4px 11px;border-radius:99px}
+.tlage{font-weight:500;opacity:.85;margin-left:5px;text-transform:none;letter-spacing:0}
+.tlcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin-top:11px;box-shadow:0 8px 22px -14px rgba(34,25,15,.4);transition:transform .18s ease,box-shadow .18s ease}
+.tlcard:hover{transform:translateY(-2px);box-shadow:0 18px 34px -16px rgba(34,25,15,.45)}
+.tlcard h3{margin:0 0 8px;font-size:1.3rem;line-height:1.25}
 .tlcard p{margin:0;color:var(--ink)}
-.tlgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
-.tlgrid.one{grid-template-columns:1fr;max-width:560px}
+.tlcard.is-now{border-color:var(--gold);background:linear-gradient(180deg,#FFF8EC,var(--card))}
+.tlgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.tlgrid.one{grid-template-columns:1fr;max-width:600px}
 .tlfig{margin:0}
-.tlmedia{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;background:#000}
-.tlfig figcaption{font-family:-apple-system,sans-serif;font-size:.8rem;color:var(--muted);margin-top:6px;line-height:1.4}
-@media(max-width:560px){.tlgrid{grid-template-columns:1fr}}
-@media(max-width:560px){.tlitem{padding-left:48px}.tl::before{left:15px}.tlitem::before{width:32px;height:32px;left:0}}
+.tlframe{position:relative;display:block;overflow:hidden;border-radius:13px;background:#1a1712;box-shadow:0 4px 12px -4px rgba(34,25,15,.3)}
+.tlmedia{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .45s ease}
+.tlfig:not(.tlfig--video):hover .tlmedia{transform:scale(1.05)}
+.tlbadge{position:absolute;top:10px;left:10px;font-family:-apple-system,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.09em;color:#fff;background:rgba(26,23,18,.62);padding:3px 9px;border-radius:6px;display:inline-flex;align-items:center;gap:5px;pointer-events:none}
+.tlfig figcaption{font-family:-apple-system,sans-serif;font-size:.82rem;color:var(--muted);margin-top:8px;line-height:1.4;font-style:italic}
+.tlend{position:relative;padding-left:62px;font-family:-apple-system,sans-serif;font-size:.86rem;color:var(--muted);font-style:italic}
+.tlend::before{content:"🐾";position:absolute;left:9px;font-size:1rem;font-style:normal}
+@media(max-width:600px){.tlgrid{grid-template-columns:1fr}.bekavatar{width:150px;height:150px}.tlitem,.tlyear,.tlend{padding-left:54px}.tl::before{left:17px}.tlitem::before{left:1px}.tlyear::before{left:11px}.tlend::before{left:6px}}
 main{padding:42px 0 70px}
 h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin-bottom:14px}
 h2{font-size:1.35rem;margin:34px 0 12px}
@@ -365,7 +382,7 @@ ${ld}
 <body>
 ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem">${S.staging}</div>` : ''}
 <header><div class="bar">
-  <a class="mark" href="${H(mkt + '/')}"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
+  <a class="mark" href="${H('index.html')}" aria-label="DogRanking — wybierz kraj"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
   <nav>
     <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + S.calc.slug + '/')}">${S.calc.navlink}</a><a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
   </nav>
@@ -1010,46 +1027,62 @@ const BEKON_STR = {
     eyebrow: 'Bekon · pudel miniaturowy', h1pre: 'Całe życie Bekona,', h1em: 'chwila po chwili',
     lead: 'Bekon to nie tylko maskotka i główny degustator DogRanking — to ważna część mojego życia. Tu zbieram najważniejsze momenty od pierwszego dnia, ze zdjęciami i historiami.',
     title: 'Bekon — oś czasu życia | DogRanking', desc: 'Historia Bekona, pudla miniaturowego i głównego testera DogRanking — najważniejsze chwile od szczeniaka, ze zdjęciami.',
-    phNote: 'Tu pojawi się zdjęcie'
+    avatarAlt: 'Bekon — pudel miniaturowy', videoBadge: 'WIDEO',
+    facts: [['🎂', 'ur. 16 grudnia 2023'], ['🐩', 'pudel miniaturowy'], ['🥣', 'szef testów DogRanking']],
+    endNote: 'Ciąg dalszy nastąpi — kolejne chwile dopiszę tutaj.'
   },
   en: {
     crumbHome: 'DogRanking', crumb: 'Bekon',
     eyebrow: 'Bekon · miniature poodle', h1pre: "Bekon's whole life,", h1em: 'moment by moment',
     lead: "Bekon is more than the mascot and chief taster of DogRanking — he's an important part of my life. Here I collect the milestones from day one, with photos and stories.",
     title: 'Bekon — life timeline | DogRanking', desc: "The story of Bekon, a miniature poodle and DogRanking's chief tester — milestones from puppyhood, with photos.",
-    phNote: 'Photo coming here'
+    avatarAlt: 'Bekon — miniature poodle', videoBadge: 'VIDEO',
+    facts: [['🎂', 'born 16 Dec 2023'], ['🐩', 'miniature poodle'], ['🥣', "DogRanking's chief taster"]],
+    endNote: 'To be continued — more moments will be added right here.'
   }
 };
 function bekonPage(mkt) {
   const m = MARKETS[mkt]; const S = BEKON_STR[m.lang];
   const url = `/${mkt}/bekon/`;
   const alts = { pl: '/pl/bekon/', uk: '/uk/bekon/', us: '/us/bekon/' };
+  const fig = (it, b) => {
+    const cap = it.caption ? `<figcaption>${it.caption[m.lang]}</figcaption>` : '';
+    if (it.type === 'video') {
+      return `<figure class="tlfig tlfig--video"><span class="tlframe"><video class="tlmedia" controls preload="none" playsinline poster="${href(url, it.poster)}"><source src="${href(url, it.src)}" type="video/mp4"></video><span class="tlbadge">▶ ${S.videoBadge}</span></span>${cap}</figure>`;
+    }
+    return `<figure class="tlfig"><span class="tlframe"><img class="tlmedia" src="${href(url, it.src)}" alt="${(it.caption ? it.caption[m.lang] : b.title[m.lang])}" loading="lazy"></span>${cap}</figure>`;
+  };
+  let lastYear = null;
   const items = BEKON.map(b => {
     const list = b.media || [];
-    const fig = it => {
-      const cap = it.caption ? `<figcaption>${it.caption[m.lang]}</figcaption>` : '';
-      const inner = it.type === 'video'
-        ? `<video class="tlmedia" controls preload="none" playsinline poster="${href(url, it.poster)}"><source src="${href(url, it.src)}" type="video/mp4"></video>`
-        : `<img class="tlmedia" src="${href(url, it.src)}" alt="${(it.caption ? it.caption[m.lang] : b.title[m.lang])}" loading="lazy">`;
-      return `<figure class="tlfig">${inner}${cap}</figure>`;
-    };
-    const media = list.length ? `<div class="tlgrid${list.length === 1 ? ' one' : ''}">${list.map(fig).join('')}</div>` : '';
-    return `<div class="tlitem">
+    const year = b.date.slice(0, 4);
+    const yearSep = year !== lastYear ? `<div class="tlyear">${year}</div>` : '';
+    lastYear = year;
+    const media = list.length ? `<div class="tlgrid${list.length === 1 ? ' one' : ''}">${list.map(it => fig(it, b)).join('')}</div>` : '';
+    return `${yearSep}<div class="tlitem">
   <div class="tldate">${b.displayDate[m.lang]}<span class="tlage">· ${b.age[m.lang]}</span></div>
-  <div class="tlcard"><h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p>${media}</div>
+  <div class="tlcard${b.id === 'dzis' ? ' is-now' : ''}"><h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p>${media}</div>
 </div>`;
   }).join('\n');
   const jsonld = [ORG, {
     '@context': 'https://schema.org', '@type': 'ItemList', name: S.title,
     itemListElement: BEKON.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.title[m.lang] }))
   }];
+  const avatar = href(url, 'bekon/2024-06-26.jpg');
   const body = `
 <p class="crumb"><a href="${href(url, mkt + '/')}">${S.crumbHome}</a> › ${S.crumb}</p>
-<div class="eyebrow">${S.eyebrow}</div>
-<h1>${S.h1pre} <em style="color:var(--terra)">${S.h1em}</em></h1>
-<p class="lead">${S.lead}</p>
+<div class="bekhero">
+  <div class="bekhero-txt">
+    <div class="eyebrow">${S.eyebrow}</div>
+    <h1>${S.h1pre} <em style="color:var(--terra)">${S.h1em}</em></h1>
+    <p class="lead">${S.lead}</p>
+    <div class="bekfacts">${S.facts.map(f => `<span class="bekfact"><b>${f[0]}</b> ${f[1]}</span>`).join('')}</div>
+  </div>
+  <figure class="bekavatar"><img src="${avatar}" alt="${S.avatarAlt}" loading="lazy"></figure>
+</div>
 <div class="tl">
 ${items}
+<p class="tlend">${S.endNote}</p>
 </div>`;
   return { url, html: page({ title: S.title, desc: S.desc, canonical: url, body, jsonld, mkt, alts }) };
 }
