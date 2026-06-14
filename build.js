@@ -189,7 +189,11 @@ header{background:var(--card);border-bottom:1px solid var(--line)}
 nav{display:flex;gap:4px;font-family:-apple-system,sans-serif;font-size:.9rem;flex-wrap:wrap}
 nav a{padding:7px 12px;border-radius:99px;color:var(--muted);text-decoration:none;white-space:nowrap}
 nav a:hover{color:var(--ink)}
-.mktswitch{margin-left:auto;font-family:-apple-system,sans-serif;font-size:.82rem}
+.social{margin-left:auto;display:inline-flex;align-items:center;gap:12px}
+.social a{color:var(--muted);display:inline-flex;transition:color .15s}
+.social a:hover{color:var(--terra)}
+.social svg{width:20px;height:20px;display:block}
+.mktswitch{margin-left:16px;font-family:-apple-system,sans-serif;font-size:.82rem}
 .mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
 .mktswitch a:hover{color:var(--terra)}
 /* ===== Bekon: oś czasu życia ===== */
@@ -355,6 +359,10 @@ const LOGO = `<svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
 <rect x="243" y="425" width="26" height="30" rx="7" fill="#243149"/>
 </svg>`;
 
+/* ---------- social (Instagram + TikTok) ---------- */
+const SOCIAL_LINKS = { instagram: 'https://www.instagram.com/dogranking', tiktok: 'https://www.tiktok.com/@dogranking' };
+const SOCIAL = `<a href="${SOCIAL_LINKS.instagram}" target="_blank" rel="noopener noreferrer" aria-label="DogRanking na Instagramie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a><a href="${SOCIAL_LINKS.tiktok}" target="_blank" rel="noopener noreferrer" aria-label="DogRanking na TikToku"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 3c.32 2.16 1.53 3.46 3.62 3.6v2.41c-1.21.12-2.27-.28-3.5-1.02v6.67c0 3.39-2.5 5.62-5.45 5.62-2.84 0-5.07-2.18-5.07-5.06 0-3.01 2.39-5.16 5.62-4.96v2.62c-.43-.12-.86-.18-1.27-.18-1.39 0-2.45 1.06-2.45 2.45 0 1.46 1.07 2.51 2.55 2.51 1.5 0 2.62-1.09 2.62-2.96V3h2.8z"/></svg></a>`;
+
 /* ---------- szkielet ---------- */
 function page({ title, desc, canonical, body, jsonld, mkt = 'pl', alts = null }) {
   const m = MARKETS[mkt] || MARKETS.pl;
@@ -386,6 +394,7 @@ ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padd
   <nav>
     <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + S.calc.slug + '/')}">${S.calc.navlink}</a><a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
   </nav>
+  <div class="social">${SOCIAL}</div>
   <div class="mktswitch">${Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a href="${H(k + '/')}" title="${v.name}">${v.flag}</a>`).join(' ')}</div>
 </div></header>
 <main><div class="wrap">
