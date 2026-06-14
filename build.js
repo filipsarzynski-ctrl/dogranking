@@ -256,11 +256,26 @@ ul.pc li{padding:3px 0}
 .crumb a:hover{color:var(--terra)}
 footer{border-top:1px solid var(--line);background:var(--card);padding:26px 0;font-size:.8rem;color:var(--muted);font-family:-apple-system,sans-serif;text-align:center}
 .rankrow{display:grid;grid-template-columns:40px 1fr 120px 185px;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin:10px 0;text-decoration:none;color:var(--ink)}
+.rankrow.food{grid-template-columns:30px 46px 1fr 120px 175px}
 .rankrow:hover{border-color:var(--ink)}
 .rankrow .num{font-size:1.3rem;color:var(--line);font-weight:700}
-.rankrow>span:nth-child(3){justify-self:start}
+.rankrow:not(.food)>span:nth-child(3){justify-self:start}
+.rankrow.food>span:nth-child(4){justify-self:start}
+.pkgcell{display:flex;align-items:center;justify-content:center}
+.pkg{width:42px;height:48px;display:block}
 .rankrow .gobtn{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;color:var(--terra);white-space:nowrap;justify-self:end;text-align:right}
-@media(max-width:760px){.rankrow{grid-template-columns:30px 1fr;gap:8px 12px}.rankrow>span:nth-child(3),.rankrow .gobtn{grid-column:2;justify-self:start;text-align:left}}
+@media(max-width:760px){
+.rankrow:not(.food){grid-template-columns:30px 1fr;gap:8px 12px}
+.rankrow:not(.food)>span:nth-child(3),.rankrow:not(.food) .gobtn{grid-column:2;justify-self:start;text-align:left}
+.rankrow.food{grid-template-columns:26px 40px 1fr;gap:8px 12px}
+.rankrow.food>span:nth-child(3){grid-column:3}
+.rankrow.food>span:nth-child(4),.rankrow.food .gobtn{grid-column:3;justify-self:start;text-align:left}
+.pkg{width:36px;height:42px}
+}
+.phead{display:flex;gap:18px;align-items:flex-start;margin:0 0 6px}
+.phead-main{min-width:0}
+.pkgbig{width:104px;height:auto;flex:0 0 auto;filter:drop-shadow(0 8px 16px rgba(34,29,21,.12))}
+@media(max-width:560px){.phead{gap:12px}.pkgbig{width:76px}}
 .pawwrap{position:relative;display:inline-block;line-height:0;vertical-align:middle}
 .paw{width:20px;height:20px;display:inline-block;margin-right:3px;fill:#DCD2BD}
 .pawbase{white-space:nowrap}
@@ -340,6 +355,37 @@ const cSlug = (c, m) => m === 'pl' ? c.slug : c.slugEn;
 const cName = (c, m) => m === 'pl' ? c.name : c.nameEn;
 const cDesc = (c, m) => m === 'pl' ? c.desc : c.descEn;
 const cCrit = (c, m) => m === 'pl' ? c.criteria : c.criteriaEn;
+
+/* ---------- miniaturki opakowań (stylizowane SVG, paleta strony) ---------- */
+/* Worek dla suchej karmy, puszka dla mokrej; kolor pasma = deterministyczny z marki,
+   monogram = 2 pierwsze litery nazwy. Renderowane inline (SSR, bez plików, bez praw autorskich). */
+const PKG_PALETTE = ['#B5613B', '#6E7544', '#3F6F6A', '#C28A2C', '#6E4357', '#4A5C77', '#9C4A38', '#5E7259', '#2F3E5C', '#8A5A3C'];
+const PKG_PAW = '<circle cx="5" cy="10.2" r="2.2"/><circle cx="9.4" cy="6.9" r="2.4"/><circle cx="14.6" cy="6.9" r="2.4"/><circle cx="19" cy="10.2" r="2.2"/><path d="M12 11.4c3.1 0 5.7 2.3 5.7 5 0 1.8-1.4 3.2-3.3 3.2-.9 0-1.5-.3-2.4-.3s-1.5.3-2.4.3c-1.9 0-3.3-1.4-3.3-3.2 0-2.7 2.6-5 5.7-5z"/>';
+const pkgHash = s => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; };
+const pkgColor = p => PKG_PALETTE[pkgHash((p.brand || p.name || '').toLowerCase()) % PKG_PALETTE.length];
+const pkgMono = p => ((p.name || p.brand || '?').trim().split(/\s+/)[0] || '?').slice(0, 2).toUpperCase();
+function pkgThumb(p, cls = 'pkg') {
+  const c = pkgColor(p), mono = pkgMono(p), wet = /mokr|wet|puszk|pouch|can/i.test(p.type || '');
+  const al = (p.name || '').replace(/&/g, '&amp;').replace(/"/g, '');
+  if (wet) {
+    return `<svg class="${cls}" viewBox="0 0 56 64" role="img" aria-label="${al}">`
+      + `<ellipse cx="28" cy="60" rx="15" ry="2.4" fill="#221d15" opacity=".10"/>`
+      + `<rect x="12" y="15" width="32" height="43" rx="2.5" fill="#FBF6EC" stroke="#D9CDB6" stroke-width="1.1"/>`
+      + `<ellipse cx="28" cy="15" rx="16" ry="4.4" fill="#EFE5CE" stroke="#D9CDB6" stroke-width="1.1"/>`
+      + `<g transform="translate(22.1,15.6) scale(.5)" fill="${c}" opacity=".30">${PKG_PAW}</g>`
+      + `<rect x="12" y="29" width="32" height="20" fill="${c}"/>`
+      + `<text x="28" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" letter-spacing=".5" fill="#fff">${mono}</text>`
+      + `</svg>`;
+  }
+  return `<svg class="${cls}" viewBox="0 0 56 64" role="img" aria-label="${al}">`
+    + `<ellipse cx="28" cy="61" rx="17" ry="2.4" fill="#221d15" opacity=".10"/>`
+    + `<rect x="10" y="5" width="36" height="55" rx="4" fill="#FBF6EC" stroke="#D9CDB6" stroke-width="1.1"/>`
+    + `<rect x="10" y="5" width="36" height="6.5" rx="3.2" fill="#EFE5CE"/>`
+    + `<g transform="translate(20.7,10) scale(.62)" fill="${c}" opacity=".30">${PKG_PAW}</g>`
+    + `<rect x="13" y="25" width="30" height="21" fill="${c}"/>`
+    + `<text x="28" y="39.6" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" letter-spacing=".5" fill="#fff">${mono}</text>`
+    + `</svg>`;
+}
 
 /* ---------- logo ---------- */
 const LOGO = `<svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
@@ -509,11 +555,14 @@ ${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.s
     testSection = `<div class="pending">📋 ${S.testPending}</div>`;
   }
 
-  const body = `
-<p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › <a href="${href(url, `${mkt}/${cSlug(cat, mkt)}/`)}">${cName(cat, mkt)}</a> › ${p.name}</p>
+  const headInner = `<div class="phead-main">
 <div class="eyebrow">${S.review} · ${cName(cat, mkt)} · ${p.type}</div>
 <h1>${p.name} — ${S.reviewTitle}</h1>
 <p class="meta">${S.rated}: ${pawsTxt(p.score, m.lang)} <strong>${p.score}/100 · ${scoreLbl(p.score, m.lang)}</strong> · ${S.updated}: ${TODAY}${p.verified ? '' : ` · <span class="badge">${S.demo}</span>`}</p>
+</div>`;
+  const body = `
+<p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › <a href="${href(url, `${mkt}/${cSlug(cat, mkt)}/`)}">${cName(cat, mkt)}</a> › ${p.name}</p>
+${isFood ? `<div class="phead">${pkgThumb(p, 'pkgbig')}${headInner}</div>` : headInner}
 
 <h2>${S.goodChoice(p.name)}</h2>
 <div class="answer">${p.verdict}</div>
@@ -542,8 +591,10 @@ ${relatedKnowledge(p, cat, mkt, url)}
 function rankRows(products, cat, mkt, fromUrl) {
   const m = MARKETS[mkt]; const S = STR[m.lang];
   const sorted = [...products].sort((a, b) => b.score - a.score);
-  return sorted.map((p, i) => `<a class="rankrow" href="${href(fromUrl, `${mkt}/${cSlug(cat, mkt)}/${p.slug}/`)}">
+  const isFood = cat.slug === 'karmy';
+  return sorted.map((p, i) => `<a class="rankrow${isFood ? ' food' : ''}" href="${href(fromUrl, `${mkt}/${cSlug(cat, mkt)}/${p.slug}/`)}">
   <span class="num">${String(i + 1).padStart(2, '0')}</span>
+  ${isFood ? `<span class="pkgcell">${pkgThumb(p)}</span>` : ''}
   <span><strong>${p.name}</strong><br><span class="meta">${p.type}${p.proteinDM ? ` · ${S.protein.toLowerCase()} ${p.proteinDM}% DM` : ''}${per1000(p) ? ` · ~${m.money(per1000(p))} / 1000 kcal` : ''} · ${p.test ? S.testedByUs : S.labelBased}</span></span>
   <span>${pawsTxt(p.score, m.lang)}</span>
   <span class="gobtn">${p.test ? S.seeReview : S.seeReviewLabel}</span>
@@ -582,7 +633,7 @@ function matchAttrs(p) {
   const grainFree = /bez zbóż|grain-free|bezzboż/.test(txt);
   const epaDha = (p.pros || []).some(x => /epa|dha/i.test(x));
   const life = /wszystkie etapy|all life stages/i.test(p.life || '') ? 'all' : (/szczen|puppy/i.test(p.life || '') ? 'puppy' : 'adult');
-  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, po: poultry ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life };
+  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, po: poultry ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life, th: pkgThumb(p) };
 }
 function foodMatchPanel(products, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang]; const P = S.prof;
@@ -634,8 +685,9 @@ function foodMatchPanel(products, mkt) {
         ? '<div class="match bad"><b style="color:var(--terra)">✕ '+T.blocked+'</b></div>'
         : '<div class="match'+(mm.pct<55?' bad':'')+'"><b>'+T.matchLbl+': '+mm.pct+'%</b><div class="mbar"><i style="width:'+mm.pct+'%"></i></div></div>';
       var warn=(mm.b?[mm.b]:mm.w).map(function(x){return '<div class="warnline">⚠ '+x+'</div>';}).join('');
-      return '<a class="rankrow'+(mm.b?' blocked':'')+'" href="'+f.s+'/">'
+      return '<a class="rankrow food'+(mm.b?' blocked':'')+'" href="'+f.s+'/">'
         +'<span class="num">'+String(i+1).padStart(2,'0')+'</span>'
+        +'<span class="pkgcell">'+f.th+'</span>'
         +'<span><strong>'+f.n+'</strong><br><span class="meta">'+meta+' · '+(f.test?T.tested:T.label)+'</span>'+match+warn+'</span>'
         +'<span>'+paws(f.sc)+'</span>'
         +'<span class="gobtn">'+(f.test?T.see:T.seeL)+'</span></a>';
