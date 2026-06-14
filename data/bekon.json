@@ -1,0 +1,148 @@
+{
+  "_uwaga": "Oś czasu życia Bekona (maskotka i tester DogRanking). Posty UŁOŻONE CHRONOLOGICZNIE od najstarszego. Każdy post: date (YYYY-MM, do sortowania), displayDate, age (wiek Bekona), title i text w PL+EN, oraz media[] — lista zdjęć/wideo. media item: {type:'image'|'video', src:'bekon/plik', poster:'bekon/plik.jpg' (tylko wideo), caption:{pl,en} (opcjonalnie)}. Pliki leżą w strona/static/bekon/. Aby dodać moment: dopisz obiekt na końcu listy. Bekon urodził się 16 grudnia 2023.",
+  "posts": [
+    {
+      "id": "narodziny",
+      "date": "2023-12",
+      "displayDate": { "pl": "16 grudnia 2023", "en": "16 December 2023" },
+      "age": { "pl": "dzień 1", "en": "day 1" },
+      "title": { "pl": "Bekon przychodzi na świat", "en": "Bekon is born" },
+      "text": {
+        "pl": "16 grudnia 2023 na świat przyszedł mały pudel miniaturowy. Jeszcze go nie znałem, jeszcze nie miał imienia — a już miał zostać jedną z najważniejszych części mojego życia.",
+        "en": "On 16 December 2023 a tiny miniature poodle came into the world. I didn't know him yet, he didn't have a name yet — and he was already about to become one of the most important parts of my life."
+      },
+      "media": []
+    },
+    {
+      "id": "pierwsze-dni",
+      "date": "2024-02",
+      "displayDate": { "pl": "Luty 2024", "en": "February 2024" },
+      "age": { "pl": "2 miesiące", "en": "2 months" },
+      "title": { "pl": "Pierwsze dni w nowym domu", "en": "First days in his new home" },
+      "text": {
+        "pl": "Bekon przyjechał do mnie jako rudy kłębek sierści, który mieścił się w dwóch dłoniach. Pierwsze drzemki na poduszce, pierwsze odkrycia — łącznie z kartonowym pudłem, które od razu uznał za najlepszą zabawkę świata.",
+        "en": "Bekon came to me as a red ball of fur that fit in two hands. First naps on a cushion, first discoveries — including a cardboard box he instantly declared the best toy in the world."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-02-18.mp4", "poster": "bekon/2024-02-18.jpg", "caption": { "pl": "Pierwsze dni — maleńki Bekon na poduszce", "en": "First days — tiny Bekon on a cushion" } },
+        { "type": "video", "src": "bekon/2024-02-21.mp4", "poster": "bekon/2024-02-21.jpg", "caption": { "pl": "Ulubione pudło", "en": "The favourite box" } }
+      ]
+    },
+    {
+      "id": "rosnie-w-oczach",
+      "date": "2024-03",
+      "displayDate": { "pl": "Marzec 2024", "en": "March 2024" },
+      "age": { "pl": "3 miesiące", "en": "3 months" },
+      "title": { "pl": "Rośnie w oczach", "en": "Growing fast" },
+      "text": {
+        "pl": "Z każdym tygodniem coraz więcej energii i charakteru. Zabawy na dywanie, pierwsze drzemki na kanapie i nieustanne testowanie, co jeszcze da się pogryźć.",
+        "en": "More energy and personality every week. Games on the rug, first naps on the couch, and constant testing of what else can be chewed."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-03-17.mp4", "poster": "bekon/2024-03-17.jpg", "caption": { "pl": "Zabawa na dywanie", "en": "Playtime on the rug" } },
+        { "type": "video", "src": "bekon/2024-03-31a.mp4", "poster": "bekon/2024-03-31a.jpg", "caption": { "pl": "Drzemka na kanapie", "en": "A couch nap" } }
+      ]
+    },
+    {
+      "id": "pierwsze-wyjscia",
+      "date": "2024-03",
+      "displayDate": { "pl": "Koniec marca 2024", "en": "Late March 2024" },
+      "age": { "pl": "3,5 miesiąca", "en": "3.5 months" },
+      "title": { "pl": "Pierwsze wyjścia na dwór", "en": "First time outside" },
+      "text": {
+        "pl": "Po komplecie szczepień świat stanął otworem. Pierwsze kroki na dworze, obwąchiwanie każdego kamyka i odkrywanie, że na zewnątrz jest mnóstwo do zbadania.",
+        "en": "Once fully vaccinated, the world opened up. First steps outside, sniffing every pebble, and discovering there's a whole lot to investigate out there."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-03-31b.mp4", "poster": "bekon/2024-03-31b.jpg", "caption": { "pl": "Pierwsze kroki na dworze", "en": "First steps outdoors" } }
+      ]
+    },
+    {
+      "id": "pierwsze-spacery",
+      "date": "2024-04",
+      "displayDate": { "pl": "Kwiecień 2024", "en": "April 2024" },
+      "age": { "pl": "4 miesiące", "en": "4 months" },
+      "title": { "pl": "Pierwsze spacery po mieście", "en": "First walks around town" },
+      "text": {
+        "pl": "Smycz, chodnik i wielki świat. Spacery trwały dłużej od obwąchiwania niż od chodzenia — ale każdy z nich był małą przygodą.",
+        "en": "A leash, the pavement, and the big world. Walks took longer from sniffing than from actual walking — but each one was a little adventure."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-04-12.mp4", "poster": "bekon/2024-04-12.jpg", "caption": { "pl": "Spacer na smyczy", "en": "On the leash" } }
+      ]
+    },
+    {
+      "id": "psi-znajomi",
+      "date": "2024-04",
+      "displayDate": { "pl": "Koniec kwietnia 2024", "en": "Late April 2024" },
+      "age": { "pl": "4,5 miesiąca", "en": "4.5 months" },
+      "title": { "pl": "Pierwsi psi znajomi", "en": "His first dog friends" },
+      "text": {
+        "pl": "Socjalizacja pełną parą — pierwsze spotkania z innymi psami. Bekon, choć najmniejszy w stawce, od początku wchodził w to bez kompleksów.",
+        "en": "Socialisation in full swing — first meetings with other dogs. Bekon, though the smallest of the bunch, jumped into it without a hint of shyness."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-04-28.mp4", "poster": "bekon/2024-04-28.jpg", "caption": { "pl": "Nowi koledzy z podwórka", "en": "New friends from the park" } }
+      ]
+    },
+    {
+      "id": "pierwsze-gory",
+      "date": "2024-05",
+      "displayDate": { "pl": "Przełom kwietnia i maja 2024", "en": "Late April / early May 2024" },
+      "age": { "pl": "4,5 miesiąca", "en": "4.5 months" },
+      "title": { "pl": "Pierwsza wyprawa w góry", "en": "First trip to the mountains" },
+      "text": {
+        "pl": "Górskie jeziora, łąki i hamak. Pierwsza większa podróż pokazała, że Bekon to pies do przygód — biega po halach, jakby robił to całe życie.",
+        "en": "Mountain lakes, meadows and a hammock. His first bigger trip proved Bekon is a dog made for adventure — running across alpine pastures as if he'd done it his whole life."
+      },
+      "media": [
+        { "type": "image", "src": "bekon/2024-04-30a.jpg", "caption": { "pl": "Nad górskim jeziorem", "en": "By a mountain lake" } },
+        { "type": "image", "src": "bekon/2024-04-30b.jpg", "caption": { "pl": "Kajaki i woda", "en": "Kayaks and water" } },
+        { "type": "image", "src": "bekon/2024-05-02b.jpg", "caption": { "pl": "Bieg przez górską łąkę", "en": "Running across an alpine meadow" } },
+        { "type": "image", "src": "bekon/2024-05-02a.jpg", "caption": { "pl": "Odpoczynek w hamaku", "en": "Resting in the hammock" } }
+      ]
+    },
+    {
+      "id": "juz-prawie-dorosly",
+      "date": "2024-06",
+      "displayDate": { "pl": "Czerwiec 2024", "en": "June 2024" },
+      "age": { "pl": "6 miesięcy", "en": "6 months" },
+      "title": { "pl": "Już prawie dorosły", "en": "Almost all grown up" },
+      "text": {
+        "pl": "Pół roku minęło jak jeden długi spacer. Z kłębka sierści wyrósł pewny siebie pudel z gęstą, rudą czupryną i nienagannym apetytem.",
+        "en": "Half a year went by like one long walk. The ball of fur grew into a confident poodle with a thick red coat and an impeccable appetite."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-06-26.mp4", "poster": "bekon/2024-06-26.jpg", "caption": { "pl": "Dorosły look", "en": "All grown-up look" } },
+        { "type": "video", "src": "bekon/2024-06-30.mp4", "poster": "bekon/2024-06-30.jpg", "caption": { "pl": "Gotowy do drogi", "en": "Ready to roll" } }
+      ]
+    },
+    {
+      "id": "wakacyjne-podroze",
+      "date": "2024-07",
+      "displayDate": { "pl": "Lipiec 2024", "en": "July 2024" },
+      "age": { "pl": "7 miesięcy", "en": "7 months" },
+      "title": { "pl": "Wakacyjne podróże i psia paczka", "en": "Summer travels and the dog pack" },
+      "text": {
+        "pl": "Lato w trasie: drzemki w samochodzie między przystankami i bieganie po nasłonecznionych łąkach z psią paczką. Bekon na dobre stał się towarzyszem każdej wyprawy.",
+        "en": "Summer on the road: naps in the car between stops and running across sunlit meadows with the dog pack. Bekon had truly become the companion for every trip."
+      },
+      "media": [
+        { "type": "video", "src": "bekon/2024-07-19.mp4", "poster": "bekon/2024-07-19.jpg", "caption": { "pl": "Drzemka w trasie", "en": "A nap on the road" } },
+        { "type": "video", "src": "bekon/2024-07-20.mp4", "poster": "bekon/2024-07-20.jpg", "caption": { "pl": "Psia paczka na łące", "en": "The pack in the meadow" } }
+      ]
+    },
+    {
+      "id": "dzis",
+      "date": "2026-06",
+      "displayDate": { "pl": "Dziś", "en": "Today" },
+      "age": { "pl": "2,5 roku", "en": "2.5 years" },
+      "title": { "pl": "Tu i teraz", "en": "Here and now" },
+      "text": {
+        "pl": "Dziś Bekon ma 2,5 roku, stałą dietę i niezmiennie nienaganny apetyt. Testuje wszystko, o czym piszemy na DogRanking, i codziennie przypomina mi, dlaczego ten portal w ogóle powstał. Ciąg dalszy nastąpi — kolejne chwile dopiszę tutaj.",
+        "en": "Today Bekon is 2.5 years old, on a steady diet and with an ever-impeccable appetite. He tests everything we write about on DogRanking and reminds me every day why this site exists in the first place. To be continued — more moments will be added right here."
+      },
+      "media": []
+    }
+  ]
+}
