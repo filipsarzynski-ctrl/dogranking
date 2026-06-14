@@ -196,6 +196,21 @@ nav a:hover{color:var(--ink)}
 .mktswitch{margin-left:16px;font-family:-apple-system,sans-serif;font-size:.82rem}
 .mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
 .mktswitch a:hover{color:var(--terra)}
+header{position:relative}
+.navd{display:flex;align-items:center}
+.navd>summary{display:none;list-style:none;cursor:pointer;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--ink)}
+.navd>summary::-webkit-details-marker{display:none}
+.navd>summary:hover{background:var(--paper)}
+.navd>nav{display:flex}
+@media(max-width:760px){
+  .bar{gap:8px;min-height:54px}
+  .navd>summary{display:inline-flex;margin-left:auto;order:2}
+  .social{order:3;margin-left:0}
+  .mktswitch{order:4;margin-left:2px}
+  .navd:not([open])>nav{display:none}
+  .navd[open]>nav{display:flex;flex-direction:column;gap:2px;position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 14px 26px -18px rgba(34,29,21,.45);padding:8px 16px 14px;z-index:30}
+  .navd[open]>nav a{padding:12px 10px;border-radius:8px;font-size:1.02rem}
+}
 /* ===== Bekon: oś czasu życia ===== */
 .bekpanel{position:relative;overflow:hidden;background:linear-gradient(135deg,#FBF5EA,#F2E5CC);border:1px solid var(--line);border-radius:22px;padding:32px 36px;margin:6px 0 4px;box-shadow:0 10px 30px -18px rgba(34,25,15,.35)}
 .bekpanel::after{content:"🐾";position:absolute;right:6px;bottom:-26px;font-size:8.5rem;opacity:.07;transform:rotate(-14deg);pointer-events:none;line-height:1}
@@ -295,7 +310,8 @@ footer{border-top:1px solid var(--line);background:var(--card);padding:26px 0;fo
 .phead{display:flex;gap:18px;align-items:flex-start;margin:0 0 6px}
 .phead-main{min-width:0}
 .pkgbig{width:104px;height:auto;flex:0 0 auto;filter:drop-shadow(0 8px 16px rgba(34,29,21,.12))}
-@media(max-width:560px){.phead{gap:12px}.pkgbig{width:76px}}
+@media(max-width:560px){.phead{gap:12px}.pkgbig{width:74px}}
+@media(max-width:430px){.phead{flex-direction:column;gap:10px}.pkgbig{width:64px}}
 .pawwrap{position:relative;display:inline-block;line-height:0;vertical-align:middle}
 .paw{width:20px;height:20px;display:inline-block;margin-right:3px;fill:#DCD2BD}
 .pawbase{white-space:nowrap}
@@ -457,9 +473,9 @@ ${ld}
 ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem">${S.staging}</div>` : ''}
 <header><div class="bar">
   <a class="mark" href="${H('index.html')}" aria-label="DogRanking — wybierz kraj"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
-  <nav>
+  <details class="navd"><summary class="burger" aria-label="Menu" title="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></summary><nav>
     <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + S.calc.slug + '/')}">${S.calc.navlink}</a><a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
-  </nav>
+  </nav></details>
   <div class="social">${SOCIAL}</div>
   <div class="mktswitch">${Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a href="${H(k + '/')}" title="${v.name}">${v.flag}</a>`).join(' ')}</div>
 </div></header>
@@ -1302,6 +1318,7 @@ body{font-family:Georgia,'Times New Roman',serif;background:#F7F2E9;color:#221D1
 .gate-saved a{color:#3F5934;font-weight:700;text-decoration:none}
 .gate-foot{margin-top:34px;font-family:-apple-system,sans-serif;font-size:.74rem;color:#9b9282}
 .staging{position:fixed;top:0;left:0;right:0;background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem}
+${STAGING ? '@media(max-width:760px){body{justify-content:flex-start;padding-top:84px}}' : ''}
 </style>
 <script type="application/ld+json">${JSON.stringify(ORG)}</script>
 </head>
@@ -1402,7 +1419,7 @@ ${urls.map(u => `  <url><loc>${SITE}${u}</loc><lastmod>${TODAY}</lastmod></url>`
 
 /* ---------- build ---------- */
 try { fs.rmSync(OUT, { recursive: true, force: true }); } catch (e) { /* brak prawa unlink */ }
-const pages = [rootPageAnim()];
+const pages = [rootPage()];
 pages.push(knowledgeHub(), ...ARTS.map(articlePage));
 for (const mkt of Object.keys(MARKETS)) {
   pages.push(homeMkt(mkt), methodPage(mkt), aboutPage(mkt), principlesPage(mkt), bekonPage(mkt));
