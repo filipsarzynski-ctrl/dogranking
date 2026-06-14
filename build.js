@@ -197,7 +197,13 @@ nav a:hover{color:var(--ink)}
 .mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
 .mktswitch a:hover{color:var(--terra)}
 /* ===== Bekon: oś czasu życia ===== */
-.bekhero{display:flex;gap:34px;align-items:center;margin:4px 0 6px;flex-wrap:wrap}
+.bekpanel{position:relative;overflow:hidden;background:linear-gradient(135deg,#FBF5EA,#F2E5CC);border:1px solid var(--line);border-radius:22px;padding:32px 36px;margin:6px 0 4px;box-shadow:0 10px 30px -18px rgba(34,25,15,.35)}
+.bekpanel::after{content:"🐾";position:absolute;right:6px;bottom:-26px;font-size:8.5rem;opacity:.07;transform:rotate(-14deg);pointer-events:none;line-height:1}
+.bekhero{display:flex;gap:34px;align-items:center;margin:0;flex-wrap:wrap;position:relative;z-index:1}
+.bekhero .lead{margin-bottom:0}
+.bekstats{font-family:-apple-system,sans-serif;font-size:.82rem;color:var(--muted);margin-top:16px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.bekstats span{display:inline-flex;align-items:center;gap:6px}
+.bekstats b{color:var(--terra);font-weight:700;font-size:.95rem}
 .bekhero-txt{flex:1 1 340px}
 .bekhero-txt h1{margin-bottom:12px}
 .bekavatar{flex:0 0 auto;margin:0;width:200px;height:200px;border-radius:50%;overflow:hidden;border:6px solid var(--card);box-shadow:0 14px 36px -8px rgba(34,25,15,.3);transform:rotate(2.5deg);position:relative}
@@ -230,7 +236,21 @@ nav a:hover{color:var(--ink)}
 .tlfig figcaption{font-family:-apple-system,sans-serif;font-size:.82rem;color:var(--muted);margin-top:8px;line-height:1.4;font-style:italic}
 .tlend{position:relative;padding-left:62px;font-family:-apple-system,sans-serif;font-size:.86rem;color:var(--muted);font-style:italic}
 .tlend::before{content:"🐾";position:absolute;left:9px;font-size:1rem;font-style:normal}
-@media(max-width:600px){.tlgrid{grid-template-columns:1fr}.bekavatar{width:150px;height:150px}.tlitem,.tlyear,.tlend{padding-left:54px}.tl::before{left:17px}.tlitem::before{left:1px}.tlyear::before{left:11px}.tlend::before{left:6px}}
+.tlcard.is-first>p:first-of-type::first-letter{font-size:3rem;line-height:.78;float:left;margin:5px 11px 0 0;color:var(--terra);font-family:Georgia,serif;font-weight:700}
+.tlfig:not(.tlfig--video) .tlframe{cursor:zoom-in}
+.tlfig:not(.tlfig--video) .tlframe::after{content:"⤢";position:absolute;right:9px;bottom:9px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:.95rem;color:#fff;background:rgba(26,23,18,.5);border-radius:8px;opacity:0;transition:opacity .15s;pointer-events:none}
+.tlfig:not(.tlfig--video):hover .tlframe::after{opacity:1}
+/* lightbox */
+.lbx{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;background:rgba(20,16,11,.93);padding:24px;opacity:0;transition:opacity .2s}
+.lbx.on{display:flex;opacity:1}
+.lbx-img{max-width:92vw;max-height:82vh;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.55);object-fit:contain;background:#1a1712}
+.lbx-cap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#F7F2E9;font-family:-apple-system,sans-serif;font-size:.9rem;font-style:italic;text-shadow:0 1px 5px rgba(0,0,0,.7);padding:0 60px}
+.lbx button{position:absolute;background:rgba(247,242,233,.12);border:1px solid rgba(247,242,233,.32);color:#F7F2E9;width:46px;height:46px;border-radius:50%;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;transition:background .15s;-webkit-tap-highlight-color:transparent}
+.lbx button:hover{background:rgba(247,242,233,.26)}
+.lbx-x{top:20px;right:20px;font-size:1.7rem}
+.lbx-prev{left:20px;top:50%;transform:translateY(-50%)}
+.lbx-next{right:20px;top:50%;transform:translateY(-50%)}
+@media(max-width:600px){.tlgrid{grid-template-columns:1fr}.bekpanel{padding:24px 22px}.bekavatar{width:150px;height:150px}.tlitem,.tlyear,.tlend{padding-left:54px}.tl::before{left:17px}.tlitem::before{left:1px}.tlyear::before{left:11px}.tlend::before{left:6px}.lbx-prev{left:8px}.lbx-next{right:8px}.lbx button{width:40px;height:40px}.lbx-cap{padding:0 16px;bottom:14px}}
 main{padding:42px 0 70px}
 h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin-bottom:14px}
 h2{font-size:1.35rem;margin:34px 0 12px}
@@ -1082,6 +1102,13 @@ function articlePage(a) {
 }
 
 /* ---------- Bekon: oś czasu życia (wszystkie rynki) ---------- */
+/* polska odmiana liczebników: [mianownik l.poj., 2–4, 5+] */
+function plForm(n, forms) {
+  const a = n % 10, b = n % 100;
+  if (n === 1) return forms[0];
+  if (a >= 2 && a <= 4 && !(b >= 12 && b <= 14)) return forms[1];
+  return forms[2];
+}
 const BEKON_STR = {
   pl: {
     crumbHome: 'DogRanking PL', crumb: 'Bekon',
@@ -1114,17 +1141,28 @@ function bekonPage(mkt) {
     return `<figure class="tlfig"><span class="tlframe"><img class="tlmedia" src="${href(url, it.src)}" alt="${(it.caption ? it.caption[m.lang] : b.title[m.lang])}" loading="lazy"></span>${cap}</figure>`;
   };
   let lastYear = null;
-  const items = BEKON.map(b => {
+  const items = BEKON.map((b, idx) => {
     const list = b.media || [];
     const year = b.date.slice(0, 4);
     const yearSep = year !== lastYear ? `<div class="tlyear">${year}</div>` : '';
     lastYear = year;
     const media = list.length ? `<div class="tlgrid${list.length === 1 ? ' one' : ''}">${list.map(it => fig(it, b)).join('')}</div>` : '';
+    const cls = `${idx === 0 ? ' is-first' : ''}${b.id === 'dzis' ? ' is-now' : ''}`;
     return `${yearSep}<div class="tlitem">
   <div class="tldate">${b.displayDate[m.lang]}<span class="tlage">· ${b.age[m.lang]}</span></div>
-  <div class="tlcard${b.id === 'dzis' ? ' is-now' : ''}"><h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p>${media}</div>
+  <div class="tlcard${cls}"><h3>${b.title[m.lang]}</h3><p>${b.text[m.lang]}</p>${media}</div>
 </div>`;
   }).join('\n');
+  const films = BEKON.reduce((n, b) => n + (b.media || []).filter(x => x.type === 'video').length, 0);
+  const photos = BEKON.reduce((n, b) => n + (b.media || []).filter(x => x.type === 'image').length, 0);
+  const moments = BEKON.length;
+  const enP = (n, s) => n === 1 ? s : s + 's';
+  const stat = m.lang === 'pl'
+    ? [[moments, plForm(moments, ['chwila', 'chwile', 'chwil'])], [films, plForm(films, ['film', 'filmy', 'filmów'])], [photos, plForm(photos, ['zdjęcie', 'zdjęcia', 'zdjęć'])]]
+    : [[moments, enP(moments, 'moment')], [films, enP(films, 'film')], [photos, enP(photos, 'photo')]];
+  const icons = ['🐾', '🎬', '📷'];
+  const stats = `<div class="bekstats">${stat.map((s, i) => `<span>${icons[i]} <b>${s[0]}</b> ${s[1]}</span>`).join('')}</div>`;
+  const lb = m.lang === 'pl' ? { close: 'Zamknij', prev: 'Poprzednie zdjęcie', next: 'Następne zdjęcie' } : { close: 'Close', prev: 'Previous photo', next: 'Next photo' };
   const jsonld = [ORG, {
     '@context': 'https://schema.org', '@type': 'ItemList', name: S.title,
     itemListElement: BEKON.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.title[m.lang] }))
@@ -1132,19 +1170,37 @@ function bekonPage(mkt) {
   const avatar = href(url, 'bekon/2024-06-26.jpg');
   const body = `
 <p class="crumb"><a href="${href(url, mkt + '/')}">${S.crumbHome}</a> › ${S.crumb}</p>
-<div class="bekhero">
+<div class="bekpanel"><div class="bekhero">
   <div class="bekhero-txt">
     <div class="eyebrow">${S.eyebrow}</div>
     <h1>${S.h1pre} <em style="color:var(--terra)">${S.h1em}</em></h1>
     <p class="lead">${S.lead}</p>
     <div class="bekfacts">${S.facts.map(f => `<span class="bekfact"><b>${f[0]}</b> ${f[1]}</span>`).join('')}</div>
+    ${stats}
   </div>
   <figure class="bekavatar"><img src="${avatar}" alt="${S.avatarAlt}" loading="lazy"></figure>
-</div>
+</div></div>
 <div class="tl">
 ${items}
 <p class="tlend">${S.endNote}</p>
-</div>`;
+</div>
+<script>
+(function(){
+var imgs=[].slice.call(document.querySelectorAll('.tl .tlfig:not(.tlfig--video) .tlframe img'));
+if(!imgs.length)return;
+var ov=document.createElement('div');ov.className='lbx';ov.setAttribute('role','dialog');ov.setAttribute('aria-modal','true');
+ov.innerHTML='<button class="lbx-prev" type="button" aria-label="${lb.prev}">‹</button><img class="lbx-img" alt=""><figcaption class="lbx-cap"></figcaption><button class="lbx-next" type="button" aria-label="${lb.next}">›</button><button class="lbx-x" type="button" aria-label="${lb.close}">×</button>';
+document.body.appendChild(ov);
+var im=ov.querySelector('.lbx-img'),cap=ov.querySelector('.lbx-cap'),cur=-1;
+function show(i){cur=(i+imgs.length)%imgs.length;var s=imgs[cur];im.src=s.currentSrc||s.src;var f=s.closest('figure'),c=f&&f.querySelector('figcaption');cap.textContent=c?c.textContent:'';ov.classList.add('on');document.body.style.overflow='hidden';}
+function hide(){ov.classList.remove('on');document.body.style.overflow='';im.src='';}
+imgs.forEach(function(s,i){s.addEventListener('click',function(){show(i);});});
+ov.addEventListener('click',function(e){if(e.target===ov||e.target.classList.contains('lbx-x'))hide();});
+ov.querySelector('.lbx-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);});
+ov.querySelector('.lbx-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1);});
+document.addEventListener('keydown',function(e){if(!ov.classList.contains('on'))return;if(e.key==='Escape')hide();else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='ArrowRight')show(cur+1);});
+})();
+</script>`;
   return { url, html: page({ title: S.title, desc: S.desc, canonical: url, body, jsonld, mkt, alts }) };
 }
 
@@ -1277,6 +1333,23 @@ ${cards}
   return { url: '/', html };
 }
 
+/* ---------- intro animowane jako strona startowa (/) ----------
+   Czyta gotowy static/intro.html (animacja cut-out z Bekonem) i wstrzykuje SEO:
+   hreflang, JSON-LD, baner + noindex w trybie staging. Crawlowalne linki krajów
+   (/pl/ /uk/ /us/) są już w pliku intro (nav.sr-links). */
+function rootPageAnim() {
+  let html = fs.readFileSync(path.join(__dirname, 'static', 'intro.html'), 'utf8');
+  const head = `<link rel="alternate" hreflang="pl-PL" href="${SITE}/pl/">
+<link rel="alternate" hreflang="en-GB" href="${SITE}/uk/">
+<link rel="alternate" hreflang="en-US" href="${SITE}/us/">
+<link rel="alternate" hreflang="x-default" href="${SITE}/">
+${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}
+<script type="application/ld+json">${JSON.stringify(ORG)}</script>`;
+  html = html.replace('</head>', head + '\n</head>');
+  if (STAGING) html = html.replace('<body>', `<body>\n<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem;position:relative;z-index:50">${STR.pl.staging}</div>`);
+  return { url: '/', html };
+}
+
 /* ---------- robots / llms / sitemap ---------- */
 const ROBOTS = `# Strategia: CHCEMY być cytowani przez AI — allow dla wszystkich botów
 User-agent: *
@@ -1329,7 +1402,7 @@ ${urls.map(u => `  <url><loc>${SITE}${u}</loc><lastmod>${TODAY}</lastmod></url>`
 
 /* ---------- build ---------- */
 try { fs.rmSync(OUT, { recursive: true, force: true }); } catch (e) { /* brak prawa unlink */ }
-const pages = [rootPage()];
+const pages = [rootPageAnim()];
 pages.push(knowledgeHub(), ...ARTS.map(articlePage));
 for (const mkt of Object.keys(MARKETS)) {
   pages.push(homeMkt(mkt), methodPage(mkt), aboutPage(mkt), principlesPage(mkt), bekonPage(mkt));
