@@ -1284,8 +1284,20 @@ function calcPage(mkt) {
    Samodzielny dokument BEZ nagłówka/nawigacji/stopki — jedyne wyjście dalej to wybór rynku. */
 function rootPage() {
   const counts = Object.fromEntries(Object.keys(MARKETS).map(k => [k, Object.values(PRODUCTS[k] || {}).reduce((a, v) => a + v.length, 0)]));
-  const cards = Object.entries(MARKETS).map(([k, v]) =>
-    `      <a class="gate-card" href="${href('/', k + '/')}" data-mkt="${k}"><span class="flag">${v.flag}</span><b>${v.name}</b><span class="sub">${counts[k]} ${k === 'pl' ? 'ocenionych produktów · po polsku' : 'rated products · in English'}</span></a>`).join('\n');
+  const CO = [
+    { id: 'pl', lang: 'pl', name: 'Polska', flag: '🇵🇱', sub: `${counts.pl} ocenionych produktów`, href: href('/', 'pl/'), active: true, accent: '#D7263D' },
+    { id: 'uk', lang: 'en', name: 'United Kingdom', flag: '🇬🇧', sub: `${counts.uk} rated products`, href: href('/', 'uk/'), active: true, accent: '#2E7D32' },
+    { id: 'us', lang: 'en', name: 'United States', flag: '🇺🇸', sub: `${counts.us} rated products`, href: href('/', 'us/'), active: true, accent: '#2A4B8D' },
+    { id: 'fr', lang: 'fr', name: 'France', flag: '🇫🇷', sub: 'Bientôt sur DogRanking', href: '', active: false, accent: '#3E5BA9' },
+    { id: 'de', lang: 'de', name: 'Deutschland', flag: '🇩🇪', sub: 'Bald auf DogRanking', href: '', active: false, accent: '#C8A000' }
+  ];
+  const GSTR = {
+    pl: { title: 'Wybierz swój kraj', subtitle: 'Pokazujemy tylko to, co kupisz u siebie', cta: 'Wejdź →', soon: 'Wkrótce', hint: '← → albo klik / przeciągnij, by zmienić kraj', foot: 'Degustację i testy prowadzi Bekon · pudel miniaturowy' },
+    en: { title: 'Choose your country', subtitle: "We only show what's available where you live", cta: 'Enter →', soon: 'Coming soon', hint: '← → or tap / swipe to change country', foot: 'Tasting and testing by Bekon · miniature poodle' },
+    fr: { title: 'Choisis ton pays', subtitle: "On ne montre que ce qui est disponible chez toi", cta: 'Entrer →', soon: 'Bientôt', hint: '← → ou tape / glisse pour changer de pays', foot: 'Dégustation et tests par Bekon · caniche nain' },
+    de: { title: 'Wähle dein Land', subtitle: 'Wir zeigen nur, was es bei dir gibt', cta: "Los geht's →", soon: 'Bald verfügbar', hint: '← → oder tippen / wischen zum Wechseln', foot: 'Verkostung und Tests von Bekon · Zwergpudel' }
+  };
+  const cards = CO.map(c => `      <a class="card${c.active ? '' : ' soon'}" data-id="${c.id}" data-lang="${c.lang}"${c.active ? ` href="${c.href}"` : ''} style="--ac:${c.accent}" aria-label="${c.name}"><img src="intro/${c.id}.webp" alt="Bekon — ${c.name}" width="600" height="720"><span class="cbadge">${c.flag} ${c.name}</span></a>`).join('\n');
   const html = `<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -1300,51 +1312,94 @@ ${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}<link rel="ca
 <link rel="alternate" hreflang="en-US" href="${SITE}/us/">
 <link rel="alternate" hreflang="x-default" href="${SITE}/">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Georgia,'Times New Roman',serif;background:#F7F2E9;color:#221D15;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 20px;text-align:center;background-image:radial-gradient(rgba(34,29,21,.04) 1px,transparent 1px);background-size:24px 24px}
-.gate{max-width:760px;width:100%}
-.gate-logo{width:min(420px,80vw);height:auto;margin:0 auto 8px;display:block}
-.gate-tag{color:#6E6557;font-size:1.05rem;margin-bottom:30px}
-.gate-h{font-family:Georgia,serif;font-size:clamp(1.4rem,3.5vw,2rem);margin-bottom:8px}
-.gate-note{font-family:-apple-system,'Segoe UI',sans-serif;font-size:.85rem;color:#6E6557;max-width:520px;margin:0 auto 26px;line-height:1.5}
-.gate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:620px){.gate-grid{grid-template-columns:1fr}}
-.gate-card{background:#FFFDF8;border:1.5px solid #E3DAC8;border-radius:16px;padding:28px 20px;text-decoration:none;color:#221D15;transition:.13s;display:block}
-.gate-card:hover{border-color:#BC5436;transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(34,29,21,.4)}
-.gate-card .flag{font-size:2.4rem;display:block;margin-bottom:12px}
-.gate-card b{font-size:1.15rem;display:block}
-.gate-card .sub{display:block;font-family:-apple-system,sans-serif;font-size:.8rem;color:#6E6557;margin-top:6px}
-.gate-saved{display:none;background:#EAF0E6;border:1px solid #C9D6BF;color:#3F5934;border-radius:12px;padding:11px 18px;font-family:-apple-system,sans-serif;font-size:.92rem;margin:0 auto 22px;max-width:460px}
-.gate-saved a{color:#3F5934;font-weight:700;text-decoration:none}
-.gate-foot{margin-top:34px;font-family:-apple-system,sans-serif;font-size:.74rem;color:#9b9282}
-.staging{position:fixed;top:0;left:0;right:0;background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem}
-${STAGING ? '@media(max-width:760px){body{justify-content:flex-start;padding-top:84px}}' : ''}
+*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%}
+body{font-family:Georgia,'Times New Roman',serif;background:radial-gradient(125% 80% at 50% 14%,#33425c 0%,#1d2636 55%,#131925 100%);color:#F4EEE2;min-height:100svh;display:flex;flex-direction:column;align-items:center;overflow-x:hidden}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.top{text-align:center;padding:30px 20px 4px}
+.kicker{font-family:-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;color:#C9A24B;font-weight:700}
+h1{font-size:clamp(1.7rem,5vw,2.7rem);margin-top:6px;line-height:1.05;font-weight:400}
+.subtitle{font-family:-apple-system,sans-serif;font-size:.84rem;color:#9fb0c7;margin-top:6px;min-height:1.1em}
+.cf{position:relative;width:100%;max-width:1000px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;padding:14px 16px}
+.card{width:clamp(150px,40vw,250px);aspect-ratio:5/6;border-radius:22px;overflow:hidden;background:#fff;border:1px solid rgba(0,0,0,.08);text-decoration:none;color:inherit;display:block;box-shadow:0 14px 30px -18px rgba(0,0,0,.6)}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.cbadge{position:absolute;left:0;right:0;bottom:0;font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:700;color:#1c2433;background:rgba(255,255,255,.86);padding:7px 10px;text-align:center}
+.js .cbadge{opacity:0;transition:.3s}
+.js .card.center .cbadge{opacity:0}
+.arrow{display:none}
+.panel{text-align:center;padding:8px 20px 24px;max-width:560px}
+.flag{font-size:2rem;line-height:1}
+.cname{font-size:clamp(1.6rem,6vw,2.2rem);margin:0}
+.csub{font-family:-apple-system,sans-serif;font-size:.92rem;color:#aebccc;min-height:1.2em;margin-top:2px}
+.cta{display:inline-block;margin-top:14px;font-family:-apple-system,sans-serif;font-weight:700;font-size:1.02rem;text-decoration:none;padding:14px 32px;border-radius:99px;background:#BC5436;color:#fff;border:none;cursor:pointer;transition:.15s;box-shadow:0 12px 26px -10px rgba(188,84,54,.7)}
+.cta:hover{background:#a8472c;transform:translateY(-2px)}
+.soonbadge{display:inline-block;margin-top:14px;font-family:-apple-system,sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#1c2433;background:#C9A24B;padding:8px 16px;border-radius:99px}
+.dots{display:none}
+.hint{font-family:-apple-system,sans-serif;font-size:.72rem;color:#7e8ca1;padding:0 0 18px;text-align:center;min-height:1em}
+.foot{font-family:-apple-system,sans-serif;font-size:.72rem;color:#67748a;padding:0 16px 20px;text-align:center}
+.staging{position:relative;width:100%;background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem}
+/* progressive enhancement: coverflow gdy jest JS */
+.js .cf{display:block;height:min(54vh,440px);perspective:1400px;padding:0}
+.js .card{position:absolute;top:50%;left:50%;margin:-1px;cursor:pointer;transition:transform .42s cubic-bezier(.2,.7,.2,1),opacity .42s,box-shadow .42s;transform-style:preserve-3d;will-change:transform}
+.js .card.center{cursor:default;box-shadow:0 26px 50px -18px rgba(0,0,0,.6),0 0 0 4px var(--ac),0 0 60px -6px var(--ac)}
+.js .arrow{display:flex;position:absolute;top:50%;transform:translateY(-50%);z-index:20;width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(244,238,226,.3);background:rgba(20,25,38,.5);color:#F4EEE2;font-size:1.7rem;cursor:pointer;align-items:center;justify-content:center;backdrop-filter:blur(5px);transition:.15s;-webkit-tap-highlight-color:transparent}
+.js .arrow:hover{background:rgba(255,255,255,.18);transform:translateY(-50%) scale(1.08)}
+.js .arrow.l{left:max(6px,calc(50% - 500px))}.js .arrow.r{right:max(6px,calc(50% - 500px))}
+.js .dots{display:flex;gap:10px;justify-content:center;padding:2px 0 8px}
+.js .dot{width:9px;height:9px;border-radius:50%;background:rgba(244,238,226,.25);border:none;cursor:pointer;transition:.2s;padding:0}.js .dot.on{background:#C9A24B;transform:scale(1.25)}
 </style>
 <script type="application/ld+json">${JSON.stringify(ORG)}</script>
 </head>
 <body>
 ${STAGING ? `<div class="staging">${STR.pl.staging}</div>` : ''}
-<main class="gate">
-  <h1 class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">DogRanking — niezależne oceny produktów dla psów</h1>
-  <img class="gate-logo" src="logo.png" alt="BEKON — dogranking.com">
-  <p class="gate-tag">Niezależne oceny produktów dla psów · Independent dog product ratings</p>
-  <div class="gate-saved" id="saved"></div>
-  <h2 class="gate-h">Wybierz swój kraj · Choose your country</h2>
-  <p class="gate-note">Produkty, ceny i sklepy różnią się między krajami — pokazujemy tylko to, co kupisz u siebie.<br>Products, prices and shops differ by country — we only show what's available where you live.</p>
-  <div class="gate-grid">
+<h1 class="sr">DogRanking — niezależne oceny produktów dla psów · wybierz swój kraj</h1>
+<div class="top"><div class="kicker">DogRanking 🐾</div><div class="title-h" id="title" style="font-size:clamp(1.7rem,5vw,2.7rem);line-height:1.05">Wybierz swój kraj</div><div class="subtitle" id="subtitle">Pokazujemy tylko to, co kupisz u siebie</div></div>
+<div class="cf" id="cf">
+  <button class="arrow l" id="prev" aria-label="poprzedni">‹</button>
+  <button class="arrow r" id="next" aria-label="następny">›</button>
 ${cards}
-  </div>
-  <p class="gate-foot">🐩 Degustację i testy prowadzi Bekon · pudel miniaturowy</p>
-</main>
+</div>
+<div class="panel"><div class="flag" id="flag">🇵🇱</div><div class="cname" id="cname">Polska</div><div class="csub" id="csub">${counts.pl} ocenionych produktów</div><div id="action"><a class="cta" href="${href('/', 'pl/')}">Wejdź →</a></div></div>
+<div class="dots" id="dots"></div>
+<div class="hint" id="hint"></div>
+<div class="foot" id="foot">🐩 Degustację i testy prowadzi Bekon · pudel miniaturowy</div>
 <script>
-(function(){try{
-  document.querySelectorAll('.gate-card').forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('dr_mkt',a.dataset.mkt);});});
-  var s=localStorage.getItem('dr_mkt');
-  if(s){var t=document.querySelector('.gate-card[data-mkt="'+s+'"]');
-    if(t){var c=document.getElementById('saved');
-      c.innerHTML='👋 '+(s==='pl'?'Ostatnio wybrany kraj':'Your saved country')+': <a href="'+t.getAttribute('href')+'">'+t.querySelector('b').textContent+' →</a>';
-      c.style.display='block';t.style.borderColor='#BC5436';}}
-}catch(e){}})();
+(function(){
+var C=${JSON.stringify(CO)},STR=${JSON.stringify(GSTR)};
+var root=document.documentElement;root.classList.add('js');
+var cf=document.getElementById('cf'),dots=document.getElementById('dots');
+var cards=[].slice.call(cf.querySelectorAll('.card'));
+cards.forEach(function(d,n){d.addEventListener('click',function(e){if(n!==i){e.preventDefault();go(n);}});var b=document.createElement('button');b.className='dot';b.onclick=function(){go(n);};dots.appendChild(b);});
+var i=0;
+try{var s=localStorage.getItem('dr_mkt');if(s){var idx=C.map(function(c){return c.id;}).indexOf(s);if(idx>=0)i=idx;}}catch(e){}
+function layout(){var W=cf.clientWidth,base=Math.min(W*0.30,250),N=C.length;
+ cards.forEach(function(d,n){var r=n-i;if(r>N/2)r-=N;if(r<-N/2)r+=N;var ar=Math.abs(r);
+  if(ar>2){d.style.opacity=0;d.style.pointerEvents='none';d.style.transform='translate(-50%,-50%) scale(.3)';return;}
+  d.style.pointerEvents='auto';
+  var tx=r*(ar===2?base*0.92:base),sc=r===0?1:(ar===1?0.74:0.52),rot=r===0?0:(r<0?16:-16);
+  d.style.zIndex=10-ar;d.style.opacity=r===0?1:(ar===1?0.82:0.4);
+  d.style.transform='translate(-50%,-50%) translateX('+tx+'px) scale('+sc+') rotateY('+rot+'deg)';
+  d.classList.toggle('center',r===0);});
+ for(var k=0;k<dots.children.length;k++)dots.children[k].classList.toggle('on',k===i);
+ var c=C[i],T=STR[c.lang];root.lang=c.lang;
+ document.getElementById('title').textContent=T.title;
+ document.getElementById('subtitle').textContent=T.subtitle;
+ document.getElementById('hint').textContent=T.hint;
+ document.getElementById('foot').textContent='🐩 '+T.foot;
+ document.getElementById('flag').textContent=c.flag;
+ document.getElementById('cname').textContent=c.name;
+ document.getElementById('csub').textContent=c.sub;
+ var a=document.getElementById('action');
+ if(c.active){a.innerHTML='<a class="cta" href="'+c.href+'">'+T.cta+'</a>';a.querySelector('a').addEventListener('click',function(){try{localStorage.setItem('dr_mkt',c.id);}catch(e){}});}
+ else{a.innerHTML='<span class="soonbadge">'+T.soon+'</span>';}
+}
+function go(n){i=(n+C.length)%C.length;layout();}
+document.getElementById('prev').onclick=function(){go(i-1);};
+document.getElementById('next').onclick=function(){go(i+1);};
+addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(i-1);if(e.key==='ArrowRight')go(i+1);});
+var sx=0;cf.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+cf.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));});
+addEventListener('resize',layout);layout();
+})();
 </script>
 </body></html>`;
   return { url: '/', html };
