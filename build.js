@@ -1529,3 +1529,5 @@ fs.writeFileSync(path.join(OUT, 'llms.txt'), LLMS);
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sitemap(pages.map(p => p.url)));
 const total = Object.values(PRODUCTS).reduce((a, m) => a + Object.values(m).reduce((b, v) => b + v.length, 0), 0);
 console.log(`OK: ${pages.length} stron · 3 rynki · ${CATS.length} kategorii/rynek · ${total} produktów → dist/`);
+
+// redesign v1 (terakota+oliwka, fale, Fraunces/Caveat) — 1733Z
