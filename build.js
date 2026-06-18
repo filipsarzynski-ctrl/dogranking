@@ -271,17 +271,21 @@ h2::after{content:none}
 h3{font-family:var(--f-serif);font-weight:600;font-size:1.18rem;margin:24px 0 8px}
 .eyebrow{font-family:var(--f-hand);font-weight:700;font-size:1.5rem;letter-spacing:0;text-transform:none;color:var(--terra);margin-bottom:4px;line-height:1}
 .lead{color:var(--muted);font-size:1.1rem;max-width:680px;line-height:1.65}
-.answer{background:var(--paper2);border-left:4px solid var(--olive);padding:20px 26px;border-radius:0 var(--r) var(--r) 0;margin:18px 0 8px;font-size:1.05rem;box-shadow:var(--shadow-sm)}
-table{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-family:var(--f-sans);font-size:.92rem;margin:18px 0;box-shadow:var(--shadow-sm)}
-th{background:#EDE3CF;text-align:left;padding:12px 16px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-deep);font-weight:600}
-td{padding:13px 16px;border-top:1px solid #EFE7D6;vertical-align:top}
+.answer{font-size:1.14rem;line-height:1.72;color:var(--ink);margin:8px 0 22px;max-width:66ch}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--paper2);border:1px solid #E6DAC5;border-radius:var(--r);overflow:hidden;font-family:var(--f-sans);font-size:.94rem;margin:18px 0;box-shadow:0 10px 26px -22px rgba(62,14,22,.4)}
+th{background:#EADCC2;text-align:left;padding:13px 18px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--maroon2);font-weight:600}
+td{padding:14px 18px;border-top:1px solid #EFE2CC;vertical-align:top}
 .badge{display:inline-block;background:#FAF0E2;border:1px solid #ECD9B8;color:#8A5A1E;border-radius:8px;padding:3px 10px;font-size:.78rem;font-family:-apple-system,sans-serif}
 .badge.live{background:#EAF0E6;border-color:#C9D6BF;color:#3F5934}
 .badge.beta{background:#E8EEF5;border-color:#C5D3E3;color:#33536F}
 .badge.edu{background:#F3E9F2;border-color:#DFC9DC;color:#6B3F63}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 28px;margin:16px 0;box-shadow:var(--shadow-sm)}
-ul.pc{margin:8px 0 8px 20px}
-ul.pc li{padding:3px 0}
+.card{background:var(--paper2);border:1px solid #E6DAC5;border-radius:var(--r-lg);padding:26px 28px;margin:18px 0;box-shadow:0 10px 26px -22px rgba(62,14,22,.4)}
+.pc{list-style:none;margin:8px 0 14px}
+.pc li{padding:6px 0 6px 28px;position:relative}
+.pc.good li::before{content:"✓";position:absolute;left:0;color:var(--olive-deep);font-weight:700}
+.pc.bad li::before{content:"–";position:absolute;left:0;color:var(--terra);font-weight:700}
+ul.pc:not(.good):not(.bad){list-style:disc;margin-left:20px}
+ul.pc:not(.good):not(.bad) li{padding:3px 0}
 .shops a{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;padding:11px 20px;border-radius:99px;font-family:var(--f-sans);font-weight:500;font-size:.88rem;margin:4px 8px 4px 0;transition:.15s;box-shadow:var(--shadow-sm)}
 .shops a:hover{background:var(--terra-deep);transform:translateY(-1px)}
 .disclosure{font-size:.8rem;color:var(--muted);font-family:-apple-system,sans-serif;border-left:3px solid var(--line);padding-left:12px;margin:16px 0}
@@ -721,8 +725,8 @@ ${dataTable}
 ${p.pillars.map((v, i) => `<tr><td>${labels[i]}</td><td><strong>${v}</strong></td><td>${maxes[i]}</td></tr>`).join('\n')}
 </table>
 
-<div class="card"><strong>${S.pros}</strong><ul class="pc">${p.pros.map(x => `<li>${x}</li>`).join('')}</ul>
-<strong>${S.cons}</strong><ul class="pc">${p.cons.map(x => `<li>${x}</li>`).join('')}</ul></div>
+<div class="card"><strong>${S.pros}</strong><ul class="pc good">${p.pros.map(x => `<li>${x}</li>`).join('')}</ul>
+<strong>${S.cons}</strong><ul class="pc bad">${p.cons.map(x => `<li>${x}</li>`).join('')}</ul></div>
 ${testSection}
 <h2>${S.faqH}</h2>
 ${p.faq.map(x => `<h3>${x.q}</h3><p>${x.a}</p>`).join('')}
