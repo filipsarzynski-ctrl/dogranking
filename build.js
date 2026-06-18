@@ -555,7 +555,7 @@ const LOGO = `<svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
 </svg>`;
 
 /* ---------- social (Instagram + TikTok) ---------- */
-const SOCIAL_LINKS = { instagram: 'https://www.instagram.com/dogranking', tiktok: 'https://www.tiktok.com/@dogranking' };
+const SOCIAL_LINKS = { instagram: 'https://www.instagram.com/bekon.dogranking', tiktok: 'https://www.tiktok.com/@bekon.dogranking' };
 const SOCIAL = `<a href="${SOCIAL_LINKS.instagram}" target="_blank" rel="noopener noreferrer" aria-label="DogRanking na Instagramie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a><a href="${SOCIAL_LINKS.tiktok}" target="_blank" rel="noopener noreferrer" aria-label="DogRanking na TikToku"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 3c.32 2.16 1.53 3.46 3.62 3.6v2.41c-1.21.12-2.27-.28-3.5-1.02v6.67c0 3.39-2.5 5.62-5.45 5.62-2.84 0-5.07-2.18-5.07-5.06 0-3.01 2.39-5.16 5.62-4.96v2.62c-.43-.12-.86-.18-1.27-.18-1.39 0-2.45 1.06-2.45 2.45 0 1.46 1.07 2.51 2.55 2.51 1.5 0 2.62-1.09 2.62-2.96V3h2.8z"/></svg></a>`;
 
 /* ---------- szkielet ---------- */
@@ -1593,124 +1593,62 @@ function calcPage(mkt) {
 /* STRONA STARTOWA = czysta BRAMKA wyboru kraju.
    Samodzielny dokument BEZ nagłówka/nawigacji/stopki — jedyne wyjście dalej to wybór rynku. */
 function rootPage() {
-  const counts = Object.fromEntries(Object.keys(MARKETS).map(k => [k, Object.values(PRODUCTS[k] || {}).reduce((a, v) => a + v.length, 0)]));
-  const CO = [
-    { id: 'pl', lang: 'pl', name: 'Polska', flag: '🇵🇱', sub: `${counts.pl} ocenionych produktów`, href: href('/', 'pl/'), active: true, accent: '#D7263D' },
-    { id: 'uk', lang: 'en', name: 'United Kingdom', flag: '🇬🇧', sub: `${counts.uk} rated products`, href: href('/', 'uk/'), active: true, accent: '#2E7D32' },
-    { id: 'us', lang: 'en', name: 'United States', flag: '🇺🇸', sub: `${counts.us} rated products`, href: href('/', 'us/'), active: true, accent: '#2A4B8D' },
-    { id: 'fr', lang: 'fr', name: 'France', flag: '🇫🇷', sub: 'Bientôt sur DogRanking', href: '', active: false, accent: '#3E5BA9' },
-    { id: 'de', lang: 'de', name: 'Deutschland', flag: '🇩🇪', sub: 'Bald auf DogRanking', href: '', active: false, accent: '#C8A000' }
-  ];
-  const GSTR = {
-    pl: { title: 'Wybierz swój kraj', subtitle: 'Pokazujemy tylko to, co kupisz u siebie', cta: 'Wejdź →', soon: 'Wkrótce', hint: '← → albo klik / przeciągnij, by zmienić kraj', foot: 'Degustację i testy prowadzi Bekon · pudel miniaturowy' },
-    en: { title: 'Choose your country', subtitle: "We only show what's available where you live", cta: 'Enter →', soon: 'Coming soon', hint: '← → or tap / swipe to change country', foot: 'Tasting and testing by Bekon · miniature poodle' },
-    fr: { title: 'Choisis ton pays', subtitle: "On ne montre que ce qui est disponible chez toi", cta: 'Entrer →', soon: 'Bientôt', hint: '← → ou tape / glisse pour changer de pays', foot: 'Dégustation et tests par Bekon · caniche nain' },
-    de: { title: 'Wähle dein Land', subtitle: 'Wir zeigen nur, was es bei dir gibt', cta: "Los geht's →", soon: 'Bald verfügbar', hint: '← → oder tippen / wischen zum Wechseln', foot: 'Verkostung und Tests von Bekon · Zwergpudel' }
-  };
-  const cards = CO.map(c => `      <a class="card${c.active ? '' : ' soon'}" data-id="${c.id}" data-lang="${c.lang}"${c.active ? ` href="${c.href}"` : ''} style="--ac:${c.accent}" aria-label="${c.name}"><img src="intro/${c.id}.webp" alt="Bekon — ${c.name}" width="600" height="720"><span class="cbadge">${c.flag} ${c.name}</span></a>`).join('\n');
+  const P = { pl: href('/', 'pl/'), uk: href('/', 'uk/'), us: href('/', 'us/') };
   const html = `<!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
-<title>DogRanking — wybierz kraj · choose your country</title>
-<meta name="description" content="Niezależne oceny produktów dla psów. Wybierz swój kraj, by zobaczyć karmy i produkty dostępne na Twoim rynku. Independent dog product ratings — choose your country.">
+<title>DogRanking — niezależne oceny produktów dla psów · dog product ratings</title>
+<meta name="description" content="Niezależne oceny karm i produktów dla psów. Rozpoznajemy Twój kraj i pokazujemy rynek lokalny. Independent dog product ratings — PL · UK · US.">
 ${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}<link rel="canonical" href="${SITE}/">
 <link rel="alternate" hreflang="pl-PL" href="${SITE}/pl/">
 <link rel="alternate" hreflang="en-GB" href="${SITE}/uk/">
 <link rel="alternate" hreflang="en-US" href="${SITE}/us/">
 <link rel="alternate" hreflang="x-default" href="${SITE}/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%}
-body{font-family:Georgia,'Times New Roman',serif;background:radial-gradient(125% 80% at 50% 14%,#33425c 0%,#1d2636 55%,#131925 100%);color:#F4EEE2;min-height:100svh;display:flex;flex-direction:column;align-items:center;overflow-x:hidden}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.top{text-align:center;padding:30px 20px 4px}
-.kicker{font-family:-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;color:#C9A24B;font-weight:700}
-h1{font-size:clamp(1.7rem,5vw,2.7rem);margin-top:6px;line-height:1.05;font-weight:400}
-.subtitle{font-family:-apple-system,sans-serif;font-size:.84rem;color:#9fb0c7;margin-top:6px;min-height:1.1em}
-.cf{position:relative;width:100%;max-width:1000px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;padding:14px 16px}
-.card{width:clamp(150px,40vw,250px);aspect-ratio:5/6;border-radius:22px;overflow:hidden;background:#fff;border:1px solid rgba(0,0,0,.08);text-decoration:none;color:inherit;display:block;box-shadow:0 14px 30px -18px rgba(0,0,0,.6)}
-.card img{width:100%;height:100%;object-fit:cover;display:block}
-.cbadge{position:absolute;left:0;right:0;bottom:0;font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:700;color:#1c2433;background:rgba(255,255,255,.86);padding:7px 10px;text-align:center}
-.js .cbadge{opacity:0;transition:.3s}
-.js .card.center .cbadge{opacity:0}
-.arrow{display:none}
-.panel{text-align:center;padding:8px 20px 24px;max-width:560px}
-.flag{font-size:2rem;line-height:1}
-.cname{font-size:clamp(1.6rem,6vw,2.2rem);margin:0}
-.csub{font-family:-apple-system,sans-serif;font-size:.92rem;color:#aebccc;min-height:1.2em;margin-top:2px}
-.cta{display:inline-block;margin-top:14px;font-family:-apple-system,sans-serif;font-weight:700;font-size:1.02rem;text-decoration:none;padding:14px 32px;border-radius:99px;background:#BC5436;color:#fff;border:none;cursor:pointer;transition:.15s;box-shadow:0 12px 26px -10px rgba(188,84,54,.7)}
-.cta:hover{background:#a8472c;transform:translateY(-2px)}
-.soonbadge{display:inline-block;margin-top:14px;font-family:-apple-system,sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#1c2433;background:#C9A24B;padding:8px 16px;border-radius:99px}
-.dots{display:none}
-.hint{font-family:-apple-system,sans-serif;font-size:.72rem;color:#7e8ca1;padding:0 0 18px;text-align:center;min-height:1em}
-.foot{font-family:-apple-system,sans-serif;font-size:.72rem;color:#67748a;padding:0 16px 20px;text-align:center}
-.staging{position:relative;width:100%;background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem}
-/* progressive enhancement: coverflow gdy jest JS */
-.js .cf{display:block;height:min(54vh,440px);perspective:1400px;padding:0}
-.js .card{position:absolute;top:50%;left:50%;margin:-1px;cursor:pointer;transition:transform .42s cubic-bezier(.2,.7,.2,1),opacity .42s,box-shadow .42s;transform-style:preserve-3d;will-change:transform}
-.js .card.center{cursor:default;box-shadow:0 26px 50px -18px rgba(0,0,0,.6),0 0 0 4px var(--ac),0 0 60px -6px var(--ac)}
-.js .arrow{display:flex;position:absolute;top:50%;transform:translateY(-50%);z-index:20;width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(244,238,226,.3);background:rgba(20,25,38,.5);color:#F4EEE2;font-size:1.7rem;cursor:pointer;align-items:center;justify-content:center;backdrop-filter:blur(5px);transition:.15s;-webkit-tap-highlight-color:transparent}
-.js .arrow:hover{background:rgba(255,255,255,.18);transform:translateY(-50%) scale(1.08)}
-.js .arrow.l{left:max(6px,calc(50% - 500px))}.js .arrow.r{right:max(6px,calc(50% - 500px))}
-.js .dots{display:flex;gap:10px;justify-content:center;padding:2px 0 8px}
-.js .dot{width:9px;height:9px;border-radius:50%;background:rgba(244,238,226,.25);border:none;cursor:pointer;transition:.2s;padding:0}.js .dot.on{background:#C9A24B;transform:scale(1.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:radial-gradient(120% 80% at 50% 16%,#671C26 0%,#3E0E16 62%,#2a0a10 100%);color:#F2E8D5}
+.logo{height:52px;margin-bottom:22px}
+.kick{font-family:'Caveat',cursive;font-weight:700;font-size:1.7rem;color:#D9A441;line-height:1}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(1.5rem,4vw,2.2rem);margin:4px 0 8px;color:#F8EFDD}
+p{color:#E7D2C0;font-size:.98rem;max-width:44ch;margin:0 auto}
+.spin{width:34px;height:34px;border:3px solid rgba(242,232,213,.25);border-top-color:#D9A441;border-radius:50%;margin:26px auto 4px;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.picker{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.picker a{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1.5px solid rgba(242,232,213,.42);color:#F2E8D5;text-decoration:none;font-weight:600;font-size:.95rem;padding:11px 20px;border-radius:99px;transition:.15s}
+.picker a:hover{background:rgba(255,255,255,.16);border-color:#D9A441;transform:translateY(-2px)}
+.pickhint{font-family:-apple-system,sans-serif;font-size:.74rem;color:#B79C8A;margin-top:16px}
 </style>
 <script type="application/ld+json">${JSON.stringify(ORG)}</script>
-</head>
-<body>
-${STAGING ? `<div class="staging">${STR.pl.staging}</div>` : ''}
-<h1 class="sr">DogRanking — niezależne oceny produktów dla psów · wybierz swój kraj</h1>
-<div class="top"><div class="kicker">DogRanking 🐾</div><div class="title-h" id="title" style="font-size:clamp(1.7rem,5vw,2.7rem);line-height:1.05">Wybierz swój kraj</div><div class="subtitle" id="subtitle">Pokazujemy tylko to, co kupisz u siebie</div></div>
-<div class="cf" id="cf">
-  <button class="arrow l" id="prev" aria-label="poprzedni">‹</button>
-  <button class="arrow r" id="next" aria-label="następny">›</button>
-${cards}
-</div>
-<div class="panel"><div class="flag" id="flag">🇵🇱</div><div class="cname" id="cname">Polska</div><div class="csub" id="csub">${counts.pl} ocenionych produktów</div><div id="action"><a class="cta" href="${href('/', 'pl/')}">Wejdź →</a></div></div>
-<div class="dots" id="dots"></div>
-<div class="hint" id="hint"></div>
-<div class="foot" id="foot">🐩 Degustację i testy prowadzi Bekon · pudel miniaturowy</div>
 <script>
 (function(){
-var C=${JSON.stringify(CO)},STR=${JSON.stringify(GSTR)};
-var root=document.documentElement;root.classList.add('js');
-var cf=document.getElementById('cf'),dots=document.getElementById('dots');
-var cards=[].slice.call(cf.querySelectorAll('.card'));
-cards.forEach(function(d,n){d.addEventListener('click',function(e){if(n!==i){e.preventDefault();go(n);}});var b=document.createElement('button');b.className='dot';b.onclick=function(){go(n);};dots.appendChild(b);});
-var i=0;
-try{var s=localStorage.getItem('dr_mkt');if(s){var idx=C.map(function(c){return c.id;}).indexOf(s);if(idx>=0)i=idx;}}catch(e){}
-function layout(){var W=cf.clientWidth,base=Math.min(W*0.30,250),N=C.length;
- cards.forEach(function(d,n){var r=n-i;if(r>N/2)r-=N;if(r<-N/2)r+=N;var ar=Math.abs(r);
-  if(ar>2){d.style.opacity=0;d.style.pointerEvents='none';d.style.transform='translate(-50%,-50%) scale(.3)';return;}
-  d.style.pointerEvents='auto';
-  var tx=r*(ar===2?base*0.92:base),sc=r===0?1:(ar===1?0.74:0.52),rot=r===0?0:(r<0?16:-16);
-  d.style.zIndex=10-ar;d.style.opacity=r===0?1:(ar===1?0.82:0.4);
-  d.style.transform='translate(-50%,-50%) translateX('+tx+'px) scale('+sc+') rotateY('+rot+'deg)';
-  d.classList.toggle('center',r===0);});
- for(var k=0;k<dots.children.length;k++)dots.children[k].classList.toggle('on',k===i);
- var c=C[i],T=STR[c.lang];root.lang=c.lang;
- document.getElementById('title').textContent=T.title;
- document.getElementById('subtitle').textContent=T.subtitle;
- document.getElementById('hint').textContent=T.hint;
- document.getElementById('foot').textContent='🐩 '+T.foot;
- document.getElementById('flag').textContent=c.flag;
- document.getElementById('cname').textContent=c.name;
- document.getElementById('csub').textContent=c.sub;
- var a=document.getElementById('action');
- if(c.active){a.innerHTML='<a class="cta" href="'+c.href+'">'+T.cta+'</a>';a.querySelector('a').addEventListener('click',function(){try{localStorage.setItem('dr_mkt',c.id);}catch(e){}});}
- else{a.innerHTML='<span class="soonbadge">'+T.soon+'</span>';}
-}
-function go(n){i=(n+C.length)%C.length;layout();}
-document.getElementById('prev').onclick=function(){go(i-1);};
-document.getElementById('next').onclick=function(){go(i+1);};
-addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(i-1);if(e.key==='ArrowRight')go(i+1);});
-var sx=0;cf.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
-cf.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));});
-addEventListener('resize',layout);layout();
+  var M={pl:${JSON.stringify(P.pl)},uk:${JSON.stringify(P.uk)},us:${JSON.stringify(P.us)}};
+  function pick(loc){loc=(loc||'').toUpperCase();if(loc==='PL')return 'pl';if(loc==='US'||loc==='CA'||loc==='MX')return 'us';return 'uk';}
+  function byLang(){var l=(navigator.language||'').toLowerCase();if(l.indexOf('pl')===0)return 'pl';if(l==='en-us'||l==='en-ca')return 'us';return 'uk';}
+  var done=false;function go(k){if(done)return;done=true;location.replace(M[k]||M.uk);}
+  var t=setTimeout(function(){go(byLang());},1500);
+  try{
+    fetch('/cdn-cgi/trace',{cache:'no-store'}).then(function(r){return r.text();}).then(function(tx){
+      clearTimeout(t);var m=/loc=([A-Za-z]{2})/.exec(tx);go(pick(m&&m[1]));
+    }).catch(function(){clearTimeout(t);go(byLang());});
+  }catch(e){clearTimeout(t);go(byLang());}
 })();
 </script>
+</head>
+<body>
+<img class="logo" src="logo-dr.webp" alt="DogRanking">
+<div class="kick">cześć, tu Bekon 🐾</div>
+<h1>Szukamy Twojego rynku…</h1>
+<p>Rozpoznajemy Twój kraj, żeby pokazać karmy i ceny dostępne u Ciebie. · Detecting your country to show your local market.</p>
+<div class="spin" aria-hidden="true"></div>
+<div class="picker">
+  <a href="${P.pl}">🇵🇱 Polska</a><a href="${P.uk}">🇬🇧 United Kingdom</a><a href="${P.us}">🇺🇸 United States</a>
+</div>
+<div class="pickhint">Nie ten kraj? Wybierz ręcznie. · Wrong country? Pick manually.</div>
 </body></html>`;
   return { url: '/', html };
 }
