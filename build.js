@@ -178,37 +178,35 @@ const FOOD_FORMS = {
 /* ---------- design system ---------- */
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap');
-:root{--paper:#F4EDDF;--paper2:#FBF6EC;--card:#FFFDF8;--ink:#2B2218;--muted:#7B7060;--terra:#C25A38;--terra-deep:#A2462A;--olive:#6E7A45;--olive-deep:#55602F;--sage:#6E7A45;--gold:#C99B3F;--line:#E6DAC5;--r:18px;--r-lg:26px;--shadow:0 18px 40px -24px rgba(43,34,24,.40);--shadow-sm:0 6px 16px -10px rgba(43,34,24,.28);--f-serif:'Fraunces',Georgia,'Times New Roman',serif;--f-hand:'Caveat','Segoe Script',cursive;--f-sans:'Inter',-apple-system,'Segoe UI',sans-serif}
+:root{--paper:#F4EDDF;--paper2:#FBF6EC;--card:#FFFDF8;--ink:#2B2218;--muted:#7B7060;--terra:#C75B38;--terra-deep:#A8472A;--olive:#6E7A45;--olive-deep:#55602F;--sage:#6E7A45;--gold:#D9A441;--maroon:#3E0E16;--maroon2:#671C26;--cream:#F4EDDF;--line:#E6DAC5;--r:18px;--r-lg:26px;--shadow:0 18px 40px -24px rgba(43,34,24,.40);--shadow-sm:0 6px 16px -10px rgba(43,34,24,.28);--f-serif:'Fraunces',Georgia,'Times New Roman',serif;--f-hand:'Caveat','Segoe Script',cursive;--f-sans:'Inter',-apple-system,'Segoe UI',sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--f-sans);font-weight:400;background:var(--paper);color:var(--ink);line-height:1.72;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-header{background:var(--card)}
-.bar{display:flex;align-items:center;gap:18px;min-height:62px;max-width:1060px;margin:0 auto;padding:6px 22px;flex-wrap:wrap}
+header{background:var(--maroon);position:relative}
+.bar{display:flex;align-items:center;gap:18px;min-height:64px;max-width:1100px;margin:0 auto;padding:10px 24px;flex-wrap:wrap}
 .mark{text-decoration:none;display:flex;align-items:center}
-.mark img{height:46px;width:auto;display:block}
+.mark img{height:42px;width:auto;display:block}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-nav{display:flex;gap:4px;font-family:-apple-system,sans-serif;font-size:.9rem;flex-wrap:wrap}
-nav a{padding:7px 12px;border-radius:99px;color:var(--muted);text-decoration:none;white-space:nowrap}
-nav a:hover{color:var(--ink)}
+nav{display:flex;gap:6px;font-family:var(--f-sans);font-size:.95rem;font-weight:500;flex-wrap:wrap}
+nav a{padding:7px 12px;border-radius:99px;color:#EBD9C2;text-decoration:none;white-space:nowrap}
+nav a:hover{color:var(--gold)}
 .social{margin-left:auto;display:inline-flex;align-items:center;gap:12px}
-.social a{color:var(--muted);display:inline-flex;transition:color .15s}
-.social a:hover{color:var(--terra)}
+.social a{color:#EBD9C2;display:inline-flex;transition:color .15s}
+.social a:hover{color:var(--gold)}
 .social svg{width:20px;height:20px;display:block}
-.mktswitch{margin-left:16px;font-family:-apple-system,sans-serif;font-size:.82rem}
-.mktswitch a{color:var(--muted);text-decoration:none;padding:4px 7px}
-.mktswitch a:hover{color:var(--terra)}
-header{position:relative}
-header::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:11px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12' viewBox='0 0 40 12'%3E%3Cpath d='M0 6 Q10 0 20 6 T40 6' fill='none' stroke='%23C25A38' stroke-width='2.4'/%3E%3C/svg%3E") repeat-x left center;z-index:6;pointer-events:none}
+.mktswitch{margin-left:16px;font-family:var(--f-sans);font-size:.82rem}
+.mktswitch a{color:#EBD9C2;text-decoration:none;padding:4px 7px}
+.mktswitch a:hover{color:var(--gold)}
 .navt{display:none}
-.burger{display:none;cursor:pointer;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--ink)}
-.burger:hover{background:var(--paper)}
+.burger{display:none;cursor:pointer;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--cream)}
+.burger:hover{background:rgba(255,255,255,.1)}
 @media(max-width:760px){
   .bar{gap:8px;min-height:54px}
   .burger{display:inline-flex;margin-left:auto;order:2}
   .social{order:3;margin-left:0}
   .mktswitch{order:4;margin-left:2px}
   nav{display:none;order:5;width:100%}
-  .navt:checked ~ nav{display:flex;flex-direction:column;gap:2px;position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 14px 26px -18px rgba(34,29,21,.45);padding:8px 16px 14px;z-index:30}
+  .navt:checked ~ nav{display:flex;flex-direction:column;gap:2px;position:absolute;left:0;right:0;top:100%;background:var(--maroon2);box-shadow:0 14px 26px -18px rgba(0,0,0,.5);padding:8px 16px 14px;z-index:30}
   .navt:checked ~ nav a{padding:12px 10px;border-radius:8px;font-size:1.02rem}
 }
 /* ===== Bekon: oś czasu życia ===== */
@@ -269,7 +267,7 @@ header::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:11
 main{padding:56px 0 92px}
 h1{font-family:var(--f-serif);font-weight:600;font-size:clamp(2rem,5vw,3rem);line-height:1.1;letter-spacing:-.01em;margin-bottom:18px}
 h2{font-family:var(--f-serif);font-weight:600;font-size:clamp(1.5rem,3vw,1.9rem);line-height:1.2;margin:52px 0 18px;position:relative}
-h2::after{content:"";display:block;width:58px;height:9px;margin-top:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='10' viewBox='0 0 80 10'%3E%3Cpath d='M2 6 Q9 1 16 6 T30 6 T44 6 T58 6 T72 6' fill='none' stroke='%23C25A38' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") left center/contain no-repeat}
+h2::after{content:none}
 h3{font-family:var(--f-serif);font-weight:600;font-size:1.18rem;margin:24px 0 8px}
 .eyebrow{font-family:var(--f-hand);font-weight:700;font-size:1.5rem;letter-spacing:0;text-transform:none;color:var(--terra);margin-bottom:4px;line-height:1}
 .lead{color:var(--muted);font-size:1.1rem;max-width:680px;line-height:1.65}
@@ -291,7 +289,8 @@ ul.pc li{padding:3px 0}
 .crumb{font-size:.8rem;color:var(--muted);font-family:-apple-system,sans-serif;margin-bottom:16px}
 .crumb a{color:var(--muted);text-decoration:none}
 .crumb a:hover{color:var(--terra)}
-footer{border-top:1px solid var(--line);background:var(--card);padding:26px 0;font-size:.8rem;color:var(--muted);font-family:-apple-system,sans-serif;text-align:center}
+footer{background:var(--maroon);padding:34px 0;font-size:.85rem;color:#D8BFA9;font-family:var(--f-sans);text-align:center}
+footer a{color:var(--gold)}
 .rankrow{display:grid;grid-template-columns:40px 1fr 120px 185px;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;margin:12px 0;text-decoration:none;color:var(--ink);box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s,border-color .15s}
 .rankrow.food{grid-template-columns:30px 46px 1fr 120px 175px}
 .rankrow:hover{border-color:var(--terra);transform:translateY(-2px);box-shadow:var(--shadow)}
@@ -372,6 +371,114 @@ footer{border-top:1px solid var(--line);background:var(--card);padding:26px 0;fo
 .reader .lead-a{font-style:italic;font-size:1.15rem;color:var(--muted);margin:14px 0 24px}
 .reader .body p{margin-bottom:18px;font-size:1.02rem}
 .reader .src{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted);font-family:-apple-system,sans-serif}
+`;
+
+/* ---------- CSS strony głównej (landing, wg zaakceptowanego prototypu bordo) ---------- */
+const LP_CSS = `
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--maroon:#3E0E16;--maroon2:#671C26;--cream:#F2E8D5;--cream2:#FAF3E4;--terra:#C75B38;--caramel:#C9824C;--gold:#D9A441;--ink:#2A1A18;--paper:#EFE2CC;--sage:#7E7A45}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;overflow-x:hidden}
+.serif{font-family:'Fraunces',Georgia,serif}.hand{font-family:'Caveat',cursive}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.04;letter-spacing:-.015em}
+.kick{font-family:'Caveat',cursive;font-weight:700;font-size:1.8rem;color:var(--terra);line-height:1}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:1rem;text-decoration:none;padding:15px 30px;border-radius:99px;transition:.18s;cursor:pointer;border:0}
+.btn-pri{background:var(--terra);color:#fff;box-shadow:0 14px 30px -12px rgba(199,91,56,.7)}
+.btn-pri:hover{background:#A8472A;transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.08);border:1.5px solid rgba(242,232,213,.6);color:var(--cream)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+nav.lpnav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 28px;transition:.25s}
+nav.lpnav.solid{background:rgba(62,14,22,.94);backdrop-filter:blur(8px);padding:12px 28px;box-shadow:0 6px 20px -10px rgba(0,0,0,.5)}
+nav.lpnav .logo{display:flex;align-items:center;text-decoration:none}
+nav.lpnav .links{display:flex;gap:26px;align-items:center}
+nav.lpnav .links a{color:var(--cream);text-decoration:none;font-size:.95rem;font-weight:500;opacity:.92}
+nav.lpnav .links a:hover{color:var(--gold)}
+nav.lpnav .mkt{display:flex;gap:9px;align-items:center}
+nav.lpnav .mkt a,nav.lpnav .mkt strong{font-size:1.2rem;text-decoration:none;opacity:.6;line-height:1}
+nav.lpnav .mkt strong{opacity:1}
+@media(max-width:880px){nav.lpnav .links a:not(.flag){display:none}}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-start;color:var(--cream);overflow:hidden;background:#3a0c12}
+.hero .bg{position:absolute;inset:0;background-position:center 62%;background-size:cover;background-repeat:no-repeat;z-index:0}
+.hero .ov{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(40,5,10,.86),rgba(40,5,10,.34) 32%,rgba(40,5,10,0) 50%,rgba(40,5,10,.12) 74%,rgba(40,5,10,.78))}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:128px;padding-bottom:120px}
+.hero .htext{max-width:780px}
+.hero h1{font-size:clamp(2.6rem,6.2vw,5.2rem);color:#F8EFDD}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.sub{font-size:1.18rem;max-width:520px;margin:24px 0 30px;color:#EBDDC4}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .trust{position:absolute;left:28px;right:28px;bottom:30px;z-index:2;max-width:1180px;margin:0 auto;display:flex;gap:8px 24px;flex-wrap:wrap;font-size:.92rem;color:#E7D7Bd}
+.hero .trust b{color:var(--gold)}
+.scrollcue{position:absolute;bottom:84px;left:50%;transform:translateX(-50%);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:#E7D7Bd;opacity:.7;z-index:2}
+.sec{padding:58px 0}.center{text-align:center}
+.manifesto{background:var(--cream)}
+.manifesto h2{font-size:clamp(2rem,4.6vw,3.4rem);max-width:18ch;margin:14px auto 0}
+.manifesto h2 .u{background:linear-gradient(transparent 62%,rgba(199,91,56,.30) 0);padding:0 .08em}
+.manifesto p{max-width:600px;margin:22px auto 0;color:#7a6b56;font-size:1.1rem}
+.pillars{background:var(--cream2)}
+.pillgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+.pill{background:var(--cream);border:1px solid #E7D8Bd;border-radius:26px;padding:30px 26px;position:relative;transition:.2s;box-shadow:0 10px 26px -20px rgba(62,14,22,.5)}
+.pill:hover{transform:translateY(-5px);box-shadow:0 26px 44px -24px rgba(62,14,22,.45);border-color:var(--terra)}
+.pill .no{font-family:'Caveat',cursive;font-weight:700;font-size:2.2rem;color:var(--terra);line-height:1}
+.pill .ic{margin:6px 0 12px}.pill h3{font-size:1.28rem;margin-bottom:8px}
+.pill .w{position:absolute;top:26px;right:26px;font-family:'Caveat',cursive;font-weight:700;color:var(--maroon2);font-size:1.5rem}
+.pill p{font-size:.95rem;color:#7a6b56}
+@media(max-width:880px){.pillgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.pillgrid{grid-template-columns:1fr}}
+.process{background:linear-gradient(160deg,var(--maroon2),var(--maroon));color:var(--cream)}
+.process h2{color:var(--cream);font-size:clamp(1.9rem,4vw,3rem)}
+.process p.lead2{max-width:52ch;margin:14px auto 0;color:#E7D2C0}
+.procgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:30px 18px;margin:48px auto 0;max-width:1060px}
+.procitem{display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
+.procitem img{height:100px;width:auto;display:block;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
+.procitem b{font-family:'Fraunces',serif;font-weight:500;font-size:.96rem;color:var(--cream)}
+@media(max-width:880px){.procgrid{grid-template-columns:repeat(3,1fr);gap:28px 14px}}
+@media(max-width:520px){.procgrid{grid-template-columns:repeat(2,1fr)}}
+.rank{background:var(--paper)}
+.rrow{display:grid;grid-template-columns:54px 70px 1fr auto auto;gap:22px;align-items:center;background:var(--cream);border:1px solid #E7D8Bd;border-radius:22px;padding:18px 26px;margin:14px 0;text-decoration:none;color:inherit;transition:.16s;box-shadow:0 8px 22px -18px rgba(62,14,22,.5)}
+.rrow:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(62,14,22,.45);border-color:var(--terra)}
+.rrow .rno{font-family:'Fraunces',serif;font-weight:700;font-size:2rem;color:#D8C3A2}
+.rrow .nm{font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem}
+.rrow .mt{font-size:.85rem;color:#8a7c64}
+.rrow .sc{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;color:var(--terra)}
+.rrow .go{color:var(--terra);font-weight:600;white-space:nowrap}
+.rrow .bag{width:54px;height:60px}
+@media(max-width:740px){.rrow{grid-template-columns:40px 56px 1fr auto;gap:14px}.rrow .go{display:none}}
+.countries{background:linear-gradient(160deg,var(--maroon2),var(--maroon));color:var(--cream)}
+.crow{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:44px}
+.ccard{display:flex;flex-direction:column;align-items:center;gap:11px;width:186px;padding:30px 22px 26px;background:rgba(250,243,228,.05);border:1px solid rgba(242,232,213,.20);border-radius:22px;text-decoration:none;color:var(--cream);transition:.2s}
+.ccard:hover{background:rgba(250,243,228,.11);transform:translateY(-5px);border-color:var(--gold)}
+.ccard .fl{width:60px;height:60px;border-radius:50%;background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:1.9rem;box-shadow:0 10px 22px -10px rgba(0,0,0,.55)}
+.ccard b{font-family:'Fraunces',serif;font-size:1.12rem;color:var(--cream)}
+.ccard .n{font-size:.82rem;color:#E7D2C0}
+.ccard .go{font-size:.8rem;color:var(--gold);font-weight:600}
+.ccard.soon{opacity:.82}.ccard.soon .n{color:var(--gold)}
+.iginvite{background:#F9E2CA;overflow:hidden}
+.iginvite .ph{position:relative;max-width:1500px;margin:0 auto}
+.igphoto{display:block;width:100%}
+.igtext{position:absolute;top:0;bottom:0;right:0;width:50%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left;padding:0 max(30px,4.5vw) 0 10px}
+.iginvite h2{font-size:clamp(1.7rem,3.3vw,3rem);margin:10px 0 0;max-width:14ch}
+.iginvite p{max-width:42ch;margin:16px 0 0;color:#7a6b56;font-size:1.05rem}
+.follow-lbl{font-family:'Caveat',cursive;font-weight:700;font-size:1.6rem;color:var(--terra);margin-top:26px;line-height:1}
+.sclinks{display:flex;gap:20px;margin-top:12px}
+.scitem{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none}
+.sclbl{font-family:'Inter';font-size:.85rem;font-weight:600;color:var(--maroon)}
+.scbtn{display:block;width:72px;height:72px;border-radius:20px;overflow:hidden;box-shadow:0 12px 26px -12px rgba(62,14,22,.55);transition:.18s}
+.scitem:hover .scbtn{transform:translateY(-3px) rotate(-2deg)}
+.scbtn img{width:100%;height:100%;display:block;object-fit:cover}
+@media(max-width:860px){.igtext{position:static;width:auto;align-items:center;text-align:center;padding:60px 24px 6px}.iginvite h2,.iginvite p{max-width:34ch;margin-left:auto;margin-right:auto}}
+.ctaband{background:linear-gradient(120deg,var(--terra),#9e3f24);color:#fff;text-align:center}
+.ctaband h2{font-size:clamp(1.9rem,4vw,3rem);color:#fff;max-width:20ch;margin:0 auto 10px}
+.ctaband p{opacity:.92;max-width:46ch;margin:0 auto 24px}
+footer.lpfoot{background:var(--maroon);color:#D8BFA9;padding:62px 0 32px}
+footer.lpfoot .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+footer.lpfoot .flogo{display:flex;align-items:center}
+footer.lpfoot h4{color:var(--cream);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+footer.lpfoot a{display:block;color:#D8BFA9;text-decoration:none;font-size:.95rem;padding:4px 0}footer.lpfoot a:hover{color:var(--gold)}
+footer.lpfoot .legal{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:760px){footer.lpfoot .fg{grid-template-columns:1fr 1fr}}
+.rev{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}.rev.in{opacity:1;transform:none}
+.eyebrowc{color:var(--terra)}
+@media(max-width:820px){.hero .bg{background-position:center 70%}}
 `;
 
 /* ---------- łapki, linki, waluty ---------- */
@@ -474,7 +581,7 @@ ${ld}
 <body>
 ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem">${S.staging}</div>` : ''}
 <header><div class="bar">
-  <a class="mark" href="${H('index.html')}" aria-label="DogRanking — wybierz kraj"><img src="${href(canonical, 'logo-small.png')}" alt="BEKON — dogranking.com" height="46"></a>
+  <a class="mark" href="${H('index.html')}" aria-label="DogRanking — wybierz kraj"><img src="${href(canonical, 'logo-dr.webp')}" alt="DogRanking" height="42"></a>
   <input type="checkbox" id="navtoggle" class="navt" aria-label="Menu">
   <label for="navtoggle" class="burger" title="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
   <nav>
@@ -845,41 +952,138 @@ ${products.length ? `<p class="disclosure">${S.hubDisclosure}</p>` : ''}`;
 }
 
 /* ---------- strona główna rynku ---------- */
+// łapki (statyczne, samodzielne — dla landing page bez współdzielonego CSS)
+function lpPaws(sc) {
+  const PAW = f => `<svg width="17" height="17" viewBox="0 0 24 24" style="vertical-align:middle" fill="${f}"><circle cx="5" cy="10.2" r="2.2"/><circle cx="9.4" cy="6.9" r="2.4"/><circle cx="14.6" cy="6.9" r="2.4"/><circle cx="19" cy="10.2" r="2.2"/><path d="M12 11.4c3.1 0 5.7 2.3 5.7 5 0 1.8-1.4 3.2-3.3 3.2-.9 0-1.5-.3-2.4-.3s-1.5.3-2.4.3c-1.9 0-3.3-1.4-3.3-3.2 0-2.7 2.6-5 5.7-5z"/></svg>`;
+  const g = Math.max(1, Math.min(5, Math.round(sc / 20)));
+  return Array.from({ length: 5 }, (_, i) => PAW(i < g ? '#D9A441' : '#DDCDB2')).join('');
+}
+const countProd = mk => Object.values(PRODUCTS[mk] || {}).reduce((a, v) => a + v.length, 0);
+
 function homeMkt(mkt) {
-  const m = MARKETS[mkt]; const S = STR[m.lang];
+  const m = MARKETS[mkt]; const S = STR[m.lang]; const pl = m.lang === 'pl';
   const url = `/${mkt}/`;
+  const H = t => href(url, t);
+  const A = t => href(url, t); // asset / page (oba z roota)
   const foods = (PRODUCTS[mkt] || {}).karmy || [];
-  const top = [...foods].sort((a, b) => b.score - a.score).slice(0, 3);
-  const methodPath = `${mkt}/${m.lang === 'pl' ? 'metodologia' : 'methodology'}/`;
-  const body = `
-<div class="eyebrow">${S.homeEyebrow} · ${m.flag} ${m.name}</div>
-<h1>${S.homeH1}</h1>
-<p class="lead">${S.homeLead}</p>
+  const top = [...foods].sort((a, b) => b.score - a.score).slice(0, 5);
+  const methodSlug = pl ? 'metodologia' : 'methodology';
+  const karmyUrl = H(`${mkt}/${cSlug(CATS[0], mkt)}/`);
+  const bekonUrl = H(`${mkt}/bekon/`);
+  const wiedzaUrl = pl ? H('pl/wiedza/') : H(`${mkt}/${methodSlug}/`);
+  const ig = SOCIAL_LINKS.instagram, tt = SOCIAL_LINKS.tiktok;
+  const n = foods.length;
 
-<h2 id="kategorie">${S.whatWeRate}</h2>
-<div class="catgrid">
-${CATS.map(c => {
-    const prods = (PRODUCTS[mkt] || {})[c.slug] || [];
-    const st = prods.length ? c.status : (c.status === 'edu' ? 'edu' : 'soon');
-    return `<a class="catcard" href="${href(url, `${mkt}/${cSlug(c, mkt)}/`)}">
-  <span class="ic">${c.icon}</span><h3>${cName(c, mkt)}</h3><p>${cDesc(c, mkt)}</p>${statusBadge(st, S)}
-</a>`;
-  }).join('\n')}
-</div>
+  const L = pl ? {
+    nav: ['Karmy', 'Jak oceniamy', 'Wiedza', 'Bekon', 'Kraje'],
+    heroKick: 'cześć, tu Bekon 🐾',
+    heroH1: 'Najlepsza miska zaczyna się od <em>uczciwej oceny.</em>',
+    heroSub: 'Niezależny ranking karm i produktów dla psów — w suchej masie, wg norm FEDIAF i kryteriów WSAVA. Bez ściemy. Bez płatnych miejsc na podium.',
+    ctaSee: 'Zobacz ranking →', ctaHow: 'Jak oceniamy',
+    trust: [`<b>${n}</b> karm ocenionych`, '<b>3</b> rynki · PL · UK · US', '<b>0</b> płatnych pozycji'],
+    scroll: 'przewiń ↓',
+    mKick: 'to nie tylko jedzenie',
+    mH2: 'Twój pies to rodzina. Jego miska <span class="u">zasługuje na to samo serce.</span>',
+    mP: 'Producentów są setki, etykiety mówią półprawdy, a „rankingi" w sieci to często płatne listy. My liczymy skład w suchej masie, sprawdzamy normy i wiarygodność marki — i mówimy wprost, co jest warte miski Twojego psa.',
+    pKick: 'cztery filary', pH2: 'Jak powstaje ocena w łapkach',
+    pills: [
+      ['Skład', '35', 'Białko i tłuszcz w suchej masie, nazwane mięso, bez zbędnych wypełniaczy.'],
+      ['Normy i testy', '25', 'Zgodność z FEDIAF/AAFCO oraz realne próby żywieniowe, nie tylko deklaracje.'],
+      ['Producent', '25', 'Wiarygodność marki wg kryteriów WSAVA — kto i jak naprawdę robi tę karmę.'],
+      ['Dodatki', '15', 'EPA/DHA, jakość konserwacji, brak sztucznych barwników i zbędnej chemii.']
+    ],
+    prKick: 'jak to robimy', prH2: 'Dziesięć prób, zanim coś trafi do rankingu',
+    prLead: 'Od testu karmy i zabawek, przez rozpakowanie i pielęgnację, aż po komfort i finalną rekomendację — każdy produkt przechodzi przez łapy (i podniebienie) Bekona.',
+    rKick: `ranking · ${m.name}`, rH2: 'Top karmy na polskim rynku',
+    rFull: `Zobacz pełny ranking ${n} karm →`,
+    cKick: 'wybierz swój kraj', cH2: 'Pokazujemy tylko to, co kupisz u siebie',
+    cP: 'Produkty, ceny i sklepy różnią się między krajami — pokazujemy ranking dla Twojego rynku.',
+    igKick: 'życie Bekona', igH2: 'Bekon testuje. Ty obserwujesz.',
+    igP: 'Codzienne życie, próby miski i szczere recenzje produktów — wszystko na jego profilach. Dołącz do psiej ekipy i bądź na bieżąco.',
+    follow: 'Obserwuj mnie',
+    nKick: 'co tydzień, prosto do miski', nH2: 'Nowe oceny karm — zanim trafią do sklepu',
+    nP: 'Bez spamu. Tylko świeże rankingi, ostrzeżenia o składach i okazje cenowe.',
+    nPlace: 'Twój e-mail', nBtn: 'Zapisz się 🐾',
+    fDesc: 'Niezależne oceny karm i produktów dla psów. Liczymy uczciwie, w suchej masie — dla psów i ich ludzi.',
+    fCol: ['Karmy', 'Portal', 'Rynki'],
+    fKarmy: [['Ranking', karmyUrl], ['Kalkulator', H(`${mkt}/${S.calc.slug}/`)]],
+    fPortal: [['Jak oceniamy', H(`${mkt}/${methodSlug}/`)], ['Wiedza', wiedzaUrl], ['O nas', H(`${mkt}/o-nas/`)], ['Bekon', bekonUrl]],
+    legal: '© 2026 DogRanking · zrobione z 🐾 dla psów i ich ludzi'
+  } : {
+    nav: ['Dog food', 'How we rate', 'Knowledge', 'Bekon', 'Countries'],
+    heroKick: "hi, it's Bekon 🐾",
+    heroH1: 'A better bowl starts with an <em>honest review.</em>',
+    heroSub: `Independent dog food and product rankings — on a dry-matter basis, against ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} thresholds and WSAVA criteria. No fluff. No paid podium spots.`,
+    ctaSee: 'See the ranking →', ctaHow: 'How we rate',
+    trust: [`<b>${n}</b> foods rated`, '<b>3</b> markets · PL · UK · US', '<b>0</b> paid placements'],
+    scroll: 'scroll ↓',
+    mKick: 'more than just food',
+    mH2: 'Your dog is family. Their bowl <span class="u">deserves the same heart.</span>',
+    mP: 'There are hundreds of makers, labels tell half-truths, and online "rankings" are often paid lists. We calculate composition on a dry-matter basis, check standards and brand credibility — and say plainly what is worth your dog\'s bowl.',
+    pKick: 'four pillars', pH2: 'How a paw rating is built',
+    pills: [
+      ['Composition', '35', 'Protein and fat on a dry-matter basis, named meat, no needless fillers.'],
+      ['Standards & trials', '25', `Compliance with ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} plus real feeding trials, not just label claims.`],
+      ['Manufacturer', '25', 'Brand credibility against WSAVA criteria — who really makes this food, and how.'],
+      ['Extras', '15', 'EPA/DHA, preservation quality, no artificial colours or needless chemistry.']
+    ],
+    prKick: 'how we do it', prH2: 'Ten trials before anything makes the ranking',
+    prLead: 'From food and toy tests, through unboxing and grooming, to comfort and the final recommendation — every product passes through Bekon\'s paws (and palate).',
+    rKick: `ranking · ${m.name}`, rH2: `Top dog foods in ${m.name}`,
+    rFull: `See the full ranking of ${n} foods →`,
+    cKick: 'choose your country', cH2: 'We show only what you can buy at home',
+    cP: 'Products, prices and shops differ between countries — we show the ranking for your market.',
+    igKick: "Bekon's life", igH2: 'Bekon tests. You watch.',
+    igP: 'Everyday life, bowl trials and honest product reviews — all on his profiles. Join the dog crew and stay in the loop.',
+    follow: 'Follow me',
+    nKick: 'weekly, straight to the bowl', nH2: 'New food ratings — before they hit the shelf',
+    nP: 'No spam. Just fresh rankings, ingredient warnings and price deals.',
+    nPlace: 'Your email', nBtn: 'Sign up 🐾',
+    fDesc: 'Independent ratings of dog food and products. We count honestly, on a dry-matter basis — for dogs and their people.',
+    fCol: ['Dog food', 'Portal', 'Markets'],
+    fKarmy: [['Ranking', karmyUrl], ['Calculator', H(`${mkt}/${S.calc.slug}/`)]],
+    fPortal: [['How we rate', H(`${mkt}/${methodSlug}/`)], ['Knowledge', wiedzaUrl], ['About', H(`${mkt}/about/`)], ['Bekon', bekonUrl]],
+    legal: '© 2026 DogRanking · made with 🐾 for dogs and their people'
+  };
 
-${top.length ? `<h2>${S.top3}</h2>
-<p class="meta">${S.updated}: ${TODAY}</p>
-${rankRows(top, CATS[0], mkt, url)}
-<p><a href="${href(url, `${mkt}/${cSlug(CATS[0], mkt)}/`)}" class="gobtn" style="font-family:-apple-system,sans-serif;font-weight:600;color:var(--terra);text-decoration:none">${S.fullRank}</a></p>` : ''}
+  const PILL_IC = [
+    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M9 6h14l-2 20H11z"/><path d="M9 12h14"/></svg>`,
+    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M6 16l6 6 14-14"/></svg>`,
+    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M16 4l3 7 8 .6-6 5 2 8-7-4-7 4 2-8-6-5 8-.6z"/></svg>`,
+    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M16 27s-11-7-11-15a6 6 0 0111-3 6 6 0 0111 3c0 8-11 15-11 15z"/></svg>`
+  ];
+  const PROC = [
+    ['test-karmy', pl ? 'Test karmy' : 'Food test'],
+    ['test-zabawek', pl ? 'Test zabawek' : 'Toy test'],
+    ['ranking', 'Ranking'],
+    ['rozpakowanie', pl ? 'Rozpakowanie' : 'Unboxing'],
+    ['rekomendacja', pl ? 'Rekomendacja' : 'Recommendation'],
+    ['dog-approved', 'Dog approved'],
+    ['smaczki', pl ? 'Smaczki' : 'Treats'],
+    ['podroze', pl ? 'Podróże' : 'Travel'],
+    ['pielegnacja', pl ? 'Pielęgnacja' : 'Grooming'],
+    ['test-komfortu', pl ? 'Test komfortu' : 'Comfort test']
+  ];
+  const COUNTRIES = ['pl', 'uk', 'us'].map(k => {
+    const mm = MARKETS[k]; const c = countProd(k);
+    const lbl = k === 'pl' ? (pl ? `${c} produkty` : `${c} products`) : `${c} products`;
+    const go = k === 'pl' && pl ? 'Wejdź →' : 'Enter →';
+    return `<a class="ccard" href="${H(`${k}/`)}"><span class="fl">${mm.flag}</span><b>${mm.name}</b><span class="n">${lbl}</span><span class="go">${go}</span></a>`;
+  }).join('');
+  const SOON = [['🇫🇷', 'France', pl ? 'Wkrótce' : 'Soon'], ['🇩🇪', 'Deutschland', pl ? 'Wkrótce' : 'Bald']]
+    .map(([fl, nm, t]) => `<a class="ccard soon" href="#"><span class="fl">${fl}</span><b>${nm}</b><span class="n">${t}</span></a>`).join('');
 
-${mkt === 'pl' ? `<h2>Z bazy wiedzy — badania, nie opinie</h2>
-<div class="catgrid">
-${ARTS.slice(0, 3).map(a => artCard(a, url)).join('\n')}
-</div>
-<p><a href="${href(url, 'pl/wiedza/')}" class="gobtn" style="font-family:-apple-system,sans-serif;font-weight:600;color:var(--terra);text-decoration:none">Wszystkie artykuły (${ARTS.length}) →</a></p>` : ''}
+  const rows = top.map((p, i) => `<a class="rrow" href="${H(`${mkt}/${cSlug(CATS[0], mkt)}/${p.slug}/`)}">
+    <span class="rno">${String(i + 1).padStart(2, '0')}</span>
+    <span>${pkgThumb(p, 'bag')}</span>
+    <span><span class="nm">${p.name}</span><br><span class="mt">${p.type}${p.proteinDM ? ` · ${S.protein.toLowerCase()} ${p.proteinDM}% DM` : ''}${per1000(p) ? ` · ~${m.money(per1000(p))} / 1000 kcal` : ''}</span></span>
+    <span class="paws">${lpPaws(p.score)}</span>
+    <span class="sc">${p.score}</span>
+  </a>`).join('');
 
-<h2>${S.howWeRate}</h2>
-<p>${S.howWeRateTxt} <a href="${href(url, methodPath)}">${S.methodLink}</a></p>`;
+  const navLinks = `<a href="${karmyUrl}">${L.nav[0]}</a><a href="#pillars">${L.nav[1]}</a><a href="${wiedzaUrl}">${L.nav[2]}</a><a href="${bekonUrl}">${L.nav[3]}</a><a href="#countries">${L.nav[4]}</a>`;
+  const mktNav = Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a class="flag" href="${H(`${k}/`)}" title="${v.name}">${v.flag}</a>`).join('');
+
   const alts = { pl: '/pl/', uk: '/uk/', us: '/us/' };
   const titles = {
     pl: 'DogRanking — niezależne oceny produktów dla psów (karmy, akcesoria, tech)',
@@ -891,7 +1095,105 @@ ${ARTS.slice(0, 3).map(a => artCard(a, url)).join('\n')}
     uk: 'Dog food rated on FEDIAF thresholds and WSAVA criteria, accessories on safety research. Transparent 100-point algorithm, paw ratings, UK availability and prices.',
     us: 'Dog food rated on AAFCO thresholds and WSAVA criteria, accessories on safety research. Transparent 100-point algorithm, paw ratings, US availability and prices.'
   };
-  return { url, html: page({ title: titles[mkt], desc: descs[mkt], canonical: url, body, jsonld: [ORG], mkt, alts }) };
+  const altTags = `
+  <link rel="alternate" hreflang="pl-PL" href="${SITE}${alts.pl}">
+  <link rel="alternate" hreflang="en-GB" href="${SITE}${alts.uk}">
+  <link rel="alternate" hreflang="en-US" href="${SITE}${alts.us}">
+  <link rel="alternate" hreflang="x-default" href="${SITE}/">`;
+
+  const html = `<!DOCTYPE html>
+<html lang="${m.lang}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="${A('logo.svg')}">
+<title>${titles[mkt]}</title>
+<meta name="description" content="${descs[mkt]}">
+${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}<link rel="canonical" href="${SITE}${url}">${altTags}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>${LP_CSS}</style>
+<script type="application/ld+json">${JSON.stringify(ORG)}</script>
+</head>
+<body>
+<nav class="lpnav" id="nav"><a class="logo" href="${A('index.html')}"><img src="${A('logo-dr.webp')}" alt="DogRanking" style="height:42px;display:block"></a>
+<div class="links">${navLinks}<span class="mkt">${mktNav}</span></div></nav>
+
+<header class="hero">
+<div class="bg" style="background-image:url('${A('hero-bekon.webp')}')"></div><div class="ov"></div>
+<div class="wrap"><div class="htext">
+  <div class="kick" style="color:var(--gold)">${L.heroKick}</div>
+  <h1 class="serif">${L.heroH1}</h1>
+  <p class="sub">${L.heroSub}</p>
+  <div class="cta"><a class="btn btn-pri" href="#ranking">${L.ctaSee}</a><a class="btn btn-ghost" href="#pillars">${L.ctaHow}</a></div>
+</div></div>
+<div class="trust">${L.trust.map(t => `<span>${t}</span>`).join('')}</div>
+<div class="scrollcue">${L.scroll}</div>
+</header>
+
+<section class="sec manifesto center"><div class="wrap rev">
+  <div class="kick">${L.mKick}</div>
+  <h2 class="serif">${L.mH2}</h2>
+  <p>${L.mP}</p>
+</div></section>
+
+<section class="sec pillars" id="pillars"><div class="wrap">
+  <div class="center rev"><div class="kick eyebrowc">${L.pKick}</div><h2 class="serif" style="font-size:clamp(1.9rem,4vw,3rem)">${L.pH2}</h2></div>
+  <div class="pillgrid">
+${L.pills.map((p, i) => `    <div class="pill rev"><div class="no">0${i + 1}</div>${PILL_IC[i]}<span class="w">${p[1]}</span><h3 class="serif">${p[0]}</h3><p>${p[2]}</p></div>`).join('\n')}
+  </div>
+</div></section>
+
+<section class="sec process center" id="proces"><div class="wrap">
+  <div class="kick" style="color:var(--gold)">${L.prKick}</div>
+  <h2 class="serif">${L.prH2}</h2>
+  <p class="lead2">${L.prLead}</p>
+  <div class="procgrid">${PROC.map(([f, lbl], i) => `<div class="procitem rev"><img src="${A(`proces/${f}.webp`)}" alt="${lbl}" loading="lazy"><b>${i + 1}. ${lbl}</b></div>`).join('')}</div>
+</div></section>
+
+<section class="sec rank" id="ranking"><div class="wrap">
+  <div class="center rev"><div class="kick eyebrowc">${L.rKick}</div><h2 class="serif" style="font-size:clamp(1.9rem,4vw,3rem)">${L.rH2}</h2></div>
+  <div style="max-width:860px;margin:30px auto 0">${rows}</div>
+  <div class="center" style="margin-top:34px"><a class="btn btn-pri" href="${karmyUrl}">${L.rFull}</a></div>
+</div></section>
+
+<section class="sec countries" id="countries"><div class="wrap center">
+  <div class="kick" style="color:var(--gold)">${L.cKick}</div>
+  <h2 class="serif" style="color:var(--cream);font-size:clamp(1.9rem,4vw,3rem)">${L.cH2}</h2>
+  <p style="max-width:48ch;margin:14px auto 0;color:#E7D2C0">${L.cP}</p>
+  <div class="crow">${COUNTRIES}${SOON}</div>
+</div></section>
+
+<section class="sec iginvite" id="bekon"><div class="ph"><div class="igtext rev">
+  <div class="kick">${L.igKick}</div>
+  <h2 class="serif">${L.igH2}</h2>
+  <p>${L.igP}</p>
+  <div class="follow-lbl">${L.follow}</div><div class="sclinks"><a class="scitem" href="${ig}" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="scbtn"><img src="${A('social/ig.webp')}" alt="Instagram"></span><span class="sclbl">Instagram</span></a><a class="scitem" href="${tt}" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><span class="scbtn"><img src="${A('social/tt.webp')}" alt="TikTok"></span><span class="sclbl">TikTok</span></a></div>
+</div><img class="igphoto" src="${A('bekon1.webp')}" alt="Bekon" loading="lazy"></div></section>
+
+<section class="sec ctaband center"><div class="wrap rev">
+  <div class="kick" style="color:#FBE9C8">${L.nKick}</div>
+  <h2 class="serif">${L.nH2}</h2>
+  <p>${L.nP}</p>
+  <form class="signup" style="display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center" onsubmit="return false"><input type="email" placeholder="${L.nPlace}" style="flex:1;min-width:200px;padding:15px 20px;border-radius:99px;border:0;font:inherit;font-size:1rem"><button class="btn" style="background:var(--maroon);color:#fff">${L.nBtn}</button></form>
+</div></section>
+
+<footer class="lpfoot"><div class="wrap">
+  <div class="fg">
+    <div><a class="flogo" href="${A('index.html')}"><img src="${A('logo-dr.webp')}" alt="DogRanking" style="height:38px"></a><p style="margin-top:12px;max-width:34ch;font-size:.92rem">${L.fDesc}</p></div>
+    <div><h4>${L.fCol[0]}</h4>${L.fKarmy.map(([t, u]) => `<a href="${u}">${t}</a>`).join('')}</div>
+    <div><h4>${L.fCol[1]}</h4>${L.fPortal.map(([t, u]) => `<a href="${u}">${t}</a>`).join('')}</div>
+    <div><h4>${L.fCol[2]}</h4>${['pl', 'uk', 'us'].map(k => `<a href="${H(`${k}/`)}">${MARKETS[k].flag} ${MARKETS[k].name}</a>`).join('')}</div>
+  </div>
+  <div class="legal"><span>${L.legal}</span><span><a href="${ig}" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:none">Instagram</a> · <a href="${tt}" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:none">TikTok</a></span></div>
+</div></footer>
+<script>
+var nav=document.getElementById('nav');addEventListener('scroll',function(){nav.classList.toggle('solid',scrollY>40);},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(el){io.observe(el);});
+</script>
+</body></html>`;
+  return { url, html };
 }
 
 /* ---------- metodologia ---------- */
