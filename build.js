@@ -36,6 +36,14 @@ const MARKETS = {
 const PREVIEW = !!process.env.PREVIEW;
 const STAGING = !process.env.LAUNCH;
 
+/* Opinie gości (UGC). enabled=false dopóki nie skonfigurujesz zasobów Cloudflare (D1/R2/Turnstile).
+   PREVIEW_REVIEWS=1 wymusza render sekcji w lokalnym podglądzie. site key Turnstile jest publiczny. */
+const REVIEWS = {
+  enabled: true,
+  api: '/api',
+  turnstileSiteKey: '0x4AAAAAADnU-ECLyP4S7kJr'
+};
+
 /* ---------- i18n szablonów ---------- */
 const STR = {
   pl: {
@@ -375,6 +383,49 @@ footer a{color:var(--gold)}
 .reader .lead-a{font-style:italic;font-size:1.15rem;color:var(--muted);margin:14px 0 24px}
 .reader .body p{margin-bottom:18px;font-size:1.02rem}
 .reader .src{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted);font-family:-apple-system,sans-serif}
+/* ===== opinie gości (UGC) ===== */
+.crating{display:inline-flex;align-items:center;gap:5px;font-family:var(--f-sans);font-size:.95rem;color:var(--muted)}
+.crating .st{color:var(--gold);letter-spacing:1px}
+.dualrate{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 4px}
+.dualrate .rt{flex:1;min-width:210px;background:var(--paper2);border:1px solid #E6DAC5;border-radius:var(--r);padding:14px 18px}
+.dualrate .rt .lbl{font-family:var(--f-sans);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.dualrate .rt .big{font-family:var(--f-serif);font-weight:700;font-size:1.8rem;color:var(--terra);line-height:1.1;margin-top:2px}
+.dualrate .rt.exp .big{color:var(--maroon2)}
+.dualrate .rt .sub{font-family:var(--f-sans);font-size:.82rem;color:var(--muted)}
+.stars{--s:#D9A441;display:inline-block;font-size:1.05rem;letter-spacing:2px;color:#DCD2BD}
+.stars b{color:var(--s)}
+.rvlist{display:flex;flex-direction:column;gap:14px;margin:18px 0}
+.rvcard{background:var(--card);border:1px solid #E6DAC5;border-radius:var(--r);padding:16px 18px;box-shadow:0 8px 22px -18px rgba(62,14,22,.5)}
+.rvhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rvhead .who{font-family:var(--f-serif);font-weight:600}
+.rvhead .when{font-family:var(--f-sans);font-size:.78rem;color:var(--muted);margin-left:auto}
+.rvmeta{font-family:var(--f-sans);font-size:.8rem;color:var(--muted);margin:4px 0 0;display:flex;gap:8px 14px;flex-wrap:wrap}
+.rvmeta .rec{color:var(--olive-deep);font-weight:600}
+.rvbody{margin:8px 0 0;font-size:.98rem}
+.rvphoto{margin-top:10px}
+.rvphoto img{max-width:160px;border-radius:12px;cursor:zoom-in;border:1px solid #E6DAC5;display:block}
+.rvempty{font-family:var(--f-sans);color:var(--muted);font-size:.92rem;padding:6px 0}
+.rvform{background:var(--paper2);border:1px solid #E6DAC5;border-radius:var(--r-lg);padding:22px 24px;margin:18px 0}
+.rvform h3{margin:0 0 4px}
+.rvform .hint{font-family:var(--f-sans);font-size:.86rem;color:var(--muted);margin-bottom:14px}
+.rvform label{display:block;font-family:var(--f-sans);font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:12px 0 5px}
+.rvform input[type=text],.rvform input[type=email],.rvform textarea,.rvform select{width:100%;padding:11px 13px;border:1px solid #E0D0B4;border-radius:12px;background:var(--card);font:inherit;font-size:.95rem;color:var(--ink)}
+.rvform textarea{min-height:96px;resize:vertical}
+.rvform .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:540px){.rvform .grid2{grid-template-columns:1fr}}
+.starpick{display:inline-flex;flex-direction:row-reverse;gap:4px;font-size:2rem;line-height:1}
+.starpick input{position:absolute;opacity:0;width:0;height:0}
+.starpick label{margin:0;color:#DCD2BD;cursor:pointer;transition:.1s;font-size:2rem;padding:0}
+.starpick label:hover,.starpick label:hover ~ label,.starpick input:checked ~ label{color:var(--gold)}
+.rvform .filehint{font-family:var(--f-sans);font-size:.78rem;color:var(--muted);margin-top:4px}
+.rvform .consent{display:flex;gap:9px;align-items:flex-start;margin-top:14px;font-family:var(--f-sans);font-size:.82rem;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400}
+.rvform .consent input{margin-top:3px;flex:0 0 auto}
+.rvsubmit{margin-top:16px;background:var(--terra);color:#fff;border:0;font-family:var(--f-sans);font-weight:600;font-size:1rem;padding:13px 28px;border-radius:99px;cursor:pointer;box-shadow:0 12px 26px -14px rgba(199,91,56,.6);transition:.15s}
+.rvsubmit:hover{background:var(--terra-deep);transform:translateY(-2px)}
+.rvsubmit:disabled{opacity:.55;cursor:default;transform:none}
+.rvmsg{font-family:var(--f-sans);font-size:.92rem;margin-top:12px;padding:11px 14px;border-radius:12px;display:none}
+.rvmsg.ok{display:block;background:#EAF0E6;border:1px solid #C9D6BF;color:#3F5934}
+.rvmsg.err{display:block;background:#F8EEE9;border:1px solid #E5CDC2;color:#7A4633}
 `;
 
 /* ---------- CSS strony głównej (landing, wg zaakceptowanego prototypu bordo) ---------- */
@@ -633,6 +684,116 @@ const placeholderSVG = label => `<svg xmlns="http://www.w3.org/2000/svg" viewBox
 </svg>`;
 
 /* ---------- strona produktu (uniwersalna, multi-market) ---------- */
+function reviewsSection(p, cat, mkt) {
+  const m = MARKETS[mkt]; const pl = m.lang === 'pl';
+  const [pf, ph] = pawParts(p.score); const ourPaws = pf + ph * 0.5;
+  const cfg = { api: REVIEWS.api, sk: REVIEWS.turnstileSiteKey, market: mkt, category: cat.slug, slug: p.slug };
+  const T = pl ? {
+    h: 'Opinie psich rodziców', expLbl: 'Ocena DogRanking', expSub: 'wg metodologii · 4 filary, 100 pkt',
+    comLbl: 'Ocena społeczności', comNone: 'Brak opinii — bądź pierwszy', loading: 'Ładuję opinie…',
+    countSuf: 'opinii', recSuf: 'poleca', empty: 'Nie ma jeszcze opinii o tym produkcie. Podziel się swoją!',
+    formH: 'Masz tę karmę? Dodaj opinię', formHint: 'Pomóż innym psim rodzicom — najbardziej liczy się zdjęcie miski lub psa przy posiłku.',
+    name: 'Imię lub nick', email: 'E-mail (opcjonalnie, nie publikujemy)', rate: 'Twoja ocena',
+    rec: 'Polecasz?', recYes: 'Tak', recNo: 'Nie', dog: 'Wielkość psa', any: '—', dS: 'mały', dM: 'średni', dL: 'duży',
+    title: 'Tytuł (opcjonalnie)', body: 'Twoja opinia', photo: 'Zdjęcie produktu (opcjonalnie)',
+    fileHint: 'JPG/PNG/WEBP, do 5 MB. Każde zdjęcie sprawdzamy przed publikacją.',
+    consent: 'Zgadzam się na publikację mojej opinii i zdjęcia. Opinia trafia najpierw do moderacji.',
+    submit: 'Wyślij opinię 🐾', sending: 'Wysyłam…',
+    ok: 'Dziękujemy! Twoja opinia czeka na moderację i pojawi się po sprawdzeniu.',
+    err: 'Nie udało się wysłać. Sprawdź pola i spróbuj ponownie.', need: 'Zaznacz ocenę, wpisz opinię i zaznacz zgodę.'
+  } : {
+    h: 'What dog parents say', expLbl: 'DogRanking score', expSub: 'by our methodology · 4 pillars, 100 pts',
+    comLbl: 'Community rating', comNone: 'No reviews yet — be the first', loading: 'Loading reviews…',
+    countSuf: 'reviews', recSuf: 'recommend', empty: 'No reviews of this product yet. Share yours!',
+    formH: 'Got this food? Add your review', formHint: 'Help other dog parents — a photo of the bowl or your dog at mealtime helps most.',
+    name: 'Name or nickname', email: 'Email (optional, never published)', rate: 'Your rating',
+    rec: 'Recommend?', recYes: 'Yes', recNo: 'No', dog: 'Dog size', any: '—', dS: 'small', dM: 'medium', dL: 'large',
+    title: 'Title (optional)', body: 'Your review', photo: 'Product photo (optional)',
+    fileHint: 'JPG/PNG/WEBP, up to 5 MB. Every photo is reviewed before publishing.',
+    consent: 'I agree to publish my review and photo. Reviews are moderated before going live.',
+    submit: 'Send review 🐾', sending: 'Sending…',
+    ok: 'Thank you! Your review is awaiting moderation and will appear once approved.',
+    err: 'Could not send. Check the fields and try again.', need: 'Pick a rating, write a review and tick consent.'
+  };
+  const starpick = [5, 4, 3, 2, 1].map(n => `<input type="radio" name="rating" id="rv-st${n}" value="${n}"><label for="rv-st${n}" title="${n}">★</label>`).join('');
+  return `
+<h2 id="opinie">${T.h}</h2>
+<div class="dualrate">
+  <div class="rt exp"><div class="lbl">${T.expLbl}</div><div class="big">${ourPaws} / 5 🐾</div><div class="sub">${T.expSub}</div></div>
+  <div class="rt"><div class="lbl">${T.comLbl}</div><div class="big" data-cbig>–</div><div class="sub" data-csub>${T.comNone}</div></div>
+</div>
+<div class="rvlist" data-rvlist><p class="rvempty">${T.loading}</p></div>
+<form class="rvform" data-rvform autocomplete="off">
+  <h3>${T.formH}</h3>
+  <p class="hint">${T.formHint}</p>
+  <div class="grid2">
+    <div><label for="rv-name">${T.name}</label><input type="text" id="rv-name" name="author" maxlength="40" required></div>
+    <div><label for="rv-email">${T.email}</label><input type="email" id="rv-email" name="email" maxlength="120"></div>
+  </div>
+  <label>${T.rate}</label><div class="starpick">${starpick}</div>
+  <div class="grid2">
+    <div><label for="rv-rec">${T.rec}</label><select id="rv-rec" name="recommend"><option value="">${T.any}</option><option value="1">${T.recYes}</option><option value="0">${T.recNo}</option></select></div>
+    <div><label for="rv-dog">${T.dog}</label><select id="rv-dog" name="dog_size"><option value="">${T.any}</option><option value="maly">${T.dS}</option><option value="sredni">${T.dM}</option><option value="duzy">${T.dL}</option></select></div>
+  </div>
+  <label for="rv-title">${T.title}</label><input type="text" id="rv-title" name="title" maxlength="80">
+  <label for="rv-body">${T.body}</label><textarea id="rv-body" name="body" maxlength="1500" required></textarea>
+  <label for="rv-photo">${T.photo}</label><input type="file" id="rv-photo" name="photo" accept="image/jpeg,image/png,image/webp"><div class="filehint">${T.fileHint}</div>
+  <div class="cf-turnstile" data-sitekey="${cfg.sk}"></div>
+  <label class="consent"><input type="checkbox" name="consent" required> ${T.consent}</label>
+  <button type="submit" class="rvsubmit">${T.submit}</button>
+  <div class="rvmsg" data-rvmsg></div>
+</form>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+(function(){
+  var CFG=${JSON.stringify(cfg)}, T=${JSON.stringify({ countSuf: T.countSuf, recSuf: T.recSuf, empty: T.empty, ok: T.ok, err: T.err, need: T.need, submit: T.submit, sending: T.sending, comNone: T.comNone })};
+  var sec=document.currentScript.closest ? document.currentScript : null;
+  var root=document.querySelector('[data-rvform]').closest('main')||document;
+  var listEl=root.querySelector('[data-rvlist]'), bigEl=root.querySelector('[data-cbig]'), subEl=root.querySelector('[data-csub]');
+  var form=root.querySelector('[data-rvform]'), msg=root.querySelector('[data-rvmsg]'), crat=root.querySelector('[data-crating]');
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function stars(n){n=Math.round(n);var o='';for(var i=1;i<=5;i++)o+=i<=n?'<b>★</b>':'★';return o;}
+  function fmtDate(s){try{return new Date(s).toLocaleDateString();}catch(e){return '';}}
+  function q(o){return Object.keys(o).map(function(k){return k+'='+encodeURIComponent(o[k]);}).join('&');}
+  function load(){
+    fetch(CFG.api+'/reviews?'+q({market:CFG.market,category:CFG.category,slug:CFG.slug})).then(function(r){return r.json();}).then(function(d){
+      var n=d.count||0;
+      if(n>0){
+        bigEl.innerHTML=(d.avg.toFixed(1))+' <span class="stars">'+stars(d.avg)+'</span>';
+        var rec=(d.recommendPct!=null)?(' · '+d.recommendPct+'% '+T.recSuf):'';
+        subEl.textContent=n+' '+T.countSuf+rec;
+        if(crat){crat.querySelector('.cval').textContent=d.avg.toFixed(1);crat.querySelector('.ccount').textContent='('+n+')';}
+      } else { bigEl.textContent='–'; subEl.textContent=T.comNone; }
+      if(!d.reviews||!d.reviews.length){listEl.innerHTML='<p class="rvempty">'+T.empty+'</p>';return;}
+      listEl.innerHTML=d.reviews.map(function(r){
+        var ph=r.hasPhoto?('<div class="rvphoto"><img loading="lazy" src="'+CFG.api+'/photo?id='+encodeURIComponent(r.id)+'" alt="zdjęcie od '+esc(r.author)+'" onclick="window.open(this.src)"></div>'):'';
+        var meta=[]; if(r.recommend===1)meta.push('<span class="rec">✓ '+T.recSuf+'</span>'); if(r.recommend===0)meta.push('—');
+        if(r.dog_size)meta.push(esc(r.dog_size));
+        return '<div class="rvcard"><div class="rvhead"><span class="stars">'+stars(r.rating)+'</span> <span class="who">'+esc(r.author)+'</span><span class="when">'+fmtDate(r.created_at)+'</span></div>'+
+          (meta.length?'<div class="rvmeta">'+meta.join('')+'</div>':'')+
+          (r.title?'<div class="rvbody"><strong>'+esc(r.title)+'</strong></div>':'')+
+          (r.body?'<div class="rvbody">'+esc(r.body)+'</div>':'')+ph+'</div>';
+      }).join('');
+    }).catch(function(){listEl.innerHTML='<p class="rvempty">'+T.empty+'</p>';});
+  }
+  function show(cls,txt){msg.className='rvmsg '+cls;msg.textContent=txt;}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var fd=new FormData(form);
+    if(!fd.get('rating')||!(''+fd.get('body')).trim()||!fd.get('consent')){show('err',T.need);return;}
+    fd.append('market',CFG.market);fd.append('category',CFG.category);fd.append('slug',CFG.slug);
+    var btn=form.querySelector('.rvsubmit');btn.disabled=true;var old=btn.textContent;btn.textContent=T.sending;
+    fetch(CFG.api+'/submit',{method:'POST',body:fd}).then(function(r){return r.json().catch(function(){return {ok:r.ok};});}).then(function(d){
+      if(d&&d.ok){show('ok',T.ok);form.reset();if(window.turnstile)try{turnstile.reset();}catch(e){}}
+      else{show('err',(d&&d.error)||T.err);}
+      btn.disabled=false;btn.textContent=old;
+    }).catch(function(){show('err',T.err);btn.disabled=false;btn.textContent=old;});
+  });
+  load();
+})();
+</script>`;
+}
+
 function productPage(p, cat, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang];
   const url = `/${mkt}/${cSlug(cat, mkt)}/${p.slug}/`;
@@ -709,7 +870,7 @@ ${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.s
   const headInner = `<div class="phead-main">
 <div class="eyebrow">${S.review} · ${cName(cat, mkt)} · ${p.type}</div>
 <h1>${p.name} — ${S.reviewTitle}</h1>
-<p class="meta">${S.rated}: ${pawsTxt(p.score, m.lang)} <strong>${p.score}/100 · ${scoreLbl(p.score, m.lang)}</strong> · ${S.updated}: ${TODAY}${p.verified ? '' : ` · <span class="badge">${S.demo}</span>`}</p>
+<p class="meta">${S.rated}: ${pawsTxt(p.score, m.lang)} <strong>${p.score}/100 · ${scoreLbl(p.score, m.lang)}</strong> · ${S.updated}: ${TODAY}${p.verified ? '' : ` · <span class="badge">${S.demo}</span>`}${REVIEWS.enabled ? ` · <a class="crating" data-crating href="#opinie">★ <span class="cval">–</span> <span class="ccount"></span></a>` : ''}</p>
 </div>`;
   const body = `
 <p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › <a href="${href(url, `${mkt}/${cSlug(cat, mkt)}/`)}">${cName(cat, mkt)}</a> › ${p.name}</p>
@@ -728,6 +889,7 @@ ${p.pillars.map((v, i) => `<tr><td>${labels[i]}</td><td><strong>${v}</strong></t
 <div class="card"><strong>${S.pros}</strong><ul class="pc good">${p.pros.map(x => `<li>${x}</li>`).join('')}</ul>
 <strong>${S.cons}</strong><ul class="pc bad">${p.cons.map(x => `<li>${x}</li>`).join('')}</ul></div>
 ${testSection}
+${REVIEWS.enabled ? reviewsSection(p, cat, mkt) : ''}
 <h2>${S.faqH}</h2>
 ${p.faq.map(x => `<h3>${x.q}</h3><p>${x.a}</p>`).join('')}
 ${relatedKnowledge(p, cat, mkt, url)}

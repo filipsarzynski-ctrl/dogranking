@@ -1,1 +1,12 @@
-{ "name": "dogranking", "compatibility_date": "2026-06-12", "assets": { "directory": "./dist", "not_found_handling": "404-page" } }
+{
+  "name": "dogranking",
+  "main": "worker.js",
+  "compatibility_date": "2026-06-12",
+  "assets": { "directory": "./dist", "not_found_handling": "404-page", "binding": "ASSETS" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "dogranking-reviews", "database_id": "35ce7534-c87c-45ec-85b7-9e9da0dd310e" }
+  ],
+  "r2_buckets": [
+    { "binding": "PHOTOS", "bucket_name": "dogranking-photos" }
+  ]
+}
