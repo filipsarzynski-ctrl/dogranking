@@ -335,9 +335,9 @@ footer a{color:var(--gold)}
 .gallery img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover}
 .gallery figcaption{padding:10px 14px;font-size:.8rem;color:var(--muted);font-family:-apple-system,sans-serif;border-top:1px solid #EEE7D8}
 .paws{font-size:1.05rem;letter-spacing:2px}
-.protocol{background:#F0F2EC;border:1px solid #D5DACB;border-radius:var(--r);padding:16px 20px;font-size:.9rem;font-family:-apple-system,sans-serif;color:#43503A;margin:16px 0}
-.legalbox{background:#F8EEE9;border:1px solid #E5CDC2;border-radius:var(--r);padding:16px 20px;font-size:.9rem;font-family:-apple-system,sans-serif;color:#7A4633;margin:16px 0}
-.pending{background:#EFF2F6;border:1px solid #CDD8E4;border-radius:var(--r);padding:16px 20px;font-size:.9rem;font-family:-apple-system,sans-serif;color:#33536F;margin:16px 0}
+.protocol,.legalbox,.pending{background:none;border:0;border-left:3px solid var(--line);border-radius:0;padding:3px 0 3px 16px;font-size:.92rem;font-family:var(--f-sans);color:var(--muted);margin:18px 0}
+.protocol strong,.legalbox strong,.pending strong{color:var(--ink)}
+.protocol a,.legalbox a,.pending a{color:var(--terra)}
 .catgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:24px 0}
 .catcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:9px;transition:transform .15s,box-shadow .15s,border-color .15s;box-shadow:var(--shadow-sm)}
 .catcard:hover{border-color:var(--terra);transform:translateY(-3px);box-shadow:var(--shadow)}
@@ -359,7 +359,7 @@ footer a{color:var(--gold)}
 .mbar{height:7px;background:var(--line-soft,#EEE7D8);border-radius:4px;margin-top:4px;max-width:200px;overflow:hidden}
 .mbar i{display:block;height:100%;border-radius:4px;background:var(--sage)}
 .match.bad .mbar i{background:var(--terra)}
-.warnline{background:#FAF0E2;border:1px solid #ECD9B8;color:#8A5A1E;border-radius:8px;padding:7px 12px;font-size:.8rem;font-family:-apple-system,sans-serif;margin-top:8px}
+.warnline{background:none;border:0;border-left:3px solid var(--terra);color:var(--terra-deep);border-radius:0;padding:2px 0 2px 10px;font-size:.8rem;font-family:var(--f-sans);margin-top:8px}
 .rankrow.blocked{opacity:.5}
 .matchlegend{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:14px 18px;font-family:-apple-system,sans-serif;font-size:.84rem;color:var(--muted);margin-top:10px}
 /* intro / market picker */
@@ -835,7 +835,7 @@ ${p.flavor ? `<tr><td>${S.flavorRow}</td><td><strong>${p.flavor}</strong></td><t
 ${k1000 ? `<tr><td><strong>${S.cost1000}</strong></td><td><strong>~${m.money(k1000)}</strong></td><td>${S.cost1000note}</td></tr>` : ''}
 </table>
 <p class="meta">${S.dmNote} <a href="${href(url, methodPath)}">${S.howCalc}</a></p>
-<div class="protocol" style="background:#FAF0E2;border-color:#ECD9B8;color:#7a5c1e">ℹ️ ${S.variantBox}</div>` : `
+<div class="protocol">ℹ️ ${S.variantBox}</div>` : `
 <h2>${S.spec}</h2>
 <table>
 <tr><th>${S.param}</th><th>${S.value}</th></tr>
