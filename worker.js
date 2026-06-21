@@ -2,6 +2,7 @@
 // Pliki statyczne (dist/) serwuje warstwa "assets" Cloudflare (assets-first).
 // Worker uruchamia się tylko dla ścieżek, które nie są plikiem statycznym — czyli /api/*.
 import * as reviews from './functions/api/reviews.js';
+import * as summary from './functions/api/reviews-summary.js';
 import * as submit from './functions/api/submit.js';
 import * as photo from './functions/api/photo.js';
 import * as admin from './functions/api/admin.js';
@@ -13,6 +14,7 @@ export default {
     const c = { request, env, ctx };
 
     if (p === '/api/reviews' && request.method === 'GET') return reviews.onRequestGet(c);
+    if (p === '/api/reviews-summary' && request.method === 'GET') return summary.onRequestGet(c);
     if (p === '/api/submit' && request.method === 'POST') return submit.onRequestPost(c);
     if (p === '/api/photo' && request.method === 'GET') return photo.onRequestGet(c);
     if (p === '/api/admin') {
