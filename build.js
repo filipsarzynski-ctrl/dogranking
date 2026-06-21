@@ -1317,7 +1317,7 @@ function homeMkt(mkt) {
   const H = t => href(url, t);
   const A = t => href(url, t); // asset / page (oba z roota)
   const foods = (PRODUCTS[mkt] || {}).karmy || [];
-  const top = [...foods].sort((a, b) => b.score - a.score).slice(0, 5);
+  const top = [...foods].sort((a, b) => b.score - a.score).slice(0, 8);
   const methodSlug = pl ? 'metodologia' : 'methodology';
   const karmyUrl = H(`${mkt}/${cSlug(CATS[0], mkt)}/`);
   const bekonUrl = H(`${mkt}/bekon/`);
