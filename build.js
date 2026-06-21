@@ -459,6 +459,30 @@ footer a{color:var(--gold)}
 .rcard.blocked .rc-img{filter:grayscale(.6)}
 .rc-warn{font-family:var(--f-sans);font-size:.74rem;color:#F0B8A6;margin-top:2px}
 @media(hover:none){.rc-hover{display:none}}
+/* ===== ciemny motyw strony rankingu (kategorie) ===== */
+body.rank-dark{background:#340b12}
+.rank-dark main{color:#EBD9C2}
+.rank-dark h1,.rank-dark h2,.rank-dark h3{color:#F8EFDD}
+.rank-dark p,.rank-dark .answer,.rank-dark td{color:#E7D2C0}
+.rank-dark .lead,.rank-dark .meta,.rank-dark .crumb,.rank-dark .crumb a{color:#C9A98C}
+.rank-dark .crumb a:hover,.rank-dark a:hover{color:var(--gold)}
+.rank-dark .eyebrow{color:var(--gold)}
+.rank-dark .badge.live{background:rgba(255,255,255,.08);border-color:rgba(242,232,213,.25);color:#CFE0C4}
+.rank-dark .profile{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.18)}
+.rank-dark .profile h3{color:#F8EFDD}
+.rank-dark .pf-g label{color:#C9A98C}
+.rank-dark .pf-g select{background:#4a121c;border-color:rgba(242,232,213,.28);color:#F2E8D5}
+.rank-dark .pf-reset{color:var(--gold)}
+.rank-dark .matchlegend{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.22);color:#C9A98C}
+.rank-dark table{background:rgba(255,255,255,.04);border-color:rgba(242,232,213,.16);box-shadow:none}
+.rank-dark th{background:rgba(0,0,0,.28);color:#E7D2C0}
+.rank-dark td{border-top-color:rgba(242,232,213,.12)}
+.rank-dark .catcard{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.18);color:#EBD9C2}
+.rank-dark .catcard:hover{border-color:var(--gold);background:rgba(255,255,255,.09)}
+.rank-dark .catcard h3{color:#F8EFDD}.rank-dark .catcard p{color:#C9A98C}
+.rank-dark .rcard{border-color:rgba(242,232,213,.16)}
+.rank-dark .protocol,.rank-dark .legalbox,.rank-dark .pending{border-left-color:var(--gold);color:#C9A98C}
+.rank-dark .protocol strong,.rank-dark .legalbox strong{color:#F8EFDD}
 `;
 
 /* ---------- CSS strony głównej (landing, wg zaakceptowanego prototypu bordo) ---------- */
@@ -643,7 +667,7 @@ const SOCIAL_LINKS = { instagram: 'https://www.instagram.com/bekon.dogranking', 
 const SOCIAL = `<a href="${SOCIAL_LINKS.instagram}" target="_blank" rel="noopener noreferrer" aria-label="DogRanking na Instagramie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a><a href="${SOCIAL_LINKS.tiktok}" target="_blank" rel="noopener noreferrer" aria-label="DogRanking na TikToku"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 3c.32 2.16 1.53 3.46 3.62 3.6v2.41c-1.21.12-2.27-.28-3.5-1.02v6.67c0 3.39-2.5 5.62-5.45 5.62-2.84 0-5.07-2.18-5.07-5.06 0-3.01 2.39-5.16 5.62-4.96v2.62c-.43-.12-.86-.18-1.27-.18-1.39 0-2.45 1.06-2.45 2.45 0 1.46 1.07 2.51 2.55 2.51 1.5 0 2.62-1.09 2.62-2.96V3h2.8z"/></svg></a>`;
 
 /* ---------- szkielet ---------- */
-function page({ title, desc, canonical, body, jsonld, mkt = 'pl', alts = null }) {
+function page({ title, desc, canonical, body, jsonld, mkt = 'pl', alts = null, bodyClass = '' }) {
   const m = MARKETS[mkt] || MARKETS.pl;
   const S = STR[m.lang];
   const ld = (jsonld || []).map(o => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n');
@@ -666,7 +690,7 @@ ${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}<link rel="ca
 <style>${CSS}</style>
 ${ld}
 </head>
-<body>
+<body${bodyClass ? ` class="${bodyClass}"` : ''}>
 ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem">${S.staging}</div>` : ''}
 <header><div class="bar">
   <a class="mark" href="${H('index.html')}" aria-label="DogRanking - wybierz kraj"><img src="${href(canonical, 'logo-dr.webp')}" alt="DogRanking" height="42"></a>
@@ -1210,7 +1234,7 @@ ${content}
 <p class="meta"><a href="${href(url, methodPath)}">${S.fullMethod}</a></p>
 ${products.length ? `<p class="disclosure">${S.hubDisclosure}</p>` : ''}`;
 
-  return { url, html: page({ title: `${cName(cat, mkt)} - DogRanking ${MARKETS[mkt].name}`, desc: cDesc(cat, mkt).slice(0, 155), canonical: url, body, jsonld, mkt, alts }) };
+  return { url, html: page({ title: `${cName(cat, mkt)} - DogRanking ${MARKETS[mkt].name}`, desc: cDesc(cat, mkt).slice(0, 155), canonical: url, body, jsonld, mkt, alts, bodyClass: 'rank-dark' }) };
 }
 
 /* ---------- strona główna rynku ---------- */
