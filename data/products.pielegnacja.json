@@ -1,5 +1,5 @@
 {
-  "_uwaga": "Kategoria beta — pierwszy test kategorii pielęgnacja. Dane DEMO (verified:false) do podmiany po realnym teście.",
+  "_uwaga": "Kategoria beta - pierwszy test kategorii pielęgnacja. Dane DEMO (verified:false) do podmiany po realnym teście.",
   "products": [
     {
       "slug": "chris-christensen-big-g-slicker",
@@ -10,25 +10,25 @@
       "specs": [
         ["Typ", "szczotka pudlówka (slicker), rozmiar M"],
         ["Przeznaczenie", "sierść kędzierzawa, gęsta, podatna na filcowanie (pudle, doodle)"],
-        ["Piny", "długie, gięte, zagęszczone — docierają do skóry przez gęsty włos"],
+        ["Piny", "długie, gięte, zagęszczone - docierają do skóry przez gęsty włos"],
         ["Waga / rączka", "lekka, ergonomiczna, antypoślizgowa"]
       ],
       "verified": false,
       "test": {
         "date": "2026-06-11",
-        "pomiar": "4 tygodnie codziennego rozczesywania Bekona (pudel miniaturowy — sierść kędzierzawa bez podszerstka)",
+        "pomiar": "4 tygodnie codziennego rozczesywania Bekona (pudel miniaturowy - sierść kędzierzawa bez podszerstka)",
         "zapach": "",
         "tekstura": "piny nie wyginają się po miesiącu pracy; brak zarysowań skóry",
         "bekon": 3,
-        "bekonNote": "Toleruje czesanie bez protestów — piny nie szarpią przy kołtunkach za uchem. Skala 🎾: akceptacja w użytkowaniu, nie smakowitość.",
+        "bekonNote": "Toleruje czesanie bez protestów - piny nie szarpią przy kołtunkach za uchem. Skala 🎾: akceptacja w użytkowaniu, nie smakowitość.",
         "uwagi": "Egzemplarz kupiony, nie od producenta. Porównanie z tanią szczotką marketową w przygotowaniu."
       },
-      "verdict": "Punkt odniesienia wśród szczotek dla ras kędzierzawych. Długie, gięte piny rozplątują sierść pudla do skóry, czego nie potrafi większość tanich slickerów — te czeszą tylko wierzch, a kołtuny rosną przy skórze. Cena wysoka, ale w 4-tygodniowym teście na Bekonie zero szarpania i zero wygiętych pinów.",
-      "pros": ["Dociera do skóry przez gęstą, kędzierzawą sierść", "Nie szarpie przy kołtunkach (test na Bekonie)", "Trwałość pinów — bez odkształceń po miesiącu", "Standard w salonach groomerskich"],
-      "cons": ["Cena 150–200 zł — kilkukrotnie drożej niż marketowe", "Dla ras krótkowłosych to przepłacanie — wystarczy gumowa zgrzebło", "Wymaga nauki techniki (line brushing), inaczej czesze tylko wierzch"],
+      "verdict": "Punkt odniesienia wśród szczotek dla ras kędzierzawych. Długie, gięte piny rozplątują sierść pudla do skóry, czego nie potrafi większość tanich slickerów - te czeszą tylko wierzch, a kołtuny rosną przy skórze. Cena wysoka, ale w 4-tygodniowym teście na Bekonie zero szarpania i zero wygiętych pinów.",
+      "pros": ["Dociera do skóry przez gęstą, kędzierzawą sierść", "Nie szarpie przy kołtunkach (test na Bekonie)", "Trwałość pinów - bez odkształceń po miesiącu", "Standard w salonach groomerskich"],
+      "cons": ["Cena 150–200 zł - kilkukrotnie drożej niż marketowe", "Dla ras krótkowłosych to przepłacanie - wystarczy gumowa zgrzebło", "Wymaga nauki techniki (line brushing), inaczej czesze tylko wierzch"],
       "faq": [
-        {"q": "Czy droga szczotka ma sens dla pudla?", "a": "Tak — sierść kędzierzawa bez podszerstka filcuje się przy skórze, a tanie slickery z krótkimi pinami czeszą tylko wierzch. Kołtun przy skórze kończy się goleniem psa. Dobra szczotka to koszt jednego strzyżenia u groomera."},
-        {"q": "Jak często czesać pudla?", "a": "Sierść kędzierzawą rozczesuje się do skóry 2–4 razy w tygodniu (przy dłuższym strzyżeniu codziennie), zawsze przed kąpielą — woda zacieśnia kołtuny."}
+        {"q": "Czy droga szczotka ma sens dla pudla?", "a": "Tak - sierść kędzierzawa bez podszerstka filcuje się przy skórze, a tanie slickery z krótkimi pinami czeszą tylko wierzch. Kołtun przy skórze kończy się goleniem psa. Dobra szczotka to koszt jednego strzyżenia u groomera."},
+        {"q": "Jak często czesać pudla?", "a": "Sierść kędzierzawą rozczesuje się do skóry 2–4 razy w tygodniu (przy dłuższym strzyżeniu codziennie), zawsze przed kąpielą - woda zacieśnia kołtuny."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -41,15 +41,15 @@
       "specs": [
         ["Typ", "grzebień metalowy 24,5 cm (9 5/8\"), szeroki rozstaw zębów"],
         ["Materiały", "zęby ze stali nierdzewnej osadzone w mosiężnym rdzeniu, wykonanie ręczne"],
-        ["Przeznaczenie", "szaty kędzierzawe i wełniste (pudel, bichon, doodle) — kontrola rozczesania do skóry"],
+        ["Przeznaczenie", "szaty kędzierzawe i wełniste (pudel, bichon, doodle) - kontrola rozczesania do skóry"],
         ["Cena orientacyjna", "ok. 200–250 zł (tańszy wariant Fine/Coarse 7,5\" ~198 zł)"]
       ],
       "verified": false,
-      "verdict": "Naturalne dopełnienie slickera: po rozczesaniu szczotką grzebień weryfikuje, czy naprawdę dotarłeś do skóry — jeśli zęby przechodzą przez sierść bez oporu, nie ma kołtunów. Zaokrąglone zęby w mosiężnym rdzeniu dają poślizg, którego nie mają tłoczone grzebienie z marketu. Cena bolesna, ale to narzędzie na dekady.",
-      "pros": ["Idealny poślizg — nie tnie i nie wyrywa włosa", "Stal + mosiądz: nie elektryzuje sierści", "Test grzebieniem to jedyna pewna kontrola rozczesania do skóry", "Praktycznie niezniszczalny"],
-      "cons": ["Ok. 200–250 zł za grzebień — najwyższa półka cenowa", "Klasyczny format bez rączki wymaga przyzwyczajenia", "Dla ras krótkowłosych zbędny"],
+      "verdict": "Naturalne dopełnienie slickera: po rozczesaniu szczotką grzebień weryfikuje, czy naprawdę dotarłeś do skóry - jeśli zęby przechodzą przez sierść bez oporu, nie ma kołtunów. Zaokrąglone zęby w mosiężnym rdzeniu dają poślizg, którego nie mają tłoczone grzebienie z marketu. Cena bolesna, ale to narzędzie na dekady.",
+      "pros": ["Idealny poślizg - nie tnie i nie wyrywa włosa", "Stal + mosiądz: nie elektryzuje sierści", "Test grzebieniem to jedyna pewna kontrola rozczesania do skóry", "Praktycznie niezniszczalny"],
+      "cons": ["Ok. 200–250 zł za grzebień - najwyższa półka cenowa", "Klasyczny format bez rączki wymaga przyzwyczajenia", "Dla ras krótkowłosych zbędny"],
       "faq": [
-        {"q": "Po co grzebień, skoro mam dobrego slickera?", "a": "Slicker rozczesuje, grzebień kontroluje. W gęstej, kędzierzawej szacie kołtun przy skórze łatwo przeoczyć — grzebień, który nie przechodzi gładko, natychmiast go zdradza. Groomerzy nazywają to 'line combing' po 'line brushing'."},
+        {"q": "Po co grzebień, skoro mam dobrego slickera?", "a": "Slicker rozczesuje, grzebień kontroluje. W gęstej, kędzierzawej szacie kołtun przy skórze łatwo przeoczyć - grzebień, który nie przechodzi gładko, natychmiast go zdradza. Groomerzy nazywają to 'line combing' po 'line brushing'."},
         {"q": "Czym różni się Buttercomb od grzebienia za 20 zł?", "a": "Sposobem wykonania zębów: w Buttercomb są zaokrąglone do samego rdzenia i osadzone w mosiądzu, więc ślizgają się po włosie. Tanie grzebienie mają zęby wycinane/tłoczone z ostrymi krawędziami, które tną i łamią włos."}
       ],
       "shops": [{"n": "GroomerShop.pl", "u": "https://www.groomershop.pl/"}, {"n": "Germapol", "u": "https://sklep.germapol.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
@@ -68,12 +68,12 @@
         ["Cena orientacyjna", "ok. 66 zł / 70 g"]
       ],
       "verified": false,
-      "verdict": "Standard weterynaryjny w higienie zębów psa. Podwójny system enzymatyczny ogranicza bakterie nawet przy niedoskonałym szczotkowaniu, a smak drobiowy sprawia, że większość psów traktuje mycie jak przysmak. Dla ras miniaturowych — z ich genetyczną skłonnością do kamienia — to wydatek ważniejszy niż niejeden suplement.",
-      "pros": ["Enzymy pracują też tam, gdzie szczoteczka nie dotarła", "Bez fluoru i ksylitolu — bezpieczna przy połykaniu", "Smak drobiowy ułatwia przyzwyczajenie psa", "Marka weterynaryjna z dorobkiem badawczym"],
-      "cons": ["Ok. 66 zł za 70 g — drogo jak na pastę", "Zawiera dwutlenek tytanu i benzoesan sodu (dopuszczone, ale kosmetycznie dyskusyjne)", "Bez szczotkowania sama pasta zdziała niewiele"],
+      "verdict": "Standard weterynaryjny w higienie zębów psa. Podwójny system enzymatyczny ogranicza bakterie nawet przy niedoskonałym szczotkowaniu, a smak drobiowy sprawia, że większość psów traktuje mycie jak przysmak. Dla ras miniaturowych - z ich genetyczną skłonnością do kamienia - to wydatek ważniejszy niż niejeden suplement.",
+      "pros": ["Enzymy pracują też tam, gdzie szczoteczka nie dotarła", "Bez fluoru i ksylitolu - bezpieczna przy połykaniu", "Smak drobiowy ułatwia przyzwyczajenie psa", "Marka weterynaryjna z dorobkiem badawczym"],
+      "cons": ["Ok. 66 zł za 70 g - drogo jak na pastę", "Zawiera dwutlenek tytanu i benzoesan sodu (dopuszczone, ale kosmetycznie dyskusyjne)", "Bez szczotkowania sama pasta zdziała niewiele"],
       "faq": [
-        {"q": "Dlaczego nie można myć psu zębów ludzką pastą?", "a": "Ludzka pasta zawiera fluor i często ksylitol — oba toksyczne dla psa przy połykaniu, a pies pastę zawsze połyka. Pasty weterynaryjne są projektowane do połykania i nie wymagają spłukiwania."},
-        {"q": "Jak często szczotkować psu zęby?", "a": "Złoty standard to codziennie — płytka mineralizuje się w kamień w 48–72 godziny. Realne minimum to 3 razy w tygodniu. Rasy małe i miniaturowe (pudle, yorki) mają genetycznie większą skłonność do kamienia, więc u nich regularność jest kluczowa."}
+        {"q": "Dlaczego nie można myć psu zębów ludzką pastą?", "a": "Ludzka pasta zawiera fluor i często ksylitol - oba toksyczne dla psa przy połykaniu, a pies pastę zawsze połyka. Pasty weterynaryjne są projektowane do połykania i nie wymagają spłukiwania."},
+        {"q": "Jak często szczotkować psu zęby?", "a": "Złoty standard to codziennie - płytka mineralizuje się w kamień w 48–72 godziny. Realne minimum to 3 razy w tygodniu. Rasy małe i miniaturowe (pudle, yorki) mają genetycznie większą skłonność do kamienia, więc u nich regularność jest kluczowa."}
       ],
       "shops": [{"n": "ZooArt", "u": "https://zooart.com.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -91,35 +91,35 @@
         ["Cena orientacyjna", "ok. 198 zł"]
       ],
       "verified": false,
-      "verdict": "Bezpieczna alternatywa dla cążek: szlifowanie nie niesie ryzyka przycięcia żywej części pazura, a krawędź zostaje gładka zamiast ostrej. Szczególnie cenny przy ciemnych pazurach, w których nie widać matrycy. Wymaga tylko cierpliwego przyzwyczajenia psa do wibracji — to proces na tygodnie, nie minuty.",
-      "pros": ["Zero ryzyka przycięcia 'żywego' — najczęstszego wypadku z cążkami", "Gładka krawędź pazura zamiast ostrej po cięciu", "Osłona z otworem prowadzącym i kąt 45° dla początkujących", "Cichszy niż klasyczne szlifierki"],
-      "cons": ["Baterie AA zamiast akumulatora (model 7760 ma Li-Ion)", "Wolniejsze niż cążki — sesja trwa dłużej", "Pies musi zostać oswojony z dźwiękiem i wibracją"],
+      "verdict": "Bezpieczna alternatywa dla cążek: szlifowanie nie niesie ryzyka przycięcia żywej części pazura, a krawędź zostaje gładka zamiast ostrej. Szczególnie cenny przy ciemnych pazurach, w których nie widać matrycy. Wymaga tylko cierpliwego przyzwyczajenia psa do wibracji - to proces na tygodnie, nie minuty.",
+      "pros": ["Zero ryzyka przycięcia 'żywego' - najczęstszego wypadku z cążkami", "Gładka krawędź pazura zamiast ostrej po cięciu", "Osłona z otworem prowadzącym i kąt 45° dla początkujących", "Cichszy niż klasyczne szlifierki"],
+      "cons": ["Baterie AA zamiast akumulatora (model 7760 ma Li-Ion)", "Wolniejsze niż cążki - sesja trwa dłużej", "Pies musi zostać oswojony z dźwiękiem i wibracją"],
       "faq": [
-        {"q": "Szlifierka czy cążki — co lepsze dla psa?", "a": "Dla większości opiekunów szlifierka jest bezpieczniejsza: przy ciemnych pazurach nie widać, gdzie kończy się martwa część, a jedno za głębokie cięcie cążkami boli i zraża psa na lata. Szlifowanie zdejmuje pazur warstwami i daje pełną kontrolę."},
-        {"q": "Jak przyzwyczaić psa do szlifierki?", "a": "Etapami, z nagrodami: najpierw sam widok i dźwięk urządzenia, potem dotyk wyłączonego, dopiero po dniach — krótkie szlifowanie jednego pazura. Sesje po kilka minut, zawsze zakończone przysmakiem."}
+        {"q": "Szlifierka czy cążki - co lepsze dla psa?", "a": "Dla większości opiekunów szlifierka jest bezpieczniejsza: przy ciemnych pazurach nie widać, gdzie kończy się martwa część, a jedno za głębokie cięcie cążkami boli i zraża psa na lata. Szlifowanie zdejmuje pazur warstwami i daje pełną kontrolę."},
+        {"q": "Jak przyzwyczaić psa do szlifierki?", "a": "Etapami, z nagrodami: najpierw sam widok i dźwięk urządzenia, potem dotyk wyłączonego, dopiero po dniach - krótkie szlifowanie jednego pazura. Sesje po kilka minut, zawsze zakończone przysmakiem."}
       ],
       "shops": [{"n": "Media Expert", "u": "https://www.mediaexpert.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}, {"n": "Amazon.pl", "u": "https://www.amazon.pl/"}]
     },
     {
       "slug": "vetoquinol-otifree",
-      "name": "Vetoquinol Otifree — płyn do czyszczenia uszu",
+      "name": "Vetoquinol Otifree - płyn do czyszczenia uszu",
       "brand": "Vetoquinol Biowet",
       "type": "higiena uszu", "life": "wszystkie",
       "score": 83, "pillars": [28, 21, 22, 12],
       "specs": [
         ["Typ", "roztwór do higieny uszu psów i kotów, 60/160 ml"],
-        ["Skład", "nalewka z kwiatów nagietka, olejek bazyliowy, neutralne podłoże — bez konserwantów"],
-        ["Aplikacja", "butelka z gumowym aplikatorem — bezpieczne podanie do kanału słuchowego"],
+        ["Skład", "nalewka z kwiatów nagietka, olejek bazyliowy, neutralne podłoże - bez konserwantów"],
+        ["Aplikacja", "butelka z gumowym aplikatorem - bezpieczne podanie do kanału słuchowego"],
         ["Produkcja", "Vetoquinol Biowet, Gorzów Wielkopolski (Polska)"],
         ["Cena orientacyjna", "ok. 55 zł / 160 ml; 60 ml ok. 34 zł"]
       ],
       "verified": false,
-      "verdict": "Weterynaryjny standard pielęgnacji uszu, produkowany w Polsce, ze składem roślinnym bez konserwantów. Obowiązkowy u ras z wiszącym, owłosionym uchem (pudle, spaniele, doodle), gdzie woskowina zalega i kanał słabo wentyluje. Granica jest jasna: to profilaktyka — zapalenie ucha leczy weterynarz, nie płyn.",
-      "pros": ["Skład roślinny bez konserwantów", "Gumowy aplikator — bezpieczne i wygodne podanie", "Skutecznie rozpuszcza woskowinę przy regularnym stosowaniu", "Polska produkcja, dostępny w każdej lecznicy"],
-      "cons": ["Nie leczy infekcji — przy zapaleniu konieczny weterynarz", "Zapach bazylii nie każdemu psu odpowiada", "Cena za litr wysoka (ok. 344 zł/l)"],
+      "verdict": "Weterynaryjny standard pielęgnacji uszu, produkowany w Polsce, ze składem roślinnym bez konserwantów. Obowiązkowy u ras z wiszącym, owłosionym uchem (pudle, spaniele, doodle), gdzie woskowina zalega i kanał słabo wentyluje. Granica jest jasna: to profilaktyka - zapalenie ucha leczy weterynarz, nie płyn.",
+      "pros": ["Skład roślinny bez konserwantów", "Gumowy aplikator - bezpieczne i wygodne podanie", "Skutecznie rozpuszcza woskowinę przy regularnym stosowaniu", "Polska produkcja, dostępny w każdej lecznicy"],
+      "cons": ["Nie leczy infekcji - przy zapaleniu konieczny weterynarz", "Zapach bazylii nie każdemu psu odpowiada", "Cena za litr wysoka (ok. 344 zł/l)"],
       "faq": [
-        {"q": "Jak często czyścić psu uszy?", "a": "Tylko gdy widać zabrudzenie — zwykle co 1–4 tygodnie zależnie od rasy. Nadgorliwe czyszczenie zdrowego ucha niszczy naturalną barierę ochronną. Rasy z wiszącym uchem i włosami w kanale (pudel!) wymagają częstszej kontroli."},
-        {"q": "Po czym poznać, że to już zapalenie, a nie brud?", "a": "Niepokojące objawy: intensywny zapach, ciemnobrązowa lub ropna wydzielina, zaczerwienienie, ból przy dotyku, potrząsanie głową. Wtedy żaden płyn pielęgnacyjny nie pomoże — potrzebna wizyta u weterynarza i celowane leczenie."}
+        {"q": "Jak często czyścić psu uszy?", "a": "Tylko gdy widać zabrudzenie - zwykle co 1–4 tygodnie zależnie od rasy. Nadgorliwe czyszczenie zdrowego ucha niszczy naturalną barierę ochronną. Rasy z wiszącym uchem i włosami w kanale (pudel!) wymagają częstszej kontroli."},
+        {"q": "Po czym poznać, że to już zapalenie, a nie brud?", "a": "Niepokojące objawy: intensywny zapach, ciemnobrązowa lub ropna wydzielina, zaczerwienienie, ból przy dotyku, potrząsanie głową. Wtedy żaden płyn pielęgnacyjny nie pomoże - potrzebna wizyta u weterynarza i celowane leczenie."}
       ],
       "shops": [{"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "aptekazwierzat.pl", "u": "https://aptekazwierzat.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -132,17 +132,17 @@
       "specs": [
         ["Typ", "szampon odżywczo-oczyszczający z fitokeratyną, koncentrat 1:3–1:5"],
         ["INCI (kluczowe)", "Sodium Laureth Sulfate (SLES), Cocamidopropyl Betaine, Sodium Cocoyl Hydrolyzed Wheat Protein"],
-        ["pH", "producent deklaruje 'przyjazne skórze psa' — bez wartości liczbowej (skóra psa ~pH 7)"],
+        ["pH", "producent deklaruje 'przyjazne skórze psa' - bez wartości liczbowej (skóra psa ~pH 7)"],
         ["Certyfikat", "Safe Pet Cosmetics; istnieje wariant Banana SLS&SLES Free"],
         ["Cena orientacyjna", "ok. 83 zł / 500 ml (koncentrat); 3 l ok. 269 zł"]
       ],
       "verified": false,
-      "verdict": "Salonowy klasyk do szat kędzierzawych: fitokeratyna realnie ułatwia rozczesywanie po kąpieli, a koncentrat 1:5 czyni cenę uczciwszą, niż wygląda. Dwie rysy: baza myjąca to SLES (łagodny, ale nie bezsiarczanowy — producent ma osobny wariant SLS/SLES Free) i brak liczbowej deklaracji pH, którą u kosmetyków dla psów chcielibyśmy widzieć zawsze.",
-      "pros": ["Fitokeratyna zapobiega kołtunieniu — kluczowe u pudli i doodli", "Koncentrat 1:3–1:5 — bardzo wydajny", "Certyfikat Safe Pet Cosmetics", "Profesjonalna marka groomerska dostępna w PL"],
-      "cons": ["SLES w składzie — wrażliwa skóra może preferować wariant SLS/SLES Free", "Brak liczbowej deklaracji pH", "Intensywny bananowy zapach nie dla każdego (psiego) nosa"],
+      "verdict": "Salonowy klasyk do szat kędzierzawych: fitokeratyna realnie ułatwia rozczesywanie po kąpieli, a koncentrat 1:5 czyni cenę uczciwszą, niż wygląda. Dwie rysy: baza myjąca to SLES (łagodny, ale nie bezsiarczanowy - producent ma osobny wariant SLS/SLES Free) i brak liczbowej deklaracji pH, którą u kosmetyków dla psów chcielibyśmy widzieć zawsze.",
+      "pros": ["Fitokeratyna zapobiega kołtunieniu - kluczowe u pudli i doodli", "Koncentrat 1:3–1:5 - bardzo wydajny", "Certyfikat Safe Pet Cosmetics", "Profesjonalna marka groomerska dostępna w PL"],
+      "cons": ["SLES w składzie - wrażliwa skóra może preferować wariant SLS/SLES Free", "Brak liczbowej deklaracji pH", "Intensywny bananowy zapach nie dla każdego (psiego) nosa"],
       "faq": [
-        {"q": "Dlaczego nie można myć psa ludzkim szamponem?", "a": "Skóra psa ma pH ok. 7 (neutralne), ludzka ok. 5,5 (kwaśne). Ludzkie szampony są zakwaszone pod nasz naskórek — u psa naruszają barierę hydrolipidową, prowadząc do przesuszenia, swędzenia i nawracających infekcji."},
-        {"q": "Jak często kąpać pudla?", "a": "Przy regularnym rozczesywaniu co 3–6 tygodni; groomerskie szaty utrzymywane w dłuższym włosie nawet co 2–3 tygodnie. Zawsze rozczesz sierść PRZED kąpielą — woda zacieśnia istniejące kołtuny."}
+        {"q": "Dlaczego nie można myć psa ludzkim szamponem?", "a": "Skóra psa ma pH ok. 7 (neutralne), ludzka ok. 5,5 (kwaśne). Ludzkie szampony są zakwaszone pod nasz naskórek - u psa naruszają barierę hydrolipidową, prowadząc do przesuszenia, swędzenia i nawracających infekcji."},
+        {"q": "Jak często kąpać pudla?", "a": "Przy regularnym rozczesywaniu co 3–6 tygodni; groomerskie szaty utrzymywane w dłuższym włosie nawet co 2–3 tygodnie. Zawsze rozczesz sierść PRZED kąpielą - woda zacieśnia istniejące kołtuny."}
       ],
       "shops": [{"n": "Amici Group", "u": "https://amicigroup.pl/"}, {"n": "GroomerShop.pl", "u": "https://www.groomershop.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
     },
@@ -161,17 +161,17 @@
       ],
       "verified": false,
       "verdict": "Budżetowy bohater pielęgnacji: za kilkanaście złotych dostajesz prosty, bezsilikonowy spray, który realnie zmniejsza tarcie przy rozczesywaniu. Profesjonalne rozkołtuniacze (Hydra, iGroom) dają więcej poślizgu, ale kosztują kilkukrotnie więcej. Zasada żelazna dla szat kędzierzawych: nigdy nie czesać 'na sucho' bez sprayu.",
-      "pros": ["Bardzo niska cena (od ~14 zł)", "Prosty skład bez silikonów", "Działa antystatycznie — sierść się nie elektryzuje", "Polska marka, dostępność w każdym sklepie zoologicznym"],
+      "pros": ["Bardzo niska cena (od ~14 zł)", "Prosty skład bez silikonów", "Działa antystatycznie - sierść się nie elektryzuje", "Polska marka, dostępność w każdym sklepie zoologicznym"],
       "cons": ["Mniej poślizgu niż profesjonalne rozkołtuniacze silikonowe", "Wyczuwalny zapach perfumowany", "Przy mocno sfilcowanych kołtunach to za mało"],
       "faq": [
-        {"q": "Dlaczego nie wolno rozczesywać suchej sierści bez sprayu?", "a": "Suchy włos ma podniesione łuski i duże tarcie — szczotka go łamie i wyrywa zamiast rozplątywać, a pies kojarzy czesanie z bólem. Mgiełka sprayu wygładza łuskę włosa i zmniejsza tarcie o kilkadziesiąt procent."},
+        {"q": "Dlaczego nie wolno rozczesywać suchej sierści bez sprayu?", "a": "Suchy włos ma podniesione łuski i duże tarcie - szczotka go łamie i wyrywa zamiast rozplątywać, a pies kojarzy czesanie z bólem. Mgiełka sprayu wygładza łuskę włosa i zmniejsza tarcie o kilkadziesiąt procent."},
         {"q": "Spray bez silikonów czy z silikonami?", "a": "Silikony dają najlepszy poślizg przy kołtunach, ale obciążają sierść i wymagają dokładniejszego zmywania. Do codziennej profilaktyki lekki spray bez silikonów wystarcza; silikonowy rozkołtuniacz trzymaj na sytuacje awaryjne."}
       ],
       "shops": [{"n": "ZooArt", "u": "https://zooart.com.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
     },
     {
       "slug": "moser-max45-maszynka",
-      "name": "Moser Max45 (typ 1245) — maszynka do strzyżenia",
+      "name": "Moser Max45 (typ 1245) - maszynka do strzyżenia",
       "brand": "Moser",
       "type": "maszynka groomerska", "life": "wszystkie",
       "score": 86, "pillars": [32, 21, 22, 11],
@@ -183,12 +183,12 @@
         ["Cena orientacyjna", "od ok. 545 zł"]
       ],
       "verified": false,
-      "verdict": "Maszynka klasy profesjonalnej, która radzi sobie z gęstą, kędzierzawą sierścią pudla tam, gdzie tanie domowe modele się zacinają. Mocny silnik, dwa biegi i tłumienie drgań to komfort i trwałość na lata. Cena i kabel to główne ograniczenia — oraz nagrzewające się ostrze, które trzeba kontrolować, by nie poparzyć skóry.",
-      "pros": ["Mocny silnik radzi sobie z gęstą sierścią (pudel, doodle)", "Dwa biegi i skuteczne tłumienie drgań", "Wymienne ostrza — różne długości cięcia", "Trwałość klasy profesjonalnej"],
-      "cons": ["Wysoka cena", "Sieciowa (kabel) — mniej wygodna przy ruchliwym psie", "Głośna dla wrażliwych psów", "Ostrze nagrzewa się przy długim strzyżeniu — kontrolować temperaturę"],
+      "verdict": "Maszynka klasy profesjonalnej, która radzi sobie z gęstą, kędzierzawą sierścią pudla tam, gdzie tanie domowe modele się zacinają. Mocny silnik, dwa biegi i tłumienie drgań to komfort i trwałość na lata. Cena i kabel to główne ograniczenia - oraz nagrzewające się ostrze, które trzeba kontrolować, by nie poparzyć skóry.",
+      "pros": ["Mocny silnik radzi sobie z gęstą sierścią (pudel, doodle)", "Dwa biegi i skuteczne tłumienie drgań", "Wymienne ostrza - różne długości cięcia", "Trwałość klasy profesjonalnej"],
+      "cons": ["Wysoka cena", "Sieciowa (kabel) - mniej wygodna przy ruchliwym psie", "Głośna dla wrażliwych psów", "Ostrze nagrzewa się przy długim strzyżeniu - kontrolować temperaturę"],
       "faq": [
-        {"q": "Czy warto strzyc psa w domu maszynką?", "a": "Przy rasach wymagających częstego strzyżenia (pudel, bichon, doodle) maszynka zwraca się po kilku wizytach u groomera. Wymaga jednak nauki techniki i cierpliwości — na początek warto łączyć domowe podstrzyganie z okresową wizytą u profesjonalisty."},
-        {"q": "Jak nie poparzyć psa nagrzanym ostrzem?", "a": "Rób przerwy, dotykaj ostrza wierzchem dłoni (jeśli za gorące dla Ciebie — za gorące dla psa), używaj sprayu chłodząco-smarującego do ostrzy i nie pracuj zbyt długo jednym ostrzem bez przerwy."}
+        {"q": "Czy warto strzyc psa w domu maszynką?", "a": "Przy rasach wymagających częstego strzyżenia (pudel, bichon, doodle) maszynka zwraca się po kilku wizytach u groomera. Wymaga jednak nauki techniki i cierpliwości - na początek warto łączyć domowe podstrzyganie z okresową wizytą u profesjonalisty."},
+        {"q": "Jak nie poparzyć psa nagrzanym ostrzem?", "a": "Rób przerwy, dotykaj ostrza wierzchem dłoni (jeśli za gorące dla Ciebie - za gorące dla psa), używaj sprayu chłodząco-smarującego do ostrzy i nie pracuj zbyt długo jednym ostrzem bez przerwy."}
       ],
       "shops": [{"n": "Germapol", "u": "https://germapol.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -201,23 +201,23 @@
       "specs": [
         ["Typ", "nożyczki do wykończeń (łapy, pysk, okolice oczu); proste i gięte (curved)"],
         ["Materiał", "stal nierdzewna (część japońska), antypoślizgowa rączka"],
-        ["Bezpieczeństwo", "zaokrąglona końcówka — mniejsze ryzyko ukłucia przy pysku/oczach"],
+        ["Bezpieczeństwo", "zaokrąglona końcówka - mniejsze ryzyko ukłucia przy pysku/oczach"],
         ["Akcesoria", "dostępne też degażówki w zestawach"],
         ["Cena orientacyjna", "od ok. 20–30 zł (domowe) do 80–150+ zł (pro)"]
       ],
       "verified": false,
-      "verdict": "Element wyposażenia, o którym łatwo zapomnieć, dopóki nie trzeba przyciąć włosa przy oczach albo między palcami. Zaokrąglone końce to konkretne bezpieczeństwo — przy szarpnięciu psa nie wbiją się w skórę. Klucz to jakość stali: tanie nożyczki szybko tępieją i zamiast ciąć, gniotą włos.",
-      "pros": ["Zaokrąglone końce — bezpieczne przy pysku, łapach i oczach", "Precyzja przy wykończeniach (najtrudniejsze miejsca)", "Stal nierdzewna, antypoślizgowa rączka", "Niedrogie wersje domowe na start"],
-      "cons": ["Tanie nożyczki szybko tępieją (gniotą zamiast ciąć)", "Pies musi być spokojny — ryzyko skaleczenia przy szarpnięciu", "Wymagają regularnego ostrzenia i oliwienia"],
+      "verdict": "Element wyposażenia, o którym łatwo zapomnieć, dopóki nie trzeba przyciąć włosa przy oczach albo między palcami. Zaokrąglone końce to konkretne bezpieczeństwo - przy szarpnięciu psa nie wbiją się w skórę. Klucz to jakość stali: tanie nożyczki szybko tępieją i zamiast ciąć, gniotą włos.",
+      "pros": ["Zaokrąglone końce - bezpieczne przy pysku, łapach i oczach", "Precyzja przy wykończeniach (najtrudniejsze miejsca)", "Stal nierdzewna, antypoślizgowa rączka", "Niedrogie wersje domowe na start"],
+      "cons": ["Tanie nożyczki szybko tępieją (gniotą zamiast ciąć)", "Pies musi być spokojny - ryzyko skaleczenia przy szarpnięciu", "Wymagają regularnego ostrzenia i oliwienia"],
       "faq": [
-        {"q": "Po co osobne nożyczki z zaokrąglonymi końcami?", "a": "Do najwrażliwszych miejsc: włosów przy oczach, w uszach, na pysku i między palcami. Ostry szpic zwykłych nożyczek przy nagłym ruchu psa może zranić — zaokrąglona końcówka to ryzyko mocno ogranicza."},
+        {"q": "Po co osobne nożyczki z zaokrąglonymi końcami?", "a": "Do najwrażliwszych miejsc: włosów przy oczach, w uszach, na pysku i między palcami. Ostry szpic zwykłych nożyczek przy nagłym ruchu psa może zranić - zaokrąglona końcówka to ryzyko mocno ogranicza."},
         {"q": "Nożyczki czy maszynka?", "a": "To narzędzia uzupełniające. Maszynka szybko skraca sierść na dużych powierzchniach, nożyczki służą do precyzyjnych wykończeń (łapy, pysk, okolice oczu i odbytu), gdzie maszynka jest zbyt zgrubna lub niebezpieczna."}
       ],
       "shops": [{"n": "canilove.pl", "u": "https://canilove.pl/"}, {"n": "groomer.com.pl", "u": "https://www.groomer.com.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
     {
       "slug": "beaphar-szampon-puppy",
-      "name": "Beaphar Shampoo Puppy — szampon dla szczeniąt",
+      "name": "Beaphar Shampoo Puppy - szampon dla szczeniąt",
       "brand": "Beaphar",
       "type": "szampon dla szczeniąt", "life": "szczenię",
       "score": 76, "pillars": [26, 19, 19, 12],
@@ -225,16 +225,16 @@
         ["Typ", "łagodny szampon dla szczeniąt i wrażliwej skóry, 250 ml"],
         ["Skład", "rumianek + aloes (kojące, połysk); naturalne pH; bez parabenów"],
         ["Stosowanie", "od wieku wskazanego na etykiecie (zwykle od ~8 tyg.); unikać oczu"],
-        ["Dostępność", "szeroka — też apteki"],
+        ["Dostępność", "szeroka - też apteki"],
         ["Cena orientacyjna", "ok. 15–25 zł / 250 ml"]
       ],
       "verified": false,
-      "verdict": "Łagodny, tani szampon na pierwsze kąpiele szczeniaka: rumianek i aloes koją delikatną skórę, pH jest dobrane do psa, a formuła obywa się bez parabenów. To kosmetyk pielęgnacyjny, nie leczniczy — przy łupieżu, świądzie czy infekcji potrzebny będzie preparat z polecenia weterynarza.",
-      "pros": ["Łagodna formuła o pH dla skóry szczenięcia", "Rumianek i aloes — kojące, dają połysk", "Bez parabenów, niska cena", "Szeroka dostępność (sklepy i apteki)"],
+      "verdict": "Łagodny, tani szampon na pierwsze kąpiele szczeniaka: rumianek i aloes koją delikatną skórę, pH jest dobrane do psa, a formuła obywa się bez parabenów. To kosmetyk pielęgnacyjny, nie leczniczy - przy łupieżu, świądzie czy infekcji potrzebny będzie preparat z polecenia weterynarza.",
+      "pros": ["Łagodna formuła o pH dla skóry szczenięcia", "Rumianek i aloes - kojące, dają połysk", "Bez parabenów, niska cena", "Szeroka dostępność (sklepy i apteki)"],
       "cons": ["Stosować dopiero od wieku wskazanego na etykiecie", "Nie zastępuje szamponów leczniczych przy problemach skórnych", "Unikać kontaktu z oczami"],
       "faq": [
-        {"q": "Od kiedy można kąpać szczeniaka?", "a": "Zwykle nie wcześniej niż ok. 8 tygodnia życia i tylko gdy to konieczne — młode szczenięta słabo regulują temperaturę. Zawsze sprawdź wiek wskazany na etykiecie szamponu i dbaj o dokładne osuszenie po kąpieli."},
-        {"q": "Czy szczeniak potrzebuje osobnego szamponu?", "a": "Tak — skóra szczeniaka jest delikatniejsza, więc szampon dla szczeniąt ma łagodniejszą formułę i delikatniejszy zapach. Nigdy nie używaj ludzkiego szamponu: jego pH jest dobrane pod naszą, kwaśniejszą skórę."}
+        {"q": "Od kiedy można kąpać szczeniaka?", "a": "Zwykle nie wcześniej niż ok. 8 tygodnia życia i tylko gdy to konieczne - młode szczenięta słabo regulują temperaturę. Zawsze sprawdź wiek wskazany na etykiecie szamponu i dbaj o dokładne osuszenie po kąpieli."},
+        {"q": "Czy szczeniak potrzebuje osobnego szamponu?", "a": "Tak - skóra szczeniaka jest delikatniejsza, więc szampon dla szczeniąt ma łagodniejszą formułę i delikatniejszy zapach. Nigdy nie używaj ludzkiego szamponu: jego pH jest dobrane pod naszą, kwaśniejszą skórę."}
       ],
       "shops": [{"n": "apetete.pl", "u": "https://apetete.pl/"}, {"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -245,18 +245,18 @@
       "type": "deshedder (wyczesywanie podszerstka)", "life": "wszystkie",
       "score": 72, "pillars": [27, 16, 19, 10],
       "specs": [
-        ["Typ", "narzędzie do wyczesywania martwego podszerstka — ostrze ze stali nierdzewnej"],
+        ["Typ", "narzędzie do wyczesywania martwego podszerstka - ostrze ze stali nierdzewnej"],
         ["Skuteczność", "redukcja wypadania nawet do 90% u ras z podszerstkiem"],
         ["Rozmiary", "S (do 9 kg) / M (9–23 kg) / L (>23 kg); wersje sierść krótka/długa"],
-        ["OSTRZEŻENIE", "NIE dla ras BEZ podszerstka (pudel, bichon, yorki) — wycina okrywę!"],
+        ["OSTRZEŻENIE", "NIE dla ras BEZ podszerstka (pudel, bichon, yorki) - wycina okrywę!"],
         ["Cena orientacyjna", "ok. 90–160 zł"]
       ],
       "verified": false,
-      "verdict": "Bardzo skuteczne narzędzie — ale tylko dla właściwej sierści. Na psach z gęstym podszerstkiem (husky, owczarek, labrador) potrafi ograniczyć linienie nawet o 90%. Na rasach jednowarstwowych, jak nasz tester pudel, robi krzywdę: wycina i uszkadza okrywę włosową. Niska ocena oddaje to ryzyko niewłaściwego użycia.",
+      "verdict": "Bardzo skuteczne narzędzie - ale tylko dla właściwej sierści. Na psach z gęstym podszerstkiem (husky, owczarek, labrador) potrafi ograniczyć linienie nawet o 90%. Na rasach jednowarstwowych, jak nasz tester pudel, robi krzywdę: wycina i uszkadza okrywę włosową. Niska ocena oddaje to ryzyko niewłaściwego użycia.",
       "pros": ["Bardzo skuteczny przy linieniu ras z podszerstkiem", "Redukcja wypadania nawet o 90%", "Skin Guard i przycisk FURejector (wygodne zrzucanie włosa)", "Trwałe, stalowe ostrze"],
-      "cons": ["NIE dla ras bez podszerstka (pudel, bichon, yorki, maltańczyk) — wycina okrywę!", "Zbyt mocne/częste użycie przerzedza sierść i drażni skórę", "Nie używać na sierści mokrej lub zmierzwionej", "Nie dla skóry z ranami i podrażnieniami"],
+      "cons": ["NIE dla ras bez podszerstka (pudel, bichon, yorki, maltańczyk) - wycina okrywę!", "Zbyt mocne/częste użycie przerzedza sierść i drażni skórę", "Nie używać na sierści mokrej lub zmierzwionej", "Nie dla skóry z ranami i podrażnieniami"],
       "faq": [
-        {"q": "Czy FURminator nadaje się dla pudla?", "a": "Nie. Pudel, bichon, yorki czy maltańczyk to rasy jednowarstwowe (bez podszerstka) — FURminator zamiast wyczesywać luźny podszerstek wycina i uszkadza ich włos okrywowy. Dla takich ras właściwe są szczotka slicker i grzebień."},
+        {"q": "Czy FURminator nadaje się dla pudla?", "a": "Nie. Pudel, bichon, yorki czy maltańczyk to rasy jednowarstwowe (bez podszerstka) - FURminator zamiast wyczesywać luźny podszerstek wycina i uszkadza ich włos okrywowy. Dla takich ras właściwe są szczotka slicker i grzebień."},
         {"q": "Dla jakich psów FURminator jest dobry?", "a": "Dla ras z gęstym podszerstkiem, które obficie linieją: husky, malamut, owczarek niemiecki, labrador, golden, corgi. Używaj 1–2 razy w tygodniu na suchej, rozczesanej sierści, bez nadmiernego docisku."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]

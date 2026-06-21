@@ -1,14 +1,14 @@
 {
-  "_note": "US market DEMO data (verified:false) — verify against real labels before indexing. No 'test' object = 'label-based review, hands-on test pending'.",
+  "_note": "US market DEMO data (verified:false) - verify against real labels before indexing. No 'test' object = 'label-based review, hands-on test pending'.",
   "foods": [
     {
-      "slug": "farmers-dog-turkey", "name": "The Farmer's Dog — Turkey Recipe", "brand": "The Farmer's Dog",
+      "slug": "farmers-dog-turkey", "name": "The Farmer's Dog - Turkey Recipe", "brand": "The Farmer's Dog",
       "type": "fresh (subscription)", "life": "all life stages", "score": 92, "pillars": [33, 23, 22, 14],
       "proteinDM": 39.0, "fatDM": 17.0, "kcal": 121, "priceKg": 11.0, "verified": false,
-      "verdict": "The benchmark US fresh diet: human-grade named ingredients, board-certified nutritionists on staff, AAFCO-complete recipes and portioning per dog. The honest caveat is price — cost per 1,000 kcal runs several times a quality kibble, and 'fresh extends lifespan' remains unproven.",
+      "verdict": "The benchmark US fresh diet: human-grade named ingredients, board-certified nutritionists on staff, AAFCO-complete recipes and portioning per dog. The honest caveat is price - cost per 1,000 kcal runs several times a quality kibble, and 'fresh extends lifespan' remains unproven.",
       "pros": ["Formulated by board-certified veterinary nutritionists", "Named, human-grade ingredients; turkey recipe is chicken-free", "Pre-portioned to your dog's caloric needs"],
       "cons": ["Cost per 1,000 kcal several times higher than kibble", "Requires fridge/freezer logistics", "Health-outcome superiority over kibble is not proven"],
-      "faq": [{"q": "Is The Farmer's Dog worth the price?", "a": "Nutritionally it is excellent and palatability is outstanding — but a top-tier kibble meets the same AAFCO standards at a fraction of the cost per 1,000 kcal. It is worth it for fussy eaters, small dogs (smaller absolute cost) and owners who value the convenience."}],
+      "faq": [{"q": "Is The Farmer's Dog worth the price?", "a": "Nutritionally it is excellent and palatability is outstanding - but a top-tier kibble meets the same AAFCO standards at a fraction of the cost per 1,000 kcal. It is worth it for fussy eaters, small dogs (smaller absolute cost) and owners who value the convenience."}],
       "shops": [{"n": "thefarmersdog.com", "u": "https://www.thefarmersdog.com/"}]
     },
     {
@@ -17,7 +17,7 @@
       "proteinDM": 42.2, "fatDM": 20.0, "kcal": 394, "priceKg": 7.5, "verified": false,
       "verdict": "The highest-meat mainstream kibble in the US: 85% animal ingredients, all named, with fresh and raw inclusions. Legumes appear mid-list (DCM context applies for predisposed breeds). Since the Mars acquisition the manufacturer pillar benefits from corporate QC infrastructure.",
       "pros": ["42% protein DM from named animal sources", "WholePrey inclusions (organs, cartilage)", "Mars-level quality control since acquisition"],
-      "cons": ["Legumes present in the recipe (DCM context)", "High energy density — easy to overfeed without measuring", "Premium price"],
+      "cons": ["Legumes present in the recipe (DCM context)", "High energy density - easy to overfeed without measuring", "Premium price"],
       "faq": [{"q": "Is Orijen safe given the FDA DCM investigation?", "a": "The FDA never established causality and stopped updates in 2022. Orijen contains legumes mid-recipe; for Dobermanns, Great Danes, Boxers and Goldens we suggest discussing grain-free choices with your veterinarian."}],
       "shops": [{"n": "Chewy", "u": "https://www.chewy.com/"}, {"n": "Petco", "u": "https://www.petco.com/"}]
     },
@@ -25,19 +25,19 @@
       "slug": "open-farm-homestead-turkey", "name": "Open Farm Homestead Turkey", "brand": "Open Farm",
       "type": "dry", "life": "adult", "score": 88, "pillars": [31, 22, 22, 13],
       "proteinDM": 32.2, "fatDM": 16.7, "kcal": 370, "priceKg": 8.0, "verified": false,
-      "verdict": "The transparency leader: every ingredient lot traceable on their website, certified-humane sourcing, named turkey first. Recipe quality is strong though not extreme — what earns the score is a manufacturer pillar most brands cannot match.",
+      "verdict": "The transparency leader: every ingredient lot traceable on their website, certified-humane sourcing, named turkey first. Recipe quality is strong though not extreme - what earns the score is a manufacturer pillar most brands cannot match.",
       "pros": ["Lot-level ingredient traceability (industry-leading transparency)", "Named turkey, chicken-free recipe", "Certified humane sourcing"],
       "cons": ["Legumes in the recipe (DCM context)", "Premium price for moderate protein level"],
-      "faq": [{"q": "What makes Open Farm different from other premium kibbles?", "a": "Traceability: you can enter the lot code and see the source of every ingredient. In our algorithm that means a near-maximal manufacturer-credibility pillar — the part of food quality you cannot read off a label."}],
+      "faq": [{"q": "What makes Open Farm different from other premium kibbles?", "a": "Traceability: you can enter the lot code and see the source of every ingredient. In our algorithm that means a near-maximal manufacturer-credibility pillar - the part of food quality you cannot read off a label."}],
       "shops": [{"n": "Chewy", "u": "https://www.chewy.com/"}, {"n": "openfarmpet.com", "u": "https://openfarmpet.com/"}]
     },
     {
-      "slug": "ollie-fresh-beef", "name": "Ollie — Fresh Beef Recipe", "brand": "Ollie",
+      "slug": "ollie-fresh-beef", "name": "Ollie - Fresh Beef Recipe", "brand": "Ollie",
       "type": "fresh (subscription)", "life": "adult", "score": 87, "pillars": [32, 21, 20, 14],
       "proteinDM": 38.0, "fatDM": 22.0, "kcal": 132, "priceKg": 10.0, "verified": false,
-      "verdict": "A strong fresh-food alternative to The Farmer's Dog: named beef recipe, vet-nutritionist formulation, flexible plans. Slightly behind on transparency of feeding-trial evidence; identical economics caveat — fresh costs several times kibble per 1,000 kcal.",
+      "verdict": "A strong fresh-food alternative to The Farmer's Dog: named beef recipe, vet-nutritionist formulation, flexible plans. Slightly behind on transparency of feeding-trial evidence; identical economics caveat - fresh costs several times kibble per 1,000 kcal.",
       "pros": ["Named beef first; chicken-free recipe", "Formulated with veterinary nutritionists", "Flexible mixed plans (fresh + baked)"],
-      "cons": ["High cost per 1,000 kcal", "Higher fat — not suitable after pancreatitis", "Less published detail than category leader"],
+      "cons": ["High cost per 1,000 kcal", "Higher fat - not suitable after pancreatitis", "Less published detail than category leader"],
       "faq": [{"q": "Ollie or The Farmer's Dog?", "a": "Both are nutritionally complete fresh diets. Farmer's Dog publishes more about its nutrition team and processes (higher manufacturer pillar); Ollie's mixed fresh+baked plans cut the monthly cost meaningfully."}],
       "shops": [{"n": "myollie.com", "u": "https://www.myollie.com/"}]
     },
@@ -45,27 +45,27 @@
       "slug": "wellness-core-original", "name": "Wellness CORE Original", "brand": "Wellness Pet Company",
       "type": "dry", "life": "adult", "score": 83, "pillars": [30, 21, 19, 13],
       "proteinDM": 37.8, "fatDM": 17.8, "kcal": 372, "priceKg": 6.0, "verified": false,
-      "verdict": "A solid high-protein mainstream option: named turkey and chicken meals, added taurine and joint support claims at sensible levels. Legumes feature in the grain-free recipe — the brand also offers grain-inclusive CORE lines worth considering for predisposed breeds.",
+      "verdict": "A solid high-protein mainstream option: named turkey and chicken meals, added taurine and joint support claims at sensible levels. Legumes feature in the grain-free recipe - the brand also offers grain-inclusive CORE lines worth considering for predisposed breeds.",
       "pros": ["Named meat meals (turkey, chicken)", "37.8% protein DM at a mid-premium price", "Added taurine"],
-      "cons": ["Legumes high in the grain-free recipe (DCM context)", "Contains chicken", "Glucosamine claims — evidence for dietary doses is weak"],
-      "faq": [{"q": "Does the added glucosamine in CORE help joints?", "a": "Meta-analyses show no significant clinical effect for glucosamine/chondroitin in dogs, and dietary doses are lower still. We treat it as neutral — neither a benefit nor a flaw. For joints, look for declared EPA/DHA instead."}],
+      "cons": ["Legumes high in the grain-free recipe (DCM context)", "Contains chicken", "Glucosamine claims - evidence for dietary doses is weak"],
+      "faq": [{"q": "Does the added glucosamine in CORE help joints?", "a": "Meta-analyses show no significant clinical effect for glucosamine/chondroitin in dogs, and dietary doses are lower still. We treat it as neutral - neither a benefit nor a flaw. For joints, look for declared EPA/DHA instead."}],
       "shops": [{"n": "Chewy", "u": "https://www.chewy.com/"}, {"n": "Amazon", "u": "https://www.amazon.com/"}]
     },
     {
       "slug": "purina-pro-plan-adult", "name": "Purina Pro Plan Complete Essentials Adult", "brand": "Nestlé Purina",
       "type": "dry", "life": "adult", "score": 78, "pillars": [22, 23, 24, 9],
       "proteinDM": 28.9, "fatDM": 17.8, "kcal": 380, "priceKg": 4.4, "verified": false,
-      "verdict": "The inverse of boutique brands: an ingredient list with by-products and cereals — but feeding trials, 500+ scientists, owned plants and the most rigorous QC in the industry. The food most often fed by US veterinarians to their own dogs. Pillar C carries the score.",
+      "verdict": "The inverse of boutique brands: an ingredient list with by-products and cereals - but feeding trials, 500+ scientists, owned plants and the most rigorous QC in the industry. The food most often fed by US veterinarians to their own dogs. Pillar C carries the score.",
       "pros": ["AAFCO feeding trials (not just formulation)", "Industry-leading manufacturer infrastructure and recalls record", "Excellent cost per 1,000 kcal"],
       "cons": ["By-products and cereals lead parts of the recipe (named, but mid-quality)", "Contains chicken", "Artificial preservation in some lines"],
-      "faq": [{"q": "Why do vets recommend Pro Plan if the ingredients look mediocre?", "a": "Because ingredient lists do not measure digestibility or safety. Purina runs feeding trials, employs boarded nutritionists and controls its plants — the evidence-backed parts of food quality. Our algorithm shows both truths: modest pillar A, near-maximal pillar C."}],
+      "faq": [{"q": "Why do vets recommend Pro Plan if the ingredients look mediocre?", "a": "Because ingredient lists do not measure digestibility or safety. Purina runs feeding trials, employs boarded nutritionists and controls its plants - the evidence-backed parts of food quality. Our algorithm shows both truths: modest pillar A, near-maximal pillar C."}],
       "shops": [{"n": "Chewy", "u": "https://www.chewy.com/"}, {"n": "Amazon", "u": "https://www.amazon.com/"}]
     },
     {
       "slug": "taste-of-the-wild-high-prairie", "name": "Taste of the Wild High Prairie", "brand": "Diamond Pet Foods",
       "type": "dry", "life": "all life stages", "score": 74, "pillars": [27, 19, 16, 12],
       "proteinDM": 35.6, "fatDM": 20.0, "kcal": 370, "priceKg": 3.7, "verified": false,
-      "verdict": "America's best-selling grain-free food: named bison and venison flavoring a chicken-meal base, at a budget-premium price. Two caveats: legumes feature prominently (it appeared frequently in FDA DCM reports — association, not causation), and Diamond's recall history weighs on the manufacturer pillar.",
+      "verdict": "America's best-selling grain-free food: named bison and venison flavoring a chicken-meal base, at a budget-premium price. Two caveats: legumes feature prominently (it appeared frequently in FDA DCM reports - association, not causation), and Diamond's recall history weighs on the manufacturer pillar.",
       "pros": ["Strong cost per 1,000 kcal for the protein level", "Named meat meals", "Wide availability"],
       "cons": ["Legume-heavy recipe; frequent in FDA DCM case reports (association only)", "Manufacturer recall history (2012 Salmonella)", "Marketing implies more bison than the recipe contains"],
       "faq": [{"q": "Was Taste of the Wild linked to DCM?", "a": "It appeared among the most-named brands in FDA case reports (53 reports through 2019). The FDA never established causation and notes reporting bias. For predisposed breeds, this is the category where we suggest extra caution and a vet conversation."}],
@@ -75,9 +75,9 @@
       "slug": "hills-kd-kidney-care", "name": "Hill's Prescription Diet k/d Kidney Care", "brand": "Hill's Pet Nutrition",
       "type": "dry (veterinary)", "life": "adult", "score": 75, "pillars": [18, 21, 24, 12],
       "proteinDM": 15.6, "fatDM": 20.0, "kcal": 401, "priceKg": 9.0, "verified": false,
-      "verdict": "A therapeutic renal diet — judged in its own category, where restricted phosphorus and moderated protein are clinical goals, not flaws (IRIS guidelines). Decades of feeding trials and published research behind it. Use strictly under veterinary supervision.",
+      "verdict": "A therapeutic renal diet - judged in its own category, where restricted phosphorus and moderated protein are clinical goals, not flaws (IRIS guidelines). Decades of feeding trials and published research behind it. Use strictly under veterinary supervision.",
       "pros": ["Clinically studied phosphorus restriction (IRIS-aligned)", "Feeding trials and published renal research", "High palatability for a therapeutic diet"],
-      "cons": ["Not for healthy dogs — low protein is intentional and unsuitable", "Premium price", "Requires veterinary recommendation and monitoring"],
+      "cons": ["Not for healthy dogs - low protein is intentional and unsuitable", "Premium price", "Requires veterinary recommendation and monitoring"],
       "faq": [{"q": "Can I feed k/d to my healthy dog?", "a": "No. Restricted phosphorus and moderated protein serve dogs with diagnosed kidney disease (IRIS staging). For a healthy dog this profile is unnecessarily low in protein. Therapeutic diets belong with a diagnosis and veterinary monitoring."}],
       "shops": [{"n": "Chewy (vet authorization)", "u": "https://www.chewy.com/"}, {"n": "Your veterinary clinic", "u": "https://www.hillspet.com/"}]
     }

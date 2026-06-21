@@ -1,5 +1,5 @@
 {
-  "_uwaga": "DANE DEMONSTRACYJNE — przed publikacją każdy rekord zweryfikować z realną etykietą (źródło prawdy: baza-karm.xlsx). verified:false = nie publikować na produkcji.",
+  "_uwaga": "DANE DEMONSTRACYJNE - przed publikacją każdy rekord zweryfikować z realną etykietą (źródło prawdy: baza-karm.xlsx). verified:false = nie publikować na produkcji.",
   "foods": [
     {
       "slug": "wiejska-zagroda-adult-indyk-wolowina",
@@ -25,13 +25,13 @@
         "zapach": "wyraźnie mięsny, bez nuty zjełczałego tłuszczu",
         "tekstura": "twarda, sucha granula; nie kruszy się w palcach, nie zostawia tłustego filmu",
         "bekon": 3,
-        "bekonNote": "Zjadł natychmiast i szukał więcej. Test smakowitości: 5 granulek podanych jako przysmak — bez zmiany diety.",
+        "bekonNote": "Zjadł natychmiast i szukał więcej. Test smakowitości: 5 granulek podanych jako przysmak - bez zmiany diety.",
         "uwagi": "Worek 2 kg, partia z bieżącej produkcji. Skład na etykiecie zgodny z deklaracją na stronie producenta."
       },
-      "verdict": "Polska karma z krótkim, w pełni nazwanym składem (indyk i wołowina jako pierwsze składniki), białkiem 32% w suchej masie — wyraźnie powyżej progu FEDIAF dla psów dorosłych — i bez strączkowych w czołówce. Producent przejrzysty, konserwowanie naturalne. Nasza najwyższa ocena na polskim rynku.",
+      "verdict": "Polska karma z krótkim, w pełni nazwanym składem (indyk i wołowina jako pierwsze składniki), białkiem 32% w suchej masie - wyraźnie powyżej progu FEDIAF dla psów dorosłych - i bez strączkowych w czołówce. Producent przejrzysty, konserwowanie naturalne. Nasza najwyższa ocena na polskim rynku.",
       "pros": [
         "Nazwane źródła białka (indyk, wołowina)",
-        "Białko 32,2% DM — wysoko ponad próg FEDIAF (21%)",
+        "Białko 32,2% DM - wysoko ponad próg FEDIAF (21%)",
         "Bez sztucznych barwników i konserwantów",
         "Polska produkcja, krótki łańcuch"
       ],
@@ -42,11 +42,11 @@
       "faq": [
         {
           "q": "Czy Wiejska Zagroda Adult jest dobra dla szczeniąt?",
-          "a": "Nie — to receptura dla psów dorosłych (deklaracja adult). Dla szczeniąt wybierz wariant z deklaracją growth lub all life stages, z wapniem do 1,8% suchej masy."
+          "a": "Nie - to receptura dla psów dorosłych (deklaracja adult). Dla szczeniąt wybierz wariant z deklaracją growth lub all life stages, z wapniem do 1,8% suchej masy."
         },
         {
           "q": "Ile białka ma Wiejska Zagroda Adult Indyk z wołowiną?",
-          "a": "29% w analizie gwarantowanej, co po przeliczeniu na suchą masę (10% wilgotności) daje 32,2% — wyraźnie powyżej minimum FEDIAF 2024 dla psów dorosłych (21% DM)."
+          "a": "29% w analizie gwarantowanej, co po przeliczeniu na suchą masę (10% wilgotności) daje 32,2% - wyraźnie powyżej minimum FEDIAF 2024 dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
@@ -86,21 +86,21 @@
       "test": {
         "date": "2026-06-11",
         "granulaMm": 13,
-        "zapach": "intensywny, rybno-mięsny — wyczuwalny zaraz po otwarciu worka",
+        "zapach": "intensywny, rybno-mięsny - wyczuwalny zaraz po otwarciu worka",
         "tekstura": "nieregularne, gęste granule; lekko tłuste w dotyku (wyższy tłuszcz)",
         "bekon": 3,
-        "bekonNote": "Duże zainteresowanie od pierwszego powąchania. Test smakowitości: 5 granulek jako przysmak — bez zmiany diety.",
-        "uwagi": "Worek 2 kg. Strączkowe (soczewica) na 4. pozycji składu — odnotowane w wadach."
+        "bekonNote": "Duże zainteresowanie od pierwszego powąchania. Test smakowitości: 5 granulek jako przysmak - bez zmiany diety.",
+        "uwagi": "Worek 2 kg. Strączkowe (soczewica) na 4. pozycji składu - odnotowane w wadach."
       },
-      "verdict": "Wysokomięsna karma z nazwanymi źródłami białka i deklarowanym EPA/DHA. Dwa zastrzeżenia: strączkowe w czołówce składu (kontekst śledztwa FDA ws. DCM) i wapń przy górnej granicy normy dla wszystkich etapów życia — dla szczeniąt dużych ras wybierz wariant z niższym wapniem.",
+      "verdict": "Wysokomięsna karma z nazwanymi źródłami białka i deklarowanym EPA/DHA. Dwa zastrzeżenia: strączkowe w czołówce składu (kontekst śledztwa FDA ws. DCM) i wapń przy górnej granicy normy dla wszystkich etapów życia - dla szczeniąt dużych ras wybierz wariant z niższym wapniem.",
       "pros": [
         "Białko 37,5% DM z nazwanych źródeł drobiowych i rybnych",
         "Deklarowane EPA/DHA ze źródeł morskich",
         "Naturalne konserwowanie"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst DCM — zob. Wiedza)",
-        "Wapń 1,82% DM — przy limicie dla wzrostu",
+        "Strączkowe wysoko w składzie (kontekst DCM - zob. Wiedza)",
+        "Wapń 1,82% DM - przy limicie dla wzrostu",
         "Wysoka cena za kg"
       ],
       "faq": [
@@ -142,13 +142,13 @@
       "test": {
         "date": "2026-06-11",
         "granulaMm": 14,
-        "zapach": "neutralny, lekko tłuszczowy — mało mięsny",
+        "zapach": "neutralny, lekko tłuszczowy - mało mięsny",
         "tekstura": "regularne, jednolite granule (powtarzalność produkcji widoczna gołym okiem)",
         "bekon": 2,
-        "bekonNote": "Zjadł po chwili wahania, nie dopominał się o więcej. Test smakowitości: 5 granulek jako przysmak — bez zmiany diety.",
-        "uwagi": "Worek 4 kg. Etykieta podaje pełną analizę z dodatkami — wzorcowa przejrzystość deklaracji."
+        "bekonNote": "Zjadł po chwili wahania, nie dopominał się o więcej. Test smakowitości: 5 granulek jako przysmak - bez zmiany diety.",
+        "uwagi": "Worek 4 kg. Etykieta podaje pełną analizę z dodatkami - wzorcowa przejrzystość deklaracji."
       },
-      "verdict": "Odwrotność wielu konkurentów: skład z ogólnikami (nienazwane białka drobiowe), ale wzorcowy filar producenta — nutrycjoniści w zespole, próby żywieniowe, własne zakłady i pełna kontrola jakości. Solidny, przewidywalny wybór, choć za skład płaci się tu oceną.",
+      "verdict": "Odwrotność wielu konkurentów: skład z ogólnikami (nienazwane białka drobiowe), ale wzorcowy filar producenta - nutrycjoniści w zespole, próby żywieniowe, własne zakłady i pełna kontrola jakości. Solidny, przewidywalny wybór, choć za skład płaci się tu oceną.",
       "pros": [
         "Próby żywieniowe (feeding trial), nie tylko formulacja",
         "Wzorcowa kontrola jakości i R&D producenta",
@@ -198,15 +198,15 @@
       "test": {
         "date": "2026-06-11",
         "granulaMm": 0,
-        "zapach": "naturalny, mięsny — wyraźne kawałki mięsa, nie pasztet jednolity",
-        "tekstura": "duże kawałki w galarecie; widać włókna mięsa — skład potwierdza się wizualnie",
+        "zapach": "naturalny, mięsny - wyraźne kawałki mięsa, nie pasztet jednolity",
+        "tekstura": "duże kawałki w galarecie; widać włókna mięsa - skład potwierdza się wizualnie",
         "bekon": 3,
-        "bekonNote": "Entuzjazm pełny — mokra karma zawsze wygrywa smakowitością. Test: 1 łyżka jako dodatek do miski, bez zmiany diety.",
-        "uwagi": "Puszka 400 g, polska produkcja. UWAGA do porównań: 8% białka na etykiecie to 38% w suchej masie — mokrych karm nie wolno porównywać z suchymi bez przeliczenia."
+        "bekonNote": "Entuzjazm pełny - mokra karma zawsze wygrywa smakowitością. Test: 1 łyżka jako dodatek do miski, bez zmiany diety.",
+        "uwagi": "Puszka 400 g, polska produkcja. UWAGA do porównań: 8% białka na etykiecie to 38% w suchej masie - mokrych karm nie wolno porównywać z suchymi bez przeliczenia."
       },
-      "verdict": "Polska mokra karma z krótkim składem i wysokim udziałem nazwanego mięsa (jagnięcina). W suchej masie: 38% białka — więcej niż większość karm suchych. Koszt za 1000 kcal jest jednak ~3,5× wyższy niż dobrej karmy suchej — to cena formy mokrej, nie wada produktu.",
+      "verdict": "Polska mokra karma z krótkim składem i wysokim udziałem nazwanego mięsa (jagnięcina). W suchej masie: 38% białka - więcej niż większość karm suchych. Koszt za 1000 kcal jest jednak ~3,5× wyższy niż dobrej karmy suchej - to cena formy mokrej, nie wada produktu.",
       "pros": [
-        "Krótki, nazwany skład — jagnięcina jako pierwszy składnik",
+        "Krótki, nazwany skład - jagnięcina jako pierwszy składnik",
         "38% białka w suchej masie",
         "Wysoka smakowitość (mokra forma)",
         "Polska produkcja"
@@ -219,11 +219,11 @@
       "faq": [
         {
           "q": "Czy mokra karma jest lepsza od suchej?",
-          "a": "Żadna forma nie jest z definicji lepsza. Mokra ma wyższą smakowitość i nawodnienie, sucha — niższy koszt za 1000 kcal i wygodę. Porównuj skład w suchej masie: ta karma ma 38% białka DM, czyli więcej niż większość karm suchych."
+          "a": "Żadna forma nie jest z definicji lepsza. Mokra ma wyższą smakowitość i nawodnienie, sucha - niższy koszt za 1000 kcal i wygodę. Porównuj skład w suchej masie: ta karma ma 38% białka DM, czyli więcej niż większość karm suchych."
         },
         {
           "q": "Ile kosztuje żywienie psa mokrą karmą Piper?",
-          "a": "Przy 110 kcal/100 g i cenie ~23 zł/kg koszt 1000 kcal to około 21 zł — dla psa 15 kg (ok. 700–900 kcal dziennie) wychodzi 15–19 zł dziennie. Karma sucha o podobnej jakości to 4–6 zł dziennie."
+          "a": "Przy 110 kcal/100 g i cenie ~23 zł/kg koszt 1000 kcal to około 21 zł - dla psa 15 kg (ok. 700–900 kcal dziennie) wychodzi 15–19 zł dziennie. Karma sucha o podobnej jakości to 4–6 zł dziennie."
         }
       ],
       "shops": [
@@ -256,7 +256,7 @@
       "kcal": 394,
       "priceZlKg": 22,
       "verified": false,
-      "verdict": "Jedna z najwyżej mięsnych karm suchych na rynku — 85% składników zwierzęcych i białko ~43% w suchej masie. Strączkowe są obecne (kontekst DCM), a producent nie prowadzi klasycznych prób żywieniowych, ale skład i deklarowane EPA/DHA stawiają ją w ścisłej czołówce.",
+      "verdict": "Jedna z najwyżej mięsnych karm suchych na rynku - 85% składników zwierzęcych i białko ~43% w suchej masie. Strączkowe są obecne (kontekst DCM), a producent nie prowadzi klasycznych prób żywieniowych, ale skład i deklarowane EPA/DHA stawiają ją w ścisłej czołówce.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 43.2% w suchej masie",
@@ -264,13 +264,13 @@
         "Deklarowane EPA/DHA ze źródeł morskich"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM — zob. Wiedza)",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM - zob. Wiedza)",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Orijen Original?",
-          "a": "Na etykiecie 38%, co po przeliczeniu na suchą masę (wilgotność 12%) daje 43.2% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 38%, co po przeliczeniu na suchą masę (wilgotność 12%) daje 43.2% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -303,19 +303,19 @@
       "kcal": 375,
       "priceZlKg": 20,
       "verified": false,
-      "verdict": "Low-grain (orkisz i owies zamiast kukurydzy), kurczak bez kości jako pierwszy składnik, deklarowane EPA/DHA z oleju ze śledzia i brak strączkowych. Farmina współpracuje naukowo z uczelnią — solidny, zrównoważony wybór bez modnego grain-free.",
+      "verdict": "Low-grain (orkisz i owies zamiast kukurydzy), kurczak bez kości jako pierwszy składnik, deklarowane EPA/DHA z oleju ze śledzia i brak strączkowych. Farmina współpracuje naukowo z uczelnią - solidny, zrównoważony wybór bez modnego grain-free.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 33% w suchej masie",
         "Deklarowane EPA/DHA ze źródeł morskich"
       ],
       "cons": [
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Farmina N&D Ancestral Grain Kurczak z granatem?",
-          "a": "Na etykiecie 30%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 33% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 30%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 33% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -348,20 +348,20 @@
       "kcal": 372,
       "priceZlKg": 17,
       "verified": false,
-      "verdict": "Najlepiej sprzedająca się karma grain-free w USA: bizon i dziczyzna w nazwie, mączka z kurczaka w bazie, budżet-premium. Dwa zastrzeżenia: strączkowe wysoko w składzie (częsta w zgłoszeniach FDA ws. DCM — związek, nie przyczyna) oraz historia wycofań producenta.",
+      "verdict": "Najlepiej sprzedająca się karma grain-free w USA: bizon i dziczyzna w nazwie, mączka z kurczaka w bazie, budżet-premium. Dwa zastrzeżenia: strączkowe wysoko w składzie (częsta w zgłoszeniach FDA ws. DCM - związek, nie przyczyna) oraz historia wycofań producenta.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 35.6% w suchej masie",
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM — zob. Wiedza)",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM - zob. Wiedza)",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Taste of the Wild High Prairie?",
-          "a": "Na etykiecie 32%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 35.6% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 32%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 35.6% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -394,7 +394,7 @@
       "kcal": 365,
       "priceZlKg": 17,
       "verified": false,
-      "verdict": "Wysokomięsna, grain-free karma z łososiem i indykiem — bez kurczaka, co bywa atutem przy wrażliwościach. Wysokie białko i deklarowane EPA/DHA z oleju z łososia; minus to strączkowe (groszek) wysoko w składzie zamiast zbóż.",
+      "verdict": "Wysokomięsna, grain-free karma z łososiem i indykiem - bez kurczaka, co bywa atutem przy wrażliwościach. Wysokie białko i deklarowane EPA/DHA z oleju z łososia; minus to strączkowe (groszek) wysoko w składzie zamiast zbóż.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 41.1% w suchej masie",
@@ -402,12 +402,12 @@
         "Deklarowane EPA/DHA ze źródeł morskich"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM — zob. Wiedza)"
+        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM - zob. Wiedza)"
       ],
       "faq": [
         {
           "q": "Ile białka ma Carnilove Salmon & Turkey Adult?",
-          "a": "Na etykiecie 37%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 41.1% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 37%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 41.1% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -440,19 +440,19 @@
       "kcal": 341,
       "priceZlKg": 18,
       "verified": false,
-      "verdict": "Niemiecka, grain-free karma ze świeżym mięsem drobiowym (40%) i amarantusem zamiast zbóż. Umiarkowane białko, kryl morski jako źródło EPA/DHA, solidny producent rodzinny. Źródło drobiu nie jest doprecyzowane gatunkowo — to drobny minus.",
+      "verdict": "Niemiecka, grain-free karma ze świeżym mięsem drobiowym (40%) i amarantusem zamiast zbóż. Umiarkowane białko, kryl morski jako źródło EPA/DHA, solidny producent rodzinny. Źródło drobiu nie jest doprecyzowane gatunkowo - to drobny minus.",
       "pros": [
         "Receptura bez zbóż",
         "Deklarowane EPA/DHA ze źródeł morskich"
       ],
       "cons": [
         "Źródło białka bez podanego gatunku",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Belcando Adult GF Poultry?",
-          "a": "Na etykiecie 23.5%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 26.1% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 23.5%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 26.1% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -492,13 +492,13 @@
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM — zob. Wiedza)",
+        "Strączkowe wysoko w składzie (kontekst śledztwa FDA ws. DCM - zob. Wiedza)",
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji"
       ],
       "faq": [
         {
           "q": "Ile białka ma Wolf of Wilderness The Taste of Canada?",
-          "a": "Na etykiecie 28%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 30.8% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 28%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 30.8% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -540,12 +540,12 @@
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Purizon Adult Kurczak i Ryba?",
-          "a": "Na etykiecie 37%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 40.7% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 37%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 40.7% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -587,7 +587,7 @@
       "faq": [
         {
           "q": "Ile białka ma Brit Care Adult Medium Lamb & Rice?",
-          "a": "Na etykiecie 26%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 28.9% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 26%, co po przeliczeniu na suchą masę (wilgotność 10%) daje 28.9% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -626,12 +626,12 @@
       ],
       "cons": [
         "Źródło białka bez podanego gatunku",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Josera Optiness Adult?",
-          "a": "Na etykiecie 26%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 28.6% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 26%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 28.6% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -669,12 +669,12 @@
         "Nazwane źródło mięsa w składzie"
       ],
       "cons": [
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Fitmin dog Medium Maintenance?",
-          "a": "Na etykiecie 25%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 27.5% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 25%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 27.5% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -716,7 +716,7 @@
       "faq": [
         {
           "q": "Ile białka ma Calibra Dog Life Adult Medium Lamb?",
-          "a": "Na etykiecie 27%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 29.7% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 27%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 29.7% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -749,7 +749,7 @@
       "kcal": 327,
       "priceZlKg": 22,
       "verified": false,
-      "verdict": "Linia dla psów wrażliwych z rzadkim źródłem białka (końskie) i bez kurczaka — przydatna przy nietolerancjach. Niskie białko i tłuszcz nadają się dla psów mało aktywnych; cena za kilogram wyższa. Duży, doświadczony producent rodzinny.",
+      "verdict": "Linia dla psów wrażliwych z rzadkim źródłem białka (końskie) i bez kurczaka - przydatna przy nietolerancjach. Niskie białko i tłuszcz nadają się dla psów mało aktywnych; cena za kilogram wyższa. Duży, doświadczony producent rodzinny.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Receptura bez zbóż"
@@ -758,7 +758,7 @@
       "faq": [
         {
           "q": "Ile białka ma Happy Dog Supreme Sensible Montana?",
-          "a": "Na etykiecie 21%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 23.1% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 21%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 23.1% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -791,7 +791,7 @@
       "kcal": 357,
       "priceZlKg": 12,
       "verified": false,
-      "verdict": "Odwrotność butikowych marek: skład z pszenicą, kukurydzą i ogólnikowym białkiem drobiowym, ale za to próby żywieniowe, setki naukowców i wzorcowa kontrola jakości. Jedna z karm najczęściej polecanych przez weterynarzy — to filar producenta dźwiga ocenę.",
+      "verdict": "Odwrotność butikowych marek: skład z pszenicą, kukurydzą i ogólnikowym białkiem drobiowym, ale za to próby żywieniowe, setki naukowców i wzorcowa kontrola jakości. Jedna z karm najczęściej polecanych przez weterynarzy - to filar producenta dźwiga ocenę.",
       "pros": [
         "Deklarowane EPA/DHA ze źródeł morskich",
         "Producent z próbami żywieniowymi i kontrolą jakości (kryteria WSAVA)"
@@ -799,12 +799,12 @@
       "cons": [
         "Źródło białka bez podanego gatunku",
         "Brak deklaracji naturalnego konserwowania",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Purina Pro Plan Medium Adult OptiBalance?",
-          "a": "Na etykiecie 25%, co po przeliczeniu na suchą masę (wilgotność 9.5%) daje 27.6% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 25%, co po przeliczeniu na suchą masę (wilgotność 9.5%) daje 27.6% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -843,12 +843,12 @@
         "Producent z próbami żywieniowymi i kontrolą jakości (kryteria WSAVA)"
       ],
       "cons": [
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Hill's Science Plan Adult Advanced Fitness Medium?",
-          "a": "Na etykiecie 22%, co po przeliczeniu na suchą masę (wilgotność 8.5%) daje 24% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 22%, co po przeliczeniu na suchą masę (wilgotność 8.5%) daje 24% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -887,12 +887,12 @@
         "Producent z próbami żywieniowymi i kontrolą jakości (kryteria WSAVA)"
       ],
       "cons": [
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Eukanuba Adult Medium Breed Kurczak?",
-          "a": "Na etykiecie 24%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 26.4% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 24%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 26.4% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -925,16 +925,16 @@
       "kcal": 340,
       "priceZlKg": 6.5,
       "verified": false,
-      "verdict": "Linia ekonomiczna dużego producenta: zboża to 46% składu, mięso i produkty zwierzęce podane ogólnikowo (min. 4% kurczaka). Tania i bezpieczna mikrobiologicznie dzięki kontroli jakości Purina, ale jakość składu jest podstawowa — to karma „wystarczająca\", nie dobra.",
+      "verdict": "Linia ekonomiczna dużego producenta: zboża to 46% składu, mięso i produkty zwierzęce podane ogólnikowo (min. 4% kurczaka). Tania i bezpieczna mikrobiologicznie dzięki kontroli jakości Purina, ale jakość składu jest podstawowa - to karma „wystarczająca\", nie dobra.",
       "pros": [],
       "cons": [
         "Ogólnikowe nazwy składników („mięso i produkty pochodzenia zwierzęcego\")",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Purina Dog Chow Adult Kurczak?",
-          "a": "Na etykiecie 25%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 27.5% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 25%, co po przeliczeniu na suchą masę (wilgotność 9%) daje 27.5% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         }
       ],
       "shops": [
@@ -975,17 +975,17 @@
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Koszt za 1000 kcal (~24 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~24 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Pan Mięsko Pełnoporcjowa?",
-          "a": "Na etykiecie 10.7%, co po przeliczeniu na suchą masę (wilgotność 78.2%) daje 49.1% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 10.7%, co po przeliczeniu na suchą masę (wilgotność 78.2%) daje 49.1% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Pan Mięsko Pełnoporcjowa wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 24 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 24 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1026,17 +1026,17 @@
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Koszt za 1000 kcal (~11 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~11 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Lukullus Naturkost?",
-          "a": "Na etykiecie 10.1%, co po przeliczeniu na suchą masę (wilgotność 76%) daje 42.1% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 10.1%, co po przeliczeniu na suchą masę (wilgotność 76%) daje 42.1% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Lukullus Naturkost wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 11 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 11 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1077,16 +1077,16 @@
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Koszt za 1000 kcal (~12 zł) wyższy niż karmy suchej — to cecha formy mokrej"
+        "Koszt za 1000 kcal (~12 zł) wyższy niż karmy suchej - to cecha formy mokrej"
       ],
       "faq": [
         {
           "q": "Ile białka ma Rocco Classic Wołowina z Dziczyzną?",
-          "a": "Na etykiecie 11%, co po przeliczeniu na suchą masę (wilgotność 75%) daje 44% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 11%, co po przeliczeniu na suchą masę (wilgotność 75%) daje 44% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Rocco Classic Wołowina z Dziczyzną wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 12 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 12 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1119,7 +1119,7 @@
       "kcal": 110,
       "priceZlKg": 10,
       "verified": false,
-      "verdict": "W 100% bezzbożowa mokra karma z jagnięciną (66%) i leśnymi jagodami, bez kurczaka. Wysoki udział mięsa, czysty skład i niska cena za kilogram. Jak w innych markach własnych — bez własnego zaplecza naukowego.",
+      "verdict": "W 100% bezzbożowa mokra karma z jagnięciną (66%) i leśnymi jagodami, bez kurczaka. Wysoki udział mięsa, czysty skład i niska cena za kilogram. Jak w innych markach własnych - bez własnego zaplecza naukowego.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 41.2% w suchej masie",
@@ -1127,16 +1127,16 @@
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Koszt za 1000 kcal (~9 zł) wyższy niż karmy suchej — to cecha formy mokrej"
+        "Koszt za 1000 kcal (~9 zł) wyższy niż karmy suchej - to cecha formy mokrej"
       ],
       "faq": [
         {
           "q": "Ile białka ma Wolf of Wilderness Adult Jagnięcina (mokra)?",
-          "a": "Na etykiecie 10.3%, co po przeliczeniu na suchą masę (wilgotność 75%) daje 41.2% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 10.3%, co po przeliczeniu na suchą masę (wilgotność 75%) daje 41.2% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Wolf of Wilderness Adult Jagnięcina (mokra) wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 9 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 9 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1169,23 +1169,23 @@
       "kcal": 115,
       "priceZlKg": 12,
       "verified": false,
-      "verdict": "Niemiecka mokra karma premium z wysokim udziałem wołowiny i podrobów, bez zbóż, soi i glutenu. Czysty, mięsny skład i renomowany producent. Wariant czysto wołowy jest bez drobiu — przydatny przy wrażliwościach.",
+      "verdict": "Niemiecka mokra karma premium z wysokim udziałem wołowiny i podrobów, bez zbóż, soi i glutenu. Czysty, mięsny skład i renomowany producent. Wariant czysto wołowy jest bez drobiu - przydatny przy wrażliwościach.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 47.8% w suchej masie",
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Koszt za 1000 kcal (~10 zł) wyższy niż karmy suchej — to cecha formy mokrej"
+        "Koszt za 1000 kcal (~10 zł) wyższy niż karmy suchej - to cecha formy mokrej"
       ],
       "faq": [
         {
           "q": "Ile białka ma Animonda GranCarno Adult Wołowina?",
-          "a": "Na etykiecie 11%, co po przeliczeniu na suchą masę (wilgotność 77%) daje 47.8% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 11%, co po przeliczeniu na suchą masę (wilgotność 77%) daje 47.8% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Animonda GranCarno Adult Wołowina wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 10 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 10 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1225,17 +1225,17 @@
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Koszt za 1000 kcal (~16 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~16 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Brit Paté & Meat Wołowina z indykiem?",
-          "a": "Na etykiecie 9%, co po przeliczeniu na suchą masę (wilgotność 78%) daje 40.9% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 9%, co po przeliczeniu na suchą masę (wilgotność 78%) daje 40.9% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Brit Paté & Meat Wołowina z indykiem wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 16 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 16 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1268,24 +1268,24 @@
       "kcal": 112,
       "priceZlKg": 29,
       "verified": false,
-      "verdict": "Wysokomięsna mokra karma z dziczyzną drobiową (kaczka 41%, bażant 26%) i jagodami, bez zbóż i ziemniaków. Bogaty skład; najwyższy koszt za 1000 kcal w zestawieniu mokrych — to cena pozycjonowania premium.",
+      "verdict": "Wysokomięsna mokra karma z dziczyzną drobiową (kaczka 41%, bażant 26%) i jagodami, bez zbóż i ziemniaków. Bogaty skład; najwyższy koszt za 1000 kcal w zestawieniu mokrych - to cena pozycjonowania premium.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 42% w suchej masie",
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Koszt za 1000 kcal (~26 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~26 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Carnilove Wild Meat Kaczka z bażantem?",
-          "a": "Na etykiecie 10.5%, co po przeliczeniu na suchą masę (wilgotność 75%) daje 42% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 10.5%, co po przeliczeniu na suchą masę (wilgotność 75%) daje 42% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Carnilove Wild Meat Kaczka z bażantem wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 26 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 26 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1318,24 +1318,24 @@
       "kcal": 54,
       "priceZlKg": 35,
       "verified": false,
-      "verdict": "Bardzo wysokie białko i znikomy tłuszcz: kurczak 75% w rosole, praktycznie bez węglowodanów. Uwaga — część linii Applaws (Taste Toppers) to karma uzupełniająca, nie pełnoporcjowa; ten wariant Adult jest pełnoporcjowy. Wysoki koszt za 1000 kcal.",
+      "verdict": "Bardzo wysokie białko i znikomy tłuszcz: kurczak 75% w rosole, praktycznie bez węglowodanów. Uwaga - część linii Applaws (Taste Toppers) to karma uzupełniająca, nie pełnoporcjowa; ten wariant Adult jest pełnoporcjowy. Wysoki koszt za 1000 kcal.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 72.2% w suchej masie",
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Koszt za 1000 kcal (~65 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~65 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Applaws Adult Kurczak (mokra)?",
-          "a": "Na etykiecie 13%, co po przeliczeniu na suchą masę (wilgotność 82%) daje 72.2% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 13%, co po przeliczeniu na suchą masę (wilgotność 82%) daje 72.2% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Applaws Adult Kurczak (mokra) wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 65 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 65 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1376,17 +1376,17 @@
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Koszt za 1000 kcal (~19 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~19 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Wiejska Zagroda Kurczak monoproteinowa (mokra)?",
-          "a": "Na etykiecie 10.4%, co po przeliczeniu na suchą masę (wilgotność 75.2%) daje 41.9% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 10.4%, co po przeliczeniu na suchą masę (wilgotność 75.2%) daje 41.9% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Wiejska Zagroda Kurczak monoproteinowa (mokra) wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 19 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 19 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1427,17 +1427,17 @@
       "cons": [
         "Ogólnikowe nazwy składników („mięso i produkty pochodzenia zwierzęcego\")",
         "Brak deklaracji naturalnego konserwowania",
-        "Koszt za 1000 kcal (~64 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~64 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Royal Canin Mini Adult (mokra w sosie)?",
-          "a": "Na etykiecie 8.5%, co po przeliczeniu na suchą masę (wilgotność 78%) daje 38.6% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 8.5%, co po przeliczeniu na suchą masę (wilgotność 78%) daje 38.6% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Royal Canin Mini Adult (mokra w sosie) wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 64 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 64 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1470,23 +1470,23 @@
       "kcal": 77,
       "priceZlKg": 7.5,
       "verified": false,
-      "verdict": "Budżetowa mokra karma dużego producenta: niskie i ogólnikowe mięso (4% kurczaka), zboża i roślinne ekstrakty białkowe. Tania i bezpieczna mikrobiologicznie, ale uboga odżywczo — w suchej masie białko wypada nisko. Karma „wystarczająca\" do uzupełniania, nie pierwszego wyboru.",
+      "verdict": "Budżetowa mokra karma dużego producenta: niskie i ogólnikowe mięso (4% kurczaka), zboża i roślinne ekstrakty białkowe. Tania i bezpieczna mikrobiologicznie, ale uboga odżywczo - w suchej masie białko wypada nisko. Karma „wystarczająca\" do uzupełniania, nie pierwszego wyboru.",
       "pros": [
         "Wysokie białko: 41.1% w suchej masie"
       ],
       "cons": [
         "Ogólnikowe nazwy składników („mięso i produkty pochodzenia zwierzęcego\")",
-        "Koszt za 1000 kcal (~10 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~10 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Pedigree Adult Wołowina w galaretce?",
-          "a": "Na etykiecie 7.2%, co po przeliczeniu na suchą masę (wilgotność 82.5%) daje 41.1% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 7.2%, co po przeliczeniu na suchą masę (wilgotność 82.5%) daje 41.1% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Pedigree Adult Wołowina w galaretce wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 10 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 10 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1525,17 +1525,17 @@
       ],
       "cons": [
         "Ogólnikowe nazwy składników („mięso i produkty pochodzenia zwierzęcego\")",
-        "Koszt za 1000 kcal (~43 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~43 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Cesar Teryna z wołowiną i wątróbką?",
-          "a": "Na etykiecie 10%, co po przeliczeniu na suchą masę (wilgotność 80.5%) daje 51.3% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 10%, co po przeliczeniu na suchą masę (wilgotność 80.5%) daje 51.3% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Cesar Teryna z wołowiną i wątróbką wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 43 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 43 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1568,24 +1568,24 @@
       "kcal": 78,
       "priceZlKg": 9,
       "verified": false,
-      "verdict": "Półka najtańsza: mięso i produkty zwierzęce podane ogólnikowo (tylko 4% jagnięciny), zboża i cukry, niepełne dane na etykiecie. Tania i dostępna, ale uboga — w suchej masie białko niskie. Do rozważenia tylko jako sporadyczne uzupełnienie, nie podstawa diety.",
+      "verdict": "Półka najtańsza: mięso i produkty zwierzęce podane ogólnikowo (tylko 4% jagnięciny), zboża i cukry, niepełne dane na etykiecie. Tania i dostępna, ale uboga - w suchej masie białko niskie. Do rozważenia tylko jako sporadyczne uzupełnienie, nie podstawa diety.",
       "pros": [
         "Wysokie białko: 41.7% w suchej masie"
       ],
       "cons": [
         "Ogólnikowe nazwy składników („mięso i produkty pochodzenia zwierzęcego\")",
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji",
-        "Koszt za 1000 kcal (~12 zł) wyższy niż karmy suchej — to cecha formy mokrej",
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Koszt za 1000 kcal (~12 zł) wyższy niż karmy suchej - to cecha formy mokrej",
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Ile białka ma Puffi Jagnięcina (mokra)?",
-          "a": "Na etykiecie 7.5%, co po przeliczeniu na suchą masę (wilgotność 82%) daje 41.7% — powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
+          "a": "Na etykiecie 7.5%, co po przeliczeniu na suchą masę (wilgotność 82%) daje 41.7% - powyżej minimum FEDIAF 2024 dla psów dorosłych (21% w suchej masie)."
         },
         {
           "q": "Czy Puffi Jagnięcina (mokra) wypada drogo?",
-          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal — tu około 12 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
+          "a": "Cena za kilogram bywa myląca przy karmach mokrych. Liczy się koszt za 1000 kcal - tu około 12 zł, czyli wielokrotnie więcej niż dobra karma sucha. To naturalna cecha formy mokrej, nie wada produktu."
         }
       ],
       "shops": [
@@ -1619,24 +1619,24 @@
       "kcal": 360,
       "priceZlKg": 17,
       "verified": false,
-      "verdict": "Wariant tej samej linii Carnilove, ale bez ryby i bez drobiu — jagnięcina i dzik jako jedyne źródła białka. To dobry przykład, jak smak zmienia profil: brak deklarowanego EPA/DHA (nie ma ryby) obniża jeden element oceny względem wariantu z łososiem, za to znika alergen drobiowy.",
+      "verdict": "Wariant tej samej linii Carnilove, ale bez ryby i bez drobiu - jagnięcina i dzik jako jedyne źródła białka. To dobry przykład, jak smak zmienia profil: brak deklarowanego EPA/DHA (nie ma ryby) obniża jeden element oceny względem wariantu z łososiem, za to znika alergen drobiowy.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 36.7% w suchej masie",
         "Receptura bez zbóż",
-        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+        "Bez kurczaka/drobiu - przydatna przy alergii na kurczaka"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)"
+        "Strączkowe wysoko w składzie (kontekst FDA ws. DCM - zob. Wiedza)"
       ],
       "faq": [
         {
           "q": "Czym ten wariant różni się od innych smaków tej linii?",
-          "a": "To wariant „Jagnięcina z dzikiem (bez ryby i drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+          "a": "To wariant „Jagnięcina z dzikiem (bez ryby i drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno - sprawdzaj ten, który kupujesz."
         },
         {
           "q": "Ile białka ma Carnilove Lamb & Wild Boar Adult?",
-          "a": "Na etykiecie 33%, co w suchej masie (wilgotność 10%) daje 36.7% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+          "a": "Na etykiecie 33%, co w suchej masie (wilgotność 10%) daje 36.7% - powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
@@ -1669,25 +1669,25 @@
       "kcal": 353,
       "priceZlKg": 24,
       "verified": false,
-      "verdict": "Rybny wariant Orijen — sześć gatunków ryb zamiast drobiu. Bardzo wysokie białko i naturalnie bogate EPA/DHA z ryb; brak kurczaka czyni go opcją przy alergii na drób. Strączkowe wciąż obecne (kontekst DCM), jak w całej linii.",
+      "verdict": "Rybny wariant Orijen - sześć gatunków ryb zamiast drobiu. Bardzo wysokie białko i naturalnie bogate EPA/DHA z ryb; brak kurczaka czyni go opcją przy alergii na drób. Strączkowe wciąż obecne (kontekst DCM), jak w całej linii.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 43.2% w suchej masie",
         "Receptura bez zbóż",
         "Deklarowane EPA/DHA ze źródeł morskich",
-        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+        "Bez kurczaka/drobiu - przydatna przy alergii na kurczaka"
       ],
       "cons": [
-        "Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)"
+        "Strączkowe wysoko w składzie (kontekst FDA ws. DCM - zob. Wiedza)"
       ],
       "faq": [
         {
           "q": "Czym ten wariant różni się od innych smaków tej linii?",
-          "a": "To wariant „Sześć ryb (bez drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+          "a": "To wariant „Sześć ryb (bez drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno - sprawdzaj ten, który kupujesz."
         },
         {
           "q": "Ile białka ma Orijen Six Fish?",
-          "a": "Na etykiecie 38%, co w suchej masie (wilgotność 12%) daje 43.2% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+          "a": "Na etykiecie 38%, co w suchej masie (wilgotność 12%) daje 43.2% - powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
@@ -1720,22 +1720,22 @@
       "kcal": 357,
       "priceZlKg": 15,
       "verified": false,
-      "verdict": "Grain-free, monobiałkowy wariant Brit Care z łososiem i ziemniakami — bez kurczaka i bez zbóż, projektowany pod psy wrażliwe i alergiczne. W odróżnieniu od wariantu Lamb & Rice jest bezzbożowy i ma rybie EPA/DHA, ale ziemniak zamiast ryżu.",
+      "verdict": "Grain-free, monobiałkowy wariant Brit Care z łososiem i ziemniakami - bez kurczaka i bez zbóż, projektowany pod psy wrażliwe i alergiczne. W odróżnieniu od wariantu Lamb & Rice jest bezzbożowy i ma rybie EPA/DHA, ale ziemniak zamiast ryżu.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Receptura bez zbóż",
         "Deklarowane EPA/DHA ze źródeł morskich",
-        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+        "Bez kurczaka/drobiu - przydatna przy alergii na kurczaka"
       ],
       "cons": [],
       "faq": [
         {
           "q": "Czym ten wariant różni się od innych smaków tej linii?",
-          "a": "To wariant „Łosoś z ziemniakami (grain-free, hipoalergiczny)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+          "a": "To wariant „Łosoś z ziemniakami (grain-free, hipoalergiczny)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno - sprawdzaj ten, który kupujesz."
         },
         {
           "q": "Ile białka ma Brit Care Adult Salmon & Potato?",
-          "a": "Na etykiecie 25%, co w suchej masie (wilgotność 10%) daje 27.8% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+          "a": "Na etykiecie 25%, co w suchej masie (wilgotność 10%) daje 27.8% - powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
@@ -1768,12 +1768,12 @@
       "kcal": 368,
       "priceZlKg": 14,
       "verified": false,
-      "verdict": "Wariant z dziczyzną tej samej polskiej linii — bez drobiu, bezzbożowy, z nietypowym źródłem białka (dzik) przydatnym przy nietolerancjach. Inny smak niż „Indyk z wołowiną\", więc i inny profil alergenów; ocena zbliżona, bo skład i producent te same.",
+      "verdict": "Wariant z dziczyzną tej samej polskiej linii - bez drobiu, bezzbożowy, z nietypowym źródłem białka (dzik) przydatnym przy nietolerancjach. Inny smak niż „Indyk z wołowiną\", więc i inny profil alergenów; ocena zbliżona, bo skład i producent te same.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 33% w suchej masie",
         "Receptura bez zbóż",
-        "Bez kurczaka/drobiu — przydatna przy alergii na kurczaka"
+        "Bez kurczaka/drobiu - przydatna przy alergii na kurczaka"
       ],
       "cons": [
         "Producent bez prób żywieniowych / nutrycjonisty w deklaracji"
@@ -1781,11 +1781,11 @@
       "faq": [
         {
           "q": "Czym ten wariant różni się od innych smaków tej linii?",
-          "a": "To wariant „Dzik z jabłkiem (bez drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+          "a": "To wariant „Dzik z jabłkiem (bez drobiu)\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno - sprawdzaj ten, który kupujesz."
         },
         {
           "q": "Ile białka ma Wiejska Zagroda Dzik z jabłkiem?",
-          "a": "Na etykiecie 30%, co w suchej masie (wilgotność 9%) daje 33% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+          "a": "Na etykiecie 30%, co w suchej masie (wilgotność 9%) daje 33% - powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
@@ -1818,23 +1818,23 @@
       "kcal": 100,
       "priceZlKg": 12,
       "verified": false,
-      "verdict": "Drobiowy wariant GranCarno — w odróżnieniu od wersji czysto wołowej zawiera kurczaka i indyka, więc nie nadaje się przy alergii na drób. Skład i jakość producenta te same; różnica to źródło białka i alergeny.",
+      "verdict": "Drobiowy wariant GranCarno - w odróżnieniu od wersji czysto wołowej zawiera kurczaka i indyka, więc nie nadaje się przy alergii na drób. Skład i jakość producenta te same; różnica to źródło białka i alergeny.",
       "pros": [
         "Nazwane źródło mięsa w składzie",
         "Wysokie białko: 47.7% w suchej masie",
         "Receptura bez zbóż"
       ],
       "cons": [
-        "Zawiera drób — wykluczona przy alergii na kurczaka"
+        "Zawiera drób - wykluczona przy alergii na kurczaka"
       ],
       "faq": [
         {
           "q": "Czym ten wariant różni się od innych smaków tej linii?",
-          "a": "To wariant „Kurczak z indykiem\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno — sprawdzaj ten, który kupujesz."
+          "a": "To wariant „Kurczak z indykiem\". Inne smaki tej samej linii mają inny skład (źródło białka, alergeny, profil tłuszczu), więc również inną ocenę i dopasowanie do psa. Oceniamy każdy wariant osobno - sprawdzaj ten, który kupujesz."
         },
         {
           "q": "Ile białka ma Animonda GranCarno Adult Kurczak z indykiem?",
-          "a": "Na etykiecie 10.5%, co w suchej masie (wilgotność 78%) daje 47.7% — powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
+          "a": "Na etykiecie 10.5%, co w suchej masie (wilgotność 78%) daje 47.7% - powyżej minimum FEDIAF dla psów dorosłych (21% DM)."
         }
       ],
       "shops": [
@@ -1847,6 +1847,128 @@
           "u": "https://fera.pl/"
         }
       ]
+    },
+    {
+      "slug": "alpha-spirit-soft-food-multiprotein",
+      "name": "Alpha Spirit Soft Food Multiprotein",
+      "brand": "Alpha Spirit",
+      "type": "półwilgotna",
+      "life": "dorosły",
+      "score": 84,
+      "pillars": [
+        32,
+        18,
+        20,
+        14
+      ],
+      "proteinDM": 39,
+      "fatDM": 20,
+      "kcal": 331,
+      "priceZlKg": 38,
+      "verified": true,
+      "test": {
+        "date": "2026-06-14",
+        "granulaMm": 9,
+        "zapach": "intensywnie mięsny, lekko wędzony; bez chemicznej nuty",
+        "tekstura": "miękkie, sprężyste kostki - nie kruszą się, łatwe do podziału; forma półwilgotna, nieekstrudowana",
+        "bekon": 3,
+        "bekonNote": "Najbardziej lubiana karma w naszych testach - Bekon wybiera ją spośród kilku smaków linii. Werdykt właściciela: 10/10.",
+        "uwagi": "Worek 9 kg złożony z małych, szczelnie zamkniętych porcji (~210 g) - karma nie wysycha aż do ostatniej porcji. Analiza z oficjalnych danych producenta."
+      },
+      "verdict": "Półwilgotna karma pełnoporcjowa bez zbóż, nieekstrudowana, bez mączek mięsnych i sztucznych aromatów. W suchej masie 39% białka, zadeklarowane EPA+DHA (1790 mg/kg) i tauryna. Dużym atutem jest pakowanie 9 kg w małe, szczelne porcje - karma pozostaje świeża do końca. Najwyżej oceniana przez Bekona (smakowitość nie wpływa jednak na łapki - te opisują wyłącznie jakość).",
+      "pros": [
+        "Bez zbóż, bez mączek mięsnych, nieekstrudowana (niska temperatura)",
+        "39% białka w suchej masie; zadeklarowane EPA+DHA i tauryna",
+        "Pakowanie 9 kg w małe, szczelne porcje - świeżość do ostatniej porcji",
+        "Forma półwilgotna - wysoka smakowitość, miękkie kostki także dla małych psów"
+      ],
+      "cons": [
+        "Brak prób żywieniowych (deklaracja: formulated to meet)",
+        "Cena premium (~9 €/kg)",
+        "Tłuszcz 20% DM - ostrożnie przy skłonności do zapalenia trzustki"
+      ],
+      "faq": [
+        {
+          "q": "Czym jest karma półwilgotna i czym różni się od suchej?",
+          "a": "To forma pośrednia (~25% wilgotności): miększa i bardziej apetyczna niż sucha granula, ale trwalsza i bardziej kaloryczna niż mokra. Alpha Spirit nie jest ekstrudowana i gotowana jest w niskiej temperaturze, co lepiej chroni składniki odżywcze."
+        },
+        {
+          "q": "Czy worek 9 kg nie zepsuje się przy małym psie?",
+          "a": "Nie - 9 kg składa się z małych, szczelnie zamkniętych porcji (~210 g). Otwierasz kolejną dopiero gdy poprzednia się skończy, więc karma nie wysycha. Dla małego psa to rozwiązanie wygodne i ekonomiczne mimo dużego opakowania."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Alpha Spirit Store",
+          "u": "https://www.aspiritpetfood.store/"
+        }
+      ],
+      "flavor": "Multiprotein"
+    },
+    {
+      "slug": "wiejska-zagroda-wolowina-kaczka-kurkuma",
+      "name": "Wiejska Zagroda Wołowina z kaczką i kurkumą",
+      "brand": "Wiejska Zagroda",
+      "type": "mokra",
+      "life": "dorosły",
+      "score": 86,
+      "pillars": [
+        33,
+        18,
+        21,
+        14
+      ],
+      "proteinDM": 45,
+      "fatDM": 34,
+      "kcal": 121,
+      "priceZlKg": 33,
+      "verified": true,
+      "test": {
+        "date": "2026-06-14",
+        "granulaMm": 0,
+        "zapach": "naturalny, mięsny; wyczuwalna kaczka, bez sztucznej nuty",
+        "tekstura": "wilgotne kawałki, widoczne włókna mięsa - skład potwierdza się wizualnie",
+        "bekon": 3,
+        "bekonNote": "Bekon chętnie zjada, wyraźnie dobra jakość. Minus użytkowy: saszetka za duża dla małego psa - po kilku godzinach w lodówce karma traci dla niego smak.",
+        "uwagi": "Saszetka 400/500 g. UWAGA do porównań: 10,7% białka na etykiecie to ~45% w suchej masie - mokrych karm nie porównujemy z suchymi bez przeliczenia."
+      },
+      "verdict": "Mokra karma pełnoporcjowa o bardzo wysokim udziale surowców zwierzęcych (97,4%: mięso, podroby, bulion, kaczka), bez zbóż, z sensownymi dodatkami funkcjonalnymi (kurkuma, spirulina, MOS/FOS) i olejem z łososia. W suchej masie 45% białka. Receptura hipoalergiczna. Mocna pozycja wśród mokrych karm na polskim rynku.",
+      "pros": [
+        "97,4% składników zwierzęcych, 0% zbóż - receptura hipoalergiczna",
+        "45% białka w suchej masie; olej z łososia jako źródło kwasów omega",
+        "Dodatki funkcjonalne: kurkuma, spirulina, prebiotyki MOS/FOS",
+        "Wygodna saszetka, polska produkcja, przystępna cena"
+      ],
+      "cons": [
+        "Saszetka za duża dla bardzo małych psów - resztka traci smak po przechowaniu",
+        "Tłuszcz 34% DM - ostrożnie przy skłonności do zapalenia trzustki",
+        "Brak deklarowanej ilości EPA/DHA i prób żywieniowych"
+      ],
+      "faq": [
+        {
+          "q": "Czy ta karma jest odpowiednia dla psów z alergią?",
+          "a": "Receptura jest hipoalergiczna i bezzbożowa, oparta na wołowinie i kaczce z dodatkiem podrobów. Przy zdiagnozowanej alergii na wołowinę lub kaczkę nie należy jej podawać; przy diecie eliminacyjnej wybierz wariant monobiałkowy i skonsultuj się z weterynarzem."
+        },
+        {
+          "q": "Ile białka ma Wiejska Zagroda wołowina z kaczką i kurkumą?",
+          "a": "10,7% w analizie gwarantowanej, co przy 76% wilgotności daje ok. 45% w suchej masie - więcej niż większość karm suchych. Mokrych karm nie wolno porównywać z suchymi bez przeliczenia na suchą masę."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Krakvet",
+          "u": "https://www.krakvet.pl/"
+        }
+      ],
+      "flavor": "Wołowina z kaczką i kurkumą"
     }
   ]
 }

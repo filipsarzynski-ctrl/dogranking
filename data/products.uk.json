@@ -8,18 +8,18 @@
       "type": "single-protein training treat", "life": "adult",
       "score": 85, "pillars": [32, 21, 20, 12],
       "specs": [
-        ["Composition", "100% of the named meat (e.g. 100% venison) — no additives or preservatives"],
+        ["Composition", "100% of the named meat (e.g. 100% venison) - no additives or preservatives"],
         ["Profile", "high protein, low fat; grain- and gluten-free; single protein for elimination diets"],
-        ["Texture", "soft, snappable — safe on teeth, easy to break for training"],
+        ["Texture", "soft, snappable - safe on teeth, easy to break for training"],
         ["VOHC", "no (not a dental product)"],
         ["Price", "~£2–4 per 50g pack; venison, turkey, lamb, ostrich, kangaroo"]
       ],
       "verified": false,
       "verdict": "A model training treat from a UK maker: one named protein, nothing else, and soft enough to snap into tiny reward-sized pieces. Novel proteins like venison or ostrich make it a strong pick for allergy dogs. As pure meat it is calorie-dense, so it counts toward the daily ration.",
-      "pros": ["Single named protein — hypoallergenic-friendly", "No fillers, additives or preservatives", "Soft and snappable — gentle on teeth, ideal for training", "Novel proteins available for elimination diets"],
-      "cons": ["Calorie-dense meat — portion control needed", "Not a dental product (no abrasive cleaning)", "Price-per-gram higher than processed treats"],
+      "pros": ["Single named protein - hypoallergenic-friendly", "No fillers, additives or preservatives", "Soft and snappable - gentle on teeth, ideal for training", "Novel proteins available for elimination diets"],
+      "cons": ["Calorie-dense meat - portion control needed", "Not a dental product (no abrasive cleaning)", "Price-per-gram higher than processed treats"],
       "faq": [
-        {"q": "Are single-protein treats worth it for a non-allergic dog?", "a": "Yes — a short, clear ingredient list means fewer unwanted additives, and a dog already used to single proteins makes any future elimination diet far easier to run."},
+        {"q": "Are single-protein treats worth it for a non-allergic dog?", "a": "Yes - a short, clear ingredient list means fewer unwanted additives, and a dog already used to single proteins makes any future elimination diet far easier to run."},
         {"q": "How many training treats per day?", "a": "Keep all treats to about 10% of daily calories. Because these are pure meat, break them small and, where possible, deduct the equivalent from the dog's main meal."}
       ],
       "shops": [{"n": "VioVet", "u": "https://www.viovet.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}, {"n": "The Natural Pet Store", "u": "https://www.thenaturalpetstore.co.uk/"}]
@@ -33,16 +33,16 @@
       "specs": [
         ["Composition", "potato starch, glycerin, cellulose, lecithin, dried yeast, malt; vegetarian, grain-free"],
         ["Analysis", "very low protein/fat; toothbrush shape with ridges"],
-        ["Hardness", "abrasive but yielding — passes the thumbnail test"],
-        ["VOHC", "yes (Brushzees shape) — not all Whimzees shapes are VOHC-listed"],
+        ["Hardness", "abrasive but yielding - passes the thumbnail test"],
+        ["VOHC", "yes (Brushzees shape) - not all Whimzees shapes are VOHC-listed"],
         ["Price", "~£12–25 monthly box; sized XS–L by weight"]
       ],
       "verified": false,
       "verdict": "One of the few chews on the UK shelf carrying a VOHC seal, so its dental benefit is clinically backed rather than just claimed. The trade-off is the category's classic one: dentally credible, nutritionally hollow (potato starch and glycerin lead the list). Judge it as a hygiene tool, not food.",
-      "pros": ["VOHC seal (Brushzees) — clinical dental evidence", "Grain-free, vegetarian — option for allergy dogs", "Ridged shape works the tooth surface", "Yielding texture — wears down, won't fracture teeth"],
-      "cons": ["Nutritionally empty — starch and glycerin lead", "Pricier per chew than Dentastix", "Supplements, never replaces, brushing"],
+      "pros": ["VOHC seal (Brushzees) - clinical dental evidence", "Grain-free, vegetarian - option for allergy dogs", "Ridged shape works the tooth surface", "Yielding texture - wears down, won't fracture teeth"],
+      "cons": ["Nutritionally empty - starch and glycerin lead", "Pricier per chew than Dentastix", "Supplements, never replaces, brushing"],
       "faq": [
-        {"q": "What does the VOHC seal mean?", "a": "The Veterinary Oral Health Council awards it only to products shown in controlled trials to reduce plaque or tartar. It is the one independent proof of dental efficacy — claims without it are marketing."},
+        {"q": "What does the VOHC seal mean?", "a": "The Veterinary Oral Health Council awards it only to products shown in controlled trials to reduce plaque or tartar. It is the one independent proof of dental efficacy - claims without it are marketing."},
         {"q": "Does a dental chew replace toothbrushing?", "a": "No. Daily brushing with enzymatic paste is the gold standard; a VOHC chew is a useful add-on on days brushing slips, not a substitute."}
       ],
       "shops": [{"n": "Zooplus.co.uk", "u": "https://www.zooplus.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}]
@@ -56,16 +56,16 @@
       "specs": [
         ["Composition", "cereals, meat & animal derivatives, starch, minerals, vegetable protein extracts"],
         ["Analysis", "~6% crude protein, low fat; ~70 kcal per medium stick"],
-        ["Hardness", "soft, flexes/dents — passes the thumbnail test"],
-        ["VOHC", "yes — seal for plaque/tartar control"],
+        ["Hardness", "soft, flexes/dents - passes the thumbnail test"],
+        ["VOHC", "yes - seal for plaque/tartar control"],
         ["Price", "from ~£1.69 (7-pack) to ~£10–13 bulk"]
       ],
       "verified": false,
-      "verdict": "The cheapest, most widely stocked VOHC-sealed chew in the UK — and that is its whole value. The cereal-and-derivatives base has nothing to do with good nutrition, but the dental function is clinically backed. You're buying a hygiene tool at the price of chewing gum.",
-      "pros": ["VOHC seal — clinical tartar-control evidence", "Very cheap, sold in every supermarket", "Low fat, soft texture safe for teeth", "Size-matched ranges"],
-      "cons": ["Cereal and animal-derivative base — nutritionally weak", "Not for grain-sensitive dogs", "Daily calories must be counted", "No named meat source"],
+      "verdict": "The cheapest, most widely stocked VOHC-sealed chew in the UK - and that is its whole value. The cereal-and-derivatives base has nothing to do with good nutrition, but the dental function is clinically backed. You're buying a hygiene tool at the price of chewing gum.",
+      "pros": ["VOHC seal - clinical tartar-control evidence", "Very cheap, sold in every supermarket", "Low fat, soft texture safe for teeth", "Size-matched ranges"],
+      "cons": ["Cereal and animal-derivative base - nutritionally weak", "Not for grain-sensitive dogs", "Daily calories must be counted", "No named meat source"],
       "faq": [
-        {"q": "Does Dentastix actually work?", "a": "On tartar, yes — that is what the VOHC trials measure. On 'fresh breath' and general health it is marketing, and it still doesn't replace brushing."},
+        {"q": "Does Dentastix actually work?", "a": "On tartar, yes - that is what the VOHC trials measure. On 'fresh breath' and general health it is marketing, and it still doesn't replace brushing."},
         {"q": "From what age can dogs have Dentastix?", "a": "The maker advises from around four months and matching the size (S/M/L) to the dog. A too-small chew for a big dog risks being swallowed whole."}
       ],
       "shops": [{"n": "Pets at Home", "u": "https://www.petsathome.com/"}, {"n": "Zooplus.co.uk", "u": "https://www.zooplus.co.uk/"}, {"n": "VetUK", "u": "https://www.vetuk.co.uk/"}]
@@ -85,12 +85,12 @@
         ["Price", "adult kit ~£4–8; puppy kit ~£4.50–8"]
       ],
       "verified": false,
-      "verdict": "Daily brushing is the gold standard of oral care — it beats chews alone — and this kit makes starting cheap. The enzymatic, liver-flavoured paste is fluoride- and xylitol-free, so it is safe to swallow, and most dogs tolerate the taste. The only requirement is the daily habit.",
-      "pros": ["Brushing beats dental chews for oral health", "Enzymatic and tasty — dogs tolerate it", "Fluoride- and xylitol-free, safe to swallow", "Very affordable"],
+      "verdict": "Daily brushing is the gold standard of oral care - it beats chews alone - and this kit makes starting cheap. The enzymatic, liver-flavoured paste is fluoride- and xylitol-free, so it is safe to swallow, and most dogs tolerate the taste. The only requirement is the daily habit.",
+      "pros": ["Brushing beats dental chews for oral health", "Enzymatic and tasty - dogs tolerate it", "Fluoride- and xylitol-free, safe to swallow", "Very affordable"],
       "cons": ["Never substitute human toothpaste (fluoride/xylitol toxicity)", "Needs a daily routine and gradual desensitisation", "Double-ended head can be large for toy breeds (use finger brush)"],
       "faq": [
         {"q": "Why can't I use human toothpaste on my dog?", "a": "Human paste contains fluoride and often xylitol, both toxic to dogs, who always swallow the paste. Dog pastes are made to be swallowed and need no rinsing."},
-        {"q": "How often should I brush my dog's teeth?", "a": "Ideally daily — plaque mineralises into tartar within 48–72 hours. Three times a week is a realistic minimum; small breeds prone to tartar benefit most from consistency."}
+        {"q": "How often should I brush my dog's teeth?", "a": "Ideally daily - plaque mineralises into tartar within 48–72 hours. Three times a week is a realistic minimum; small breeds prone to tartar benefit most from consistency."}
       ],
       "shops": [{"n": "Beaphar UK", "u": "https://www.beaphar.co.uk/"}, {"n": "Pet Drugs Online", "u": "https://www.petdrugsonline.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}]
     },
@@ -101,17 +101,17 @@
       "type": "slicker brush", "life": "all",
       "score": 80, "pillars": [28, 20, 20, 12],
       "specs": [
-        ["Type", "slicker brush — fine angled wire pins on a cushioned pad; self-clean versions available"],
+        ["Type", "slicker brush - fine angled wire pins on a cushioned pad; self-clean versions available"],
         ["Build", "stainless angled pins, rubber-cushion base, ergonomic handle; small/large heads"],
         ["Use", "loose undercoat, mats and tangles; light strokes to avoid skin irritation"],
         ["Price", "Dual Slicker ~£9.99; Pro Slicker ~£13.49"]
       ],
       "verified": false,
-      "verdict": "A trusted, widely stocked UK slicker that handles loose undercoat, mats and tangles, with a cushioned pad that's gentle on skin and a self-cleaning version that ejects hair in one click. Use light strokes — pressing fine wire pins too hard causes 'slicker burn'.",
+      "verdict": "A trusted, widely stocked UK slicker that handles loose undercoat, mats and tangles, with a cushioned pad that's gentle on skin and a self-cleaning version that ejects hair in one click. Use light strokes - pressing fine wire pins too hard causes 'slicker burn'.",
       "pros": ["Removes loose undercoat, mats and tangles", "Cushioned pad gentle on skin", "Self-clean versions eject hair easily", "Trusted UK brand, widely stocked"],
       "cons": ["Fine pins can cause 'slicker burn' if pressed too hard", "Not enough alone on very thick double coats (pair with a rake)", "Pins can bend over time"],
       "faq": [
-        {"q": "How do I avoid hurting my dog with a slicker brush?", "a": "Use light, short strokes and let the pins do the work — never bear down. Hold the skin taut near mats and tease them out gradually rather than dragging through."},
+        {"q": "How do I avoid hurting my dog with a slicker brush?", "a": "Use light, short strokes and let the pins do the work - never bear down. Hold the skin taut near mats and tease them out gradually rather than dragging through."},
         {"q": "Is a slicker enough for a thick double coat?", "a": "It handles the surface and tangles, but heavy double coats also need an undercoat rake or deshedding tool to reach the dense underlayer."}
       ],
       "shops": [{"n": "Doghouse", "u": "https://www.doghouse.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}]
@@ -129,12 +129,12 @@
         ["Price", "~£4.10–5.59 (250ml)"]
       ],
       "verified": false,
-      "verdict": "An affordable, groomer-trusted everyday shampoo that's correctly pH-balanced for dogs — important, since human shampoo is wrong for canine skin. The fragranced base suits most dogs; for itchy or reactive skin step across to the Derma variant.",
-      "pros": ["Affordable; used by groomers and show owners", "pH-balanced for dogs", "Broad range — sensitive, deodorising, puppy", "Widely available"],
-      "cons": ["Fragranced — some sensitive dogs react (choose Derma)", "Avoid eyes", "Not medicated — see a vet for skin infections"],
+      "verdict": "An affordable, groomer-trusted everyday shampoo that's correctly pH-balanced for dogs - important, since human shampoo is wrong for canine skin. The fragranced base suits most dogs; for itchy or reactive skin step across to the Derma variant.",
+      "pros": ["Affordable; used by groomers and show owners", "pH-balanced for dogs", "Broad range - sensitive, deodorising, puppy", "Widely available"],
+      "cons": ["Fragranced - some sensitive dogs react (choose Derma)", "Avoid eyes", "Not medicated - see a vet for skin infections"],
       "faq": [
         {"q": "Why not use human shampoo on a dog?", "a": "Dog skin sits around pH 7 (neutral), human skin around 5.5 (acidic). Human shampoos are tuned to our skin and disrupt a dog's protective barrier, causing dryness and itching."},
-        {"q": "How often should I bathe my dog?", "a": "For most dogs every few weeks at most, or when genuinely dirty — over-washing strips natural oils. Brush the coat out before bathing, especially long or curly coats."}
+        {"q": "How often should I bathe my dog?", "a": "For most dogs every few weeks at most, or when genuinely dirty - over-washing strips natural oils. Brush the coat out before bathing, especially long or curly coats."}
       ],
       "shops": [{"n": "Animology UK", "u": "https://animology.co.uk/"}, {"n": "VioVet", "u": "https://www.viovet.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}]
     }
@@ -147,18 +147,18 @@
       "type": "Y-front harness", "life": "all",
       "score": 90, "pillars": [33, 23, 22, 12],
       "specs": [
-        ["Construction", "true Y-shape — leaves shoulders free for natural movement"],
+        ["Construction", "true Y-shape - leaves shoulders free for natural movement"],
         ["Build", "foam-padded panels, four adjustment points, aluminium back V-ring + reinforced front loop, ID pocket, reflective trim"],
         ["Attachment", "front (anti-pull) and back clips"],
         ["Sizes", "XXS–L/XL (girth 33–107 cm)"],
         ["Price", "~£49.95–59.95"]
       ],
       "verified": false,
-      "verdict": "The benchmark everyday Y-harness: the shape leaves the shoulders free (a dog has no collarbone — the shoulder hangs on muscle alone), the front clip aids gentle anti-pull training, and the padding is genuinely comfortable. Premium price, but it lasts and fits a huge size range.",
-      "pros": ["True Y-shape — frees the shoulders for natural movement", "Front clip helps gentle anti-pull training", "Well-padded and comfortable; four adjustment points", "Durable, rated ~4.8/5 for comfort"],
-      "cons": ["Premium price", "Very deep-chested dogs may fall between sizes — measure carefully", "Padding can be warm in summer"],
+      "verdict": "The benchmark everyday Y-harness: the shape leaves the shoulders free (a dog has no collarbone - the shoulder hangs on muscle alone), the front clip aids gentle anti-pull training, and the padding is genuinely comfortable. Premium price, but it lasts and fits a huge size range.",
+      "pros": ["True Y-shape - frees the shoulders for natural movement", "Front clip helps gentle anti-pull training", "Well-padded and comfortable; four adjustment points", "Durable, rated ~4.8/5 for comfort"],
+      "cons": ["Premium price", "Very deep-chested dogs may fall between sizes - measure carefully", "Padding can be warm in summer"],
       "faq": [
-        {"q": "Why a Y-harness rather than a Norwegian (strap-across) one?", "a": "A dog has no collarbone — the shoulder blade hangs on muscle and needs freedom to move. The horizontal strap of a Norwegian harness crosses the shoulder and can restrict the stride; a Y-harness runs along the chest and clears the joint."},
+        {"q": "Why a Y-harness rather than a Norwegian (strap-across) one?", "a": "A dog has no collarbone - the shoulder blade hangs on muscle and needs freedom to move. The horizontal strap of a Norwegian harness crosses the shoulder and can restrict the stride; a Y-harness runs along the chest and clears the joint."},
         {"q": "How do I size a harness?", "a": "Measure chest girth just behind the front legs and the neck at the base. A good fit lets two fingers under each strap, with the front strap clear of the armpits and throat."}
       ],
       "shops": [{"n": "Ruffwear UK", "u": "https://ruffwear.co.uk/"}, {"n": "Vetsend UK", "u": "https://www.vetsend.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}]
@@ -176,12 +176,12 @@
         ["Price", "~£30–45 for the three pieces combined"]
       ],
       "verified": false,
-      "verdict": "A UK trainer favourite for a reason: built from three separately-sized pieces, it achieves a genuinely custom fit on tricky shapes — deep-chested, narrow, or Houdini escape artists. The fleece lining is rub-free, it goes on without passing over the head (great for head-shy dogs), and worn pieces are replaced individually.",
-      "pros": ["Custom fit for hard-to-fit and escape-prone dogs", "Fleece lining is comfortable and rub-free", "Goes on without passing over the head — good for anxious dogs", "Replace single pieces — economical and sustainable"],
-      "cons": ["Buying/sizing three pieces is fiddly — easy to mis-measure", "Total cost similar to a premium one-piece", "Fleece holds water/odour and needs regular washing"],
+      "verdict": "A UK trainer favourite for a reason: built from three separately-sized pieces, it achieves a genuinely custom fit on tricky shapes - deep-chested, narrow, or Houdini escape artists. The fleece lining is rub-free, it goes on without passing over the head (great for head-shy dogs), and worn pieces are replaced individually.",
+      "pros": ["Custom fit for hard-to-fit and escape-prone dogs", "Fleece lining is comfortable and rub-free", "Goes on without passing over the head - good for anxious dogs", "Replace single pieces - economical and sustainable"],
+      "cons": ["Buying/sizing three pieces is fiddly - easy to mis-measure", "Total cost similar to a premium one-piece", "Fleece holds water/odour and needs regular washing"],
       "faq": [
-        {"q": "Who is the Perfect Fit harness best for?", "a": "Dogs that don't fit standard harnesses — very deep or narrow chests, unusual proportions, and escape artists — plus head-shy dogs, since it fastens without going over the head."},
-        {"q": "Is it worth the fiddly sizing?", "a": "If a one-size harness rubs, slips or lets your dog back out, yes — the per-piece fit solves exactly those problems, and you replace only the worn part later."}
+        {"q": "Who is the Perfect Fit harness best for?", "a": "Dogs that don't fit standard harnesses - very deep or narrow chests, unusual proportions, and escape artists - plus head-shy dogs, since it fastens without going over the head."},
+        {"q": "Is it worth the fiddly sizing?", "a": "If a one-size harness rubs, slips or lets your dog back out, yes - the per-piece fit solves exactly those problems, and you replace only the worn part later."}
       ],
       "shops": [{"n": "Perfect Fit", "u": "https://perfect-fit-dog-harness.com/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}]
     },
@@ -194,14 +194,14 @@
       "specs": [
         ["Construction", "padded body/Y-style working harness with top handle and back D-ring"],
         ["Build", "hard-wearing nylon, breathable padded lining, reflective edging, shatterproof side-release buckle"],
-        ["Sizes", "Baby/Mini through 0–4 (runs large — measure girth)"],
-        ["Note", "sits high/close to shoulders — fit carefully to avoid restricting the front leg"],
+        ["Sizes", "Baby/Mini through 0–4 (runs large - measure girth)"],
+        ["Note", "sits high/close to shoulders - fit carefully to avoid restricting the front leg"],
         ["Price", "~£16.59–50 (commonly £25–35)"]
       ],
       "verified": false,
-      "verdict": "Robust and iconic — crash-tested buckle, strong control handle, reflective trim. The score is held back by the fit: the strap can sit high across the shoulders and restrict the stride, a point UK physios raise about this style. Fine for steady walks with adult dogs; for sport, training and puppies choose a Y-harness.",
+      "verdict": "Robust and iconic - crash-tested buckle, strong control handle, reflective trim. The score is held back by the fit: the strap can sit high across the shoulders and restrict the stride, a point UK physios raise about this style. Fine for steady walks with adult dogs; for sport, training and puppies choose a Y-harness.",
       "pros": ["Very robust; shatterproof buckle", "Control handle useful in traffic and training", "Reflective for night walks", "Easy on/off, full size range"],
-      "cons": ["Sits high/close to shoulders — can restrict the front leg if mis-fitted", "Back-clip only — less anti-pull steering", "Runs large — measure chest girth"],
+      "cons": ["Sits high/close to shoulders - can restrict the front leg if mis-fitted", "Back-clip only - less anti-pull steering", "Runs large - measure chest girth"],
       "faq": [
         {"q": "Is the Julius-K9 harness bad for my dog?", "a": "Correctly fitted on a calm adult dog for ordinary walks, it's fine. Problems arise with hard pullers, sporting dogs and growing puppies, where a strap restricting the stride can reinforce a poor movement pattern."},
         {"q": "How do I know it fits right?", "a": "The chest strap should sit below the throat on the breastbone, not on the shoulder joint, and the rear strap should clear the armpits. If the strap visibly tightens over the shoulder blade as the dog steps, it's restricting movement."}
@@ -217,19 +217,19 @@
       "type": "stuffable rubber toy", "life": "all",
       "score": 92, "pillars": [33, 24, 23, 12],
       "specs": [
-        ["Material", "natural red rubber — durable, non-toxic"],
+        ["Material", "natural red rubber - durable, non-toxic"],
         ["Function", "hollow centre for stuffing (paste/kibble) and freezing; erratic bounce"],
-        ["Sizes", "XS (5.5cm) to XXL (14.5cm) — match to weight"],
+        ["Sizes", "XS (5.5cm) to XXL (14.5cm) - match to weight"],
         ["For chewers", "black 'Extreme' version for power chewers"],
         ["Price", "~£6–14 by size"]
       ],
       "verified": false,
-      "verdict": "The most versatile toy in the trade and the benchmark for safe material. Stuffed and frozen, it's the cheapest cure for boredom and separation stress. One rule: size up — a too-small KONG is a choking risk, and strong chewers need the black Extreme.",
-      "pros": ["Natural rubber — safe and springy, protects teeth", "Stuffable and freezable — excellent enrichment", "Erratic bounce for play", "Size and chewer-strength range (Puppy/Classic/Extreme)"],
-      "cons": ["Match size to dog — too small is a choke risk", "Heavy chewers need the black Extreme, not the red Classic", "Clean stuffing residue to avoid mould"],
+      "verdict": "The most versatile toy in the trade and the benchmark for safe material. Stuffed and frozen, it's the cheapest cure for boredom and separation stress. One rule: size up - a too-small KONG is a choking risk, and strong chewers need the black Extreme.",
+      "pros": ["Natural rubber - safe and springy, protects teeth", "Stuffable and freezable - excellent enrichment", "Erratic bounce for play", "Size and chewer-strength range (Puppy/Classic/Extreme)"],
+      "cons": ["Match size to dog - too small is a choke risk", "Heavy chewers need the black Extreme, not the red Classic", "Clean stuffing residue to avoid mould"],
       "faq": [
         {"q": "What should I stuff a KONG with?", "a": "Start with soft paste (cream cheese, wet food) mixed with kibble; for a longer session, freeze it solid. Count the stuffing toward daily calories."},
-        {"q": "Which KONG size should I choose?", "a": "Bigger than you think — it must be too large to fit whole in the mouth. For big dogs choose XL/XXL even if L looks 'enough'."}
+        {"q": "Which KONG size should I choose?", "a": "Bigger than you think - it must be too large to fit whole in the mouth. For big dogs choose XL/XXL even if L looks 'enough'."}
       ],
       "shops": [{"n": "Pets at Home", "u": "https://www.petsathome.com/"}, {"n": "Zooplus.co.uk", "u": "https://www.zooplus.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}]
     },
@@ -242,17 +242,17 @@
       "specs": [
         ["Material", "food-grade rubber/TPR; freezable"],
         ["Variants", "Soother (fine texture), Buddy (deeper), Tuff (heavy-duty for strong lickers)"],
-        ["Function", "spread paste/yoghurt/wet food — slows eating, calms; ~20cm"],
-        ["Safety", "supervise — determined chewers can bite off pieces (use Tuff)"],
+        ["Function", "spread paste/yoghurt/wet food - slows eating, calms; ~20cm"],
+        ["Safety", "supervise - determined chewers can bite off pieces (use Tuff)"],
         ["Price", "~£5–12"]
       ],
       "verified": false,
-      "verdict": "A UK-founded brand and a cheap, effective way to settle a dog: repetitive licking lowers arousal, which helps at vet visits, during grooming, alone time or fireworks. It also slows fast eaters. It's enrichment, not a chew — for chewers pick the Tuff version and supervise.",
-      "pros": ["Calming — licking lowers stress", "Slows fast eaters, aids digestion", "Food-grade, freezable, dishwasher-friendly", "Cheap and effective enrichment"],
-      "cons": ["Not a chew — chewers can bite off and swallow TPR (use Tuff)", "Needs regular washing (mould in grooves)", "Mind the calories in the spread"],
+      "verdict": "A UK-founded brand and a cheap, effective way to settle a dog: repetitive licking lowers arousal, which helps at vet visits, during grooming, alone time or fireworks. It also slows fast eaters. It's enrichment, not a chew - for chewers pick the Tuff version and supervise.",
+      "pros": ["Calming - licking lowers stress", "Slows fast eaters, aids digestion", "Food-grade, freezable, dishwasher-friendly", "Cheap and effective enrichment"],
+      "cons": ["Not a chew - chewers can bite off and swallow TPR (use Tuff)", "Needs regular washing (mould in grooves)", "Mind the calories in the spread"],
       "faq": [
         {"q": "What can I spread on a lick mat?", "a": "Wet food, meat paste, plain unsweetened yoghurt, mashed banana, or xylitol-FREE peanut butter (xylitol is toxic to dogs). Freeze it to make the session last longer."},
-        {"q": "Why does licking calm a dog?", "a": "Repetitive licking promotes saliva flow and occupies the dog in a soothing, monotonous task, which helps lower arousal — hence its use around fireworks, travel and nail trims."}
+        {"q": "Why does licking calm a dog?", "a": "Repetitive licking promotes saliva flow and occupies the dog in a soothing, monotonous task, which helps lower arousal - hence its use around fireworks, travel and nail trims."}
       ],
       "shops": [{"n": "LickiMat UK", "u": "https://lickimat.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}, {"n": "Pets at Home", "u": "https://www.petsathome.com/"}]
     },
@@ -264,18 +264,18 @@
       "score": 80, "pillars": [28, 20, 20, 12],
       "specs": [
         ["Type", "treat-dispensing puzzle, difficulty Levels 1–4"],
-        ["Material", "BPA-/PVC-free moulded plastic; sliding/flip/spinning compartments — not a chew"],
+        ["Material", "BPA-/PVC-free moulded plastic; sliding/flip/spinning compartments - not a chew"],
         ["Range", "Dog Smart (Level 1) to MultiPuzzle (Level 4)"],
-        ["Safety", "supervised problem-solving — dogs that chew plastic can break/swallow parts"],
+        ["Safety", "supervised problem-solving - dogs that chew plastic can break/swallow parts"],
         ["Price", "~£18–23"]
       ],
       "verified": false,
-      "verdict": "Excellent mental stimulation with graded difficulty so the dog can progress. Fifteen minutes of nose-and-paw problem-solving tires a dog like a long walk — invaluable on wet days and for seniors. Remember it's a board game, not a chew: it goes back on the shelf afterwards.",
+      "verdict": "Excellent mental stimulation with graded difficulty so the dog can progress. Fifteen minutes of nose-and-paw problem-solving tires a dog like a long walk - invaluable on wet days and for seniors. Remember it's a board game, not a chew: it goes back on the shelf afterwards.",
       "pros": ["Strong mental stimulation, slows fast eaters", "Graded difficulty to progress the dog", "Food-safe, easy to clean", "Engages dogs of all ages"],
-      "cons": ["Not a chew — chewers can break and swallow plastic", "Some dogs flip and lose the pieces", "Needs the owner present to reset and supervise"],
+      "cons": ["Not a chew - chewers can break and swallow plastic", "Some dogs flip and lose the pieces", "Needs the owner present to reset and supervise"],
       "faq": [
         {"q": "Where should I start with puzzles?", "a": "At Level 1 with easy wins. A dog set a puzzle that's too hard gets frustrated and gives up; raise the level only once it solves the current one without hesitation."},
-        {"q": "Can I leave my dog alone with a puzzle?", "a": "No — it's a supervised activity. A determined dog can chew off plastic flaps or pegs, and a swallowed piece risks an intestinal blockage."}
+        {"q": "Can I leave my dog alone with a puzzle?", "a": "No - it's a supervised activity. A determined dog can chew off plastic flaps or pegs, and a swallowed piece risks an intestinal blockage."}
       ],
       "shops": [{"n": "Healthy Pet Store", "u": "https://healthypetstore.co.uk/"}, {"n": "Direct4Pet", "u": "https://www.direct4pet.co.uk/"}, {"n": "Amazon.co.uk", "u": "https://www.amazon.co.uk/"}]
     }

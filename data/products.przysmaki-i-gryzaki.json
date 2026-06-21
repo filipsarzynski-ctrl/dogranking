@@ -1,264 +1,904 @@
 {
-  "_uwaga": "Kategoria beta. Dane z researchu web 2026-06-13 (etykiety ze sklepów online) — verified:false do potwierdzenia z realną etykietą. Bez obiektu test = build pokazuje 'test w przygotowaniu'. Filary non-food: A materiały/skład 35, B bezpieczeństwo i dowody 25, C wiarygodność producenta 25, D ergonomia i wartość 15.",
+  "_uwaga": "Kategoria beta. Dane z researchu web 2026-06-13 (etykiety ze sklepów online) - verified:false do potwierdzenia z realną etykietą. Bez obiektu test = build pokazuje 'test w przygotowaniu'. Filary non-food: A materiały/skład 35, B bezpieczeństwo i dowody 25, C wiarygodność producenta 25, D ergonomia i wartość 15.",
   "products": [
     {
       "slug": "wiejska-zagroda-kaski-treningowe-cielecina",
       "name": "Wiejska Zagroda Kąski Treningowe Cielęcina",
       "brand": "Wiejska Zagroda",
-      "type": "przysmak treningowy monoproteinowy", "life": "dorosły",
-      "score": 88, "pillars": [32, 21, 22, 13],
+      "type": "przysmak treningowy monoproteinowy",
+      "life": "dorosły",
+      "score": 88,
+      "pillars": [
+        32,
+        21,
+        22,
+        13
+      ],
       "specs": [
-        ["Skład", "cielęcina 100% (mięso cielęce 82%, kości cielęce 18%)"],
-        ["Analiza", "białko 68,4% · tłuszcz 9,4% · popiół 3,8% · wilgotność 12,4%"],
-        ["Kaloryczność", "ok. 440 kcal/100 g — wliczać do dziennej dawki!"],
-        ["Twardość", "suche kąski, łatwe do podziału palcami — przechodzą test paznokcia"],
-        ["VOHC", "nie dotyczy (to nie produkt dentystyczny)"],
-        ["Cena orientacyjna", "ok. 17,40 zł / 150 g (~116 zł/kg)"]
+        [
+          "Skład",
+          "cielęcina 100% (mięso cielęce 82%, kości cielęce 18%)"
+        ],
+        [
+          "Analiza",
+          "białko 68,4% · tłuszcz 9,4% · popiół 3,8% · wilgotność 12,4%"
+        ],
+        [
+          "Kaloryczność",
+          "ok. 440 kcal/100 g - wliczać do dziennej dawki!"
+        ],
+        [
+          "Twardość",
+          "suche kąski, łatwe do podziału palcami - przechodzą test paznokcia"
+        ],
+        [
+          "VOHC",
+          "nie dotyczy (to nie produkt dentystyczny)"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 17,40 zł / 150 g (~116 zł/kg)"
+        ]
       ],
       "verified": false,
-      "verdict": "Wzorcowy przysmak treningowy z polskiej manufaktury: jedno źródło białka, zero zbóż i wypełniaczy, skład w całości zwierzęcy. Idealny do diet eliminacyjnych i dla alergików (bez kurczaka). Jedyna pułapka to kaloryczność — 440 kcal/100 g oznacza, że intensywny trening trzeba odliczyć od miski.",
-      "pros": ["100% składników zwierzęcych, monoproteina (cielęcina)", "Nadaje się do diet eliminacyjnych — bez kurczaka i zbóż", "Polski producent o ugruntowanej renomie", "Kąski łatwo dzielić na mniejsze kawałki treningowe"],
-      "cons": ["Wysoka kaloryczność (440 kcal/100 g) — łatwo przedawkować na treningu", "Cena ~116 zł/kg — wyraźnie drożej niż przysmaki marketowe"],
-      "faq": [
-        {"q": "Ile przysmaków treningowych dziennie może dostać pies?", "a": "Zasada żywieniowa: przysmaki to maksymalnie 10% dziennego zapotrzebowania energetycznego. Dla psa 10 kg to ok. 60–70 kcal, czyli ~15 g tych kąsków. Resztę nagród na treningu lepiej wydzielić z dziennej porcji karmy."},
-        {"q": "Czy monoproteinowy przysmak ma sens, jeśli pies nie jest alergikiem?", "a": "Tak — krótki, czytelny skład to mniejsze ryzyko niechcianych dodatków. A jeśli kiedyś trzeba będzie przeprowadzić dietę eliminacyjną, pies przyzwyczajony do pojedynczych białek ułatwia zadanie."}
+      "verdict": "Wzorcowy przysmak treningowy z polskiej manufaktury: jedno źródło białka, zero zbóż i wypełniaczy, skład w całości zwierzęcy. Idealny do diet eliminacyjnych i dla alergików (bez kurczaka). Jedyna pułapka to kaloryczność - 440 kcal/100 g oznacza, że intensywny trening trzeba odliczyć od miski.",
+      "pros": [
+        "100% składników zwierzęcych, monoproteina (cielęcina)",
+        "Nadaje się do diet eliminacyjnych - bez kurczaka i zbóż",
+        "Polski producent o ugruntowanej renomie",
+        "Kąski łatwo dzielić na mniejsze kawałki treningowe"
       ],
-      "shops": [{"n": "wiejskazagroda.pl", "u": "https://wiejskazagroda.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}, {"n": "psiechrupki.pl", "u": "https://psiechrupki.pl/"}]
+      "cons": [
+        "Wysoka kaloryczność (440 kcal/100 g) - łatwo przedawkować na treningu",
+        "Cena ~116 zł/kg - wyraźnie drożej niż przysmaki marketowe"
+      ],
+      "faq": [
+        {
+          "q": "Ile przysmaków treningowych dziennie może dostać pies?",
+          "a": "Zasada żywieniowa: przysmaki to maksymalnie 10% dziennego zapotrzebowania energetycznego. Dla psa 10 kg to ok. 60–70 kcal, czyli ~15 g tych kąsków. Resztę nagród na treningu lepiej wydzielić z dziennej porcji karmy."
+        },
+        {
+          "q": "Czy monoproteinowy przysmak ma sens, jeśli pies nie jest alergikiem?",
+          "a": "Tak - krótki, czytelny skład to mniejsze ryzyko niechcianych dodatków. A jeśli kiedyś trzeba będzie przeprowadzić dietę eliminacyjną, pies przyzwyczajony do pojedynczych białek ułatwia zadanie."
+        }
+      ],
+      "shops": [
+        {
+          "n": "wiejskazagroda.pl",
+          "u": "https://wiejskazagroda.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        },
+        {
+          "n": "psiechrupki.pl",
+          "u": "https://psiechrupki.pl/"
+        }
+      ]
     },
     {
       "slug": "syta-micha-dorsz-suszony",
-      "name": "Syta Micha Fish & Seafood — dorsz suszony 100%",
+      "name": "Syta Micha Fish & Seafood - dorsz suszony 100%",
       "brand": "Syta Micha",
-      "type": "przysmak naturalny niskotłuszczowy", "life": "wszystkie",
-      "score": 86, "pillars": [32, 21, 20, 13],
+      "type": "przysmak naturalny niskotłuszczowy",
+      "life": "wszystkie",
+      "score": 86,
+      "pillars": [
+        32,
+        21,
+        20,
+        13
+      ],
       "specs": [
-        ["Skład", "dorsz 100%"],
-        ["Analiza", "białko 81% · tłuszcz 1,5% · popiół 13% · Omega 3+6 0,41%"],
-        ["Kaloryczność", "296 kcal/100 g (deklaracja producenta)"],
-        ["Twardość", "chrupkie kostki ok. 1×1 cm — bezpieczne dla zębów, dobre też jako treningówki"],
-        ["VOHC", "nie"],
-        ["Cena orientacyjna", "ok. 15 zł / 80 g"]
+        [
+          "Skład",
+          "dorsz 100%"
+        ],
+        [
+          "Analiza",
+          "białko 81% · tłuszcz 1,5% · popiół 13% · Omega 3+6 0,41%"
+        ],
+        [
+          "Kaloryczność",
+          "296 kcal/100 g (deklaracja producenta)"
+        ],
+        [
+          "Twardość",
+          "chrupkie kostki ok. 1×1 cm - bezpieczne dla zębów, dobre też jako treningówki"
+        ],
+        [
+          "VOHC",
+          "nie"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 15 zł / 80 g"
+        ]
       ],
       "verified": false,
-      "verdict": "Rekordowe białko przy śladowym tłuszczu — to przysmak pierwszego wyboru dla psów z nadwagą i alergików na białka lądowe. Jedyny skład: dorsz. Trzeba tylko zaakceptować rybi zapach i dość wysoki popiół.",
-      "pros": ["81% białka przy zaledwie 1,5% tłuszczu — idealne dla psów na diecie", "Monoskładnik rybny — alternatywne białko dla alergików", "Kwasy Omega-3 (EPA/DHA) ze źródła morskiego", "Polska marka, mały format wygodny na spacer"],
-      "cons": ["Wyraźny rybi zapach — nie każdemu opiekunowi odpowiada", "Popiół 13% — sporo jak na przysmak", "Małe opakowanie (80 g) podnosi cenę za kg"],
-      "faq": [
-        {"q": "Czy przysmaki rybne są dobre dla psa z alergią pokarmową?", "a": "Często tak — większość alergii psów dotyczy popularnych białek lądowych (kurczak, wołowina). Ryba bywa białkiem nowym dla psa, więc rzadziej wywołuje reakcję. Przy zdiagnozowanej alergii wybór białka skonsultuj z weterynarzem."},
-        {"q": "Dlaczego niskotłuszczowy przysmak jest lepszy na trening?", "a": "Bo treningowe nagradzanie to dziesiątki powtórek dziennie. Przy 1,5% tłuszczu i ~3 kcal na kostkę trudno przekroczyć limit 10% dziennych kalorii — z tłustymi przysmakami dzieje się to błyskawicznie."}
+      "verdict": "Rekordowe białko przy śladowym tłuszczu - to przysmak pierwszego wyboru dla psów z nadwagą i alergików na białka lądowe. Jedyny skład: dorsz. Trzeba tylko zaakceptować rybi zapach i dość wysoki popiół.",
+      "pros": [
+        "81% białka przy zaledwie 1,5% tłuszczu - idealne dla psów na diecie",
+        "Monoskładnik rybny - alternatywne białko dla alergików",
+        "Kwasy Omega-3 (EPA/DHA) ze źródła morskiego",
+        "Polska marka, mały format wygodny na spacer"
       ],
-      "shops": [{"n": "sytamicha.pl", "u": "https://sytamicha.pl/"}, {"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Wyraźny rybi zapach - nie każdemu opiekunowi odpowiada",
+        "Popiół 13% - sporo jak na przysmak",
+        "Małe opakowanie (80 g) podnosi cenę za kg"
+      ],
+      "faq": [
+        {
+          "q": "Czy przysmaki rybne są dobre dla psa z alergią pokarmową?",
+          "a": "Często tak - większość alergii psów dotyczy popularnych białek lądowych (kurczak, wołowina). Ryba bywa białkiem nowym dla psa, więc rzadziej wywołuje reakcję. Przy zdiagnozowanej alergii wybór białka skonsultuj z weterynarzem."
+        },
+        {
+          "q": "Dlaczego niskotłuszczowy przysmak jest lepszy na trening?",
+          "a": "Bo treningowe nagradzanie to dziesiątki powtórek dziennie. Przy 1,5% tłuszczu i ~3 kcal na kostkę trudno przekroczyć limit 10% dziennych kalorii - z tłustymi przysmakami dzieje się to błyskawicznie."
+        }
+      ],
+      "shops": [
+        {
+          "n": "sytamicha.pl",
+          "u": "https://sytamicha.pl/"
+        },
+        {
+          "n": "Petsmile",
+          "u": "https://www.sklep.petsmile.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "john-dog-watroba-wolowa-treningowe",
-      "name": "John Dog suszona wątroba wołowa — przysmaki treningowe",
+      "name": "John Dog suszona wątroba wołowa - przysmaki treningowe",
       "brand": "John Dog",
-      "type": "przysmak treningowy monobiałkowy", "life": "dorosły",
-      "score": 82, "pillars": [30, 20, 20, 12],
+      "type": "przysmak treningowy monobiałkowy",
+      "life": "dorosły",
+      "score": 82,
+      "pillars": [
+        30,
+        20,
+        20,
+        12
+      ],
       "specs": [
-        ["Skład", "100% wątroba wołowa (suszona niskotemperaturowo, pasteryzowana)"],
-        ["Analiza", "białko 66% · tłuszcz 32% · wilgotność 2%"],
-        ["Twardość", "twarde, ale kruche centymetrowe kawałki — bezpieczne dla zębów"],
-        ["VOHC", "nie"],
-        ["Uwaga producenta", "możliwe śladowe ilości ryżu i innych mięs (wspólna linia produkcyjna)"],
-        ["Cena orientacyjna", "ok. 11,90 zł / 100 g"]
+        [
+          "Skład",
+          "100% wątroba wołowa (suszona niskotemperaturowo, pasteryzowana)"
+        ],
+        [
+          "Analiza",
+          "białko 66% · tłuszcz 32% · wilgotność 2%"
+        ],
+        [
+          "Twardość",
+          "twarde, ale kruche centymetrowe kawałki - bezpieczne dla zębów"
+        ],
+        [
+          "VOHC",
+          "nie"
+        ],
+        [
+          "Uwaga producenta",
+          "możliwe śladowe ilości ryżu i innych mięs (wspólna linia produkcyjna)"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 11,90 zł / 100 g"
+        ]
       ],
       "verified": false,
-      "verdict": "Tani, polski i piekielnie aromatyczny — suszona wątroba to klasyk motywacji treningowej. Skład bez zarzutu (jeden składnik), ale wątroba ma swoje zasady: dużo witaminy A i 32% tłuszczu wymuszają umiar.",
-      "pros": ["Jeden składnik: wątroba wołowa, polska produkcja", "Bardzo intensywny aromat — silna motywacja nawet dla wybrednych psów", "Niska cena (ok. 12 zł/100 g)", "Kruche kawałki łatwo dzielić na mikro-nagrody"],
-      "cons": ["32% tłuszczu — to przysmak okazjonalny, nie codzienna garść", "Wątroba = dużo witaminy A; nadmiar grozi hiperwitaminozą", "U wrażliwych psów większa ilość daje luźny stolec"],
-      "faq": [
-        {"q": "Jak często można dawać psu suszoną wątrobę?", "a": "Kilka małych kawałków dziennie to bezpieczna dawka dla zdrowego psa. Wątroba kumuluje witaminę A, więc nie powinna być podstawą nagradzania dzień w dzień — najlepiej rotować ją z chudszymi przysmakami (np. rybnymi)."},
-        {"q": "Suszenie czy liofilizacja — co lepsze?", "a": "Liofilizacja zachowuje nieco więcej składników odżywczych, ale jest droższa. Dla przysmaków treningowych suszenie niskotemperaturowe w zupełności wystarcza — liczy się krótki skład i aromat."}
+      "verdict": "Tani, polski i piekielnie aromatyczny - suszona wątroba to klasyk motywacji treningowej. Skład bez zarzutu (jeden składnik), ale wątroba ma swoje zasady: dużo witaminy A i 32% tłuszczu wymuszają umiar.",
+      "pros": [
+        "Jeden składnik: wątroba wołowa, polska produkcja",
+        "Bardzo intensywny aromat - silna motywacja nawet dla wybrednych psów",
+        "Niska cena (ok. 12 zł/100 g)",
+        "Kruche kawałki łatwo dzielić na mikro-nagrody"
       ],
-      "shops": [{"n": "johndog.pl", "u": "https://johndog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "32% tłuszczu - to przysmak okazjonalny, nie codzienna garść",
+        "Wątroba = dużo witaminy A; nadmiar grozi hiperwitaminozą",
+        "U wrażliwych psów większa ilość daje luźny stolec"
+      ],
+      "faq": [
+        {
+          "q": "Jak często można dawać psu suszoną wątrobę?",
+          "a": "Kilka małych kawałków dziennie to bezpieczna dawka dla zdrowego psa. Wątroba kumuluje witaminę A, więc nie powinna być podstawą nagradzania dzień w dzień - najlepiej rotować ją z chudszymi przysmakami (np. rybnymi)."
+        },
+        {
+          "q": "Suszenie czy liofilizacja - co lepsze?",
+          "a": "Liofilizacja zachowuje nieco więcej składników odżywczych, ale jest droższa. Dla przysmaków treningowych suszenie niskotemperaturowe w zupełności wystarcza - liczy się krótki skład i aromat."
+        }
+      ],
+      "shops": [
+        {
+          "n": "johndog.pl",
+          "u": "https://johndog.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "wolf-of-wilderness-uszy-krolicze",
       "name": "Wolf of Wilderness uszy królicze z sierścią",
       "brand": "Wolf of Wilderness",
-      "type": "gryzak naturalny suszony", "life": "wszystkie",
-      "score": 78, "pillars": [29, 19, 18, 12],
+      "type": "gryzak naturalny suszony",
+      "life": "wszystkie",
+      "score": 78,
+      "pillars": [
+        29,
+        19,
+        18,
+        12
+      ],
       "specs": [
-        ["Skład", "100% suszone uszy królicze z sierścią"],
-        ["Analiza", "białko 70% · tłuszcz 22% · popiół 1,4% · wilgotność 12%"],
-        ["Twardość", "miękko-chrupkie — bezpieczne także dla małych psów"],
-        ["VOHC", "nie (żucie czyści mechanicznie, ale bez dowodu klinicznego)"],
-        ["Cena orientacyjna", "ok. 33 zł / 200 g (ok. 10 szt.)"]
+        [
+          "Skład",
+          "100% suszone uszy królicze z sierścią"
+        ],
+        [
+          "Analiza",
+          "białko 70% · tłuszcz 22% · popiół 1,4% · wilgotność 12%"
+        ],
+        [
+          "Twardość",
+          "miękko-chrupkie - bezpieczne także dla małych psów"
+        ],
+        [
+          "VOHC",
+          "nie (żucie czyści mechanicznie, ale bez dowodu klinicznego)"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 33 zł / 200 g (ok. 10 szt.)"
+        ]
       ],
       "verified": false,
       "verdict": "Gryzak naturalny w najlepszym wydaniu: jeden składnik, hipoalergiczne białko królika i sierść działająca jak naturalny błonnik. Bezpieczny dla zębów w przeciwieństwie do twardych gryzaków. Minusem cena za kg i estetyka, do której opiekun musi dojrzeć.",
-      "pros": ["Monoskładnik — białko królika rzadko uczula", "Miękko-chrupka struktura bezpieczna dla zębów", "Sierść wspiera perystaltykę jelit (naturalny błonnik zwierzęcy)", "Krótkie, kontrolowane żucie zamiast wielogodzinnego obgryzania"],
-      "cons": ["Wygląd i zapach nie dla wrażliwych opiekunów", "22% tłuszczu — kalorie trzeba liczyć", "U niektórych psów sierść może wywołać wymioty", "Cena za kg wysoka jak na produkt uboczny"],
-      "faq": [
-        {"q": "Po co psu sierść w gryzaku?", "a": "Sierść działa jak naturalny błonnik: wspiera perystaltykę i oczyszczanie jelit. To element diety dzikich psowatych, które zjadają ofiary w całości. U psów wrażliwych zaczynamy od pojedynczych sztuk i obserwujemy."},
-        {"q": "Czy uszy królicze czyszczą zęby?", "a": "Żucie mechanicznie ściera część płytki, ale żaden gryzak naturalny nie ma certyfikatu VOHC potwierdzającego skuteczność dentystyczną. Traktuj je jako zajęcie i przysmak, a nie zabieg higieniczny — zęby czyści szczotkowanie."}
+      "pros": [
+        "Monoskładnik - białko królika rzadko uczula",
+        "Miękko-chrupka struktura bezpieczna dla zębów",
+        "Sierść wspiera perystaltykę jelit (naturalny błonnik zwierzęcy)",
+        "Krótkie, kontrolowane żucie zamiast wielogodzinnego obgryzania"
       ],
-      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Wygląd i zapach nie dla wrażliwych opiekunów",
+        "22% tłuszczu - kalorie trzeba liczyć",
+        "U niektórych psów sierść może wywołać wymioty",
+        "Cena za kg wysoka jak na produkt uboczny"
+      ],
+      "faq": [
+        {
+          "q": "Po co psu sierść w gryzaku?",
+          "a": "Sierść działa jak naturalny błonnik: wspiera perystaltykę i oczyszczanie jelit. To element diety dzikich psowatych, które zjadają ofiary w całości. U psów wrażliwych zaczynamy od pojedynczych sztuk i obserwujemy."
+        },
+        {
+          "q": "Czy uszy królicze czyszczą zęby?",
+          "a": "Żucie mechanicznie ściera część płytki, ale żaden gryzak naturalny nie ma certyfikatu VOHC potwierdzającego skuteczność dentystyczną. Traktuj je jako zajęcie i przysmak, a nie zabieg higieniczny - zęby czyści szczotkowanie."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "kakadu.pl",
+          "u": "https://kakadu.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "whimzees-toothbrush",
       "name": "Whimzees by Wellness Toothbrush",
       "brand": "Whimzees",
-      "type": "gryzak dentystyczny wegetariański", "life": "dorosły",
-      "score": 72, "pillars": [21, 24, 17, 10],
+      "type": "gryzak dentystyczny wegetariański",
+      "life": "dorosły",
+      "score": 72,
+      "pillars": [
+        21,
+        24,
+        17,
+        10
+      ],
       "specs": [
-        ["Skład", "skrobia ziemniaczana, gliceryna, celuloza, lecytyna, drożdże, syrop słodowy, łubin; barwniki naturalne"],
-        ["Analiza", "białko 1,1% · tłuszcz 2,0% · włókno 7,2% · wilgotność 12%"],
-        ["Twardość", "ścieralny, skrobiowy — przechodzi test paznokcia; producent zaleca od 9. miesiąca"],
-        ["VOHC", "TAK — pieczęcie za ograniczanie płytki i kamienia"],
-        ["Dawkowanie", "1 szt. dziennie, rozmiar do wagi psa (XS–L)"],
-        ["Cena orientacyjna", "ok. 35 zł / 360 g"]
+        [
+          "Skład",
+          "skrobia ziemniaczana, gliceryna, celuloza, lecytyna, drożdże, syrop słodowy, łubin; barwniki naturalne"
+        ],
+        [
+          "Analiza",
+          "białko 1,1% · tłuszcz 2,0% · włókno 7,2% · wilgotność 12%"
+        ],
+        [
+          "Twardość",
+          "ścieralny, skrobiowy - przechodzi test paznokcia; producent zaleca od 9. miesiąca"
+        ],
+        [
+          "VOHC",
+          "TAK - pieczęcie za ograniczanie płytki i kamienia"
+        ],
+        [
+          "Dawkowanie",
+          "1 szt. dziennie, rozmiar do wagi psa (XS–L)"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 35 zł / 360 g"
+        ]
       ],
       "verified": false,
-      "verdict": "Jeden z trzech produktów na polskim rynku z pieczęcią VOHC — czyli z realnym, klinicznym dowodem działania na płytkę i kamień. Paradoks kategorii w pigułce: dentystycznie wiarygodny, odżywczo pusty (skrobia i gliceryna). Oceniamy go jako narzędzie higieny, nie jako jedzenie.",
-      "pros": ["Pieczęć VOHC za płytkę I kamień — rzadkość na rynku", "Bez zbóż, glutenu i mięsa — opcja dla alergików", "Kształt z rowkami faktycznie pracuje na powierzchni zębów", "Bezpieczna twardość — ściera się zamiast łamać zęby"],
-      "cons": ["Skład odżywczo pusty: skrobia ziemniaczana i gliceryna na czele", "Droższy od Dentastix przy podobnej funkcji", "Nie zastępuje szczotkowania — tylko je uzupełnia"],
-      "faq": [
-        {"q": "Co oznacza pieczęć VOHC?", "a": "Veterinary Oral Health Council przyznaje ją produktom, które w kontrolowanych badaniach klinicznych wykazały ograniczenie płytki lub kamienia nazębnego. To jedyny niezależny dowód skuteczności dentystycznej — twierdzenia bez VOHC to marketing."},
-        {"q": "Czy gryzak dentystyczny wystarczy zamiast mycia zębów?", "a": "Nie. Złotym standardem jest codzienne szczotkowanie pastą enzymatyczną. Gryzak z VOHC to wartościowy dodatek w dni, gdy szczotkowanie się nie uda — ale dodatek, nie zamiennik."}
+      "verdict": "Jeden z trzech produktów na polskim rynku z pieczęcią VOHC - czyli z realnym, klinicznym dowodem działania na płytkę i kamień. Paradoks kategorii w pigułce: dentystycznie wiarygodny, odżywczo pusty (skrobia i gliceryna). Oceniamy go jako narzędzie higieny, nie jako jedzenie.",
+      "pros": [
+        "Pieczęć VOHC za płytkę I kamień - rzadkość na rynku",
+        "Bez zbóż, glutenu i mięsa - opcja dla alergików",
+        "Kształt z rowkami faktycznie pracuje na powierzchni zębów",
+        "Bezpieczna twardość - ściera się zamiast łamać zęby"
       ],
-      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "4lapy.pl", "u": "https://www.4lapy.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Skład odżywczo pusty: skrobia ziemniaczana i gliceryna na czele",
+        "Droższy od Dentastix przy podobnej funkcji",
+        "Nie zastępuje szczotkowania - tylko je uzupełnia"
+      ],
+      "faq": [
+        {
+          "q": "Co oznacza pieczęć VOHC?",
+          "a": "Veterinary Oral Health Council przyznaje ją produktom, które w kontrolowanych badaniach klinicznych wykazały ograniczenie płytki lub kamienia nazębnego. To jedyny niezależny dowód skuteczności dentystycznej - twierdzenia bez VOHC to marketing."
+        },
+        {
+          "q": "Czy gryzak dentystyczny wystarczy zamiast mycia zębów?",
+          "a": "Nie. Złotym standardem jest codzienne szczotkowanie pastą enzymatyczną. Gryzak z VOHC to wartościowy dodatek w dni, gdy szczotkowanie się nie uda - ale dodatek, nie zamiennik."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "4lapy.pl",
+          "u": "https://www.4lapy.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "pedigree-dentastix",
       "name": "Pedigree DentaStix Codzienna Pielęgnacja Zębów",
       "brand": "Pedigree",
-      "type": "gryzak dentystyczny", "life": "dorosły",
-      "score": 64, "pillars": [15, 24, 15, 10],
+      "type": "gryzak dentystyczny",
+      "life": "dorosły",
+      "score": 64,
+      "pillars": [
+        15,
+        24,
+        15,
+        10
+      ],
       "specs": [
-        ["Skład", "zboża, produkty pochodzenia roślinnego, minerały (w tym 2,8% tripolifosforanu sodu), mięso i produkty uboczne, oleje i tłuszcze"],
-        ["Analiza", "białko 8,1% · tłuszcz 1,3% · popiół 5,7% · wilgotność 15,4%"],
-        ["Kaloryczność", "ok. 51 kcal/szt. (S) do 124 kcal/szt. (L)"],
-        ["Twardość", "miękko-elastyczny — przechodzi test paznokcia"],
-        ["VOHC", "TAK — w kategorii ograniczania kamienia"],
-        ["Cena orientacyjna", "od ~10 zł / 7 szt. (S); 28 szt. (M) ok. 33 zł"]
+        [
+          "Skład",
+          "zboża, produkty pochodzenia roślinnego, minerały (w tym 2,8% tripolifosforanu sodu), mięso i produkty uboczne, oleje i tłuszcze"
+        ],
+        [
+          "Analiza",
+          "białko 8,1% · tłuszcz 1,3% · popiół 5,7% · wilgotność 15,4%"
+        ],
+        [
+          "Kaloryczność",
+          "ok. 51 kcal/szt. (S) do 124 kcal/szt. (L)"
+        ],
+        [
+          "Twardość",
+          "miękko-elastyczny - przechodzi test paznokcia"
+        ],
+        [
+          "VOHC",
+          "TAK - w kategorii ograniczania kamienia"
+        ],
+        [
+          "Cena orientacyjna",
+          "od ~10 zł / 7 szt. (S); 28 szt. (M) ok. 33 zł"
+        ]
       ],
       "verified": false,
-      "verdict": "Najtańszy i najłatwiej dostępny gryzak z pieczęcią VOHC — i to jest jego cała wartość. Skład oparty na zbożach i produktach ubocznych nie ma nic wspólnego z dobrym żywieniem, ale funkcję dentystyczną potwierdzono klinicznie. Kupujesz narzędzie higieny w cenie gumy do żucia.",
-      "pros": ["Pieczęć VOHC — kliniczny dowód ograniczania kamienia", "Bardzo niska cena i dostępność w każdym markecie", "Niska zawartość tłuszczu (1,3%)", "Bezpieczna, elastyczna struktura"],
-      "cons": ["Skład: zboża i produkty uboczne — odżywczo słabo", "Nie dla psów z alergią na zboża", "Kalorie (51–124 kcal/szt.) trzeba odliczyć od dziennej dawki", "Marka koncernowa bez transparentności pochodzenia surowców"],
-      "faq": [
-        {"q": "Czy Dentastix naprawdę działa?", "a": "Na kamień nazębny — tak, to potwierdzone badaniami wymaganymi przez VOHC (m.in. dzięki tripolifosforanowi sodu wiążącemu wapń w ślinie). Na świeży oddech i ogólne zdrowie — to już marketing. I nadal nie zastępuje szczotkowania."},
-        {"q": "Od jakiego wieku można podawać Dentastix?", "a": "Producent zaleca od 4. miesiąca życia i dobranie rozmiaru (S/M/L) do wagi psa. Za mały gryzak dla dużego psa to ryzyko połknięcia w całości."}
+      "verdict": "Najtańszy i najłatwiej dostępny gryzak z pieczęcią VOHC - i to jest jego cała wartość. Skład oparty na zbożach i produktach ubocznych nie ma nic wspólnego z dobrym żywieniem, ale funkcję dentystyczną potwierdzono klinicznie. Kupujesz narzędzie higieny w cenie gumy do żucia.",
+      "pros": [
+        "Pieczęć VOHC - kliniczny dowód ograniczania kamienia",
+        "Bardzo niska cena i dostępność w każdym markecie",
+        "Niska zawartość tłuszczu (1,3%)",
+        "Bezpieczna, elastyczna struktura"
       ],
-      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Skład: zboża i produkty uboczne - odżywczo słabo",
+        "Nie dla psów z alergią na zboża",
+        "Kalorie (51–124 kcal/szt.) trzeba odliczyć od dziennej dawki",
+        "Marka koncernowa bez transparentności pochodzenia surowców"
+      ],
+      "faq": [
+        {
+          "q": "Czy Dentastix naprawdę działa?",
+          "a": "Na kamień nazębny - tak, to potwierdzone badaniami wymaganymi przez VOHC (m.in. dzięki tripolifosforanowi sodu wiążącemu wapń w ślinie). Na świeży oddech i ogólne zdrowie - to już marketing. I nadal nie zastępuje szczotkowania."
+        },
+        {
+          "q": "Od jakiego wieku można podawać Dentastix?",
+          "a": "Producent zaleca od 4. miesiąca życia i dobranie rozmiaru (S/M/L) do wagi psa. Za mały gryzak dla dużego psa to ryzyko połknięcia w całości."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "4dogs-ser-himalajski-chhurpi",
       "name": "4DOGS Original ser himalajski Chhurpi",
       "brand": "4DOGS Original",
-      "type": "gryzak długotrwały (twardy)", "life": "dorosły",
-      "score": 55, "pillars": [25, 8, 12, 10],
+      "type": "gryzak długotrwały (twardy)",
+      "life": "dorosły",
+      "score": 55,
+      "pillars": [
+        25,
+        8,
+        12,
+        10
+      ],
       "specs": [
-        ["Skład", "mleko 99,9%, sok z limonki, sól; bez laktozy i konserwantów"],
-        ["Analiza", "białko ~66 g/100 g · tłuszcz 2,3 g/100 g · wapń 1552 mg/100 g"],
-        ["Kaloryczność", "340 kcal/100 g"],
-        ["Twardość", "BARDZO TWARDY — NIE przechodzi testu paznokcia (grupa ryzyka jak poroże)"],
-        ["VOHC", "nie — twierdzenia o usuwaniu kamienia bez dowodu klinicznego"],
-        ["Cena orientacyjna", "od ~10 zł (S) do ~48 zł (XXL)"]
+        [
+          "Skład",
+          "mleko 99,9%, sok z limonki, sól; bez laktozy i konserwantów"
+        ],
+        [
+          "Analiza",
+          "białko ~66 g/100 g · tłuszcz 2,3 g/100 g · wapń 1552 mg/100 g"
+        ],
+        [
+          "Kaloryczność",
+          "340 kcal/100 g"
+        ],
+        [
+          "Twardość",
+          "BARDZO TWARDY - NIE przechodzi testu paznokcia (grupa ryzyka jak poroże)"
+        ],
+        [
+          "VOHC",
+          "nie - twierdzenia o usuwaniu kamienia bez dowodu klinicznego"
+        ],
+        [
+          "Cena orientacyjna",
+          "od ~10 zł (S) do ~48 zł (XXL)"
+        ]
       ],
       "verified": false,
-      "verdict": "Skład krótki i uczciwy, żucie na długie godziny — ale twardość dyskwalifikuje go u intensywnych gryzaczy. Sam producent pisze, że pies go nie zmiażdży w zębach: to dokładnie ten poziom twardości, przy którym stomatolodzy weterynaryjni widują złamane łamacze. Niska ocena to świadoma decyzja — bezpieczeństwo zębów waży u nas więcej niż czas żucia.",
-      "pros": ["Naturalny, 3-składnikowy skład bez laktozy", "Zajmuje psa na wiele godzin", "Nie brudzi i nie śmierdzi jak gryzaki mięsne", "Końcówkę można spuffować w mikrofalówce na bezpieczny chrupek"],
-      "cons": ["Twardszy niż paznokieć — realne ryzyko złamania zęba (kosztowne leczenie)", "Może pęknąć na ostre odłamki przy upadku na twardą podłogę", "Tylko pod stałym nadzorem", "Nie dla szczeniąt w wymianie zębów i seniorów ze słabym uzębieniem"],
-      "faq": [
-        {"q": "Na czym polega test paznokcia?", "a": "Wciśnij paznokieć kciuka w gryzak: jeśli nie zostawisz wgniecenia, gryzak jest twardszy niż ząb psa i może go złamać. Ser himalajski, poroże i kopyta tego testu nie przechodzą — dlatego stomatolodzy weterynaryjni zalecają wobec nich dużą ostrożność."},
-        {"q": "Czym zastąpić twardy gryzak dla intensywnego gryzacza?", "a": "Gumowymi gryzakami z kauczuku (Kong Extreme, West Paw, Goughnuts) — uginają się pod naciskiem zamiast łamać zęby, a nadziewane jedzeniem zajmują psa równie długo."}
+      "verdict": "Skład krótki i uczciwy, żucie na długie godziny - ale twardość dyskwalifikuje go u intensywnych gryzaczy. Sam producent pisze, że pies go nie zmiażdży w zębach: to dokładnie ten poziom twardości, przy którym stomatolodzy weterynaryjni widują złamane łamacze. Niska ocena to świadoma decyzja - bezpieczeństwo zębów waży u nas więcej niż czas żucia.",
+      "pros": [
+        "Naturalny, 3-składnikowy skład bez laktozy",
+        "Zajmuje psa na wiele godzin",
+        "Nie brudzi i nie śmierdzi jak gryzaki mięsne",
+        "Końcówkę można spuffować w mikrofalówce na bezpieczny chrupek"
       ],
-      "shops": [{"n": "4dogsoriginal.com", "u": "https://4dogsoriginal.com/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Twardszy niż paznokieć - realne ryzyko złamania zęba (kosztowne leczenie)",
+        "Może pęknąć na ostre odłamki przy upadku na twardą podłogę",
+        "Tylko pod stałym nadzorem",
+        "Nie dla szczeniąt w wymianie zębów i seniorów ze słabym uzębieniem"
+      ],
+      "faq": [
+        {
+          "q": "Na czym polega test paznokcia?",
+          "a": "Wciśnij paznokieć kciuka w gryzak: jeśli nie zostawisz wgniecenia, gryzak jest twardszy niż ząb psa i może go złamać. Ser himalajski, poroże i kopyta tego testu nie przechodzą - dlatego stomatolodzy weterynaryjni zalecają wobec nich dużą ostrożność."
+        },
+        {
+          "q": "Czym zastąpić twardy gryzak dla intensywnego gryzacza?",
+          "a": "Gumowymi gryzakami z kauczuku (Kong Extreme, West Paw, Goughnuts) - uginają się pod naciskiem zamiast łamać zęby, a nadziewane jedzeniem zajmują psa równie długo."
+        }
+      ],
+      "shops": [
+        {
+          "n": "4dogsoriginal.com",
+          "u": "https://4dogsoriginal.com/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "purina-dentalife",
       "name": "Purina DentaLife paski dentystyczne",
       "brand": "Purina",
-      "type": "gryzak dentystyczny", "life": "dorosły",
-      "score": 66, "pillars": [16, 24, 16, 10],
+      "type": "gryzak dentystyczny",
+      "life": "dorosły",
+      "score": 66,
+      "pillars": [
+        16,
+        24,
+        16,
+        10
+      ],
       "specs": [
-        ["Typ", "porowaty pasek dentystyczny — kolczasta struktura czyści też zęby trzonowe"],
-        ["Skład", "zboża/kukurydza, niska zawartość tłuszczu, bez cukru, bez sztucznych barwników i aromatów"],
-        ["Dawkowanie", "wg wagi: S (7–12 kg), M (12–25 kg — 1 szt./dzień), L (25–40 kg)"],
-        ["VOHC", "TAK — pieczęć VOHC za ograniczanie kamienia (zweryfikować na etykiecie PL)"],
-        ["Cena orientacyjna", "ok. 15–25 zł / opak. (Large ~142 g)"]
+        [
+          "Typ",
+          "porowaty pasek dentystyczny - kolczasta struktura czyści też zęby trzonowe"
+        ],
+        [
+          "Skład",
+          "zboża/kukurydza, niska zawartość tłuszczu, bez cukru, bez sztucznych barwników i aromatów"
+        ],
+        [
+          "Dawkowanie",
+          "wg wagi: S (7–12 kg), M (12–25 kg - 1 szt./dzień), L (25–40 kg)"
+        ],
+        [
+          "VOHC",
+          "TAK - pieczęć VOHC za ograniczanie kamienia (zweryfikować na etykiecie PL)"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 15–25 zł / opak. (Large ~142 g)"
+        ]
       ],
       "verified": false,
-      "verdict": "Druga obok Dentastix opcja dentystyczna z pieczęcią VOHC szeroko dostępna w Polsce. Porowata, kolczasta struktura dociera do zębów trzonowych, a miękkość czyni ją bezpieczną dla zębów. Ten sam kompromis co u konkurenta: dowód kliniczny jest, ale skład oparty na zbożach to nie jest dobre żywienie — to narzędzie higieny.",
-      "pros": ["Pieczęć VOHC — kliniczny dowód ograniczania kamienia", "Porowata struktura czyści trudno dostępne zęby trzonowe", "Miękka, bezpieczna dla zębów (przechodzi test paznokcia)", "Dawkowanie dobrane do wagi psa"],
-      "cons": ["Skład oparty na zbożach/kukurydzy — odżywczo słabo", "Nie dla psów z alergią na zboża", "Kalorie doliczać do dziennej dawki"],
-      "faq": [
-        {"q": "DentaLife czy Dentastix?", "a": "Oba mają pieczęć VOHC i podobny, zbożowy skład. DentaLife stawia na porowatą strukturę docierającą do zębów trzonowych, Dentastix jest tańszy i dostępny dosłownie wszędzie. Różnica jest kosmetyczna — w obu przypadkach kupujesz narzędzie higieny, nie wartość odżywczą."},
-        {"q": "Czy gryzak dentystyczny zastąpi szczotkowanie?", "a": "Nie. Codzienne szczotkowanie pastą enzymatyczną pozostaje złotym standardem; gryzak z VOHC to wartościowy dodatek w dni, gdy mycie się nie uda."}
+      "verdict": "Druga obok Dentastix opcja dentystyczna z pieczęcią VOHC szeroko dostępna w Polsce. Porowata, kolczasta struktura dociera do zębów trzonowych, a miękkość czyni ją bezpieczną dla zębów. Ten sam kompromis co u konkurenta: dowód kliniczny jest, ale skład oparty na zbożach to nie jest dobre żywienie - to narzędzie higieny.",
+      "pros": [
+        "Pieczęć VOHC - kliniczny dowód ograniczania kamienia",
+        "Porowata struktura czyści trudno dostępne zęby trzonowe",
+        "Miękka, bezpieczna dla zębów (przechodzi test paznokcia)",
+        "Dawkowanie dobrane do wagi psa"
       ],
-      "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "zooexpress.pl", "u": "https://zooexpress.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Skład oparty na zbożach/kukurydzy - odżywczo słabo",
+        "Nie dla psów z alergią na zboża",
+        "Kalorie doliczać do dziennej dawki"
+      ],
+      "faq": [
+        {
+          "q": "DentaLife czy Dentastix?",
+          "a": "Oba mają pieczęć VOHC i podobny, zbożowy skład. DentaLife stawia na porowatą strukturę docierającą do zębów trzonowych, Dentastix jest tańszy i dostępny dosłownie wszędzie. Różnica jest kosmetyczna - w obu przypadkach kupujesz narzędzie higieny, nie wartość odżywczą."
+        },
+        {
+          "q": "Czy gryzak dentystyczny zastąpi szczotkowanie?",
+          "a": "Nie. Codzienne szczotkowanie pastą enzymatyczną pozostaje złotym standardem; gryzak z VOHC to wartościowy dodatek w dni, gdy mycie się nie uda."
+        }
+      ],
+      "shops": [
+        {
+          "n": "zooplus.pl",
+          "u": "https://www.zooplus.pl/"
+        },
+        {
+          "n": "zooexpress.pl",
+          "u": "https://zooexpress.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "przelyk-wolowy-suszony",
       "name": "Przełyk wołowy suszony (MACED / John Dog)",
       "brand": "MACED",
-      "type": "gryzak naturalny monobiałkowy", "life": "dorosły",
-      "score": 79, "pillars": [29, 20, 18, 12],
+      "type": "gryzak naturalny monobiałkowy",
+      "life": "dorosły",
+      "score": 79,
+      "pillars": [
+        29,
+        20,
+        18,
+        12
+      ],
       "specs": [
-        ["Skład", "100% suszony przełyk wołowy — bez konserwantów i wybielaczy"],
-        ["Analiza", "białko ~64% · tłuszcz ~27% · popiół 3% · włókno 1,2% · wilgotność ~10%"],
-        ["Formy", "paski, cięty 12 cm, długi do 50 cm; suszenie niskotemperaturowe + pasteryzacja"],
-        ["Twardość", "miększy od poroża/kości — niższe ryzyko dla zębów"],
-        ["Cena orientacyjna", "ok. 10–25 zł zależnie od formy/gramatury"]
+        [
+          "Skład",
+          "100% suszony przełyk wołowy - bez konserwantów i wybielaczy"
+        ],
+        [
+          "Analiza",
+          "białko ~64% · tłuszcz ~27% · popiół 3% · włókno 1,2% · wilgotność ~10%"
+        ],
+        [
+          "Formy",
+          "paski, cięty 12 cm, długi do 50 cm; suszenie niskotemperaturowe + pasteryzacja"
+        ],
+        [
+          "Twardość",
+          "miększy od poroża/kości - niższe ryzyko dla zębów"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 10–25 zł zależnie od formy/gramatury"
+        ]
       ],
       "verified": false,
-      "verdict": "Naturalny gryzak monobiałkowy z polskiej produkcji: jeden składnik, miękki na tyle, by nie zagrażać zębom jak poroże, i smaczny dla większości psów. Trzeba tylko pamiętać o wysokim tłuszczu (~27%) — to gryzak okazjonalny, nie codzienny dodatek dla psa z tendencją do tycia.",
-      "pros": ["Monobiałko — dobre dla alergików i diet eliminacyjnych", "Polska produkcja, bez konserwantów i wybielaczy", "Miększy od poroża/kości — niższe ryzyko złamania zęba", "Dostępny w kilku formach (paski, cięty, długi)"],
-      "cons": ["Wysoki tłuszcz (~27%) — ostrożnie przy trzustce i nadwadze", "Intensywny zapach", "Zjadany szybciej niż twarde gryzaki — krócej zajmuje"],
-      "faq": [
-        {"q": "Czy przełyk wołowy jest bezpieczniejszy niż poroże?", "a": "Tak, dla zębów zdecydowanie — jest na tyle miękki, że przechodzi test paznokcia, więc nie grozi złamaniem łamacza jak twarde poroże czy ser himalajski. Wadą jest wysoki tłuszcz, którego poroże nie ma."},
-        {"q": "Jak często podawać naturalne gryzaki mięsne?", "a": "Traktuj je jako element dziennej racji, nie dodatek ponad nią — przy ~27% tłuszczu kaloryczność jest wysoka. Dla psa aktywnego kilka razy w tygodniu, dla psa z nadwagą rzadziej i w mniejszej formie."}
+      "verdict": "Naturalny gryzak monobiałkowy z polskiej produkcji: jeden składnik, miękki na tyle, by nie zagrażać zębom jak poroże, i smaczny dla większości psów. Trzeba tylko pamiętać o wysokim tłuszczu (~27%) - to gryzak okazjonalny, nie codzienny dodatek dla psa z tendencją do tycia.",
+      "pros": [
+        "Monobiałko - dobre dla alergików i diet eliminacyjnych",
+        "Polska produkcja, bez konserwantów i wybielaczy",
+        "Miększy od poroża/kości - niższe ryzyko złamania zęba",
+        "Dostępny w kilku formach (paski, cięty, długi)"
       ],
-      "shops": [{"n": "Petsmile", "u": "https://www.sklep.petsmile.pl/"}, {"n": "johndog.pl", "u": "https://johndog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Wysoki tłuszcz (~27%) - ostrożnie przy trzustce i nadwadze",
+        "Intensywny zapach",
+        "Zjadany szybciej niż twarde gryzaki - krócej zajmuje"
+      ],
+      "faq": [
+        {
+          "q": "Czy przełyk wołowy jest bezpieczniejszy niż poroże?",
+          "a": "Tak, dla zębów zdecydowanie - jest na tyle miękki, że przechodzi test paznokcia, więc nie grozi złamaniem łamacza jak twarde poroże czy ser himalajski. Wadą jest wysoki tłuszcz, którego poroże nie ma."
+        },
+        {
+          "q": "Jak często podawać naturalne gryzaki mięsne?",
+          "a": "Traktuj je jako element dziennej racji, nie dodatek ponad nią - przy ~27% tłuszczu kaloryczność jest wysoka. Dla psa aktywnego kilka razy w tygodniu, dla psa z nadwagą rzadziej i w mniejszej formie."
+        }
+      ],
+      "shops": [
+        {
+          "n": "Petsmile",
+          "u": "https://www.sklep.petsmile.pl/"
+        },
+        {
+          "n": "johndog.pl",
+          "u": "https://johndog.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "carnilove-true-fresh-liofilizat",
-      "name": "Carnilove True Fresh — przysmaki liofilizowane",
+      "name": "Carnilove True Fresh - przysmaki liofilizowane",
       "brand": "Carnilove",
-      "type": "przysmak liofilizowany (freeze-dried)", "life": "wszystkie",
-      "score": 83, "pillars": [31, 20, 20, 12],
+      "type": "przysmak liofilizowany (freeze-dried)",
+      "life": "wszystkie",
+      "score": 83,
+      "pillars": [
+        31,
+        20,
+        20,
+        12
+      ],
       "specs": [
-        ["Skład", "90–96% świeżego mięsa (np. kaczka 90% + 4% czerwone owoce); bez zbóż, ziemniaków, soli i cukru"],
-        ["Koncentracja", "100 g liofilizatu ≈ 300 g świeżego mięsa"],
-        ["Zastosowanie", "trening lub topper na karmę"],
-        ["Twardość", "lekkie, kruche — bezpieczne dla zębów"],
-        ["Cena orientacyjna", "ok. 18–30 zł / 40–60 g"]
+        [
+          "Skład",
+          "90–96% świeżego mięsa (np. kaczka 90% + 4% czerwone owoce); bez zbóż, ziemniaków, soli i cukru"
+        ],
+        [
+          "Koncentracja",
+          "100 g liofilizatu ≈ 300 g świeżego mięsa"
+        ],
+        [
+          "Zastosowanie",
+          "trening lub topper na karmę"
+        ],
+        [
+          "Twardość",
+          "lekkie, kruche - bezpieczne dla zębów"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 18–30 zł / 40–60 g"
+        ]
       ],
       "verified": false,
-      "verdict": "Liofilizacja to najwyższa półka przysmaków treningowych: zachowuje niemal pełną wartość świeżego mięsa, a wysoka zawartość (90–96%) i brak zbóż czynią je czystym, monoproteinowym wyborem. Skoncentrowane, więc lekkie i wygodne — pamiętaj tylko, że gram liofilizatu to sporo kalorii.",
-      "pros": ["90–96% świeżego mięsa — bardzo czysty skład", "Grain-free, bez soli, cukru i ziemniaków", "Świetny do treningu i jako topper na karmę", "Lekki, wygodny, intensywny smak"],
-      "cons": ["Wysoka kaloryczność na gram — dawkować ostrożnie", "Cena za gram wyższa niż przysmaków suszonych", "Małe opakowanie szybko się kończy"],
-      "faq": [
-        {"q": "Czym różni się liofilizat od mięsa suszonego?", "a": "Liofilizacja (suszenie sublimacyjne w niskiej temperaturze i próżni) zachowuje więcej składników odżywczych i naturalny smak niż klasyczne suszenie ciepłem. Stąd wyższa cena i intensywniejszy aromat — atut na treningu."},
-        {"q": "Czy liofilizat może być toperem na co dzień?", "a": "Może, ale to kalorie — rozkrusz niewielką ilość na karmę zamiast dosypywać garść. Dla wybrednych psów to skuteczny sposób, by zachęcić do zjedzenia miski."}
+      "verdict": "Liofilizacja to najwyższa półka przysmaków treningowych: zachowuje niemal pełną wartość świeżego mięsa, a wysoka zawartość (90–96%) i brak zbóż czynią je czystym, monoproteinowym wyborem. Skoncentrowane, więc lekkie i wygodne - pamiętaj tylko, że gram liofilizatu to sporo kalorii.",
+      "pros": [
+        "90–96% świeżego mięsa - bardzo czysty skład",
+        "Grain-free, bez soli, cukru i ziemniaków",
+        "Świetny do treningu i jako topper na karmę",
+        "Lekki, wygodny, intensywny smak"
       ],
-      "shops": [{"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "zooexpress.pl", "u": "https://zooexpress.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Wysoka kaloryczność na gram - dawkować ostrożnie",
+        "Cena za gram wyższa niż przysmaków suszonych",
+        "Małe opakowanie szybko się kończy"
+      ],
+      "faq": [
+        {
+          "q": "Czym różni się liofilizat od mięsa suszonego?",
+          "a": "Liofilizacja (suszenie sublimacyjne w niskiej temperaturze i próżni) zachowuje więcej składników odżywczych i naturalny smak niż klasyczne suszenie ciepłem. Stąd wyższa cena i intensywniejszy aromat - atut na treningu."
+        },
+        {
+          "q": "Czy liofilizat może być toperem na co dzień?",
+          "a": "Może, ale to kalorie - rozkrusz niewielką ilość na karmę zamiast dosypywać garść. Dla wybrednych psów to skuteczny sposób, by zachęcić do zjedzenia miski."
+        }
+      ],
+      "shops": [
+        {
+          "n": "kakadu.pl",
+          "u": "https://kakadu.pl/"
+        },
+        {
+          "n": "zooexpress.pl",
+          "u": "https://zooexpress.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     },
     {
       "slug": "poroze-jelenia-gryzak",
-      "name": "Poroże jelenia — gryzak naturalny",
+      "name": "Poroże jelenia - gryzak naturalny",
       "brand": "4Dogs / BIOTOP",
-      "type": "gryzak długotrwały (twardy)", "life": "dorosły",
-      "score": 54, "pillars": [25, 7, 12, 10],
+      "type": "gryzak długotrwały (twardy)",
+      "life": "dorosły",
+      "score": 54,
+      "pillars": [
+        25,
+        7,
+        12,
+        10
+      ],
       "specs": [
-        ["Skład", "pełny kawałek poroża; szpik bogaty w białko, kolagen, wapń, fosfor, magnez"],
-        ["Warianty", "twardość HARD, rozmiary S/M/L (np. Hard M ~12 cm, Hard L ~15 cm)"],
-        ["Twardość", "BARDZO TWARDY — NIE przechodzi testu paznokcia (grupa ryzyka jak ser himalajski)"],
-        ["VOHC", "nie"],
-        ["Cena orientacyjna", "ok. 30–37 zł"]
+        [
+          "Skład",
+          "pełny kawałek poroża; szpik bogaty w białko, kolagen, wapń, fosfor, magnez"
+        ],
+        [
+          "Warianty",
+          "twardość HARD, rozmiary S/M/L (np. Hard M ~12 cm, Hard L ~15 cm)"
+        ],
+        [
+          "Twardość",
+          "BARDZO TWARDY - NIE przechodzi testu paznokcia (grupa ryzyka jak ser himalajski)"
+        ],
+        [
+          "VOHC",
+          "nie"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 30–37 zł"
+        ]
       ],
       "verified": false,
-      "verdict": "Trwałość poroża jest legendarna — starcza na tygodnie i prawie nie pachnie. Tę samą cechę okupuje twardość, która dyskwalifikuje je u nas tak samo jak ser himalajski: to materiał twardszy niż psi ząb, a złamany łamacz to bolesny i drogi problem. Niska ocena to świadomy wybór — bezpieczeństwo uzębienia przed czasem żucia.",
-      "pros": ["Wyjątkowo trwałe — wiele tygodni żucia", "Prawie bezwonne, nie brudzi", "Naturalne źródło minerałów i kolagenu", "Dostępne warianty twardości i rozmiaru"],
-      "cons": ["Twardsze niż ząb psa — wysokie ryzyko złamania łamacza", "Ryzyko ostrych odłamków przy starciu do kikuta", "Niewskazane dla intensywnych gryzaczy i seniorów", "Wymaga stałego nadzoru i wymiany przed zużyciem"],
-      "faq": [
-        {"q": "Dlaczego poroże dostaje niską ocenę mimo naturalnego składu?", "a": "Bo w naszej metodologii bezpieczeństwo zębów waży więcej niż czas żucia. Poroże nie przechodzi testu paznokcia (nie zostawisz w nim wgniecenia) — to twardość, przy której stomatolodzy weterynaryjni widują złamane łamacze z odsłoniętą miazgą."},
-        {"q": "Czym bezpiecznie zastąpić poroże?", "a": "Gumowymi gryzakami z kauczuku (KONG Extreme, West Paw, Goughnuts) — uginają się pod naciskiem, a nadziewane jedzeniem zajmują psa równie długo bez ryzyka dla zębów."}
+      "verdict": "Trwałość poroża jest legendarna - starcza na tygodnie i prawie nie pachnie. Tę samą cechę okupuje twardość, która dyskwalifikuje je u nas tak samo jak ser himalajski: to materiał twardszy niż psi ząb, a złamany łamacz to bolesny i drogi problem. Niska ocena to świadomy wybór - bezpieczeństwo uzębienia przed czasem żucia.",
+      "pros": [
+        "Wyjątkowo trwałe - wiele tygodni żucia",
+        "Prawie bezwonne, nie brudzi",
+        "Naturalne źródło minerałów i kolagenu",
+        "Dostępne warianty twardości i rozmiaru"
       ],
-      "shops": [{"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "johndog.pl", "u": "https://johndog.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
+      "cons": [
+        "Twardsze niż ząb psa - wysokie ryzyko złamania łamacza",
+        "Ryzyko ostrych odłamków przy starciu do kikuta",
+        "Niewskazane dla intensywnych gryzaczy i seniorów",
+        "Wymaga stałego nadzoru i wymiany przed zużyciem"
+      ],
+      "faq": [
+        {
+          "q": "Dlaczego poroże dostaje niską ocenę mimo naturalnego składu?",
+          "a": "Bo w naszej metodologii bezpieczeństwo zębów waży więcej niż czas żucia. Poroże nie przechodzi testu paznokcia (nie zostawisz w nim wgniecenia) - to twardość, przy której stomatolodzy weterynaryjni widują złamane łamacze z odsłoniętą miazgą."
+        },
+        {
+          "q": "Czym bezpiecznie zastąpić poroże?",
+          "a": "Gumowymi gryzakami z kauczuku (KONG Extreme, West Paw, Goughnuts) - uginają się pod naciskiem, a nadziewane jedzeniem zajmują psa równie długo bez ryzyka dla zębów."
+        }
+      ],
+      "shops": [
+        {
+          "n": "toys4dogs.pl",
+          "u": "https://toys4dogs.pl/"
+        },
+        {
+          "n": "johndog.pl",
+          "u": "https://johndog.pl/"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
+    },
+    {
+      "slug": "lio-pepe-beef-liofilizowana-wolowina",
+      "name": "Lio PEPE Beef - liofilizowana wołowina",
+      "brand": "Lio PEPE (Paka Zwierzaka)",
+      "type": "przysmak liofilizowany (freeze-dried)",
+      "life": "wszystkie",
+      "score": 89,
+      "pillars": [
+        34,
+        21,
+        20,
+        14
+      ],
+      "specs": [
+        [
+          "Skład",
+          "100% mięso wołowe (liofilizowane); bez konserwantów, barwników i sztucznych aromatów"
+        ],
+        [
+          "Analiza",
+          "białko 67% · tłuszcz 29% · włókno 0,6% · popiół 3,6% · wilgotność 1,3%"
+        ],
+        [
+          "Koncentracja",
+          "liofilizacja usuwa ~98% wody - zachowuje witaminy z grupy B, żelazo, cynk i fosfor"
+        ],
+        [
+          "Zastosowanie",
+          "przysmak, topper lub dodatek BARF; po namoczeniu 1 g ≈ 5 ml wody (~10 min)"
+        ],
+        [
+          "Twardość",
+          "lekkie, kruche kawałki - łatwe do podziału, stabilna konsystencja po otwarciu"
+        ],
+        [
+          "Cena orientacyjna",
+          "ok. 57–62 zł / 180 g (~320–345 zł/kg)"
+        ]
+      ],
+      "verified": true,
+      "test": {
+        "date": "2026-06-14",
+        "pomiar": "Opakowanie 180 g (XL), egzemplarz kupiony samodzielnie. Kawałki średniej wielkości, łatwe do rozłamania na mniejsze porcje treningowe.",
+        "tekstura": "Lekkie i kruche, suche w dotyku; nawet po dłuższym czasie od otwarcia nie zmieniają konsystencji ani nie wysychają.",
+        "bekon": 3,
+        "bekonNote": "Bekon wręcz uzależnił się od tych smaczków - reaguje na sam szelest opakowania. Rozmiar i struktura idealne dla małego psa.",
+        "uwagi": "Przysmak monobiałkowy (czysta wołowina) - dobry do diet eliminacyjnych. Kaloryczność wysoka, wliczać do dziennej dawki."
+      },
+      "verdict": "Jednoskładnikowy liofilizat klasy human grade: 100% wołowiny, bez dodatków, z białkiem 67%. To czołówka wśród przysmaków - czysty skład i metoda produkcji (liofilizacja) zachowująca wartość świeżego mięsa. Jedyny realny minus to cena za gram, która przy większym psie szybko rośnie.",
+      "pros": [
+        "100% mięso wołowe - monobiałko, bez zbóż i dodatków",
+        "Liofilizacja zachowuje niemal pełną wartość świeżego mięsa",
+        "Świetny rozmiar i struktura; stabilna konsystencja po otwarciu",
+        "Nadaje się do diet eliminacyjnych i treningu"
+      ],
+      "cons": [
+        "Wysoka cena za gram - przy dużym psie spory wydatek",
+        "Wysoka kaloryczność - łatwo przedawkować na treningu",
+        "Dostępność głównie w Polsce"
+      ],
+      "faq": [
+        {
+          "q": "Czy liofilizowana wołowina Lio PEPE to pełnoporcjowa karma?",
+          "a": "Nie - to przysmak/dodatek (mięso monobiałkowe). Może uzupełniać dietę lub służyć jako topper, ale nie zastępuje pełnoporcjowej karmy. Wliczaj go do dziennej puli kalorii (przysmaki to maks. ~10% zapotrzebowania)."
+        },
+        {
+          "q": "Dla jakich psów sprawdzi się ten przysmak?",
+          "a": "Dla psów na diecie eliminacyjnej i alergików (jedno źródło białka - wołowina, bez zbóż i dodatków), a także do treningu. Przy bardzo dużych psach trzeba liczyć się z wysokim kosztem za gram."
+        }
+      ],
+      "shops": [
+        {
+          "n": "Paka Zwierzaka",
+          "u": "https://pakazwierzaka.pl/przysmak-dla-psa-lio-pepe-beef-xl-wolowina-180-g"
+        },
+        {
+          "n": "Allegro",
+          "u": "https://allegro.pl/"
+        }
+      ]
     }
   ]
 }

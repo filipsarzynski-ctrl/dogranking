@@ -1,5 +1,5 @@
 {
-  "_uwaga": "Oś czasu życia Bekona (maskotka i tester DogRanking). Posty UŁOŻONE CHRONOLOGICZNIE od najstarszego. Każdy post: date (YYYY-MM, do sortowania), displayDate, age (wiek Bekona), title i text w PL+EN, oraz media[] — lista zdjęć/wideo. media item: {type:'image'|'video', src:'bekon/plik', poster:'bekon/plik.jpg' (tylko wideo), caption:{pl,en} (opcjonalnie)}. Pliki leżą w strona/static/bekon/. Aby dodać moment: dopisz obiekt na końcu listy. Bekon urodził się 16 grudnia 2023.",
+  "_uwaga": "Oś czasu życia Bekona (maskotka i tester DogRanking). Posty UŁOŻONE CHRONOLOGICZNIE od najstarszego. Każdy post: date (YYYY-MM, do sortowania), displayDate, age (wiek Bekona), title i text w PL+EN, oraz media[] - lista zdjęć/wideo. media item: {type:'image'|'video', src:'bekon/plik', poster:'bekon/plik.jpg' (tylko wideo), caption:{pl,en} (opcjonalnie)}. Pliki leżą w strona/static/bekon/. Aby dodać moment: dopisz obiekt na końcu listy. Bekon urodził się 16 grudnia 2023.",
   "posts": [
     {
       "id": "narodziny",
@@ -8,8 +8,8 @@
       "age": { "pl": "dzień 1", "en": "day 1" },
       "title": { "pl": "Bekon przychodzi na świat", "en": "Bekon is born" },
       "text": {
-        "pl": "16 grudnia 2023 na świat przyszedł mały pudel miniaturowy. Jeszcze go nie znałem, jeszcze nie miał imienia — a już miał zostać jedną z najważniejszych części mojego życia.",
-        "en": "On 16 December 2023 a tiny miniature poodle came into the world. I didn't know him yet, he didn't have a name yet — and he was already about to become one of the most important parts of my life."
+        "pl": "16 grudnia 2023 na świat przyszedł mały pudel miniaturowy. Jeszcze go nie znałem, jeszcze nie miał imienia - a już miał zostać jedną z najważniejszych części mojego życia.",
+        "en": "On 16 December 2023 a tiny miniature poodle came into the world. I didn't know him yet, he didn't have a name yet - and he was already about to become one of the most important parts of my life."
       },
       "media": []
     },
@@ -20,11 +20,11 @@
       "age": { "pl": "2 miesiące", "en": "2 months" },
       "title": { "pl": "Pierwsze dni w nowym domu", "en": "First days in his new home" },
       "text": {
-        "pl": "Bekon przyjechał do mnie jako rudy kłębek sierści, który mieścił się w dwóch dłoniach. Pierwsze drzemki na poduszce, pierwsze odkrycia — łącznie z kartonowym pudłem, które od razu uznał za najlepszą zabawkę świata.",
-        "en": "Bekon came to me as a red ball of fur that fit in two hands. First naps on a cushion, first discoveries — including a cardboard box he instantly declared the best toy in the world."
+        "pl": "Bekon przyjechał do mnie jako rudy kłębek sierści, który mieścił się w dwóch dłoniach. Pierwsze drzemki na poduszce, pierwsze odkrycia - łącznie z kartonowym pudłem, które od razu uznał za najlepszą zabawkę świata.",
+        "en": "Bekon came to me as a red ball of fur that fit in two hands. First naps on a cushion, first discoveries - including a cardboard box he instantly declared the best toy in the world."
       },
       "media": [
-        { "type": "video", "src": "bekon/2024-02-18.mp4", "poster": "bekon/2024-02-18.jpg", "caption": { "pl": "Pierwsze dni — maleńki Bekon na poduszce", "en": "First days — tiny Bekon on a cushion" } },
+        { "type": "video", "src": "bekon/2024-02-18.mp4", "poster": "bekon/2024-02-18.jpg", "caption": { "pl": "Pierwsze dni - maleńki Bekon na poduszce", "en": "First days - tiny Bekon on a cushion" } },
         { "type": "video", "src": "bekon/2024-02-21.mp4", "poster": "bekon/2024-02-21.jpg", "caption": { "pl": "Ulubione pudło", "en": "The favourite box" } }
       ]
     },
@@ -64,8 +64,8 @@
       "age": { "pl": "4 miesiące", "en": "4 months" },
       "title": { "pl": "Pierwsze spacery po mieście", "en": "First walks around town" },
       "text": {
-        "pl": "Smycz, chodnik i wielki świat. Spacery trwały dłużej od obwąchiwania niż od chodzenia — ale każdy z nich był małą przygodą.",
-        "en": "A leash, the pavement, and the big world. Walks took longer from sniffing than from actual walking — but each one was a little adventure."
+        "pl": "Smycz, chodnik i wielki świat. Spacery trwały dłużej od obwąchiwania niż od chodzenia - ale każdy z nich był małą przygodą.",
+        "en": "A leash, the pavement, and the big world. Walks took longer from sniffing than from actual walking - but each one was a little adventure."
       },
       "media": [
         { "type": "video", "src": "bekon/2024-04-12.mp4", "poster": "bekon/2024-04-12.jpg", "caption": { "pl": "Spacer na smyczy", "en": "On the leash" } }
@@ -78,8 +78,8 @@
       "age": { "pl": "4,5 miesiąca", "en": "4.5 months" },
       "title": { "pl": "Pierwsi psi znajomi", "en": "His first dog friends" },
       "text": {
-        "pl": "Socjalizacja pełną parą — pierwsze spotkania z innymi psami. Bekon, choć najmniejszy w stawce, od początku wchodził w to bez kompleksów.",
-        "en": "Socialisation in full swing — first meetings with other dogs. Bekon, though the smallest of the bunch, jumped into it without a hint of shyness."
+        "pl": "Socjalizacja pełną parą - pierwsze spotkania z innymi psami. Bekon, choć najmniejszy w stawce, od początku wchodził w to bez kompleksów.",
+        "en": "Socialisation in full swing - first meetings with other dogs. Bekon, though the smallest of the bunch, jumped into it without a hint of shyness."
       },
       "media": [
         { "type": "video", "src": "bekon/2024-04-28.mp4", "poster": "bekon/2024-04-28.jpg", "caption": { "pl": "Nowi koledzy z podwórka", "en": "New friends from the park" } }
@@ -92,8 +92,8 @@
       "age": { "pl": "4,5 miesiąca", "en": "4.5 months" },
       "title": { "pl": "Pierwsza wyprawa w góry", "en": "First trip to the mountains" },
       "text": {
-        "pl": "Górskie jeziora, łąki i hamak. Pierwsza większa podróż pokazała, że Bekon to pies do przygód — biega po halach, jakby robił to całe życie.",
-        "en": "Mountain lakes, meadows and a hammock. His first bigger trip proved Bekon is a dog made for adventure — running across alpine pastures as if he'd done it his whole life."
+        "pl": "Górskie jeziora, łąki i hamak. Pierwsza większa podróż pokazała, że Bekon to pies do przygód - biega po halach, jakby robił to całe życie.",
+        "en": "Mountain lakes, meadows and a hammock. His first bigger trip proved Bekon is a dog made for adventure - running across alpine pastures as if he'd done it his whole life."
       },
       "media": [
         { "type": "image", "src": "bekon/2024-04-30a.jpg", "caption": { "pl": "Nad górskim jeziorem", "en": "By a mountain lake" } },
@@ -139,8 +139,8 @@
       "age": { "pl": "2,5 roku", "en": "2.5 years" },
       "title": { "pl": "Tu i teraz", "en": "Here and now" },
       "text": {
-        "pl": "Dziś Bekon ma 2,5 roku, stałą dietę i niezmiennie nienaganny apetyt. Testuje wszystko, o czym piszemy na DogRanking, i codziennie przypomina mi, dlaczego ten portal w ogóle powstał. Ciąg dalszy nastąpi — kolejne chwile dopiszę tutaj.",
-        "en": "Today Bekon is 2.5 years old, on a steady diet and with an ever-impeccable appetite. He tests everything we write about on DogRanking and reminds me every day why this site exists in the first place. To be continued — more moments will be added right here."
+        "pl": "Dziś Bekon ma 2,5 roku, stałą dietę i niezmiennie nienaganny apetyt. Testuje wszystko, o czym piszemy na DogRanking, i codziennie przypomina mi, dlaczego ten portal w ogóle powstał. Ciąg dalszy nastąpi - kolejne chwile dopiszę tutaj.",
+        "en": "Today Bekon is 2.5 years old, on a steady diet and with an ever-impeccable appetite. He tests everything we write about on DogRanking and reminds me every day why this site exists in the first place. To be continued - more moments will be added right here."
       },
       "media": []
     }

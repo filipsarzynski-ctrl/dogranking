@@ -1,5 +1,5 @@
 {
-  "_uwaga": "Kategoria beta. Dane z researchu web 2026-06-13 (zooplus.pl, kakadu.pl, toys4dogs.pl) — verified:false do potwierdzenia. Bez obiektu test = 'test w przygotowaniu'. Filary: A materiały/wykonanie 35, B bezpieczeństwo i dowody 25, C wiarygodność producenta 25, D ergonomia i wartość 15.",
+  "_uwaga": "Kategoria beta. Dane z researchu web 2026-06-13 (zooplus.pl, kakadu.pl, toys4dogs.pl) - verified:false do potwierdzenia. Bez obiektu test = 'test w przygotowaniu'. Filary: A materiały/wykonanie 35, B bezpieczeństwo i dowody 25, C wiarygodność producenta 25, D ergonomia i wartość 15.",
   "products": [
     {
       "slug": "kong-classic",
@@ -8,19 +8,19 @@
       "type": "gryzak do nadziewania", "life": "wszystkie",
       "score": 92, "pillars": [33, 24, 23, 12],
       "specs": [
-        ["Materiał", "100% kauczuk naturalny — elastyczny, bez ftalanów, nie odpryskuje ostrymi fragmentami"],
+        ["Materiał", "100% kauczuk naturalny - elastyczny, bez ftalanów, nie odpryskuje ostrymi fragmentami"],
         ["Funkcja", "nadziewanie smakołykami (pasta, mrożone jedzenie) + nieregularne odbicia do aportu"],
-        ["Rozmiary", "XS 5,7 cm – XXL 15,2 cm — ZAWSZE dobierać do wagi psa"],
+        ["Rozmiary", "XS 5,7 cm – XXL 15,2 cm - ZAWSZE dobierać do wagi psa"],
         ["Dla niszczycieli", "wersja KONG Extreme (czarna) z twardszej mieszanki"],
         ["Cena orientacyjna", "ok. 26–113 zł zależnie od rozmiaru"]
       ],
       "verified": false,
-      "verdict": "Najbardziej uniwersalna zabawka w historii psiej branży i wzorzec bezpiecznego materiału. Nadziany i zamrożony KONG to pół godziny zajęcia — najtańsza terapia nudy i wsparcie przy lęku separacyjnym. Jedyna zasada: rozmiar zawsze z zapasem w górę.",
-      "pros": ["Kauczuk naturalny — bezpieczna chemia i sprężystość chroniąca zęby", "Nadziewanie = zajęcie na długie minuty, wsparcie przy lęku separacyjnym", "Legendarna trwałość, wersja Extreme dla niszczycieli", "Sześć rozmiarów — od chihuahua po doga"],
-      "cons": ["Droższy od bezmarkowych odpowiedników", "Za mały rozmiar to ryzyko zassania do gardła — dobierać z zapasem", "Czyszczenie środka wymaga szczotki lub zmywarki"],
+      "verdict": "Najbardziej uniwersalna zabawka w historii psiej branży i wzorzec bezpiecznego materiału. Nadziany i zamrożony KONG to pół godziny zajęcia - najtańsza terapia nudy i wsparcie przy lęku separacyjnym. Jedyna zasada: rozmiar zawsze z zapasem w górę.",
+      "pros": ["Kauczuk naturalny - bezpieczna chemia i sprężystość chroniąca zęby", "Nadziewanie = zajęcie na długie minuty, wsparcie przy lęku separacyjnym", "Legendarna trwałość, wersja Extreme dla niszczycieli", "Sześć rozmiarów - od chihuahua po doga"],
+      "cons": ["Droższy od bezmarkowych odpowiedników", "Za mały rozmiar to ryzyko zassania do gardła - dobierać z zapasem", "Czyszczenie środka wymaga szczotki lub zmywarki"],
       "faq": [
-        {"q": "Czym nadziewać KONGa?", "a": "Na początek miękka pasta (np. twaróg, pasta z karmy mokrej) z kawałkami suchej karmy; dla zaawansowanych — całość zamrożona, co wydłuża zabawę do 30–60 minut. Kalorie z nadzienia odliczaj od dziennej dawki."},
-        {"q": "Jaki rozmiar KONGa wybrać?", "a": "Większy, niż się wydaje: zabawka musi być za duża, by zmieścić się w całości w pysku. Psy potrafiły zassać zbyt małego KONGa do gardła — przy psach dużych wybieraj XL/XXL, nawet jeśli L wygląda 'wystarczająco'."}
+        {"q": "Czym nadziewać KONGa?", "a": "Na początek miękka pasta (np. twaróg, pasta z karmy mokrej) z kawałkami suchej karmy; dla zaawansowanych - całość zamrożona, co wydłuża zabawę do 30–60 minut. Kalorie z nadzienia odliczaj od dziennej dawki."},
+        {"q": "Jaki rozmiar KONGa wybrać?", "a": "Większy, niż się wydaje: zabawka musi być za duża, by zmieścić się w całości w pysku. Psy potrafiły zassać zbyt małego KONGa do gardła - przy psach dużych wybieraj XL/XXL, nawet jeśli L wygląda 'wystarczająco'."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "e-hunter.pl", "u": "https://e-hunter.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -31,18 +31,18 @@
       "type": "gryzak supertrwały do nadziewania", "life": "wszystkie",
       "score": 89, "pillars": [33, 23, 21, 12],
       "specs": [
-        ["Materiał", "Zogoflex — elastomer bez BPA, lateksu i ftalanów; 100% recyklingowalny; pływa"],
+        ["Materiał", "Zogoflex - elastomer bez BPA, lateksu i ftalanów; 100% recyklingowalny; pływa"],
         ["Funkcja", "gryzak dla 'power chewers' z kieszenią na smakołyki"],
         ["Gwarancja", "producent wymienia lub zwraca pieniądze, jeśli pies zniszczy zabawkę"],
         ["Rozmiary", "S 10 cm / L 13 cm"],
         ["Cena orientacyjna", "ok. 58–73 zł (promocje), regularnie ~90–109 zł"]
       ],
       "verified": false,
-      "verdict": "Odpowiedź na pytanie 'co dać psu, który niszczy wszystko': elastomer Zogoflex ugina się pod zębami zamiast pękać, a producent daje gwarancję zniszczenia — rzadki dowód zaufania do własnego materiału. Kieszeń na smakołyki robi z niego wolniejszą, trudniejszą wersję KONGa.",
-      "pros": ["Gwarancja producenta: zniszczony = wymiana lub zwrot", "Bezpieczna chemia (bez BPA, lateksu, ftalanów), materiał z recyklingiem", "Pływa — sprawdza się nad wodą", "Zmywarka OK"],
-      "cons": ["Cena wyższa niż KONG Classic", "Mniejszy wybór rozmiarów (S/L)", "Twardszy charakter — psy preferujące miękkie zabawki go ignorują"],
+      "verdict": "Odpowiedź na pytanie 'co dać psu, który niszczy wszystko': elastomer Zogoflex ugina się pod zębami zamiast pękać, a producent daje gwarancję zniszczenia - rzadki dowód zaufania do własnego materiału. Kieszeń na smakołyki robi z niego wolniejszą, trudniejszą wersję KONGa.",
+      "pros": ["Gwarancja producenta: zniszczony = wymiana lub zwrot", "Bezpieczna chemia (bez BPA, lateksu, ftalanów), materiał z recyklingiem", "Pływa - sprawdza się nad wodą", "Zmywarka OK"],
+      "cons": ["Cena wyższa niż KONG Classic", "Mniejszy wybór rozmiarów (S/L)", "Twardszy charakter - psy preferujące miękkie zabawki go ignorują"],
       "faq": [
-        {"q": "Co znaczy 'gwarancja zniszczenia'?", "a": "West Paw deklaruje: jeśli pies zniszczy zabawkę Zogoflex, producent jednorazowo wymieni ją na nową lub zwróci pieniądze. W praktyce to najmocniejszy sygnał trwałości na rynku — firma kalkuluje, że odsetek zniszczeń będzie znikomy."},
+        {"q": "Co znaczy 'gwarancja zniszczenia'?", "a": "West Paw deklaruje: jeśli pies zniszczy zabawkę Zogoflex, producent jednorazowo wymieni ją na nową lub zwróci pieniądze. W praktyce to najmocniejszy sygnał trwałości na rynku - firma kalkuluje, że odsetek zniszczeń będzie znikomy."},
         {"q": "Zogoflex czy KONG Extreme dla niszczyciela?", "a": "Obie opcje to czołówka. KONG Extreme jest twardszy i tańszy, Zogoflex elastyczniejszy, z gwarancją i łatwiejszy do mycia. Dla psów łamiących zęby o twarde przedmioty bezpieczniejszy jest bardziej sprężysty Zogoflex."}
       ],
       "shops": [{"n": "canifel.pl", "u": "https://e-sklep.canifel.pl/"}, {"n": "furtastic.pl", "u": "https://furtastic.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
@@ -54,18 +54,18 @@
       "type": "piłka aporterska", "life": "wszystkie",
       "score": 85, "pillars": [31, 22, 20, 12],
       "specs": [
-        ["Materiał", "lita guma naturalna — gładka powierzchnia NIE ściera szkliwa (w przeciwieństwie do filcu piłek tenisowych)"],
+        ["Materiał", "lita guma naturalna - gładka powierzchnia NIE ściera szkliwa (w przeciwieństwie do filcu piłek tenisowych)"],
         ["Właściwości", "wysoki odskok, pływa, jaskrawe kolory (widoczność), pasuje do wyrzutni Chuckit!"],
-        ["Rozmiary", "M 6,5 cm / L 7,6 cm / XL 8,9 cm / XXL 11 cm — dla dużych psów min. L/XL"],
+        ["Rozmiary", "M 6,5 cm / L 7,6 cm / XL 8,9 cm / XXL 11 cm - dla dużych psów min. L/XL"],
         ["Cena orientacyjna", "ok. 18–58 zł zależnie od rozmiaru"]
       ],
       "verified": false,
       "verdict": "Piłka, którą warto kupić choćby po to, żeby wyrzucić tenisówki: filc piłki tenisowej działa na zęby jak papier ścierny i trwale ściera szkliwo, a gładka guma Ultra Ball jest dla zębów neutralna. Do tego wysoki odskok, pływalność i kolory widoczne w trawie.",
-      "pros": ["Bezpieczna dla szkliwa — gładka guma zamiast ścierającego filcu", "Wysoki, nieprzewidywalny odskok — psy ją uwielbiają", "Pływa i świetnie widać ją w trawie", "Kompatybilna z wyrzutnią Chuckit! Launcher"],
-      "cons": ["Droższa niż piłka tenisowa", "Rozmiar M za mały dla dużych psów — ryzyko zakrztuszenia", "To piłka do aportu, nie gryzak na cały dzień"],
+      "pros": ["Bezpieczna dla szkliwa - gładka guma zamiast ścierającego filcu", "Wysoki, nieprzewidywalny odskok - psy ją uwielbiają", "Pływa i świetnie widać ją w trawie", "Kompatybilna z wyrzutnią Chuckit! Launcher"],
+      "cons": ["Droższa niż piłka tenisowa", "Rozmiar M za mały dla dużych psów - ryzyko zakrztuszenia", "To piłka do aportu, nie gryzak na cały dzień"],
       "faq": [
-        {"q": "Dlaczego piłka tenisowa szkodzi psim zębom?", "a": "Filc piłek tenisowych projektowano na twarde korty — jest ścierny jak drobny papier ścierny, a dodatkowo zbiera piach. Codzienne noszenie i żucie tenisówki stopniowo ściera szkliwo, które się nie regeneruje. Weterynarze stomatolodzy widują 'tenisowe' zęby starte do miazgi."},
-        {"q": "Jaki rozmiar piłki dla mojego psa?", "a": "Piłka musi być większa niż rozwarcie pyska — dla labradora czy owczarka minimum L (7,6 cm), bezpieczniej XL. Za mała piłka może zaklinować się w gardle; to jeden z częstszych wypadków aportowych."}
+        {"q": "Dlaczego piłka tenisowa szkodzi psim zębom?", "a": "Filc piłek tenisowych projektowano na twarde korty - jest ścierny jak drobny papier ścierny, a dodatkowo zbiera piach. Codzienne noszenie i żucie tenisówki stopniowo ściera szkliwo, które się nie regeneruje. Weterynarze stomatolodzy widują 'tenisowe' zęby starte do miazgi."},
+        {"q": "Jaki rozmiar piłki dla mojego psa?", "a": "Piłka musi być większa niż rozwarcie pyska - dla labradora czy owczarka minimum L (7,6 cm), bezpieczniej XL. Za mała piłka może zaklinować się w gardle; to jeden z częstszych wypadków aportowych."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -76,19 +76,19 @@
       "type": "łamigłówka interaktywna", "life": "wszystkie",
       "score": 80, "pillars": [28, 20, 20, 12],
       "specs": [
-        ["Typ", "łamigłówka poziom 2/4 — trzy obrotowe piętra z komorami na smakołyki"],
+        ["Typ", "łamigłówka poziom 2/4 - trzy obrotowe piętra z komorami na smakołyki"],
         ["Materiał", "twarde tworzywo bez BPA i ftalanów; można myć; NIE jest gryzakiem"],
-        ["Poziomy serii", "Dog Smart (1) → Tornado (2) → MultiPuzzle (4) — stopniowanie trudności"],
+        ["Poziomy serii", "Dog Smart (1) → Tornado (2) → MultiPuzzle (4) - stopniowanie trudności"],
         ["Zasada", "zabawa wyłącznie pod nadzorem i z udziałem opiekuna"],
         ["Cena orientacyjna", "ok. 70–82 zł (wersja Small ~42 zł)"]
       ],
       "verified": false,
-      "verdict": "Klasyka pracy umysłowej: pies kręci piętrami nosem i łapą, by odsłonić komory ze smakołykami. Kwadrans takiej pracy męczy łeb porównywalnie z długim spacerem — bezcenne w deszczowe dni i dla psich emerytów. Pamiętaj tylko, że to gra planszowa, nie gryzak: po zabawie wraca na półkę.",
+      "verdict": "Klasyka pracy umysłowej: pies kręci piętrami nosem i łapą, by odsłonić komory ze smakołykami. Kwadrans takiej pracy męczy łeb porównywalnie z długim spacerem - bezcenne w deszczowe dni i dla psich emerytów. Pamiętaj tylko, że to gra planszowa, nie gryzak: po zabawie wraca na półkę.",
       "pros": ["Świetna stymulacja umysłowa i spowalnianie jedzenia", "System poziomów trudności rośnie z psem", "Tworzywo bez BPA i ftalanów, łatwe mycie", "Angażuje psy w każdym wieku, też seniorów"],
-      "cons": ["Tylko pod nadzorem — niszczyciel odgryzie ruchome elementy", "Wymaga aktywnego udziału opiekuna", "Część psów rozwiązuje poziom 2 w minutę — potrzebny upgrade"],
+      "cons": ["Tylko pod nadzorem - niszczyciel odgryzie ruchome elementy", "Wymaga aktywnego udziału opiekuna", "Część psów rozwiązuje poziom 2 w minutę - potrzebny upgrade"],
       "faq": [
-        {"q": "Od czego zacząć przygodę z łamigłówkami?", "a": "Od poziomu 1 (np. Dog Smart) i łatwych sukcesów — pies, który od razu trafi na zbyt trudną grę, sfrustruje się i zniechęci. Gdy rozwiązuje planszę bez wahania, czas na poziom wyżej."},
-        {"q": "Czy praca węchowa naprawdę męczy psa?", "a": "Tak — intensywne węszenie i kombinowanie angażuje mózg mocniej niż bieganie. Kwadrans łamigłówki lub maty węchowej daje zmęczenie porównywalne z godzinnym spacerem, co czyni je idealnym zajęciem na dni z ograniczonym ruchem."}
+        {"q": "Od czego zacząć przygodę z łamigłówkami?", "a": "Od poziomu 1 (np. Dog Smart) i łatwych sukcesów - pies, który od razu trafi na zbyt trudną grę, sfrustruje się i zniechęci. Gdy rozwiązuje planszę bez wahania, czas na poziom wyżej."},
+        {"q": "Czy praca węchowa naprawdę męczy psa?", "a": "Tak - intensywne węszenie i kombinowanie angażuje mózg mocniej niż bieganie. Kwadrans łamigłówki lub maty węchowej daje zmęczenie porównywalne z godzinnym spacerem, co czyni je idealnym zajęciem na dni z ograniczonym ruchem."}
       ],
       "shops": [{"n": "petsexpert.pl", "u": "https://www.petsexpert.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -106,12 +106,12 @@
         ["Cena orientacyjna", "ok. 44 zł (S/M)"]
       ],
       "verified": false,
-      "verdict": "Pluszak zaprojektowany przez kogoś, kto wie, jak psy niszczą pluszaki: wewnętrzny szkielet z liny przejmuje szarpanie, a śladowa ilość wypełniacza minimalizuje ryzyko, gdy pies dobierze się do środka. Żaden pluszak nie jest niezniszczalny — ten po prostu umiera z godnością i dużo wolniej.",
-      "pros": ["Szkielet z liny — wytrzymuje szarpanie, które zabija zwykłe pluszaki", "Minimalne wypełnienie = mniejsze ryzyko przy rozpruciu", "Piszczałka utrzymuje zainteresowanie psa", "Pełna rozmiarówka XS–XL"],
+      "verdict": "Pluszak zaprojektowany przez kogoś, kto wie, jak psy niszczą pluszaki: wewnętrzny szkielet z liny przejmuje szarpanie, a śladowa ilość wypełniacza minimalizuje ryzyko, gdy pies dobierze się do środka. Żaden pluszak nie jest niezniszczalny - ten po prostu umiera z godnością i dużo wolniej.",
+      "pros": ["Szkielet z liny - wytrzymuje szarpanie, które zabija zwykłe pluszaki", "Minimalne wypełnienie = mniejsze ryzyko przy rozpruciu", "Piszczałka utrzymuje zainteresowanie psa", "Pełna rozmiarówka XS–XL"],
       "cons": ["Dla zdeterminowanego niszczyciela to wciąż pluszak", "Połknięta piszczałka lub lina = ryzyko niedrożności jelit", "Droższy od marketowych pluszaków"],
       "faq": [
-        {"q": "Czy pies w ogóle potrzebuje pluszaka?", "a": "Wiele psów tak — noszenie miękkiej zdobyczy zaspokaja naturalne potrzeby, a szczeniętom pluszak daje komfort psychiczny. Warunek: zabawa pod nadzorem i natychmiastowa emerytura pluszaka, gdy zaczyna się pruć."},
-        {"q": "Co zrobić, gdy pies połknął kawałek zabawki?", "a": "Obserwuj: wymioty, apatia, brak apetytu, problemy z wypróżnianiem to sygnały alarmowe — natychmiast do weterynarza. Połknięty wypełniacz, lina czy piszczałka mogą wywołać niedrożność jelit wymagającą operacji."}
+        {"q": "Czy pies w ogóle potrzebuje pluszaka?", "a": "Wiele psów tak - noszenie miękkiej zdobyczy zaspokaja naturalne potrzeby, a szczeniętom pluszak daje komfort psychiczny. Warunek: zabawa pod nadzorem i natychmiastowa emerytura pluszaka, gdy zaczyna się pruć."},
+        {"q": "Co zrobić, gdy pies połknął kawałek zabawki?", "a": "Obserwuj: wymioty, apatia, brak apetytu, problemy z wypróżnianiem to sygnały alarmowe - natychmiast do weterynarza. Połknięty wypełniacz, lina czy piszczałka mogą wywołać niedrożność jelit wymagającą operacji."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -122,25 +122,25 @@
       "type": "zabawka węchowa", "life": "wszystkie",
       "score": 72, "pillars": [24, 17, 18, 13],
       "specs": [
-        ["Typ", "mata z falbankami do ukrywania smakołyków — praca nosem"],
+        ["Typ", "mata z falbankami do ukrywania smakołyków - praca nosem"],
         ["Materiał", "tkanina poliestrowa, wyjmowana podstawa; można prać"],
         ["Rozmiar", "50 × 34 cm"],
-        ["Zasada", "wyłącznie zabawa pod nadzorem — nie zostawiać psom zjadającym materiał"],
+        ["Zasada", "wyłącznie zabawa pod nadzorem - nie zostawiać psom zjadającym materiał"],
         ["Cena orientacyjna", "ok. 56 zł"]
       ],
       "verified": false,
-      "verdict": "Najtańszy trening węchowy, jaki istnieje: garść karmy wtarta w falbanki zamienia minutę jedzenia w kwadrans skupionej pracy nosem. Świetna dla szczeniąt, seniorów i psów w rekonwalescencji. To zabawka do pracy pod nadzorem — pies-pruwacz rozłoży ją na nitki w kilka minut.",
+      "verdict": "Najtańszy trening węchowy, jaki istnieje: garść karmy wtarta w falbanki zamienia minutę jedzenia w kwadrans skupionej pracy nosem. Świetna dla szczeniąt, seniorów i psów w rekonwalescencji. To zabawka do pracy pod nadzorem - pies-pruwacz rozłoży ją na nitki w kilka minut.",
       "pros": ["Praca węchowa męczy psychicznie skuteczniej niż spacer", "Spowalnia jedzenie łapczywych psów", "Można prać w pralce", "Dobra dla psów w każdym wieku i kondycji"],
-      "cons": ["Niska trwałość przy psach gryzących materiał", "Tylko pod nadzorem — połknięte nitki to ryzyko niedrożności", "Falbanki zbierają okruchy — wymaga regularnego prania"],
+      "cons": ["Niska trwałość przy psach gryzących materiał", "Tylko pod nadzorem - połknięte nitki to ryzyko niedrożności", "Falbanki zbierają okruchy - wymaga regularnego prania"],
       "faq": [
-        {"q": "Jak używać maty węchowej?", "a": "Wetrzyj suchą karmę lub drobne przysmaki głęboko w falbanki i pozwól psu pracować nosem. Zacznij od łatwego ukrycia, stopniowo utrudniaj. Sesja 10–15 minut wystarcza — węszenie jest dla psa intensywnym wysiłkiem umysłowym."},
-        {"q": "Mata węchowa czy miska spowalniająca?", "a": "Inne narzędzia, inny cel: miska spowalnia codzienne posiłki, mata to trening węchowy i zajęcie dodatkowe. U łapczywego psa idealnie sprawdza się duet — miska na co dzień, mata jako 'praca' kilka razy w tygodniu."}
+        {"q": "Jak używać maty węchowej?", "a": "Wetrzyj suchą karmę lub drobne przysmaki głęboko w falbanki i pozwól psu pracować nosem. Zacznij od łatwego ukrycia, stopniowo utrudniaj. Sesja 10–15 minut wystarcza - węszenie jest dla psa intensywnym wysiłkiem umysłowym."},
+        {"q": "Mata węchowa czy miska spowalniająca?", "a": "Inne narzędzia, inny cel: miska spowalnia codzienne posiłki, mata to trening węchowy i zajęcie dodatkowe. U łapczywego psa idealnie sprawdza się duet - miska na co dzień, mata jako 'praca' kilka razy w tygodniu."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}]
     },
     {
       "slug": "trixie-bungee-fun-szarpak",
-      "name": "Trixie Bungee Fun — szarpak z amortyzatorem",
+      "name": "Trixie Bungee Fun - szarpak z amortyzatorem",
       "brand": "Trixie",
       "type": "szarpak", "life": "wszystkie",
       "score": 70, "pillars": [24, 16, 17, 13],
@@ -148,16 +148,16 @@
         ["Typ", "szarpak do przeciągania z amortyzowaną rączką"],
         ["Materiał", "plusz/poliester; wariant Bungee Rope z piłką z TPR (guma termoplastyczna, bez PCW)"],
         ["Rozmiar", "20/47 cm"],
-        ["Funkcja amortyzatora", "łagodzi szarpnięcia — chroni zęby i kręgosłup psa oraz rękę opiekuna"],
+        ["Funkcja amortyzatora", "łagodzi szarpnięcia - chroni zęby i kręgosłup psa oraz rękę opiekuna"],
         ["Cena orientacyjna", "ok. 30 zł"]
       ],
       "verified": false,
-      "verdict": "Szarpanie to jedna z najlepszych wspólnych zabaw — buduje więź i uczy komendy 'puść' — a amortyzator w rączce rozwiązuje jej główny problem: gwałtowne szarpnięcia obciążające kark psa i bark człowieka. Materiałowa konstrukcja zużywa się z definicji, dlatego szarpak po zabawie wraca do szuflady.",
-      "pros": ["Amortyzator łagodzi szarpnięcia — bezpieczniejsze dla stawów i zębów", "Świetne narzędzie do nauki komendy 'puść' i budowania więzi", "Niska cena", "Wariant z piłką z bezpiecznego TPR"],
-      "cons": ["Materiałowy — zużywa się szybko przy intensywnej zabawie", "Nie zostawiać psu do samodzielnego gryzienia", "Połknięty sznurek/wypełniacz to ryzyko niedrożności"],
+      "verdict": "Szarpanie to jedna z najlepszych wspólnych zabaw - buduje więź i uczy komendy 'puść' - a amortyzator w rączce rozwiązuje jej główny problem: gwałtowne szarpnięcia obciążające kark psa i bark człowieka. Materiałowa konstrukcja zużywa się z definicji, dlatego szarpak po zabawie wraca do szuflady.",
+      "pros": ["Amortyzator łagodzi szarpnięcia - bezpieczniejsze dla stawów i zębów", "Świetne narzędzie do nauki komendy 'puść' i budowania więzi", "Niska cena", "Wariant z piłką z bezpiecznego TPR"],
+      "cons": ["Materiałowy - zużywa się szybko przy intensywnej zabawie", "Nie zostawiać psu do samodzielnego gryzienia", "Połknięty sznurek/wypełniacz to ryzyko niedrożności"],
       "faq": [
-        {"q": "Czy zabawa w przeciąganie nie uczy psa agresji?", "a": "To mit — badania nie potwierdzają związku szarpaka z agresją. Przeciwnie: zabawa z zasadami (start na sygnał, komenda 'puść', przerwy) uczy psa kontroli pobudzenia. Warunek: to opiekun zaczyna i kończy zabawę."},
-        {"q": "Jak bezpiecznie szarpać się z psem?", "a": "Ciągnij poziomo, nie w górę (chroni kręgosłup szyjny), nie wyrywaj zabawki gwałtownie skrętem, rób przerwy przy dużym pobudzeniu i przerwij przy pierwszym dotknięciu zębami ręki. U szczeniąt w wymianie zębów — bardzo delikatnie."}
+        {"q": "Czy zabawa w przeciąganie nie uczy psa agresji?", "a": "To mit - badania nie potwierdzają związku szarpaka z agresją. Przeciwnie: zabawa z zasadami (start na sygnał, komenda 'puść', przerwy) uczy psa kontroli pobudzenia. Warunek: to opiekun zaczyna i kończy zabawę."},
+        {"q": "Jak bezpiecznie szarpać się z psem?", "a": "Ciągnij poziomo, nie w górę (chroni kręgosłup szyjny), nie wyrywaj zabawki gwałtownie skrętem, rób przerwy przy dużym pobudzeniu i przerwij przy pierwszym dotknięciu zębami ręki. U szczeniąt w wymianie zębów - bardzo delikatnie."}
       ],
       "shops": [{"n": "kakadu.pl", "u": "https://kakadu.pl/"}, {"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
@@ -170,37 +170,37 @@
       "specs": [
         ["Materiał", "najtwardsza wersja klasycznego KONG-a z wzmocnionego kauczuku naturalnego"],
         ["Funkcja", "otwór do nadziewania; nieprzewidywalny odbój; mrożenie wydłuża zabawę"],
-        ["Rozmiary", "M (psy 7–16 kg) do XXL — dobierać do wagi psa"],
-        ["Bezpieczeństwo", "elastyczny — ugina się zamiast łamać zęby (inaczej niż poroże)"],
+        ["Rozmiary", "M (psy 7–16 kg) do XXL - dobierać do wagi psa"],
+        ["Bezpieczeństwo", "elastyczny - ugina się zamiast łamać zęby (inaczej niż poroże)"],
         ["Cena orientacyjna", "ok. 35–80 zł zależnie od rozmiaru"]
       ],
       "verified": false,
-      "verdict": "Odpowiedź KONG-a dla psów, które zwykłego czerwonego Classica niszczą w tydzień: czarna mieszanka jest wyraźnie twardsza, a wciąż elastyczna, więc ugina się pod zębami zamiast je łamać. Nadziany i zamrożony to godziny zajęcia. Nawet Extreme nie jest niezniszczalny — kontroluj i wymieniaj przy uszkodzeniu.",
-      "pros": ["Najtwardsza guma KONG dla mocno gryzących psów", "Bezpieczna dla zębów — ugina się, nie łamie (inaczej niż poroże)", "Do nadziewania i mrożenia — świetny enrichment", "Sprawdzona marka i pełna rozmiarówka"],
-      "cons": ["Za mały rozmiar to ryzyko połknięcia — dobierać z zapasem", "Nawet Extreme nie jest w 100% niezniszczalny dla skrajnych gryzaczy", "Droższy od bezmarkowych gryzaków"],
+      "verdict": "Odpowiedź KONG-a dla psów, które zwykłego czerwonego Classica niszczą w tydzień: czarna mieszanka jest wyraźnie twardsza, a wciąż elastyczna, więc ugina się pod zębami zamiast je łamać. Nadziany i zamrożony to godziny zajęcia. Nawet Extreme nie jest niezniszczalny - kontroluj i wymieniaj przy uszkodzeniu.",
+      "pros": ["Najtwardsza guma KONG dla mocno gryzących psów", "Bezpieczna dla zębów - ugina się, nie łamie (inaczej niż poroże)", "Do nadziewania i mrożenia - świetny enrichment", "Sprawdzona marka i pełna rozmiarówka"],
+      "cons": ["Za mały rozmiar to ryzyko połknięcia - dobierać z zapasem", "Nawet Extreme nie jest w 100% niezniszczalny dla skrajnych gryzaczy", "Droższy od bezmarkowych gryzaków"],
       "faq": [
-        {"q": "KONG Classic czy Extreme?", "a": "Czerwony Classic wystarcza większości psów; czarny Extreme jest dla tych, którzy Classica szybko niszczą — twardszy, ale wciąż elastyczny i bezpieczny dla zębów. Dla szczeniąt jest osobna, miększa wersja (różowa/niebieska Puppy)."},
-        {"q": "Dlaczego twardy KONG jest OK, a twarde poroże nie?", "a": "Bo KONG, choć twardy, jest elastyczny — ugina się pod zębami. Poroże i ser himalajski są sztywne i twardsze niż ząb, więc przy mocnym ugryzieniu łamią łamacze. To różnica między 'twardy' a 'nieustępliwy'."}
+        {"q": "KONG Classic czy Extreme?", "a": "Czerwony Classic wystarcza większości psów; czarny Extreme jest dla tych, którzy Classica szybko niszczą - twardszy, ale wciąż elastyczny i bezpieczny dla zębów. Dla szczeniąt jest osobna, miększa wersja (różowa/niebieska Puppy)."},
+        {"q": "Dlaczego twardy KONG jest OK, a twarde poroże nie?", "a": "Bo KONG, choć twardy, jest elastyczny - ugina się pod zębami. Poroże i ser himalajski są sztywne i twardsze niż ząb, więc przy mocnym ugryzieniu łamią łamacze. To różnica między 'twardy' a 'nieustępliwy'."}
       ],
       "shops": [{"n": "psiedobre.pl", "u": "https://psiedobre.pl/"}, {"n": "toys4dogs.pl", "u": "https://toys4dogs.pl/"}, {"n": "Allegro", "u": "https://allegro.pl/"}]
     },
     {
       "slug": "goughnuts-gryzak-gwarancja",
-      "name": "Goughnuts — gryzak z dożywotnią gwarancją",
+      "name": "Goughnuts - gryzak z dożywotnią gwarancją",
       "brand": "Goughnuts",
       "type": "gryzak supertrwały dla niszczycieli", "life": "dorosły",
       "score": 88, "pillars": [33, 23, 20, 12],
       "specs": [
         ["Materiały", "mocna guma; czerwona warstwa wewnętrzna jako wskaźnik zużycia"],
-        ["Gwarancja", "dożywotnia — producent wymienia uszkodzony egzemplarz"],
+        ["Gwarancja", "dożywotnia - producent wymienia uszkodzony egzemplarz"],
         ["Warianty", "pierścień, sztyft, szarpak; rozmiary wg wagi psa"],
         ["Bezpieczeństwo", "gdy widać czerwoną warstwę → odebrać i wymienić"],
         ["Cena orientacyjna", "zależna od wariantu (w PL gł. import przez Amazon)"]
       ],
       "verified": false,
-      "verdict": "Gryzak dla najmocniejszych szczęk z dwoma rozwiązaniami, których brakuje konkurencji: dożywotnią gwarancją i czerwonym wskaźnikiem bezpieczeństwa — gdy pies dogryzie się do czerwonej warstwy, czas na wymianę. W Polsce dostępny głównie przez Amazon, co wydłuża dostawę i utrudnia realizację gwarancji.",
-      "pros": ["Dożywotnia gwarancja producenta na zniszczenie", "Czerwony wskaźnik bezpieczeństwa zużycia", "Naprawdę wytrzymały — dla pitbulli, owczarków, molosów", "Kilka form (pierścień, sztyft, szarpak)"],
-      "cons": ["W PL dostępny głównie przez Amazon — dłuższa dostawa", "Realizacja gwarancji utrudniona (brak lokalnego serwisu)", "Wyższa cena; twarde warianty dobierać rozmiarem i nadzorować"],
+      "verdict": "Gryzak dla najmocniejszych szczęk z dwoma rozwiązaniami, których brakuje konkurencji: dożywotnią gwarancją i czerwonym wskaźnikiem bezpieczeństwa - gdy pies dogryzie się do czerwonej warstwy, czas na wymianę. W Polsce dostępny głównie przez Amazon, co wydłuża dostawę i utrudnia realizację gwarancji.",
+      "pros": ["Dożywotnia gwarancja producenta na zniszczenie", "Czerwony wskaźnik bezpieczeństwa zużycia", "Naprawdę wytrzymały - dla pitbulli, owczarków, molosów", "Kilka form (pierścień, sztyft, szarpak)"],
+      "cons": ["W PL dostępny głównie przez Amazon - dłuższa dostawa", "Realizacja gwarancji utrudniona (brak lokalnego serwisu)", "Wyższa cena; twarde warianty dobierać rozmiarem i nadzorować"],
       "faq": [
         {"q": "Jak działa czerwony wskaźnik Goughnuts?", "a": "Wewnątrz gryzaka jest czerwona warstwa. Dopóki pies gryzie czarną/zewnętrzną gumę, jest bezpiecznie; gdy przegryzie się na tyle, że widać czerwień, należy zabawkę odebrać i wymienić (producent realizuje gwarancję)."},
         {"q": "Goughnuts czy West Paw dla niszczyciela?", "a": "Oba to czołówka z gwarancją. Goughnuts jest cięższy i ma wskaźnik zużycia, West Paw Zogoflex lżejszy, łatwiejszy do mycia i lepiej dostępny w PL. Dla skrajnych gryzaczy Goughnuts bywa wytrzymalszy."}
@@ -209,21 +209,21 @@
     },
     {
       "slug": "lickimat-soother",
-      "name": "LickiMat (Soother / Buddy / Tuff) — mata do lizania",
+      "name": "LickiMat (Soother / Buddy / Tuff) - mata do lizania",
       "brand": "LickiMat",
       "type": "mata enrichment / antystresowa", "life": "wszystkie",
       "score": 81, "pillars": [27, 21, 21, 12],
       "specs": [
         ["Materiał", "kauczuk TPR jakości spożywczej, bez BPA, nietoksyczny"],
         ["Warianty", "Soother (wypustki), Buddy (większa), Tuff (sztywniejsza dla gryzaczy), Mini"],
-        ["Funkcja", "na pastę, jogurt, mokrą karmę — spowalnia jedzenie, uspokaja; można mrozić"],
-        ["Bezpieczeństwo", "to NIE gryzak — gryzące psy mogą odgryźć kawałki TPR (nadzór)"],
+        ["Funkcja", "na pastę, jogurt, mokrą karmę - spowalnia jedzenie, uspokaja; można mrozić"],
+        ["Bezpieczeństwo", "to NIE gryzak - gryzące psy mogą odgryźć kawałki TPR (nadzór)"],
         ["Cena orientacyjna", "ok. 33–37 zł"]
       ],
       "verified": false,
-      "verdict": "Tani, skuteczny sposób na wyciszenie psa: monotonne lizanie pasty z wypustek obniża pobudzenie i pomaga przy wizytach u weterynarza, kąpieli czy zostawaniu samemu. Spowalnia też łapczywe jedzenie. To narzędzie enrichment, nie gryzak — dla psów gryzących wybierz twardszą wersję Tuff i pilnuj.",
+      "verdict": "Tani, skuteczny sposób na wyciszenie psa: monotonne lizanie pasty z wypustek obniża pobudzenie i pomaga przy wizytach u weterynarza, kąpieli czy zostawaniu samemu. Spowalnia też łapczywe jedzenie. To narzędzie enrichment, nie gryzak - dla psów gryzących wybierz twardszą wersję Tuff i pilnuj.",
       "pros": ["Działa uspokajająco (lizanie obniża stres)", "Spowalnia łapczywe jedzenie", "Materiał spożywczy bez BPA, można mrozić", "Tani, łatwy do mycia enrichment"],
-      "cons": ["To nie gryzak — psy gryzące mogą odgryźć i połknąć kawałki TPR", "Wymaga regularnego mycia (pleśń w wypustkach)", "Miękka wersja nieodporna na zęby — dla gryzaczy tylko Tuff"],
+      "cons": ["To nie gryzak - psy gryzące mogą odgryźć i połknąć kawałki TPR", "Wymaga regularnego mycia (pleśń w wypustkach)", "Miękka wersja nieodporna na zęby - dla gryzaczy tylko Tuff"],
       "faq": [
         {"q": "Czym smarować matę do lizania?", "a": "Mokrą karmą, pastą mięsną, naturalnym jogurtem bez cukru, twarożkiem, rozgniecionym bananem lub masłem orzechowym BEZ ksylitolu (ksylitol jest dla psa toksyczny). Posmarowaną matę można zamrozić, by wydłużyć zabawę."},
         {"q": "Dlaczego lizanie uspokaja psa?", "a": "Powtarzalne lizanie wyzwala wydzielanie śliny i angażuje psa w monotonną, kojącą czynność, co pomaga obniżyć pobudzenie. Stąd popularność mat przy fajerwerkach, w transporterze czy podczas obcinania pazurów."}
@@ -239,17 +239,17 @@
       "specs": [
         ["Typ", "plansza-puzzle 23×3 cm, poziom trudności 2"],
         ["Mechanizmy", "podważanie klapek, przesuwanie, podnoszenie stożków odsłania przysmaki"],
-        ["Materiał", "plastik z antypoślizgowymi nóżkami — to NIE gryzak"],
+        ["Materiał", "plastik z antypoślizgowymi nóżkami - to NIE gryzak"],
         ["Bezpieczeństwo", "używać pod nadzorem (ryzyko połknięcia odgryzionych elementów)"],
         ["Cena orientacyjna", "ok. 30–60 zł"]
       ],
       "verified": false,
-      "verdict": "Solidny, niedrogi punkt wejścia w łamigłówki: kilka różnych mechanizmów na jednej planszy daje psu zróżnicowane zadania węchowo-manualne. Minus to ograniczona regrywalność — bystry pies opanuje poziom 2 szybko i trzeba sięgnąć po trudniejszą zabawkę. Plastik wyłącznie pod nadzorem.",
+      "verdict": "Solidny, niedrogi punkt wejścia w łamigłówki: kilka różnych mechanizmów na jednej planszy daje psu zróżnicowane zadania węchowo-manualne. Minus to ograniczona regrywalność - bystry pies opanuje poziom 2 szybko i trzeba sięgnąć po trudniejszą zabawkę. Plastik wyłącznie pod nadzorem.",
       "pros": ["Kilka mechanizmów otwierania w jednej planszy", "Dobra stymulacja umysłowa i spowalnianie jedzenia", "Antypoślizgowe nóżki, przystępna cena", "Dobry start w świat łamigłówek"],
-      "cons": ["Plastik — nie jest gryzakiem; mocny pies rozgryzie elementy (ryzyko połknięcia)", "Mała regrywalność — po opanowaniu przestaje być wyzwaniem", "Wymaga obecności opiekuna"],
+      "cons": ["Plastik - nie jest gryzakiem; mocny pies rozgryzie elementy (ryzyko połknięcia)", "Mała regrywalność - po opanowaniu przestaje być wyzwaniem", "Wymaga obecności opiekuna"],
       "faq": [
         {"q": "Co zrobić, gdy pies za szybko rozwiązuje łamigłówkę?", "a": "Utrudniaj: zasłaniaj komory dodatkowymi elementami, używaj mniej aromatycznych przysmaków, albo przejdź na wyższy poziom (np. Trixie poziom 3 lub Nina Ottosson). Rotacja kilku zabawek utrzymuje świeżość."},
-        {"q": "Czy łamigłówkę można zostawić psu samemu?", "a": "Nie — to zabawka pod nadzorem. Pies zdeterminowany, by dobrać się do przysmaków, potrafi odgryźć plastikowe klapki czy stożki, a połknięty fragment grozi niedrożnością. Po zabawie chowamy planszę."}
+        {"q": "Czy łamigłówkę można zostawić psu samemu?", "a": "Nie - to zabawka pod nadzorem. Pies zdeterminowany, by dobrać się do przysmaków, potrafi odgryźć plastikowe klapki czy stożki, a połknięty fragment grozi niedrożnością. Po zabawie chowamy planszę."}
       ],
       "shops": [{"n": "zooplus.pl", "u": "https://www.zooplus.pl/"}, {"n": "maxizoo.pl", "u": "https://www.maxizoo.pl/"}, {"n": "Ceneo", "u": "https://www.ceneo.pl/"}]
     }
