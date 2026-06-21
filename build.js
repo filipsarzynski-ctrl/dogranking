@@ -697,7 +697,7 @@ ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padd
   <input type="checkbox" id="navtoggle" class="navt" aria-label="Menu">
   <label for="navtoggle" class="burger" title="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
   <nav>
-    <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + S.calc.slug + '/')}">${S.calc.navlink}</a><a href="${H(mkt + '/bekon/')}">Bekon 🐩</a><a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
+    <a href="${H(mkt + '/')}">${S.nav[0]}</a><a href="${H(mkt + '/' + cSlug(food, mkt) + '/')}">${cName(food, mkt)}</a><a href="${H(mkt + '/') + '#kategorie'}">${S.nav[1]}</a>${mkt === 'pl' ? `<a href="${H('pl/wiedza/')}">Wiedza</a>` : ''}<a href="${H(mkt + '/' + (m.lang === 'pl' ? 'metodologia' : 'methodology') + '/')}">${S.nav[2]}</a>
   </nav>
   <div class="social">${SOCIAL}</div>
   <div class="mktswitch">${Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a href="${H(k + '/')}" title="${v.name}">${v.flag}</a>`).join(' ')}</div>
@@ -1382,7 +1382,7 @@ function homeMkt(mkt) {
     <span class="sc">${p.score}</span>
   </a>`).join('');
 
-  const navLinks = `<a href="${karmyUrl}">${L.nav[0]}</a><a href="#pillars">${L.nav[1]}</a><a href="${wiedzaUrl}">${L.nav[2]}</a><a href="${bekonUrl}">${L.nav[3]}</a><a href="#countries">${L.nav[4]}</a>`;
+  const navLinks = `<a href="${karmyUrl}">${L.nav[0]}</a><a href="#pillars">${L.nav[1]}</a><a href="${wiedzaUrl}">${L.nav[2]}</a><a href="#countries">${L.nav[4]}</a>`;
   const mktNav = Object.entries(MARKETS).map(([k, v]) => k === mkt ? `<strong>${v.flag}</strong>` : `<a class="flag" href="${H(`${k}/`)}" title="${v.name}">${v.flag}</a>`).join('');
 
   const alts = { pl: '/pl/', uk: '/uk/', us: '/us/' };
