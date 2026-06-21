@@ -278,6 +278,8 @@ h2{font-family:var(--f-serif);font-weight:600;font-size:clamp(1.5rem,3vw,1.9rem)
 h2::after{content:none}
 h3{font-family:var(--f-serif);font-weight:600;font-size:1.18rem;margin:24px 0 8px}
 .eyebrow{font-family:var(--f-hand);font-weight:700;font-size:1.5rem;letter-spacing:0;text-transform:none;color:var(--terra);margin-bottom:4px;line-height:1}
+.eyebrow .eyeico{height:1.55em;width:auto;vertical-align:-.34em;margin-right:7px}
+.rank-dark .eyebrow .eyeico{filter:brightness(0) invert(1) sepia(.3) saturate(2.2) hue-rotate(338deg) brightness(1.04)}
 .lead{color:var(--muted);font-size:1.1rem;max-width:680px;line-height:1.65}
 .answer{font-size:1.14rem;line-height:1.72;color:var(--ink);margin:8px 0 22px;max-width:66ch}
 table{width:100%;border-collapse:separate;border-spacing:0;background:var(--paper2);border:1px solid #E6DAC5;border-radius:var(--r);overflow:hidden;font-family:var(--f-sans);font-size:.94rem;margin:18px 0;box-shadow:0 10px 26px -22px rgba(62,14,22,.4)}
@@ -1290,7 +1292,7 @@ ${peopleJs}`;
   const alts = { pl: `/pl/${cat.slug}/`, uk: `/uk/${cat.slugEn}/`, us: `/us/${cat.slugEn}/` };
   const body = `
 <p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › ${cName(cat, mkt)}</p>
-<div class="eyebrow">${cat.icon} ${S.catEyebrow} · ${MARKETS[mkt].name}</div>
+<div class="eyebrow">${(() => { const ic = catIconFile(cat.slug); return ic ? `<img class="eyeico" src="${href(url, ic)}" alt="" loading="lazy">` : cat.icon; })()} ${S.catEyebrow} · ${MARKETS[mkt].name}</div>
 <h1>${cName(cat, mkt)} ${statusBadge(displayStatus, S)}</h1>
 <p class="lead">${cDesc(cat, mkt)}</p>
 ${content}
