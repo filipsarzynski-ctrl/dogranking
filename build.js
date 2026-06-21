@@ -541,7 +541,7 @@ nav.lpnav .mkt strong{opacity:1}
 .lcat{background:var(--cream);border:1px solid #E7D8Bd;border-radius:22px;padding:24px 22px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:8px;transition:.18s;box-shadow:0 10px 26px -20px rgba(62,14,22,.5)}
 .lcat:hover{transform:translateY(-4px);border-color:var(--terra);box-shadow:0 24px 40px -24px rgba(62,14,22,.45)}
 .lcat .ic{font-size:1.7rem;line-height:1}
-.lcat .ic .catico{width:56px;height:56px;border-radius:15px;display:block;box-shadow:0 8px 16px -10px rgba(62,14,22,.6)}
+.lcat .ic .catico{width:62px;height:62px;display:block}
 .lcat h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin:0}
 .lcat p{font-size:.9rem;color:#7a6b56;margin:0;flex:1}
 .lcat .st{font-family:'Inter',sans-serif;font-size:.74rem;font-weight:600;color:var(--terra)}
