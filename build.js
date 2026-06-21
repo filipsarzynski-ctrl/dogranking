@@ -444,11 +444,11 @@ footer a{color:var(--gold)}
 .rc-hover{position:absolute;left:0;right:0;top:0;bottom:0;background:linear-gradient(180deg,rgba(62,14,22,.93),rgba(40,5,10,.96));color:#F2E8D5;padding:15px 16px;display:flex;flex-direction:column;justify-content:center;gap:8px;opacity:0;transition:opacity .18s;pointer-events:none;z-index:4}
 .rcard:hover .rc-hover{opacity:1}
 .rc-hover .h{font-family:var(--f-sans);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#D9A441;margin-bottom:1px}
-.rc-bar{display:grid;grid-template-columns:82px 1fr 32px;align-items:center;gap:8px;font-family:var(--f-sans);font-size:.74rem}
+.rc-bar{display:grid;grid-template-columns:90px 1fr;align-items:center;gap:8px;font-family:var(--f-sans);font-size:.74rem}
 .rc-bar .t{color:#E7D2C0;white-space:nowrap}
 .rc-bar .track{height:7px;background:rgba(255,255,255,.16);border-radius:4px;overflow:hidden}
 .rc-bar .track i{display:block;height:100%;background:var(--gold);border-radius:4px}
-.rc-bar .v{text-align:right;color:#fff;font-weight:600}
+.rc-bar .v{display:none}
 .rc-people .track i{background:var(--terra)}
 .rc-pnote{font-family:var(--f-sans);font-size:.64rem;color:#C9A98C;margin:-3px 0 1px}
 .rc-match{margin-top:5px;font-family:var(--f-sans);font-size:.8rem;color:#fff}
