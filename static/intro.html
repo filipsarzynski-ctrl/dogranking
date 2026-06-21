@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DogRanking - skąd nas odwiedzasz? · choose your country</title>
+<meta name="description" content="Niezależne oceny produktów dla psów. Wybierz swój kraj, by zobaczyć karmy i produkty dostępne na Twoim rynku. Independent dog product ratings - choose your country.">
+<link rel="canonical" href="https://www.dogranking.com/">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<style>
+:root{
+  --paper:#F7F2E9;--paper2:#F3ECDD;--card:#FFFDF8;--ink:#221D15;--muted:#6E6557;
+  --terra:#BC5436;--line:#E3DAC8;--floor:#EDE3CE;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);font-family:'Inter',-apple-system,'Segoe UI',sans-serif;color:var(--ink);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow-x:hidden}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:1.3rem;margin:14px 0 2px;letter-spacing:-.02em}
+.brand i{font-style:italic;color:var(--terra)}
+.tagline{font-size:.72rem;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.sr-links{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skipchip{position:fixed;top:12px;right:14px;z-index:30;font-family:inherit;font-size:.8rem;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:7px 14px;text-decoration:none;color:var(--ink);box-shadow:0 6px 14px -10px rgba(0,0,0,.4);display:none}
+.skipchip.on{display:inline-block}
+
+/* ===== SCENA ===== */
+.stage{position:relative;width:min(96vw,1080px);aspect-ratio:16/9;
+  background:linear-gradient(#F3ECDD 0%,#F3ECDD 72%,#F7F2E9 72%,#F7F2E9 100%);
+  border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(0,0,0,.5)}
+.stage::after{content:"";position:absolute;left:0;right:0;top:72%;height:2px;background:var(--line)}
+.floorshadow{position:absolute;left:50%;top:78%;width:62%;height:5%;transform:translateX(-50%);
+  background:radial-gradient(closest-side,rgba(120,100,70,.28),transparent);border-radius:50%}
+
+.stage img{position:absolute;object-fit:contain;will-change:transform,opacity,left,top}
+
+/* skrzynia */
+#box{width:26%;left:49%;bottom:11%;z-index:5;opacity:0;transition:opacity .4s}
+.go #box{opacity:1}
+
+/* Bekon - trzy pozy */
+.dog{opacity:0;transition:opacity .35s ease}
+#walk{width:23%;bottom:13%;left:-30%;z-index:6}
+.go #walk{opacity:1;animation:walkmove 2.4s cubic-bezier(.42,0,.58,1) forwards, bob .4s ease-in-out 6 alternate}
+@keyframes walkmove{from{left:-30%}to{left:24%}}
+@keyframes bob{from{transform:translateY(0) rotate(-1.2deg)}to{transform:translateY(-3%) rotate(1.2deg)}}
+.peek #walk{opacity:0;animation:none;left:24%}
+
+#peek{width:25%;bottom:12%;left:25%;z-index:6}
+.peek #peek{opacity:1}
+.dig #peek{opacity:0}
+
+#dig{width:22%;bottom:16%;left:41%;z-index:4}      /* za skrzynią - wygląda jakby nurkował */
+.dig #dig{opacity:1;animation:wag 1.6s ease-in-out infinite}
+@keyframes wag{0%,100%{transform:rotate(-2.2deg)}50%{transform:rotate(2.2deg)}}
+.dig #box{animation:shake .5s ease-in-out 7;transform-origin:center bottom}
+@keyframes shake{0%,100%{transform:rotate(0)}25%{transform:rotate(-1.6deg)}75%{transform:rotate(1.6deg)}}
+
+/* zabawki wylatujące */
+.toy{width:8%;z-index:7;opacity:0;left:var(--sx);top:var(--sy)}
+.dig .toy{animation:fly 1.5s cubic-bezier(.25,.5,.5,1) forwards}
+@keyframes fly{
+  0%{opacity:0;left:var(--sx);top:var(--sy);transform:rotate(0)}
+  10%{opacity:1}
+  45%{left:var(--mx);top:var(--my);transform:rotate(190deg)}
+  100%{opacity:1;left:var(--ex);top:var(--ey);transform:rotate(335deg)}
+}
+.dig .t1{animation-delay:.20s}.dig .t2{animation-delay:.55s}.dig .t3{animation-delay:.95s}
+.dig .t4{animation-delay:1.35s}.dig .t5{animation-delay:1.75s}.dig .t6{animation-delay:2.1s}
+
+/* ===== scena kraju ===== */
+#scene{width:50%;left:50%;transform:translateX(-50%);bottom:9%;z-index:9;opacity:0;transition:opacity .5s ease}
+.scene #scene{opacity:1;animation:pop .6s cubic-bezier(.2,1.2,.4,1)}
+@keyframes pop{from{transform:translateX(-50%) translateY(10%) scale(.86)}to{transform:translateX(-50%) translateY(0) scale(1)}}
+/* w trybie sceny łagodnie wygaszamy część 1 (crossfade) */
+.scene #box,.scene #walk,.scene #peek,.scene #dig,.scene .toy{opacity:0!important;animation:none!important;transition:opacity .55s ease}
+
+/* ===== pytanie + flagi ===== */
+#ask{position:absolute;left:0;right:0;top:5%;text-align:center;opacity:0;pointer-events:none;transition:opacity .7s;z-index:12;padding:0 12px}
+#ask.on{opacity:1;pointer-events:auto}
+#ask h1{font-family:Georgia,serif;font-size:clamp(1.2rem,3.4vw,2.2rem);letter-spacing:-.01em}
+#ask p{color:var(--muted);font-size:clamp(.7rem,1.6vw,.95rem);margin-top:4px}
+.flags{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.flags button{font:inherit;font-weight:600;font-size:clamp(.7rem,1.7vw,.95rem);background:var(--card);
+  border:1px solid var(--line);border-radius:99px;padding:9px 16px;cursor:pointer;transition:.15s;box-shadow:0 6px 14px -10px rgba(0,0,0,.4)}
+.flags button:hover{border-color:var(--ink);transform:translateY(-2px) scale(1.04)}
+
+/* ===== CTA ===== */
+#cta{position:absolute;left:0;right:0;bottom:5%;text-align:center;opacity:0;pointer-events:none;transition:opacity .7s;z-index:12}
+#cta.on{opacity:1;pointer-events:auto}
+#cta a,#cta span.soon{display:inline-block;font-weight:700;font-size:clamp(.85rem,2vw,1.1rem);
+  background:var(--terra);color:#fff;border-radius:99px;padding:12px 26px;text-decoration:none;box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}
+#cta span.soon{background:var(--muted)}
+#cta .again{display:block;margin:10px auto 0;font-size:.8rem;color:var(--muted);cursor:pointer;background:none;border:none;font-family:inherit}
+#cta .again:hover{color:var(--ink)}
+#ask h1{text-shadow:0 2px 14px rgba(247,242,233,.9)}
+#ask p{text-shadow:0 1px 8px rgba(247,242,233,.9)}
+
+/* ===== MOBILE ===== */
+@media (max-width:640px){
+  .stage{aspect-ratio:4/5;border-radius:14px}
+  .stage::after{top:74%}
+  .floorshadow{top:80%}
+  #box{width:40%;bottom:14%}
+  #walk{width:36%;bottom:16%}
+  @keyframes walkmove{from{left:-38%}to{left:18%}}
+  #peek{width:38%;bottom:15%;left:20%}
+  #dig{width:34%;bottom:19%;left:36%}
+  #scene{width:82%;bottom:10%}
+  .toy{width:13%}
+  #ask{top:3%}
+  #ask p{display:none}
+  .flags{gap:7px}
+  .flags button{padding:8px 13px}
+}
+</style>
+</head>
+<body>
+<div class="brand">dog<i>ranking</i></div>
+<div class="tagline">Niezależne oceny produktów dla psów</div>
+
+<!-- crawlowalne linki krajów (SEO / no-JS) -->
+<nav class="sr-links" aria-label="Wybór kraju / choose your country">
+  <a href="/pl/">DogRanking Polska - po polsku</a>
+  <a href="/uk/">DogRanking United Kingdom - in English</a>
+  <a href="/us/">DogRanking United States - in English</a>
+</nav>
+<a class="skipchip" id="skipchip" href="#"></a>
+
+<div class="stage" id="stage">
+  <div class="floorshadow"></div>
+
+  <!-- skrzynia z zabawkami -->
+  <img id="box" src="assets-intro/skrzynia.png" alt="">
+
+  <!-- Bekon: trzy pozy część 1 -->
+  <img id="walk" class="dog" src="assets-intro/marsz.png" alt="">
+  <img id="peek" class="dog" src="assets-intro/zaglada.png" alt="">
+  <img id="dig"  class="dog" src="assets-intro/tyl-ogon.png" alt="">
+
+  <!-- wylatujące zabawki -->
+  <img class="toy t1" src="assets-intro/zabawka-pilka.png"     style="--sx:55%;--sy:34%;--mx:34%;--my:10%;--ex:26%;--ey:62%">
+  <img class="toy t2" src="assets-intro/zabawka-kosc.png"      style="--sx:57%;--sy:33%;--mx:70%;--my:8%;--ex:78%;--ey:60%">
+  <img class="toy t3" src="assets-intro/zabawka-dinozaur.png"  style="--sx:56%;--sy:35%;--mx:44%;--my:6%;--ex:36%;--ey:64%">
+  <img class="toy t4" src="assets-intro/zabawka-osmiornica.png"style="--sx:58%;--sy:34%;--mx:78%;--my:14%;--ex:84%;--ey:64%">
+  <img class="toy t5" src="assets-intro/zabawka-frisbee.png"   style="--sx:55%;--sy:35%;--mx:28%;--my:16%;--ex:20%;--ey:65%">
+  <img class="toy t6" src="assets-intro/zabawka-szarpak.png"   style="--sx:57%;--sy:33%;--mx:60%;--my:4%;--ex:66%;--ey:63%">
+
+  <!-- scena wybranego kraju -->
+  <img id="scene" src="" alt="">
+
+  <!-- pytanie -->
+  <div id="ask">
+    <h1>Skąd nas odwiedzasz? 🐾</h1>
+    <p>Where are you visiting from? Pokażemy Ci rankingi produktów dostępnych w Twoim kraju.</p>
+    <div class="flags">
+      <button onclick="pick('pl')">🇵🇱 Polska</button>
+      <button onclick="pick('uk')">🇬🇧 UK</button>
+      <button onclick="pick('us')">🇺🇸 USA</button>
+      <button onclick="pick('fr')">🇫🇷 Francja</button>
+      <button onclick="pick('it')">🇮🇹 Włochy</button>
+      <button onclick="pick('de')">🇩🇪 Niemcy</button>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div id="cta"></div>
+</div>
+
+<script>
+const stage=document.getElementById('stage');
+const ask=document.getElementById('ask');
+const cta=document.getElementById('cta');
+const scene=document.getElementById('scene');
+
+const SCENE={pl:'pl-polska',uk:'uk-wielka-brytania',us:'us-usa',fr:'fr-francja',it:'it-wlochy',de:'de-niemcy'};
+const LINKS={
+  pl:['/pl/','Wchodzę: ranking dla Polski →'],
+  uk:['/uk/','Enter: UK rankings →'],
+  us:['/us/','Enter: US rankings →'],
+  fr:[null,'🇫🇷 Już wkrótce / Bientôt !'],
+  it:[null,'🇮🇹 Już wkrótce / Prossimamente!'],
+  de:[null,'🇩🇪 Już wkrótce / Bald verfügbar!']
+};
+
+/* ---- CZĘŚĆ 1: choreografia ---- */
+function intro(){
+  stage.classList.add('go');                       // skrzynia + marsz
+  setTimeout(()=>stage.classList.add('peek'),2400); // zagląda do skrzyni
+  setTimeout(()=>stage.classList.add('dig'),3250);  // grzebie + zabawki lecą
+  setTimeout(()=>ask.classList.add('on'),6000);     // pytanie
+}
+window.addEventListener('load',()=>setTimeout(intro,500));
+
+/* powracający użytkownik: szybki skrót do zapisanego kraju */
+const MKTNAME={pl:'🇵🇱 Polska',uk:'🇬🇧 UK',us:'🇺🇸 USA'};
+(function(){try{var s=localStorage.getItem('dr_mkt');if(s&&MKTNAME[s]){
+  var ch=document.getElementById('skipchip');ch.href='/'+s+'/';
+  ch.innerHTML='↪ '+MKTNAME[s]+' →';ch.classList.add('on');}}catch(e){}})();
+
+/* ---- CZĘŚĆ 2: wybór kraju ---- */
+function pick(c){
+  ask.classList.remove('on');
+  scene.src='assets-intro/'+SCENE[c]+'.png';
+  stage.classList.add('scene');
+  const [href,label]=LINKS[c];
+  try{ if(href) localStorage.setItem('dr_mkt',c); }catch(e){}
+  cta.innerHTML=(href?`<a href="${href}">${label}</a>`:`<span class="soon">${label}</span>`)
+    +`<button class="again" onclick="resetIntro()">↺ wybierz inny kraj / choose another country</button>`;
+  setTimeout(()=>cta.classList.add('on'),650);
+}
+function resetIntro(){
+  cta.classList.remove('on');
+  stage.classList.remove('scene');
+  setTimeout(()=>ask.classList.add('on'),250);
+}
+</script>
+</body>
+</html>
