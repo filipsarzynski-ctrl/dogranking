@@ -536,6 +536,14 @@ nav.lpnav .mkt strong{opacity:1}
 .pill .w{position:absolute;top:26px;right:26px;font-family:'Caveat',cursive;font-weight:700;color:var(--maroon2);font-size:1.5rem}
 .pill p{font-size:.95rem;color:#7a6b56}
 @media(max-width:880px){.pillgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.pillgrid{grid-template-columns:1fr}}
+.cats{background:var(--cream2)}
+.lcats{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:42px;text-align:left}
+.lcat{background:var(--cream);border:1px solid #E7D8Bd;border-radius:22px;padding:24px 22px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:8px;transition:.18s;box-shadow:0 10px 26px -20px rgba(62,14,22,.5)}
+.lcat:hover{transform:translateY(-4px);border-color:var(--terra);box-shadow:0 24px 40px -24px rgba(62,14,22,.45)}
+.lcat .ic{font-size:1.7rem;line-height:1}
+.lcat h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin:0}
+.lcat p{font-size:.9rem;color:#7a6b56;margin:0;flex:1}
+.lcat .st{font-family:'Inter',sans-serif;font-size:.74rem;font-weight:600;color:var(--terra)}
 .process{background:linear-gradient(160deg,var(--maroon2),var(--maroon));color:var(--cream)}
 .process h2{color:var(--cream);font-size:clamp(1.9rem,4vw,3rem)}
 .process p.lead2{max-width:52ch;margin:14px auto 0;color:#E7D2C0}
@@ -1450,6 +1458,12 @@ ${L.pills.map((p, i) => `    <div class="pill rev"><div class="no">0${i + 1}</di
   <h2 class="serif">${L.prH2}</h2>
   <p class="lead2">${L.prLead}</p>
   <div class="procgrid">${PROC.map(([f, lbl], i) => `<div class="procitem rev"><img src="${A(`proces/${f}.webp`)}" alt="${lbl}" loading="lazy"><b>${i + 1}. ${lbl}</b></div>`).join('')}</div>
+</div></section>
+
+<section class="sec cats center" id="kategorie"><div class="wrap">
+  <div class="kick eyebrowc">${pl ? 'co oceniamy' : 'what we rate'}</div>
+  <h2 class="serif" style="font-size:clamp(1.9rem,4vw,3rem)">${pl ? 'Nie tylko karmy' : 'Not only dog food'}</h2>
+  <div class="lcats">${CATS.map(c => { const prods = (PRODUCTS[mkt] || {})[c.slug] || []; const st = prods.length ? c.status : (c.status === 'edu' ? 'edu' : 'soon'); return `<a class="lcat" href="${A(`${mkt}/${cSlug(c, mkt)}/`)}"><span class="ic">${c.icon}</span><h3>${cName(c, mkt)}</h3><p>${cDesc(c, mkt)}</p><span class="st">${S.badges[st]}</span></a>`; }).join('')}</div>
 </div></section>
 
 <section class="sec rank" id="ranking"><div class="wrap">
