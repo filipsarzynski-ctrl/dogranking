@@ -1329,7 +1329,7 @@ function homeMkt(mkt) {
     nav: ['Karmy', 'Jak oceniamy', 'Wiedza', 'Bekon', 'Kraje'],
     heroKick: 'cześć, tu Bekon 🐾',
     heroH1: 'Najlepsza miska zaczyna się od <em>uczciwej oceny.</em>',
-    heroSub: 'Niezależny ranking karm i produktów dla psów - w suchej masie, wg norm FEDIAF i kryteriów WSAVA. Bez ściemy. Bez płatnych miejsc na podium.',
+    heroSub: 'Niezależny ranking karm i produktów dla psów. Bez ściemy. Bez płatnych miejsc na podium.',
     ctaSee: 'Zobacz ranking →', ctaHow: 'Jak oceniamy',
     trust: [`<b>${n}</b> karm ocenionych`, '<b>3</b> rynki · PL · UK · US', '<b>0</b> płatnych pozycji'],
     scroll: 'przewiń ↓',
