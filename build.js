@@ -541,6 +541,7 @@ nav.lpnav .mkt strong{opacity:1}
 .lcat{background:var(--cream);border:1px solid #E7D8Bd;border-radius:22px;padding:24px 22px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:8px;transition:.18s;box-shadow:0 10px 26px -20px rgba(62,14,22,.5)}
 .lcat:hover{transform:translateY(-4px);border-color:var(--terra);box-shadow:0 24px 40px -24px rgba(62,14,22,.45)}
 .lcat .ic{font-size:1.7rem;line-height:1}
+.lcat .ic .catico{width:56px;height:56px;border-radius:15px;display:block;box-shadow:0 8px 16px -10px rgba(62,14,22,.6)}
 .lcat h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin:0}
 .lcat p{font-size:.9rem;color:#7a6b56;margin:0;flex:1}
 .lcat .st{font-family:'Inter',sans-serif;font-size:.74rem;font-weight:600;color:var(--terra)}
@@ -1001,6 +1002,11 @@ function prodVariants(slug) {
 function pickProdImg(slug, i) {
   const { i1, i2 } = prodVariants(slug);
   return (i % 2 === 0) ? (i1 || i2) : (i2 || i1);
+}
+const CAT_IMG_DIR = path.join(__dirname, 'static', 'ikony');
+function catIconFile(slug) {
+  if (fs.existsSync(path.join(CAT_IMG_DIR, slug + '.webp'))) return 'ikony/' + slug + '.webp';
+  return '';
 }
 const PILL_LBL = { pl: ['Skład', 'Normy', 'Producent', 'Dodatki'], en: ['Composition', 'Standards', 'Maker', 'Extras'] };
 const PILL_MAX = [35, 25, 25, 15];
@@ -1463,7 +1469,7 @@ ${L.pills.map((p, i) => `    <div class="pill rev"><div class="no">0${i + 1}</di
 <section class="sec cats center" id="kategorie"><div class="wrap">
   <div class="kick eyebrowc">${pl ? 'co oceniamy' : 'what we rate'}</div>
   <h2 class="serif" style="font-size:clamp(1.9rem,4vw,3rem)">${pl ? 'Nie tylko karmy' : 'Not only dog food'}</h2>
-  <div class="lcats">${CATS.map(c => { const prods = (PRODUCTS[mkt] || {})[c.slug] || []; const st = prods.length ? c.status : (c.status === 'edu' ? 'edu' : 'soon'); return `<a class="lcat" href="${A(`${mkt}/${cSlug(c, mkt)}/`)}"><span class="ic">${c.icon}</span><h3>${cName(c, mkt)}</h3><p>${cDesc(c, mkt)}</p><span class="st">${S.badges[st]}</span></a>`; }).join('')}</div>
+  <div class="lcats">${CATS.map(c => { const prods = (PRODUCTS[mkt] || {})[c.slug] || []; const st = prods.length ? c.status : (c.status === 'edu' ? 'edu' : 'soon'); const ico = catIconFile(c.slug); return `<a class="lcat" href="${A(`${mkt}/${cSlug(c, mkt)}/`)}"><span class="ic">${ico ? `<img class="catico" src="${A(ico)}" alt="" loading="lazy">` : c.icon}</span><h3>${cName(c, mkt)}</h3><p>${cDesc(c, mkt)}</p><span class="st">${S.badges[st]}</span></a>`; }).join('')}</div>
 </div></section>
 
 <section class="sec rank" id="ranking"><div class="wrap">
