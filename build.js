@@ -528,14 +528,14 @@ nav.lpnav .mkt strong{opacity:1}
 .manifesto h2 .u{background:linear-gradient(transparent 62%,rgba(199,91,56,.30) 0);padding:0 .08em}
 .manifesto p{max-width:600px;margin:22px auto 0;color:#7a6b56;font-size:1.1rem}
 .pillars{background:var(--cream2)}
-.pillgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+.pillgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:46px}
 .pill{background:var(--cream);border:1px solid #E7D8Bd;border-radius:26px;padding:30px 26px;position:relative;transition:.2s;box-shadow:0 10px 26px -20px rgba(62,14,22,.5)}
 .pill:hover{transform:translateY(-5px);box-shadow:0 26px 44px -24px rgba(62,14,22,.45);border-color:var(--terra)}
 .pill .no{font-family:'Caveat',cursive;font-weight:700;font-size:2.2rem;color:var(--terra);line-height:1}
 .pill .ic{margin:6px 0 12px}.pill h3{font-size:1.28rem;margin-bottom:8px}
 .pill .w{position:absolute;top:26px;right:26px;font-family:'Caveat',cursive;font-weight:700;color:var(--maroon2);font-size:1.5rem}
 .pill p{font-size:.95rem;color:#7a6b56}
-@media(max-width:880px){.pillgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.pillgrid{grid-template-columns:1fr}}
+@media(max-width:1040px){.pillgrid{grid-template-columns:repeat(3,1fr)}}@media(max-width:720px){.pillgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.pillgrid{grid-template-columns:1fr}}
 .cats{background:var(--cream2)}
 .lcats{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:42px;text-align:left}
 .lcat{background:var(--cream);border:1px solid #E7D8Bd;border-radius:22px;padding:24px 22px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:8px;transition:.18s;box-shadow:0 10px 26px -20px rgba(62,14,22,.5)}
@@ -1336,12 +1336,13 @@ function homeMkt(mkt) {
     mKick: 'to nie tylko jedzenie',
     mH2: 'Twój pies to rodzina. Jego miska <span class="u">zasługuje na to samo serce.</span>',
     mP: 'Producentów są setki, etykiety mówią półprawdy, a „rankingi" w sieci to często płatne listy. My liczymy skład w suchej masie, sprawdzamy normy i wiarygodność marki - i mówimy wprost, co jest warte miski Twojego psa.',
-    pKick: 'cztery filary', pH2: 'Jak powstaje ocena w łapkach',
+    pKick: 'pięć filarów', pH2: 'Jak powstaje ocena w łapkach',
     pills: [
-      ['Skład', '35', 'Białko i tłuszcz w suchej masie, nazwane mięso, bez zbędnych wypełniaczy.'],
-      ['Normy i testy', '25', 'Zgodność z FEDIAF/AAFCO oraz realne próby żywieniowe, nie tylko deklaracje.'],
-      ['Producent', '25', 'Wiarygodność marki wg kryteriów WSAVA - kto i jak naprawdę robi tę karmę.'],
-      ['Dodatki', '15', 'EPA/DHA, jakość konserwacji, brak sztucznych barwników i zbędnej chemii.']
+      ['Skład', '30', 'Białko i tłuszcz w suchej masie, nazwane mięso, bez zbędnych wypełniaczy.'],
+      ['Normy i testy', '22', 'Zgodność z FEDIAF/AAFCO oraz realne próby żywieniowe, nie tylko deklaracje.'],
+      ['Producent', '22', 'Wiarygodność marki wg kryteriów WSAVA - kto i jak naprawdę robi tę karmę.'],
+      ['Dodatki', '11', 'EPA/DHA, jakość konserwacji, brak sztucznych barwników i zbędnej chemii.'],
+      ['Głosy ludzi', '15', 'Opinie opiekunów, którzy karmią tym swoje psy - realne doświadczenie z miski.']
     ],
     prKick: 'jak to robimy', prH2: 'Dziesięć prób, zanim coś trafi do rankingu',
     prLead: 'Od testu karmy i zabawek, przez rozpakowanie i pielęgnację, aż po komfort i finalną rekomendację - każdy produkt przechodzi przez łapy (i podniebienie) Bekona.',
@@ -1371,12 +1372,13 @@ function homeMkt(mkt) {
     mKick: 'more than just food',
     mH2: 'Your dog is family. Their bowl <span class="u">deserves the same heart.</span>',
     mP: 'There are hundreds of makers, labels tell half-truths, and online "rankings" are often paid lists. We calculate composition on a dry-matter basis, check standards and brand credibility - and say plainly what is worth your dog\'s bowl.',
-    pKick: 'four pillars', pH2: 'How a paw rating is built',
+    pKick: 'five pillars', pH2: 'How a paw rating is built',
     pills: [
-      ['Composition', '35', 'Protein and fat on a dry-matter basis, named meat, no needless fillers.'],
-      ['Standards & trials', '25', `Compliance with ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} plus real feeding trials, not just label claims.`],
-      ['Manufacturer', '25', 'Brand credibility against WSAVA criteria - who really makes this food, and how.'],
-      ['Extras', '15', 'EPA/DHA, preservation quality, no artificial colours or needless chemistry.']
+      ['Composition', '30', 'Protein and fat on a dry-matter basis, named meat, no needless fillers.'],
+      ['Standards & trials', '22', `Compliance with ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} plus real feeding trials, not just label claims.`],
+      ['Manufacturer', '22', 'Brand credibility against WSAVA criteria - who really makes this food, and how.'],
+      ['Extras', '11', 'EPA/DHA, preservation quality, no artificial colours or needless chemistry.'],
+      ["People's votes", '15', 'Opinions from owners who actually feed it - real-world experience from the bowl.']
     ],
     prKick: 'how we do it', prH2: 'Ten trials before anything makes the ranking',
     prLead: 'From food and toy tests, through unboxing and grooming, to comfort and the final recommendation - every product passes through Bekon\'s paws (and palate).',
@@ -1401,7 +1403,8 @@ function homeMkt(mkt) {
     `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M9 6h14l-2 20H11z"/><path d="M9 12h14"/></svg>`,
     `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M6 16l6 6 14-14"/></svg>`,
     `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M16 4l3 7 8 .6-6 5 2 8-7-4-7 4 2-8-6-5 8-.6z"/></svg>`,
-    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M16 27s-11-7-11-15a6 6 0 0111-3 6 6 0 0111 3c0 8-11 15-11 15z"/></svg>`
+    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round"><path d="M16 27s-11-7-11-15a6 6 0 0111-3 6 6 0 0111 3c0 8-11 15-11 15z"/></svg>`,
+    `<svg class="ic" width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#C75B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="4"/><path d="M4 27c0-4 3-7 7-7s7 3 7 7"/><path d="M20 8a4 4 0 010 8"/><path d="M22 20c3 .6 5 3 5 7"/></svg>`
   ];
   const PROC = [
     ['test-karmy', pl ? 'Test karmy' : 'Food test'],
