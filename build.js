@@ -564,6 +564,37 @@ nav.lpnav .mkt strong{opacity:1}
 .rrow .go{color:var(--terra);font-weight:600;white-space:nowrap}
 .rrow .bag{width:54px;height:60px}
 @media(max-width:740px){.rrow{grid-template-columns:40px 56px 1fr auto;gap:14px}.rrow .go{display:none}}
+/* ===== ranking: kafelki (spójne z zakładką karm) ===== */
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin:30px auto 0;max-width:1040px}
+.rcard{position:relative;display:flex;flex-direction:column;border-radius:20px;overflow:hidden;background:linear-gradient(165deg,var(--maroon2),var(--maroon));border:1px solid #4a121c;box-shadow:0 14px 30px -20px rgba(62,14,22,.7);text-decoration:none;color:#F2E8D5;transition:transform .16s,box-shadow .16s,border-color .16s}
+.rcard:hover{transform:translateY(-4px);box-shadow:0 28px 48px -24px rgba(62,14,22,.7);border-color:var(--gold)}
+.rc-img{position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,#5a1620,#3E0E16);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rc-img.has-photo{background-size:cover;background-position:center}
+.rc-img .pkg,.rc-img svg{width:auto;height:64%}
+.rc-rank{position:absolute;top:9px;left:13px;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.55rem;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6);z-index:3;line-height:1}
+.rc-badge{position:absolute;top:11px;right:12px;z-index:3;font-family:'Inter',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:rgba(0,0,0,.34);color:#F2E8D5;padding:3px 9px;border-radius:99px}
+.rc-body{padding:13px 15px 15px;display:flex;flex-direction:column;gap:5px;flex:1}
+.rc-name{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.05rem;line-height:1.18;color:#F8EFDD}
+.rc-paws{line-height:0}
+.rc-stats{font-family:'Inter',sans-serif;font-size:.82rem;color:#D8BFA9;display:flex;flex-wrap:wrap;gap:2px 12px;margin-top:auto;padding-top:4px}
+.rc-stats b{color:#F2E8D5;font-weight:600}
+.rc-go{font-family:'Inter',sans-serif;font-size:.8rem;font-weight:600;color:var(--gold);margin-top:7px}
+.rc-hover{position:absolute;left:0;right:0;top:0;bottom:0;background:linear-gradient(180deg,rgba(62,14,22,.93),rgba(40,5,10,.96));color:#F2E8D5;padding:15px 16px;display:flex;flex-direction:column;justify-content:center;gap:8px;opacity:0;transition:opacity .18s;pointer-events:none;z-index:4}
+.rcard:hover .rc-hover{opacity:1}
+.rc-hover .h{font-family:'Inter',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#D9A441;margin-bottom:1px}
+.rc-bar{display:grid;grid-template-columns:90px 1fr;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:.74rem}
+.rc-bar .t{color:#E7D2C0;white-space:nowrap}
+.rc-bar .track{height:7px;background:rgba(255,255,255,.16);border-radius:4px;overflow:hidden}
+.rc-bar .track i{display:block;height:100%;background:var(--gold);border-radius:4px}
+.rc-bar .v{display:none}
+.rc-people .track i{background:var(--terra)}
+.rc-pnote{font-family:'Inter',sans-serif;font-size:.64rem;color:#C9A98C;margin:-3px 0 1px}
+@media(hover:none){.rc-hover{display:none}}
+.pawwrap{position:relative;display:inline-block;line-height:0;vertical-align:middle}
+.paw{width:20px;height:20px;display:inline-block;margin-right:3px;fill:#DCD2BD}
+.pawbase{white-space:nowrap}
+.pawfill{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap}
+.pawfill .paw{fill:var(--gold)}
 .countries{background:linear-gradient(160deg,var(--maroon2),var(--maroon));color:var(--cream)}
 .crow{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:44px}
 .ccard{display:flex;flex-direction:column;align-items:center;gap:11px;width:186px;padding:30px 22px 26px;background:rgba(250,243,228,.05);border:1px solid rgba(242,232,213,.20);border-radius:22px;text-decoration:none;color:var(--cream);transition:.2s}
@@ -1153,6 +1184,26 @@ function foodMatchPanel(products, cat, mkt) {
 </script>`;
 }
 
+/* ---------- skrypt "Ocena ludzi" (wypełnia paski mediana/avg po fetchu) ---------- */
+function peopleScript(mkt, catSlug) {
+  return `<script>
+(function(){
+  var MAP={};
+  window.__applyPeople=function(){
+    document.querySelectorAll('.rcard[data-slug]').forEach(function(card){
+      var bar=card.querySelector('.rc-people'); if(!bar)return;
+      var fill=bar.querySelector('i'), val=bar.querySelector('.v'), note=card.querySelector('.rc-pnote');
+      var pa=+bar.getAttribute('data-pa')||0, d=MAP[card.getAttribute('data-slug')];
+      if(d&&d.c>=10){var pct=Math.round(d.m/5*100);fill.style.width=pct+'%';val.textContent=(''+d.m)+'/5';if(note)note.textContent='mediana z '+d.c+' ocen';}
+      else{fill.style.width=pa+'%';val.textContent='–';if(note)note.textContent=(d&&d.c)?(d.c+'/10 ocen · wg pozostałych kryteriów'):'wg pozostałych kryteriów';}
+    });
+  };
+  fetch('/api/reviews-summary?market=${mkt}&category=${catSlug}').then(function(r){return r.json();}).then(function(d){MAP=d||{};window.__applyPeople();}).catch(function(){});
+  window.__applyPeople();
+})();
+</script>`;
+}
+
 /* ---------- hub kategorii ---------- */
 function categoryHub(cat, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang];
@@ -1166,22 +1217,7 @@ function categoryHub(cat, mkt) {
   });
   const methodPath = `${mkt}/${m.lang === 'pl' ? 'metodologia' : 'methodology'}/`;
 
-  const peopleJs = `<script>
-(function(){
-  var MAP={};
-  window.__applyPeople=function(){
-    document.querySelectorAll('.rcard[data-slug]').forEach(function(card){
-      var bar=card.querySelector('.rc-people'); if(!bar)return;
-      var fill=bar.querySelector('i'), val=bar.querySelector('.v'), note=card.querySelector('.rc-pnote');
-      var pa=+bar.getAttribute('data-pa')||0, d=MAP[card.getAttribute('data-slug')];
-      if(d&&d.c>=10){var pct=Math.round(d.m/5*100);fill.style.width=pct+'%';val.textContent=(''+d.m)+'/5';if(note)note.textContent='mediana z '+d.c+' ocen';}
-      else{fill.style.width=pa+'%';val.textContent='–';if(note)note.textContent=(d&&d.c)?(d.c+'/10 ocen · wg pozostałych kryteriów'):'wg pozostałych kryteriów';}
-    });
-  };
-  fetch('/api/reviews-summary?market=${mkt}&category=${cat.slug}').then(function(r){return r.json();}).then(function(d){MAP=d||{};window.__applyPeople();}).catch(function(){});
-  window.__applyPeople();
-})();
-</script>`;
+  const peopleJs = peopleScript(mkt, cat.slug);
   let content = '';
   if (cat.slug === 'karmy' && products.length) {
     content = `
@@ -1474,7 +1510,7 @@ ${L.pills.map((p, i) => `    <div class="pill rev"><div class="no">0${i + 1}</di
 
 <section class="sec rank" id="ranking"><div class="wrap">
   <div class="center rev"><div class="kick eyebrowc">${L.rKick}</div><h2 class="serif" style="font-size:clamp(1.9rem,4vw,3rem)">${L.rH2}</h2></div>
-  <div style="max-width:860px;margin:30px auto 0">${rows}</div>
+  <div class="rgrid">${rankCards(top, CATS[0], mkt, url)}</div>${peopleScript(mkt, CATS[0].slug)}
   <div class="center" style="margin-top:34px"><a class="btn btn-pri" href="${karmyUrl}">${L.rFull}</a></div>
 </div></section>
 
