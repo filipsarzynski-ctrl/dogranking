@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* ============================================================
-   DogRanking — generator statyczny v3 MULTI-MARKET (zero zależności)
-   - intro z wyborem rynku na / (bez przymusowego redirectu — SEO/AI!)
+   DogRanking - generator statyczny v3 MULTI-MARKET (zero zależności)
+   - intro z wyborem rynku na / (bez przymusowego redirectu - SEO/AI!)
    - osobne bazy produktów per rynek: data/foods.{pl,uk,us}.json
    - PL po polsku, UK/US po angielsku (slugi EN: /uk/dog-food/)
    - uczciwość: produkty bez obiektu `test` = "ocena z etykiety,
@@ -48,20 +48,20 @@ const REVIEWS = {
 const STR = {
   pl: {
     nav: ['Start', 'Kategorie', 'Metodologia'], review: 'Recenzja', reviewTitle: 'recenzja i ocena', rated: 'Ocena', updated: 'Zaktualizowano',
-    demo: 'DEMO — dane do weryfikacji', goodChoice: n => `Czy ${n} to dobry wybór?`,
+    demo: 'DEMO - dane do weryfikacji', goodChoice: n => `Czy ${n} to dobry wybór?`,
     calc: {
       navlink: 'Kalkulator kosztów', slug: 'kalkulator',
       h: 'Kalkulator kosztu żywienia psa',
-      lead: 'Cena za kilogram myli — sucha karma ma ~3,5× więcej kalorii niż mokra, więc „tańsza za kg" bywa droższa w misce. Policz realny koszt dzienny i miesięczny dla swojego psa.',
-      answer: 'Dzienne zapotrzebowanie liczymy ze wzoru weterynaryjnego: zapotrzebowanie spoczynkowe RER = 70 × (masa w kg)^0,75, pomnożone przez współczynnik aktywności (MER). Następnie dzielimy je przez kaloryczność karmy i mnożymy przez cenę — to daje uczciwy koszt, niezależny od formy.',
+      lead: 'Cena za kilogram myli - sucha karma ma ~3,5× więcej kalorii niż mokra, więc „tańsza za kg" bywa droższa w misce. Policz realny koszt dzienny i miesięczny dla swojego psa.',
+      answer: 'Dzienne zapotrzebowanie liczymy ze wzoru weterynaryjnego: zapotrzebowanie spoczynkowe RER = 70 × (masa w kg)^0,75, pomnożone przez współczynnik aktywności (MER). Następnie dzielimy je przez kaloryczność karmy i mnożymy przez cenę - to daje uczciwy koszt, niezależny od formy.',
       weight: 'Masa psa (kg)', activity: 'Aktywność / stan',
       actOpts: [['1.6', 'Dorosły, sterylizowany (typowy)'], ['1.8', 'Dorosły, aktywny'], ['1.4', 'Skłonność do tycia / mało ruchu'], ['1.0', 'Odchudzanie'], ['2.5', 'Szczenię / pies pracujący']],
       food: 'Karma', result: 'Wynik', kcalDay: 'Dzienne zapotrzebowanie', gramsDay: 'Porcja dzienna', perDay: 'Koszt dzienny', perMonth: 'Koszt miesięczny', perYear: 'Koszt roczny',
-      note: 'Szacunek orientacyjny dla zdrowego dorosłego psa — rzeczywiste potrzeby zależą od rasy, metabolizmu i stanu zdrowia. Skonsultuj dawkowanie z weterynarzem; przy chorobach stosuj zalecenia lekarskie.',
+      note: 'Szacunek orientacyjny dla zdrowego dorosłego psa - rzeczywiste potrzeby zależą od rasy, metabolizmu i stanu zdrowia. Skonsultuj dawkowanie z weterynarzem; przy chorobach stosuj zalecenia lekarskie.',
       pickFood: 'Wybierz karmę z rankingu', cardTitle: 'Policz koszt karmienia', cardCta: 'Otwórz kalkulator →'
     },
     flavorRow: 'Wariant (smak)',
-    variantBox: 'Ta ocena dotyczy <strong>konkretnego wariantu smakowego</strong>. Producenci często sprzedają tę samą linię w wielu smakach (np. łosoś, jagnięcina, kurczak), a każdy ma inny skład, profil odżywczy i alergeny — więc i inną ocenę. Sprawdzaj wariant, który realnie kupujesz.',
+    variantBox: 'Ta ocena dotyczy <strong>konkretnego wariantu smakowego</strong>. Producenci często sprzedają tę samą linię w wielu smakach (np. łosoś, jagnięcina, kurczak), a każdy ma inny skład, profil odżywczy i alergeny - więc i inną ocenę. Sprawdzaj wariant, który realnie kupujesz.',
     prof: {
       h: '🐶 Dopasuj do swojego psa', sub: 'Łapki opisują jakość karmy. Wybierz profil psa, a my przeliczymy dopasowanie i pokażemy ostrzeżenia.',
       age: 'Wiek', ageOpts: [['dorosly', 'Dorosły (1–7 lat)'], ['szczenie', 'Szczenię'], ['senior', 'Senior (7+)']],
@@ -69,10 +69,10 @@ const STR = {
       size: 'Rozmiar', sizeOpts: [['maly', 'Mały / toy (do 10 kg)'], ['sredni', 'Średni (10–25 kg)'], ['duzy', 'Duży / olbrzymi (25+ kg)']],
       health: 'Zdrowie', healthOpts: [['ok', 'Zdrowy'], ['alergia_kurczak', 'Alergia na kurczaka'], ['alergia_drob', 'Alergia na drób (każdy)'], ['nadwaga', 'Nadwaga'], ['trzustka', 'Po zapaleniu trzustki'], ['stawy', 'Problemy ze stawami'], ['nerki', 'Choroba nerek']],
       reset: 'Wyczyść profil', matchLbl: 'Dopasowanie', blocked: 'Niezalecana przy tym profilu',
-      legend: '<strong>Jak to czytać:</strong> łapki 🐾 = jakość karmy (niezależna od psa). Dopasowanie % = jak karma pasuje do profilu, który wybrałeś. Ostrzeżenia pokazujemy zawsze. Przy chorobach dieta zawsze pod kontrolą weterynarza — dopasowanie nie zastępuje porady lekarskiej.',
-      wAllergy: 'Zawiera kurczaka — wyklucz przy alergii na kurczaka', wAllergyP: 'Zawiera drób — wyklucz przy alergii na drób', wPanc: 'Tłuszcz powyżej 15% suchej masy — niewskazana po zapaleniu trzustki',
-      wPup: 'Receptura dla psów dorosłych — szczenię potrzebuje karmy „growth"/„wszystkie etapy życia"', wKidney: 'Choroba nerek wymaga diety renalnej z obniżonym fosforem — dobór tylko z weterynarzem',
-      wLegume: 'Strączkowe wysoko w składzie (kontekst FDA ws. DCM — zob. Wiedza)'
+      legend: '<strong>Jak to czytać:</strong> łapki 🐾 = jakość karmy (niezależna od psa). Dopasowanie % = jak karma pasuje do profilu, który wybrałeś. Ostrzeżenia pokazujemy zawsze. Przy chorobach dieta zawsze pod kontrolą weterynarza - dopasowanie nie zastępuje porady lekarskiej.',
+      wAllergy: 'Zawiera kurczaka - wyklucz przy alergii na kurczaka', wAllergyP: 'Zawiera drób - wyklucz przy alergii na drób', wPanc: 'Tłuszcz powyżej 15% suchej masy - niewskazana po zapaleniu trzustki',
+      wPup: 'Receptura dla psów dorosłych - szczenię potrzebuje karmy „growth"/„wszystkie etapy życia"', wKidney: 'Choroba nerek wymaga diety renalnej z obniżonym fosforem - dobór tylko z weterynarzem',
+      wLegume: 'Strączkowe wysoko w składzie (kontekst FDA ws. DCM - zob. Wiedza)'
     },
     nutrition: 'Wartości odżywcze (w suchej masie)', spec: 'Specyfikacja', param: 'Parametr', value: 'Wartość', ctx: 'Próg / kontekst',
     form: 'Forma karmy', formNote: 'porównujemy formy po przeliczeniu na suchą masę', protein: 'Białko', fat: 'Tłuszcz', energy: 'Energia',
@@ -82,50 +82,50 @@ const STR = {
     pillarLabelsFood: ['A · Skład i jakość białka', 'B · Zgodność z normami FEDIAF', 'C · Wiarygodność producenta (WSAVA)', 'D · Dodatki i przetwarzanie'],
     pillarLabelsOther: ['A · Materiały i wykonanie', 'B · Bezpieczeństwo i dowody', 'C · Wiarygodność producenta', 'D · Ergonomia i wartość'],
     pros: 'Zalety', cons: 'Wady',
-    testH: 'Test DogRanking — ten egzemplarz mieliśmy w rękach', testDate: 'Data testu',
-    testPending: 'Test DogRanking w przygotowaniu — powyższa ocena powstała z analizy etykiety i publicznych danych producenta (tak oceniamy zawsze; test dodaje zdjęcia, pomiary własne i werdykt Bekona, ale nie zmienia punktacji).',
+    testH: 'Test DogRanking - ten egzemplarz mieliśmy w rękach', testDate: 'Data testu',
+    testPending: 'Test DogRanking w przygotowaniu - powyższa ocena powstała z analizy etykiety i publicznych danych producenta (tak oceniamy zawsze; test dodaje zdjęcia, pomiary własne i werdykt Bekona, ale nie zmienia punktacji).',
     measure: 'Pomiar własny', kibbleRow: 'Średnica granuli / konsystencja', smellRow: 'Zapach po otwarciu', textureRow: 'Tekstura',
-    runRow: 'Przebieg testu', stateRow: 'Stan po teście', wet: 'karma mokra — kawałki w sosie/galarecie', smallOk: '(odpowiednia także dla małych ras)', smallNo: '(może być duża dla ras miniaturowych)',
+    runRow: 'Przebieg testu', stateRow: 'Stan po teście', wet: 'karma mokra - kawałki w sosie/galarecie', smallOk: '(odpowiednia także dla małych ras)', smallNo: '(może być duża dla ras miniaturowych)',
     bekonRowFood: 'Werdykt Bekona (smakowitość)', bekonRowOther: 'Werdykt Bekona (test użytkowy)',
-    protocolFood: 'Bekon ma stałą dietę i jej nie zmieniamy — test smakowitości to kilka granulek podanych jako przysmak, co jest bezpieczne dla zdrowego psa. Otwarte worki po sesji testowej przekazujemy lokalnemu schronisku.',
-    protocolOther: 'Produkty kupujemy sami (nie od producentów) i testujemy w codziennym użytkowaniu z Bekonem. Skala 🎾 mierzy akceptację psa w użyciu — nie zastępuje oceny jakości w łapkach.',
+    protocolFood: 'Bekon ma stałą dietę i jej nie zmieniamy - test smakowitości to kilka granulek podanych jako przysmak, co jest bezpieczne dla zdrowego psa. Otwarte worki po sesji testowej przekazujemy lokalnemu schronisku.',
+    protocolOther: 'Produkty kupujemy sami (nie od producentów) i testujemy w codziennym użytkowaniu z Bekonem. Skala 🎾 mierzy akceptację psa w użyciu - nie zastępuje oceny jakości w łapkach.',
     protocolTail: 'Werdykt Bekona <strong>nie wpływa na punktację</strong> 0–100.', protocolLink: 'Pełny protokół testowy →', protocolHead: 'Jak testujemy (i czego nie robimy):',
     faqH: 'Najczęstsze pytania', buyH: 'Gdzie kupić',
-    disclosure: 'Powyższe linki są linkami afiliacyjnymi — przy zakupie otrzymujemy prowizję, bez zmiany ceny dla Ciebie. Ocena powstała zanim sprawdziliśmy, gdzie produkt można kupić.',
+    disclosure: 'Powyższe linki są linkami afiliacyjnymi - przy zakupie otrzymujemy prowizję, bez zmiany ceny dla Ciebie. Ocena powstała zanim sprawdziliśmy, gdzie produkt można kupić.',
     hubDisclosure: 'Strony produktów zawierają linki afiliacyjne (zawsze oznaczone rel="sponsored"). Punktacja powstaje przed sprawdzeniem dostępności w sklepach.',
-    catEyebrow: 'Kategoria', rankingH: 'Ranking — produkty dostępne w Polsce', betaH: 'Pierwsze testy — kategoria w fazie beta',
-    soonH: 'Ranking w przygotowaniu', soonTxt: 'Tę kategorię uruchomimy zgodnie z mapą rozwoju. Metodologia jest już zaprojektowana — poniżej kryteria oceny.',
-    metaRank: n => `${n} produktów (faza startowa — baza rośnie) · wszystkie formy liczone w suchej masie`,
+    catEyebrow: 'Kategoria', rankingH: 'Ranking - produkty dostępne w Polsce', betaH: 'Pierwsze testy - kategoria w fazie beta',
+    soonH: 'Ranking w przygotowaniu', soonTxt: 'Tę kategorię uruchomimy zgodnie z mapą rozwoju. Metodologia jest już zaprojektowana - poniżej kryteria oceny.',
+    metaRank: n => `${n} produktów (faza startowa - baza rośnie) · wszystkie formy liczone w suchej masie`,
     seeReview: 'Zobacz test i recenzję →', seeReviewLabel: 'Zobacz recenzję →', testedByUs: '📷 testowana przez nas', labelBased: '📋 ocena z etykiety · test wkrótce',
-    formsH: 'Formy karm — co porównujemy i jak',
-    formsTxt: 'Karma to nie tylko sucha i mokra — oceniamy 8 form, zawsze po przeliczeniu na suchą masę i z kosztem za 1000 kcal. Mokra karma z 8% białka ma go w suchej masie 40% — bez przeliczenia każde porównanie jest błędne.',
+    formsH: 'Formy karm - co porównujemy i jak',
+    formsTxt: 'Karma to nie tylko sucha i mokra - oceniamy 8 form, zawsze po przeliczeniu na suchą masę i z kosztem za 1000 kcal. Mokra karma z 8% białka ma go w suchej masie 40% - bez przeliczenia każde porównanie jest błędne.',
     formCol: 'Forma', formNoteCol: 'Uwagi do oceny', howWeRateCat: 'Jak oceniamy w tej kategorii', fullMethod: 'Pełna metodologia (4 filary, 100 punktów, łapki) →',
     badges: { live: 'Ranking aktywny', beta: 'Pierwsze testy', soon: 'Wkrótce', edu: 'Strefa edukacyjna' },
     homeEyebrow: 'Niezależne oceny produktów dla psów · Polska',
     homeH1: 'Czytamy etykiety, normy i badania.<br><em style="color:var(--terra)">Ty wybierasz dla psa.</em>',
-    homeLead: 'Karmy, gryzaki, szelki, lokalizatory GPS — każdy produkt przechodzi przez jawny, 100-punktowy algorytm. Bez sponsorowanych miejsc. Oceny w łapkach 🐾, degustację i testy prowadzi Bekon — pudel miniaturowy.',
-    whatWeRate: 'Co oceniamy', top3: 'Ranking karm — top 3', fullRank: 'Pełny ranking karm →',
+    homeLead: 'Karmy, gryzaki, szelki, lokalizatory GPS - każdy produkt przechodzi przez jawny, 100-punktowy algorytm. Bez sponsorowanych miejsc. Oceny w łapkach 🐾, degustację i testy prowadzi Bekon - pudel miniaturowy.',
+    whatWeRate: 'Co oceniamy', top3: 'Ranking karm - top 3', fullRank: 'Pełny ranking karm →',
     howWeRate: 'Jak oceniamy?',
-    howWeRateTxt: 'Dwie warstwy: <strong>łapki 🐾</strong> (1–5) opisują jakość produktu (4 filary, 100 punktów), a <strong>dopasowanie</strong> liczymy osobno dla profilu psa. Jadalne degustuje Bekon (miski 🥣), niejadalne testuje w użyciu (piłki 🎾). W strefie Zdrowie nie rankingujemy leków — tylko edukujemy.',
+    howWeRateTxt: 'Dwie warstwy: <strong>łapki 🐾</strong> (1–5) opisują jakość produktu (4 filary, 100 punktów), a <strong>dopasowanie</strong> liczymy osobno dla profilu psa. Jadalne degustuje Bekon (miski 🥣), niejadalne testuje w użyciu (piłki 🎾). W strefie Zdrowie nie rankingujemy leków - tylko edukujemy.',
     methodLink: 'Pełna metodologia →', crumbHome: 'DogRanking PL',
-    footer: '© 2026 DogRanking · Treści edukacyjne — nie zastępują porady weterynaryjnej · Linki afiliacyjne zawsze jawnie oznaczone · Degustację prowadzi Bekon 🐩',
-    footerMethod: 'Jak oceniamy', staging: '🚧 Wersja demonstracyjna — przykładowe dane i oceny w trakcie weryfikacji z etykietami. Oficjalny start wkrótce.'
+    footer: '© 2026 DogRanking · Treści edukacyjne - nie zastępują porady weterynaryjnej · Linki afiliacyjne zawsze jawnie oznaczone · Degustację prowadzi Bekon 🐩',
+    footerMethod: 'Jak oceniamy', staging: '🚧 Wersja demonstracyjna - przykładowe dane i oceny w trakcie weryfikacji z etykietami. Oficjalny start wkrótce.'
   },
   en: {
     nav: ['Home', 'Categories', 'Methodology'], review: 'Review', reviewTitle: 'review & rating', rated: 'Rating', updated: 'Updated',
     calc: {
       navlink: 'Cost calculator', slug: 'calculator',
       h: 'Dog feeding cost calculator',
-      lead: 'Price per kilo misleads — dry food has ~3.5× the calories of wet, so “cheaper per kg” can cost more in the bowl. Work out the real daily and monthly cost for your dog.',
-      answer: 'Daily energy uses the veterinary formula: resting requirement RER = 70 × (body weight kg)^0.75, multiplied by an activity factor (MER). We divide that by the food’s calorie density and multiply by price — giving a fair cost independent of format.',
+      lead: 'Price per kilo misleads - dry food has ~3.5× the calories of wet, so “cheaper per kg” can cost more in the bowl. Work out the real daily and monthly cost for your dog.',
+      answer: 'Daily energy uses the veterinary formula: resting requirement RER = 70 × (body weight kg)^0.75, multiplied by an activity factor (MER). We divide that by the food’s calorie density and multiply by price - giving a fair cost independent of format.',
       weight: 'Dog weight (kg)', activity: 'Activity / status',
       actOpts: [['1.6', 'Adult, neutered (typical)'], ['1.8', 'Adult, active'], ['1.4', 'Prone to weight gain / low activity'], ['1.0', 'Weight loss'], ['2.5', 'Puppy / working dog']],
       food: 'Food', result: 'Result', kcalDay: 'Daily energy need', gramsDay: 'Daily portion', perDay: 'Cost per day', perMonth: 'Cost per month', perYear: 'Cost per year',
-      note: 'Rough estimate for a healthy adult dog — real needs depend on breed, metabolism and health. Confirm portions with your vet; follow medical advice for conditions.',
+      note: 'Rough estimate for a healthy adult dog - real needs depend on breed, metabolism and health. Confirm portions with your vet; follow medical advice for conditions.',
       pickFood: 'Pick a food from the ranking', cardTitle: 'Calculate feeding cost', cardCta: 'Open the calculator →'
     },
     flavorRow: 'Variant (flavour)',
-    variantBox: 'This rating is for a <strong>specific flavour variant</strong>. Brands often sell the same line in several flavours (salmon, lamb, chicken…), each with a different recipe, nutrient profile and allergens — and therefore a different score. Always check the exact variant you are buying.',
+    variantBox: 'This rating is for a <strong>specific flavour variant</strong>. Brands often sell the same line in several flavours (salmon, lamb, chicken…), each with a different recipe, nutrient profile and allergens - and therefore a different score. Always check the exact variant you are buying.',
     prof: {
       h: '🐶 Match to your dog', sub: 'Paws describe food quality. Pick your dog’s profile and we’ll compute the match and flag warnings.',
       age: 'Age', ageOpts: [['dorosly', 'Adult (1–7 yrs)'], ['szczenie', 'Puppy'], ['senior', 'Senior (7+)']],
@@ -133,12 +133,12 @@ const STR = {
       size: 'Size', sizeOpts: [['maly', 'Small / toy (up to 10 kg)'], ['sredni', 'Medium (10–25 kg)'], ['duzy', 'Large / giant (25+ kg)']],
       health: 'Health', healthOpts: [['ok', 'Healthy'], ['alergia_kurczak', 'Chicken allergy'], ['alergia_drob', 'Any poultry allergy'], ['nadwaga', 'Overweight'], ['trzustka', 'After pancreatitis'], ['stawy', 'Joint problems'], ['nerki', 'Kidney disease']],
       reset: 'Clear profile', matchLbl: 'Match', blocked: 'Not recommended for this profile',
-      legend: '<strong>How to read this:</strong> paws 🐾 = food quality (independent of your dog). Match % = how the food fits the profile you chose. Warnings are always shown. With medical conditions, diet always under veterinary supervision — match is not medical advice.',
-      wAllergy: 'Contains chicken — exclude for chicken allergy', wAllergyP: 'Contains poultry — exclude for poultry allergy', wPanc: 'Fat above 15% dry matter — unsuitable after pancreatitis',
-      wPup: 'Adult recipe — a puppy needs a “growth”/“all life stages” food', wKidney: 'Kidney disease needs a renal diet with restricted phosphorus — choose only with your vet',
-      wLegume: 'Legumes high in the recipe (FDA DCM context — see Knowledge)'
+      legend: '<strong>How to read this:</strong> paws 🐾 = food quality (independent of your dog). Match % = how the food fits the profile you chose. Warnings are always shown. With medical conditions, diet always under veterinary supervision - match is not medical advice.',
+      wAllergy: 'Contains chicken - exclude for chicken allergy', wAllergyP: 'Contains poultry - exclude for poultry allergy', wPanc: 'Fat above 15% dry matter - unsuitable after pancreatitis',
+      wPup: 'Adult recipe - a puppy needs a “growth”/“all life stages” food', wKidney: 'Kidney disease needs a renal diet with restricted phosphorus - choose only with your vet',
+      wLegume: 'Legumes high in the recipe (FDA DCM context - see Knowledge)'
     },
-    demo: 'DEMO — data pending verification', goodChoice: n => `Is ${n} a good choice?`,
+    demo: 'DEMO - data pending verification', goodChoice: n => `Is ${n} a good choice?`,
     nutrition: 'Nutrition (dry-matter basis)', spec: 'Specification', param: 'Parameter', value: 'Value', ctx: 'Threshold / context',
     form: 'Food format', formNote: 'formats compared on a dry-matter basis', protein: 'Protein', fat: 'Fat', energy: 'Energy',
     min: 'min', cost1000: 'Cost per 1,000 kcal', cost1000note: 'the only fair measure across dry, wet and fresh formats',
@@ -148,39 +148,39 @@ const STR = {
     pillarLabelsOther: ['A · Materials & build', 'B · Safety & evidence', 'C · Manufacturer credibility', 'D · Ergonomics & value'],
     pros: 'Pros', cons: 'Cons',
     testH: 'DogRanking hands-on test', testDate: 'Test date',
-    testPending: 'Hands-on test pending — this rating is based on label analysis and public manufacturer data (that is always how we score; a hands-on test adds photos, our own measurements and Bekon’s verdict, but never changes the score).',
+    testPending: 'Hands-on test pending - this rating is based on label analysis and public manufacturer data (that is always how we score; a hands-on test adds photos, our own measurements and Bekon’s verdict, but never changes the score).',
     measure: 'Our measurement', kibbleRow: 'Kibble size / consistency', smellRow: 'Smell on opening', textureRow: 'Texture',
-    runRow: 'Test procedure', stateRow: 'Condition after test', wet: 'wet food — chunks in gravy/jelly', smallOk: '(suitable for small breeds too)', smallNo: '(may be large for toy breeds)',
+    runRow: 'Test procedure', stateRow: 'Condition after test', wet: 'wet food - chunks in gravy/jelly', smallOk: '(suitable for small breeds too)', smallNo: '(may be large for toy breeds)',
     bekonRowFood: 'Bekon’s verdict (palatability)', bekonRowOther: 'Bekon’s verdict (usage test)',
-    protocolFood: 'Bekon keeps his regular diet — palatability tests are a few kibbles offered as a treat, which is safe for a healthy dog. Opened test bags go to a local shelter.',
-    protocolOther: 'We buy products ourselves (never from manufacturers) and test them in daily use with Bekon. The 🎾 scale measures the dog’s acceptance in use — it never replaces the paw-rating.',
+    protocolFood: 'Bekon keeps his regular diet - palatability tests are a few kibbles offered as a treat, which is safe for a healthy dog. Opened test bags go to a local shelter.',
+    protocolOther: 'We buy products ourselves (never from manufacturers) and test them in daily use with Bekon. The 🎾 scale measures the dog’s acceptance in use - it never replaces the paw-rating.',
     protocolTail: 'Bekon’s verdict <strong>does not affect</strong> the 0–100 score.', protocolLink: 'Full testing protocol →', protocolHead: 'How we test (and what we don’t do):',
     faqH: 'Frequently asked questions', buyH: 'Where to buy',
-    disclosure: 'The links above are affiliate links — we earn a commission at no extra cost to you. The rating was finalised before we checked where the product can be bought.',
+    disclosure: 'The links above are affiliate links - we earn a commission at no extra cost to you. The rating was finalised before we checked where the product can be bought.',
     hubDisclosure: 'Product pages contain affiliate links (always marked rel="sponsored"). Scores are finalised before checking shop availability.',
-    catEyebrow: 'Category', rankingH: 'Ranking — products available on this market', betaH: 'First tests — beta category',
-    soonH: 'Ranking in preparation', soonTxt: 'This category launches per our roadmap. The methodology is already designed — rating criteria below.',
-    metaRank: n => `${n} products (launch phase — the database is growing) · all formats compared on a dry-matter basis`,
+    catEyebrow: 'Category', rankingH: 'Ranking - products available on this market', betaH: 'First tests - beta category',
+    soonH: 'Ranking in preparation', soonTxt: 'This category launches per our roadmap. The methodology is already designed - rating criteria below.',
+    metaRank: n => `${n} products (launch phase - the database is growing) · all formats compared on a dry-matter basis`,
     seeReview: 'See test & review →', seeReviewLabel: 'See review →', testedByUs: '📷 hands-on tested', labelBased: '📋 label-based · hands-on test pending',
-    formsH: 'Dog food formats — what we compare and how',
-    formsTxt: 'Dog food is not just dry vs wet — we rate 8 formats, always converted to dry matter and costed per 1,000 kcal. A wet food with 8% protein has 40% on a dry-matter basis — without conversion every comparison is wrong.',
+    formsH: 'Dog food formats - what we compare and how',
+    formsTxt: 'Dog food is not just dry vs wet - we rate 8 formats, always converted to dry matter and costed per 1,000 kcal. A wet food with 8% protein has 40% on a dry-matter basis - without conversion every comparison is wrong.',
     formCol: 'Format', formNoteCol: 'Rating notes', howWeRateCat: 'How we rate this category', fullMethod: 'Full methodology (4 pillars, 100 points, paws) →',
     badges: { live: 'Live rankings', beta: 'First tests', soon: 'Coming soon', edu: 'Educational zone' },
     homeEyebrow: 'Independent dog product ratings',
     homeH1: 'We read the labels, standards and studies.<br><em style="color:var(--terra)">You choose for your dog.</em>',
-    homeLead: 'Dog food, chews, harnesses, GPS trackers — every product goes through a transparent 100-point algorithm. No sponsored placements. Ratings in paws 🐾; tasting and testing by Bekon, a miniature poodle.',
-    whatWeRate: 'What we rate', top3: 'Dog food ranking — top 3', fullRank: 'Full dog food ranking →',
+    homeLead: 'Dog food, chews, harnesses, GPS trackers - every product goes through a transparent 100-point algorithm. No sponsored placements. Ratings in paws 🐾; tasting and testing by Bekon, a miniature poodle.',
+    whatWeRate: 'What we rate', top3: 'Dog food ranking - top 3', fullRank: 'Full dog food ranking →',
     howWeRate: 'How we rate',
-    howWeRateTxt: 'Two layers: <strong>paws 🐾</strong> (1–5) describe product quality (4 pillars, 100 points); <strong>match</strong> is computed separately for your dog’s profile. Edibles are taste-tested by Bekon (bowls 🥣), non-edibles usage-tested (balls 🎾). In the Health zone we never rank medicines — we educate.',
+    howWeRateTxt: 'Two layers: <strong>paws 🐾</strong> (1–5) describe product quality (4 pillars, 100 points); <strong>match</strong> is computed separately for your dog’s profile. Edibles are taste-tested by Bekon (bowls 🥣), non-edibles usage-tested (balls 🎾). In the Health zone we never rank medicines - we educate.',
     methodLink: 'Full methodology →', crumbHome: 'DogRanking',
-    footer: '© 2026 DogRanking · Educational content — not a substitute for veterinary advice · Affiliate links always clearly disclosed · Tasting by Bekon 🐩',
-    footerMethod: 'How we rate', staging: '🚧 Demo version — sample data and ratings pending label verification. Official launch soon.'
+    footer: '© 2026 DogRanking · Educational content - not a substitute for veterinary advice · Affiliate links always clearly disclosed · Tasting by Bekon 🐩',
+    footerMethod: 'How we rate', staging: '🚧 Demo version - sample data and ratings pending label verification. Official launch soon.'
   }
 };
 
 const FOOD_FORMS = {
-  pl: [['Sucha (ekstrudowana)', 'standard rynku; najniższy koszt 1000 kcal'], ['Sucha tłoczona na zimno', 'łagodniejszy proces produkcji'], ['Mokra (puszki, saszetki)', '75–82% wody — porównuj TYLKO w suchej masie'], ['Świeża / gotowana chłodzona', 'wyższa strawność; model subskrypcyjny'], ['Liofilizowana / suszona powietrzem', 'wysoka gęstość odżywcza'], ['Surowa mrożona (BARF)', 'wymóg: dowód kompletności + kontrola patogenów, inaczej max 2 łapki'], ['Weterynaryjna', 'osobna kategoria oceny — zawsze pod kontrolą lekarza'], ['Topper / karma uzupełniająca', 'nie jest pełnoporcjowa — oznaczamy wyraźnie']],
-  en: [['Dry (extruded kibble)', 'market standard; lowest cost per 1,000 kcal'], ['Cold-pressed dry', 'gentler production process'], ['Wet (cans, pouches)', '75–82% water — compare ONLY on dry matter'], ['Fresh / gently cooked', 'higher digestibility; subscription model'], ['Freeze-dried / air-dried', 'very nutrient-dense'], ['Frozen raw (BARF)', 'requires completeness proof + pathogen control, else capped at 2 paws'], ['Veterinary / therapeutic', 'rated in its own category — always under veterinary care'], ['Topper / complementary', 'not complete nutrition — clearly flagged']]
+  pl: [['Sucha (ekstrudowana)', 'standard rynku; najniższy koszt 1000 kcal'], ['Sucha tłoczona na zimno', 'łagodniejszy proces produkcji'], ['Mokra (puszki, saszetki)', '75–82% wody - porównuj TYLKO w suchej masie'], ['Świeża / gotowana chłodzona', 'wyższa strawność; model subskrypcyjny'], ['Liofilizowana / suszona powietrzem', 'wysoka gęstość odżywcza'], ['Surowa mrożona (BARF)', 'wymóg: dowód kompletności + kontrola patogenów, inaczej max 2 łapki'], ['Weterynaryjna', 'osobna kategoria oceny - zawsze pod kontrolą lekarza'], ['Topper / karma uzupełniająca', 'nie jest pełnoporcjowa - oznaczamy wyraźnie']],
+  en: [['Dry (extruded kibble)', 'market standard; lowest cost per 1,000 kcal'], ['Cold-pressed dry', 'gentler production process'], ['Wet (cans, pouches)', '75–82% water - compare ONLY on dry matter'], ['Fresh / gently cooked', 'higher digestibility; subscription model'], ['Freeze-dried / air-dried', 'very nutrient-dense'], ['Frozen raw (BARF)', 'requires completeness proof + pathogen control, else capped at 2 paws'], ['Veterinary / therapeutic', 'rated in its own category - always under veterinary care'], ['Topper / complementary', 'not complete nutrition - clearly flagged']]
 };
 
 /* ---------- design system ---------- */
@@ -636,7 +636,7 @@ ${ld}
 <body>
 ${STAGING ? `<div style="background:#8A5A1E;color:#FAF0E2;text-align:center;padding:8px 16px;font-family:-apple-system,sans-serif;font-size:.85rem">${S.staging}</div>` : ''}
 <header><div class="bar">
-  <a class="mark" href="${H('index.html')}" aria-label="DogRanking — wybierz kraj"><img src="${href(canonical, 'logo-dr.webp')}" alt="DogRanking" height="42"></a>
+  <a class="mark" href="${H('index.html')}" aria-label="DogRanking - wybierz kraj"><img src="${href(canonical, 'logo-dr.webp')}" alt="DogRanking" height="42"></a>
   <input type="checkbox" id="navtoggle" class="navt" aria-label="Menu">
   <label for="navtoggle" class="burger" title="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
   <nav>
@@ -662,15 +662,15 @@ const statusBadge = (st, S) => `<span class="badge ${st === 'soon' ? '' : st}">$
 
 /* ---------- placeholdery zdjęć ---------- */
 const PHOTO_SLOTS = isFood => isFood ? [
-  { file: '01-opakowanie', label: 'Opakowanie — egzemplarz testowy u nas w domu' },
+  { file: '01-opakowanie', label: 'Opakowanie - egzemplarz testowy u nas w domu' },
   { file: '02-etykieta', label: 'Etykieta z bliska: skład i analiza gwarantowana' },
-  { file: '03-granulat', label: 'Zawartość z miarką — pomiar wielkości/konsystencji' },
-  { file: '04-bekon', label: 'Werdykt Bekona — degustacja w formie przysmaku' }
+  { file: '03-granulat', label: 'Zawartość z miarką - pomiar wielkości/konsystencji' },
+  { file: '04-bekon', label: 'Werdykt Bekona - degustacja w formie przysmaku' }
 ] : [
-  { file: '01-produkt', label: 'Produkt — egzemplarz testowy (kupiony, nie od producenta)' },
+  { file: '01-produkt', label: 'Produkt - egzemplarz testowy (kupiony, nie od producenta)' },
   { file: '02-detal', label: 'Detal wykonania z bliska' },
   { file: '03-pomiar', label: 'Pomiar / test wytrzymałości' },
-  { file: '04-bekon', label: 'Bekon w akcji — test użytkowy' }
+  { file: '04-bekon', label: 'Bekon w akcji - test użytkowy' }
 ];
 const placeholderSVG = label => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 <rect width="800" height="600" fill="#F1EADC"/>
@@ -690,11 +690,11 @@ function reviewsSection(p, cat, mkt) {
   const cfg = { api: REVIEWS.api, sk: REVIEWS.turnstileSiteKey, market: mkt, category: cat.slug, slug: p.slug };
   const T = pl ? {
     h: 'Opinie psich rodziców', expLbl: 'Ocena DogRanking', expSub: 'wg metodologii · 4 filary, 100 pkt',
-    comLbl: 'Ocena społeczności', comNone: 'Brak opinii — bądź pierwszy', loading: 'Ładuję opinie…',
+    comLbl: 'Ocena społeczności', comNone: 'Brak opinii - bądź pierwszy', loading: 'Ładuję opinie…',
     countSuf: 'opinii', recSuf: 'poleca', empty: 'Nie ma jeszcze opinii o tym produkcie. Podziel się swoją!',
-    formH: 'Masz tę karmę? Dodaj opinię', formHint: 'Pomóż innym psim rodzicom — najbardziej liczy się zdjęcie miski lub psa przy posiłku.',
+    formH: 'Masz tę karmę? Dodaj opinię', formHint: 'Pomóż innym psim rodzicom - najbardziej liczy się zdjęcie miski lub psa przy posiłku.',
     name: 'Imię lub nick', email: 'E-mail (opcjonalnie, nie publikujemy)', rate: 'Twoja ocena',
-    rec: 'Polecasz?', recYes: 'Tak', recNo: 'Nie', dog: 'Wielkość psa', any: '—', dS: 'mały', dM: 'średni', dL: 'duży',
+    rec: 'Polecasz?', recYes: 'Tak', recNo: 'Nie', dog: 'Wielkość psa', any: '-', dS: 'mały', dM: 'średni', dL: 'duży',
     title: 'Tytuł (opcjonalnie)', body: 'Twoja opinia', photo: 'Zdjęcie produktu (opcjonalnie)',
     fileHint: 'JPG/PNG/WEBP, do 5 MB. Każde zdjęcie sprawdzamy przed publikacją.',
     consent: 'Zgadzam się na publikację mojej opinii i zdjęcia. Opinia trafia najpierw do moderacji.',
@@ -703,11 +703,11 @@ function reviewsSection(p, cat, mkt) {
     err: 'Nie udało się wysłać. Sprawdź pola i spróbuj ponownie.', need: 'Zaznacz ocenę, wpisz opinię i zaznacz zgodę.'
   } : {
     h: 'What dog parents say', expLbl: 'DogRanking score', expSub: 'by our methodology · 4 pillars, 100 pts',
-    comLbl: 'Community rating', comNone: 'No reviews yet — be the first', loading: 'Loading reviews…',
+    comLbl: 'Community rating', comNone: 'No reviews yet - be the first', loading: 'Loading reviews…',
     countSuf: 'reviews', recSuf: 'recommend', empty: 'No reviews of this product yet. Share yours!',
-    formH: 'Got this food? Add your review', formHint: 'Help other dog parents — a photo of the bowl or your dog at mealtime helps most.',
+    formH: 'Got this food? Add your review', formHint: 'Help other dog parents - a photo of the bowl or your dog at mealtime helps most.',
     name: 'Name or nickname', email: 'Email (optional, never published)', rate: 'Your rating',
-    rec: 'Recommend?', recYes: 'Yes', recNo: 'No', dog: 'Dog size', any: '—', dS: 'small', dM: 'medium', dL: 'large',
+    rec: 'Recommend?', recYes: 'Yes', recNo: 'No', dog: 'Dog size', any: '-', dS: 'small', dM: 'medium', dL: 'large',
     title: 'Title (optional)', body: 'Your review', photo: 'Product photo (optional)',
     fileHint: 'JPG/PNG/WEBP, up to 5 MB. Every photo is reviewed before publishing.',
     consent: 'I agree to publish my review and photo. Reviews are moderated before going live.',
@@ -767,7 +767,7 @@ function reviewsSection(p, cat, mkt) {
       if(!d.reviews||!d.reviews.length){listEl.innerHTML='<p class="rvempty">'+T.empty+'</p>';return;}
       listEl.innerHTML=d.reviews.map(function(r){
         var ph=r.hasPhoto?('<div class="rvphoto"><img loading="lazy" src="'+CFG.api+'/photo?id='+encodeURIComponent(r.id)+'" alt="zdjęcie od '+esc(r.author)+'" onclick="window.open(this.src)"></div>'):'';
-        var meta=[]; if(r.recommend===1)meta.push('<span class="rec">✓ '+T.recSuf+'</span>'); if(r.recommend===0)meta.push('—');
+        var meta=[]; if(r.recommend===1)meta.push('<span class="rec">✓ '+T.recSuf+'</span>'); if(r.recommend===0)meta.push('-');
         if(r.dog_size)meta.push(esc(r.dog_size));
         return '<div class="rvcard"><div class="rvhead"><span class="stars">'+stars(r.rating)+'</span> <span class="who">'+esc(r.author)+'</span><span class="when">'+fmtDate(r.created_at)+'</span></div>'+
           (meta.length?'<div class="rvmeta">'+meta.join('')+'</div>':'')+
@@ -828,10 +828,10 @@ function productPage(p, cat, mkt) {
 <table>
 <tr><th>${S.param}</th><th>${S.value}</th><th>${S.ctx}</th></tr>
 <tr><td>${S.form}</td><td><strong>${p.type}</strong></td><td>${S.formNote}</td></tr>
-${p.flavor ? `<tr><td>${S.flavorRow}</td><td><strong>${p.flavor}</strong></td><td>—</td></tr>` : ''}
+${p.flavor ? `<tr><td>${S.flavorRow}</td><td><strong>${p.flavor}</strong></td><td>-</td></tr>` : ''}
 <tr><td>${S.protein}</td><td><strong>${p.proteinDM}% DM</strong></td><td>FEDIAF/AAFCO ${S.min} ${p.life === 'dorosły' || p.life === 'adult' ? '18–21' : '22,5–25'}%</td></tr>
 <tr><td>${S.fat}</td><td>${p.fatDM}% DM</td><td>${S.min} ${p.life === 'dorosły' || p.life === 'adult' ? '5,5' : '8,5'}%</td></tr>
-<tr><td>${S.energy}</td><td>${p.kcal} kcal ME/100 g</td><td>—</td></tr>
+<tr><td>${S.energy}</td><td>${p.kcal} kcal ME/100 g</td><td>-</td></tr>
 ${k1000 ? `<tr><td><strong>${S.cost1000}</strong></td><td><strong>~${m.money(k1000)}</strong></td><td>${S.cost1000note}</td></tr>` : ''}
 </table>
 <p class="meta">${S.dmNote} <a href="${href(url, methodPath)}">${S.howCalc}</a></p>
@@ -856,11 +856,11 @@ ${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('\n')}
 <h2>${S.testH}</h2>
 <p class="meta">${S.testDate}: ${t.date} · ${t.uwagi}</p>
 <div class="gallery">
-${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.slug}/${s.file}.svg`)}" alt="${p.name} — ${s.label}" loading="lazy" width="800" height="600"><figcaption>${s.label}</figcaption></figure>`).join('\n')}
+${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.slug}/${s.file}.svg`)}" alt="${p.name} - ${s.label}" loading="lazy" width="800" height="600"><figcaption>${s.label}</figcaption></figure>`).join('\n')}
 </div>
 <table>
 <tr><th>${S.measure}</th><th>${S.value}</th></tr>${rows}
-<tr><td>${isFood ? S.bekonRowFood : S.bekonRowOther}</td><td><span class="paws">${bekonIcon.repeat(t.bekon)}${'·'.repeat(3 - t.bekon)}</span> ${t.bekon}/3 — ${t.bekonNote}</td></tr>
+<tr><td>${isFood ? S.bekonRowFood : S.bekonRowOther}</td><td><span class="paws">${bekonIcon.repeat(t.bekon)}${'·'.repeat(3 - t.bekon)}</span> ${t.bekon}/3 - ${t.bekonNote}</td></tr>
 </table>
 <div class="protocol"><strong>${S.protocolHead}</strong> ${isFood ? S.protocolFood : S.protocolOther} ${S.protocolTail} <a href="${href(url, methodPath) + '#testy'}" style="color:inherit">${S.protocolLink}</a></div>`;
   } else {
@@ -869,7 +869,7 @@ ${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.s
 
   const headInner = `<div class="phead-main">
 <div class="eyebrow">${S.review} · ${cName(cat, mkt)} · ${p.type}</div>
-<h1>${p.name} — ${S.reviewTitle}</h1>
+<h1>${p.name} - ${S.reviewTitle}</h1>
 <p class="meta">${S.rated}: ${pawsTxt(p.score, m.lang)} <strong>${p.score}/100 · ${scoreLbl(p.score, m.lang)}</strong> · ${S.updated}: ${TODAY}${p.verified ? '' : ` · <span class="badge">${S.demo}</span>`}${REVIEWS.enabled ? ` · <a class="crating" data-crating href="#opinie">★ <span class="cval">–</span> <span class="ccount"></span></a>` : ''}</p>
 </div>`;
   const body = `
@@ -897,7 +897,7 @@ ${relatedKnowledge(p, cat, mkt, url)}
 <p class="shops">${p.shops.map(s => `<a href="${s.u}" rel="sponsored nofollow" target="_blank">${s.n} →</a>`).join('')}</p>
 <p class="disclosure">${S.disclosure}</p>`;
 
-  return { url, html: page({ title: `${p.name} — ${S.reviewTitle} (${TODAY.slice(0, 4)}) | DogRanking`, desc: p.verdict.slice(0, 155), canonical: url, body, jsonld, mkt }) };
+  return { url, html: page({ title: `${p.name} - ${S.reviewTitle} (${TODAY.slice(0, 4)}) | DogRanking`, desc: p.verdict.slice(0, 155), canonical: url, body, jsonld, mkt }) };
 }
 
 /* ---------- ranking rows ---------- */
@@ -937,7 +937,7 @@ ${picks.map(a => `<a class="catcard" href="${href(url, `pl/wiedza/${a.id}/`)}"><
 /* ---------- atrybuty do dopasowania (wyliczane z pól rekordu) ---------- */
 function matchAttrs(p) {
   const txt = (p.name + ' ' + (p.flavor || '') + ' ' + (p.verdict || '') + ' ' + (p.pros || []).join(' ') + ' ' + (p.cons || []).join(' ')).toLowerCase();
-  // KURCZAK (konkretnie) vs DRÓB (dowolny: indyk, kaczka, gęś...) — dwa różne alergeny
+  // KURCZAK (konkretnie) vs DRÓB (dowolny: indyk, kaczka, gęś...) - dwa różne alergeny
   const noChicken = /bez kurczaka|chicken-free|no chicken/.test(txt);
   const noPoultry = /bez drobiu|poultry-free/.test(txt);
   const chicken = !noChicken && /(kurcz|chicken)/.test(txt);
@@ -1030,7 +1030,7 @@ function categoryHub(cat, mkt) {
   const displayStatus = products.length ? cat.status : (cat.status === 'edu' ? 'edu' : 'soon');
   const jsonld = [ORG];
   if (products.length) jsonld.push({
-    '@context': 'https://schema.org', '@type': 'ItemList', name: `${cName(cat, mkt)} — DogRanking ${mkt.toUpperCase()}`,
+    '@context': 'https://schema.org', '@type': 'ItemList', name: `${cName(cat, mkt)} - DogRanking ${mkt.toUpperCase()}`,
     itemListElement: [...products].sort((a, b) => b.score - a.score).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: SITE + `/${mkt}/${cSlug(cat, mkt)}/${p.slug}/`, name: p.name }))
   });
   const methodPath = `${mkt}/${m.lang === 'pl' ? 'metodologia' : 'methodology'}/`;
@@ -1053,28 +1053,28 @@ ${foodMatchPanel(products, mkt)}
 ${rankRows(products, cat, mkt, url)}`;
   } else if (cat.status === 'edu' && cat.slug === 'zdrowie') {
     content = m.lang === 'pl' ? `
-<div class="legalbox"><strong>Dlaczego nie rankingujemy leków?</strong> Tabletki przeciwkleszczowe (Bravecto, NexGard, Simparica) to w Polsce leki na receptę, a reklama publiczna leków Rp. jest zakazana (Prawo farmaceutyczne, rozp. UE 2019/6). W tej strefie znajdziesz wyłącznie materiały edukacyjne o substancjach czynnych — bez ocen, bez łapek i bez linków zakupowych do leków. Decyzję zawsze podejmuj z lekarzem weterynarii.</div>
+<div class="legalbox"><strong>Dlaczego nie rankingujemy leków?</strong> Tabletki przeciwkleszczowe (Bravecto, NexGard, Simparica) to w Polsce leki na receptę, a reklama publiczna leków Rp. jest zakazana (Prawo farmaceutyczne, rozp. UE 2019/6). W tej strefie znajdziesz wyłącznie materiały edukacyjne o substancjach czynnych - bez ocen, bez łapek i bez linków zakupowych do leków. Decyzję zawsze podejmuj z lekarzem weterynarii.</div>
 <h2>Przewodnik po substancjach czynnych (w przygotowaniu)</h2>
 <table>
 <tr><th>Substancja</th><th>Forma</th><th>Dostępność w PL</th><th>Co warto wiedzieć</th></tr>
 <tr><td>Fipronil</td><td>krople spot-on</td><td>bez recepty</td><td>działa kontaktowo; najdłużej na rynku</td></tr>
 <tr><td>Imidaklopryd + permetryna</td><td>krople spot-on</td><td>bez recepty</td><td>permetryna silnie toksyczna dla kotów w domu!</td></tr>
 <tr><td>Imidaklopryd + flumetryna</td><td>obroża</td><td>bez recepty</td><td>działanie do 8 mies.; dobierz rozmiar</td></tr>
-<tr><td>Izoksazoliny (fluralaner, afoksolaner, sarolaner)</td><td>tabletki</td><td><strong>na receptę</strong></td><td>FDA ostrzega o możliwych objawach neurologicznych — omów z lekarzem, zwłaszcza przy padaczce</td></tr>
+<tr><td>Izoksazoliny (fluralaner, afoksolaner, sarolaner)</td><td>tabletki</td><td><strong>na receptę</strong></td><td>FDA ostrzega o możliwych objawach neurologicznych - omów z lekarzem, zwłaszcza przy padaczce</td></tr>
 </table>
 <p class="meta">Treść edukacyjna konsultowana z lekarzem weterynarii (w przygotowaniu). Nie zastępuje wizyty w gabinecie.</p>` : `
-<div class="legalbox"><strong>Why we don't rank medicines.</strong> Oral tick & flea products (isoxazolines: Bravecto, NexGard, Simparica) are prescription medicines (POM-V in the UK; Rx via FDA in the US), and advertising prescription veterinary medicines to the public is restricted. This zone is educational only — active-substance guides, no ratings, no shopping links for medicines. Always decide with your veterinarian.</div>
+<div class="legalbox"><strong>Why we don't rank medicines.</strong> Oral tick & flea products (isoxazolines: Bravecto, NexGard, Simparica) are prescription medicines (POM-V in the UK; Rx via FDA in the US), and advertising prescription veterinary medicines to the public is restricted. This zone is educational only - active-substance guides, no ratings, no shopping links for medicines. Always decide with your veterinarian.</div>
 <h2>Active-substance guide (in preparation)</h2>
 <table>
 <tr><th>Substance</th><th>Form</th><th>Availability</th><th>Worth knowing</th></tr>
 <tr><td>Fipronil</td><td>spot-on</td><td>OTC</td><td>contact action; longest market record</td></tr>
 <tr><td>Imidacloprid + flumethrin</td><td>collar</td><td>OTC / NFA-VPS (UK)</td><td>up to 8 months; size matters; see EPA incident discussions (Seresto)</td></tr>
-<tr><td>Isoxazolines (fluralaner, afoxolaner, sarolaner)</td><td>chewable tablets</td><td><strong>prescription</strong></td><td>FDA fact sheet: potential neurologic adverse events (seizures) — discuss with your vet, especially with epilepsy history</td></tr>
+<tr><td>Isoxazolines (fluralaner, afoxolaner, sarolaner)</td><td>chewable tablets</td><td><strong>prescription</strong></td><td>FDA fact sheet: potential neurologic adverse events (seizures) - discuss with your vet, especially with epilepsy history</td></tr>
 </table>
 <p class="meta">Educational content, veterinary review in progress. Not a substitute for a vet visit.</p>`;
   } else if (cat.status === 'edu') {
     content = m.lang === 'pl' ? `
-<h2>Ubezpieczenia dla psów — najpierw edukacyjnie</h2>
+<h2>Ubezpieczenia dla psów - najpierw edukacyjnie</h2>
 <div class="answer">W Wielkiej Brytanii ubezpieczonych jest ok. 25% psów; w Polsce rynek dopiero raczkuje. Zanim porównamy oferty, nauczymy Cię czytać polisy.</div>
 <h3>Na co patrzeć w polisie (zanim spojrzysz na cenę)</h3>
 <ul class="pc">
@@ -1085,8 +1085,8 @@ ${rankRows(products, cat, mkt, url)}`;
 <li>Czy polisa odnawia się po poważnej diagnozie</li>
 </ul>
 <p class="meta">Rankingi ubezpieczeń uruchomimy najpierw dla rynków UK i US.</p>` : `
-<h2>Pet insurance — rankings coming to this market first</h2>
-<div class="answer">${mkt === 'uk' ? 'Around 25% of UK dogs are insured — the most mature pet-insurance market in the world (Petplan, ManyPets, Animal Friends, Agria).' : 'The US market (Lemonade, Healthy Paws, Trupanion, Embrace) is growing fast.'} Before we compare offers, learn to read a policy.</div>
+<h2>Pet insurance - rankings coming to this market first</h2>
+<div class="answer">${mkt === 'uk' ? 'Around 25% of UK dogs are insured - the most mature pet-insurance market in the world (Petplan, ManyPets, Animal Friends, Agria).' : 'The US market (Lemonade, Healthy Paws, Trupanion, Embrace) is growing fast.'} Before we compare offers, learn to read a policy.</div>
 <h3>What to check before the price</h3>
 <ul class="pc">
 <li>Exclusions: pre-existing and breed-specific conditions (hip dysplasia in Labradors!)</li>
@@ -1114,11 +1114,11 @@ ${content}
 <p class="meta"><a href="${href(url, methodPath)}">${S.fullMethod}</a></p>
 ${products.length ? `<p class="disclosure">${S.hubDisclosure}</p>` : ''}`;
 
-  return { url, html: page({ title: `${cName(cat, mkt)} — DogRanking ${MARKETS[mkt].name}`, desc: cDesc(cat, mkt).slice(0, 155), canonical: url, body, jsonld, mkt, alts }) };
+  return { url, html: page({ title: `${cName(cat, mkt)} - DogRanking ${MARKETS[mkt].name}`, desc: cDesc(cat, mkt).slice(0, 155), canonical: url, body, jsonld, mkt, alts }) };
 }
 
 /* ---------- strona główna rynku ---------- */
-// łapki (statyczne, samodzielne — dla landing page bez współdzielonego CSS)
+// łapki (statyczne, samodzielne - dla landing page bez współdzielonego CSS)
 function lpPaws(sc) {
   const PAW = f => `<svg width="17" height="17" viewBox="0 0 24 24" style="vertical-align:middle" fill="${f}"><circle cx="5" cy="10.2" r="2.2"/><circle cx="9.4" cy="6.9" r="2.4"/><circle cx="14.6" cy="6.9" r="2.4"/><circle cx="19" cy="10.2" r="2.2"/><path d="M12 11.4c3.1 0 5.7 2.3 5.7 5 0 1.8-1.4 3.2-3.3 3.2-.9 0-1.5-.3-2.4-.3s-1.5.3-2.4.3c-1.9 0-3.3-1.4-3.3-3.2 0-2.7 2.6-5 5.7-5z"/></svg>`;
   const g = Math.max(1, Math.min(5, Math.round(sc / 20)));
@@ -1144,33 +1144,33 @@ function homeMkt(mkt) {
     nav: ['Karmy', 'Jak oceniamy', 'Wiedza', 'Bekon', 'Kraje'],
     heroKick: 'cześć, tu Bekon 🐾',
     heroH1: 'Najlepsza miska zaczyna się od <em>uczciwej oceny.</em>',
-    heroSub: 'Niezależny ranking karm i produktów dla psów — w suchej masie, wg norm FEDIAF i kryteriów WSAVA. Bez ściemy. Bez płatnych miejsc na podium.',
+    heroSub: 'Niezależny ranking karm i produktów dla psów - w suchej masie, wg norm FEDIAF i kryteriów WSAVA. Bez ściemy. Bez płatnych miejsc na podium.',
     ctaSee: 'Zobacz ranking →', ctaHow: 'Jak oceniamy',
     trust: [`<b>${n}</b> karm ocenionych`, '<b>3</b> rynki · PL · UK · US', '<b>0</b> płatnych pozycji'],
     scroll: 'przewiń ↓',
     mKick: 'to nie tylko jedzenie',
     mH2: 'Twój pies to rodzina. Jego miska <span class="u">zasługuje na to samo serce.</span>',
-    mP: 'Producentów są setki, etykiety mówią półprawdy, a „rankingi" w sieci to często płatne listy. My liczymy skład w suchej masie, sprawdzamy normy i wiarygodność marki — i mówimy wprost, co jest warte miski Twojego psa.',
+    mP: 'Producentów są setki, etykiety mówią półprawdy, a „rankingi" w sieci to często płatne listy. My liczymy skład w suchej masie, sprawdzamy normy i wiarygodność marki - i mówimy wprost, co jest warte miski Twojego psa.',
     pKick: 'cztery filary', pH2: 'Jak powstaje ocena w łapkach',
     pills: [
       ['Skład', '35', 'Białko i tłuszcz w suchej masie, nazwane mięso, bez zbędnych wypełniaczy.'],
       ['Normy i testy', '25', 'Zgodność z FEDIAF/AAFCO oraz realne próby żywieniowe, nie tylko deklaracje.'],
-      ['Producent', '25', 'Wiarygodność marki wg kryteriów WSAVA — kto i jak naprawdę robi tę karmę.'],
+      ['Producent', '25', 'Wiarygodność marki wg kryteriów WSAVA - kto i jak naprawdę robi tę karmę.'],
       ['Dodatki', '15', 'EPA/DHA, jakość konserwacji, brak sztucznych barwników i zbędnej chemii.']
     ],
     prKick: 'jak to robimy', prH2: 'Dziesięć prób, zanim coś trafi do rankingu',
-    prLead: 'Od testu karmy i zabawek, przez rozpakowanie i pielęgnację, aż po komfort i finalną rekomendację — każdy produkt przechodzi przez łapy (i podniebienie) Bekona.',
+    prLead: 'Od testu karmy i zabawek, przez rozpakowanie i pielęgnację, aż po komfort i finalną rekomendację - każdy produkt przechodzi przez łapy (i podniebienie) Bekona.',
     rKick: `ranking · ${m.name}`, rH2: 'Top karmy na polskim rynku',
     rFull: `Zobacz pełny ranking ${n} karm →`,
     cKick: 'wybierz swój kraj', cH2: 'Pokazujemy tylko to, co kupisz u siebie',
-    cP: 'Produkty, ceny i sklepy różnią się między krajami — pokazujemy ranking dla Twojego rynku.',
+    cP: 'Produkty, ceny i sklepy różnią się między krajami - pokazujemy ranking dla Twojego rynku.',
     igKick: 'życie Bekona', igH2: 'Bekon testuje. Ty obserwujesz.',
-    igP: 'Codzienne życie, próby miski i szczere recenzje produktów — wszystko na jego profilach. Dołącz do psiej ekipy i bądź na bieżąco.',
+    igP: 'Codzienne życie, próby miski i szczere recenzje produktów - wszystko na jego profilach. Dołącz do psiej ekipy i bądź na bieżąco.',
     follow: 'Obserwuj mnie',
-    nKick: 'co tydzień, prosto do miski', nH2: 'Nowe oceny karm — zanim trafią do sklepu',
+    nKick: 'co tydzień, prosto do miski', nH2: 'Nowe oceny karm - zanim trafią do sklepu',
     nP: 'Bez spamu. Tylko świeże rankingi, ostrzeżenia o składach i okazje cenowe.',
     nPlace: 'Twój e-mail', nBtn: 'Zapisz się 🐾',
-    fDesc: 'Niezależne oceny karm i produktów dla psów. Liczymy uczciwie, w suchej masie — dla psów i ich ludzi.',
+    fDesc: 'Niezależne oceny karm i produktów dla psów. Liczymy uczciwie, w suchej masie - dla psów i ich ludzi.',
     fCol: ['Karmy', 'Portal', 'Rynki'],
     fKarmy: [['Ranking', karmyUrl], ['Kalkulator', H(`${mkt}/${S.calc.slug}/`)]],
     fPortal: [['Jak oceniamy', H(`${mkt}/${methodSlug}/`)], ['Wiedza', wiedzaUrl], ['O nas', H(`${mkt}/o-nas/`)], ['Bekon', bekonUrl]],
@@ -1179,33 +1179,33 @@ function homeMkt(mkt) {
     nav: ['Dog food', 'How we rate', 'Knowledge', 'Bekon', 'Countries'],
     heroKick: "hi, it's Bekon 🐾",
     heroH1: 'A better bowl starts with an <em>honest review.</em>',
-    heroSub: `Independent dog food and product rankings — on a dry-matter basis, against ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} thresholds and WSAVA criteria. No fluff. No paid podium spots.`,
+    heroSub: `Independent dog food and product rankings - on a dry-matter basis, against ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} thresholds and WSAVA criteria. No fluff. No paid podium spots.`,
     ctaSee: 'See the ranking →', ctaHow: 'How we rate',
     trust: [`<b>${n}</b> foods rated`, '<b>3</b> markets · PL · UK · US', '<b>0</b> paid placements'],
     scroll: 'scroll ↓',
     mKick: 'more than just food',
     mH2: 'Your dog is family. Their bowl <span class="u">deserves the same heart.</span>',
-    mP: 'There are hundreds of makers, labels tell half-truths, and online "rankings" are often paid lists. We calculate composition on a dry-matter basis, check standards and brand credibility — and say plainly what is worth your dog\'s bowl.',
+    mP: 'There are hundreds of makers, labels tell half-truths, and online "rankings" are often paid lists. We calculate composition on a dry-matter basis, check standards and brand credibility - and say plainly what is worth your dog\'s bowl.',
     pKick: 'four pillars', pH2: 'How a paw rating is built',
     pills: [
       ['Composition', '35', 'Protein and fat on a dry-matter basis, named meat, no needless fillers.'],
       ['Standards & trials', '25', `Compliance with ${mkt === 'us' ? 'AAFCO' : 'FEDIAF'} plus real feeding trials, not just label claims.`],
-      ['Manufacturer', '25', 'Brand credibility against WSAVA criteria — who really makes this food, and how.'],
+      ['Manufacturer', '25', 'Brand credibility against WSAVA criteria - who really makes this food, and how.'],
       ['Extras', '15', 'EPA/DHA, preservation quality, no artificial colours or needless chemistry.']
     ],
     prKick: 'how we do it', prH2: 'Ten trials before anything makes the ranking',
-    prLead: 'From food and toy tests, through unboxing and grooming, to comfort and the final recommendation — every product passes through Bekon\'s paws (and palate).',
+    prLead: 'From food and toy tests, through unboxing and grooming, to comfort and the final recommendation - every product passes through Bekon\'s paws (and palate).',
     rKick: `ranking · ${m.name}`, rH2: `Top dog foods in ${m.name}`,
     rFull: `See the full ranking of ${n} foods →`,
     cKick: 'choose your country', cH2: 'We show only what you can buy at home',
-    cP: 'Products, prices and shops differ between countries — we show the ranking for your market.',
+    cP: 'Products, prices and shops differ between countries - we show the ranking for your market.',
     igKick: "Bekon's life", igH2: 'Bekon tests. You watch.',
-    igP: 'Everyday life, bowl trials and honest product reviews — all on his profiles. Join the dog crew and stay in the loop.',
+    igP: 'Everyday life, bowl trials and honest product reviews - all on his profiles. Join the dog crew and stay in the loop.',
     follow: 'Follow me',
-    nKick: 'weekly, straight to the bowl', nH2: 'New food ratings — before they hit the shelf',
+    nKick: 'weekly, straight to the bowl', nH2: 'New food ratings - before they hit the shelf',
     nP: 'No spam. Just fresh rankings, ingredient warnings and price deals.',
     nPlace: 'Your email', nBtn: 'Sign up 🐾',
-    fDesc: 'Independent ratings of dog food and products. We count honestly, on a dry-matter basis — for dogs and their people.',
+    fDesc: 'Independent ratings of dog food and products. We count honestly, on a dry-matter basis - for dogs and their people.',
     fCol: ['Dog food', 'Portal', 'Markets'],
     fKarmy: [['Ranking', karmyUrl], ['Calculator', H(`${mkt}/${S.calc.slug}/`)]],
     fPortal: [['How we rate', H(`${mkt}/${methodSlug}/`)], ['Knowledge', wiedzaUrl], ['About', H(`${mkt}/about/`)], ['Bekon', bekonUrl]],
@@ -1252,12 +1252,12 @@ function homeMkt(mkt) {
 
   const alts = { pl: '/pl/', uk: '/uk/', us: '/us/' };
   const titles = {
-    pl: 'DogRanking — niezależne oceny produktów dla psów (karmy, akcesoria, tech)',
-    uk: 'DogRanking UK — independent dog food & product ratings',
-    us: 'DogRanking US — independent dog food & product ratings'
+    pl: 'DogRanking - niezależne oceny produktów dla psów (karmy, akcesoria, tech)',
+    uk: 'DogRanking UK - independent dog food & product ratings',
+    us: 'DogRanking US - independent dog food & product ratings'
   };
   const descs = {
-    pl: 'Karmy, gryzaki, szelki, GPS — jawny 100-punktowy algorytm, prawdziwe testy, oceny w łapkach. Normy FEDIAF, kryteria WSAVA, badania zamiast marketingu.',
+    pl: 'Karmy, gryzaki, szelki, GPS - jawny 100-punktowy algorytm, prawdziwe testy, oceny w łapkach. Normy FEDIAF, kryteria WSAVA, badania zamiast marketingu.',
     uk: 'Dog food rated on FEDIAF thresholds and WSAVA criteria, accessories on safety research. Transparent 100-point algorithm, paw ratings, UK availability and prices.',
     us: 'Dog food rated on AAFCO thresholds and WSAVA criteria, accessories on safety research. Transparent 100-point algorithm, paw ratings, US availability and prices.'
   };
@@ -1372,7 +1372,7 @@ function methodPage(mkt) {
 <div class="eyebrow">Metodologia</div>
 <h1>Jak powstaje ocena</h1>
 <h2>Ile punktów może dostać produkt?</h2>
-<div class="answer">Maksymalnie 100 punktów w czterech filarach. Szkielet jest wspólny dla wszystkich kategorii, kryteria — dopasowane do każdej z nich. 90+ punktów to ocena Wybitna (5 łapek 🐾), poniżej 30 — Unikaj (1 łapka).</div>
+<div class="answer">Maksymalnie 100 punktów w czterech filarach. Szkielet jest wspólny dla wszystkich kategorii, kryteria - dopasowane do każdej z nich. 90+ punktów to ocena Wybitna (5 łapek 🐾), poniżej 30 - Unikaj (1 łapka).</div>
 <table>
 <tr><th>Filar</th><th>Karmy</th><th>Akcesoria / zabawki</th><th>Tech</th></tr>
 <tr><td><strong>A (35)</strong></td><td>Skład i jakość białka (sucha masa vs FEDIAF)</td><td>Materiały i wykonanie</td><td>Parametry mierzalne</td></tr>
@@ -1381,7 +1381,7 @@ function methodPage(mkt) {
 <tr><td><strong>D (15)</strong></td><td>Dodatki i przetwarzanie</td><td>Ergonomia i trwałość</td><td>Aplikacja, koszty abonamentu</td></tr>
 </table>
 <h2>Dlaczego karmy liczymy na suchej masie i w zł za 1000 kcal?</h2>
-<div class="answer">Analiza gwarantowana podaje wartości razem z wodą: mokra karma z 8% białka ma w suchej masie 40%. A ceny za kilogram nie da się porównać między formą suchą (375 kcal/100 g) i mokrą (110 kcal/100 g) — dlatego liczymy koszt 1000 kcal.</div>
+<div class="answer">Analiza gwarantowana podaje wartości razem z wodą: mokra karma z 8% białka ma w suchej masie 40%. A ceny za kilogram nie da się porównać między formą suchą (375 kcal/100 g) i mokrą (110 kcal/100 g) - dlatego liczymy koszt 1000 kcal.</div>
 <h2>Co oceniamy, czego nie widać na etykiecie?</h2>
 <div class="answer">Filar C ocenia producenta wg pytań WSAVA: nutrycjonista (ACVN/ECVCN), próby żywieniowe, udostępnianie danych o strawności, kontrola jakości, historia wycofań.</div>
 <h2>Legenda łapek</h2>
@@ -1397,21 +1397,21 @@ function methodPage(mkt) {
 </table>
 <h2>Trzy skale, żeby niczego nie mieszać</h2>
 <ul class="pc">
-<li><strong>Łapki 🐾 (1–5)</strong> — jakość produktu. Zawsze i wszędzie.</li>
-<li><strong>Miski 🥣 (0–3)</strong> — smakowitość rzeczy jadalnych w degustacji Bekona. Nie wpływa na łapki.</li>
-<li><strong>Piłki 🎾 (0–3)</strong> — akceptacja rzeczy niejadalnych w teście użytkowym. Nie wpływa na łapki.</li>
+<li><strong>Łapki 🐾 (1–5)</strong> - jakość produktu. Zawsze i wszędzie.</li>
+<li><strong>Miski 🥣 (0–3)</strong> - smakowitość rzeczy jadalnych w degustacji Bekona. Nie wpływa na łapki.</li>
+<li><strong>Piłki 🎾 (0–3)</strong> - akceptacja rzeczy niejadalnych w teście użytkowym. Nie wpływa na łapki.</li>
 </ul>
-<p>Diety weterynaryjne oceniamy w osobnej kategorii. Karmy surowe bez dowodu kompletności i kontroli patogenów mają sufit 2 łapek. Recenzje bez sekcji testu są jawnie oznaczone „ocena z etykiety" — test dodaje zdjęcia i pomiary, nigdy nie zmienia punktacji.</p>
-<h2 id="testy">Jak testujemy — i dlaczego Bekon nie je wszystkiego</h2>
-<div class="answer">Każdy testowany produkt fizycznie kupujemy i dokumentujemy zdjęciami. Karmy: pomiar granuli, zapach, tekstura, a degustacja to kilka granulek jako przysmak — nigdy zmiana diety. Akcesoria: test w codziennym użytkowaniu. Werdykty Bekona nie wpływają na punktację.</div>
-<p><strong>Dlaczego tak?</strong> Częsta zmiana karmy może powodować problemy żołądkowo-jelitowe — bezpieczne przejście to 7–10 dni. Nasz pies-tester ma stałą dietę, a karmy testowe poznaje jako pojedyncze smaczki. <strong>Produkty po teście</strong> przekazujemy lokalnemu schronisku.</p>
-<h2>Strefa Zdrowie — zasady specjalne</h2>
-<div class="legalbox">Leki weterynaryjne na receptę nie podlegają rankingowaniu ani linkowaniu zakupowemu — reklama publiczna leków Rp. jest w Polsce zakazana. Publikujemy wyłącznie materiały edukacyjne, konsultowane z lekarzem weterynarii.</div>` : `
+<p>Diety weterynaryjne oceniamy w osobnej kategorii. Karmy surowe bez dowodu kompletności i kontroli patogenów mają sufit 2 łapek. Recenzje bez sekcji testu są jawnie oznaczone „ocena z etykiety" - test dodaje zdjęcia i pomiary, nigdy nie zmienia punktacji.</p>
+<h2 id="testy">Jak testujemy - i dlaczego Bekon nie je wszystkiego</h2>
+<div class="answer">Każdy testowany produkt fizycznie kupujemy i dokumentujemy zdjęciami. Karmy: pomiar granuli, zapach, tekstura, a degustacja to kilka granulek jako przysmak - nigdy zmiana diety. Akcesoria: test w codziennym użytkowaniu. Werdykty Bekona nie wpływają na punktację.</div>
+<p><strong>Dlaczego tak?</strong> Częsta zmiana karmy może powodować problemy żołądkowo-jelitowe - bezpieczne przejście to 7–10 dni. Nasz pies-tester ma stałą dietę, a karmy testowe poznaje jako pojedyncze smaczki. <strong>Produkty po teście</strong> przekazujemy lokalnemu schronisku.</p>
+<h2>Strefa Zdrowie - zasady specjalne</h2>
+<div class="legalbox">Leki weterynaryjne na receptę nie podlegają rankingowaniu ani linkowaniu zakupowemu - reklama publiczna leków Rp. jest w Polsce zakazana. Publikujemy wyłącznie materiały edukacyjne, konsultowane z lekarzem weterynarii.</div>` : `
 <p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › Methodology</p>
 <div class="eyebrow">Methodology</div>
 <h1>How a rating is made</h1>
 <h2>How many points can a product earn?</h2>
-<div class="answer">Up to 100 points across four pillars. The skeleton is shared by all categories; criteria adapt to each. 90+ points means Outstanding (5 paws 🐾), below 30 — Avoid (1 paw).</div>
+<div class="answer">Up to 100 points across four pillars. The skeleton is shared by all categories; criteria adapt to each. 90+ points means Outstanding (5 paws 🐾), below 30 - Avoid (1 paw).</div>
 <table>
 <tr><th>Pillar</th><th>Dog food</th><th>Accessories / toys</th><th>Tech</th></tr>
 <tr><td><strong>A (35)</strong></td><td>Recipe & protein quality (dry matter vs FEDIAF/AAFCO)</td><td>Materials & build</td><td>Measurable performance</td></tr>
@@ -1420,7 +1420,7 @@ function methodPage(mkt) {
 <tr><td><strong>D (15)</strong></td><td>Additives & processing</td><td>Ergonomics & durability</td><td>App, subscription costs</td></tr>
 </table>
 <h2>Why dry matter and cost per 1,000 kcal?</h2>
-<div class="answer">Guaranteed analysis includes water: a wet food with 8% protein has 40% on a dry-matter basis. And price per kilo cannot compare dry (375 kcal/100 g) with wet (110 kcal/100 g) — so we cost every food per 1,000 kcal.</div>
+<div class="answer">Guaranteed analysis includes water: a wet food with 8% protein has 40% on a dry-matter basis. And price per kilo cannot compare dry (375 kcal/100 g) with wet (110 kcal/100 g) - so we cost every food per 1,000 kcal.</div>
 <h2>What we rate that labels can't show</h2>
 <div class="answer">Pillar C scores the manufacturer on WSAVA Global Nutrition Committee questions: a qualified nutritionist (ACVN/ECVCN), feeding trials, digestibility data on request, quality control, recall history in context.</div>
 <h2>Paw legend</h2>
@@ -1436,14 +1436,14 @@ function methodPage(mkt) {
 </table>
 <h2>Three scales, so nothing gets mixed up</h2>
 <ul class="pc">
-<li><strong>Paws 🐾 (1–5)</strong> — product quality. Always.</li>
-<li><strong>Bowls 🥣 (0–3)</strong> — palatability of edibles in Bekon's tasting. Never affects paws.</li>
-<li><strong>Balls 🎾 (0–3)</strong> — acceptance of non-edibles in usage tests. Never affects paws.</li>
+<li><strong>Paws 🐾 (1–5)</strong> - product quality. Always.</li>
+<li><strong>Bowls 🥣 (0–3)</strong> - palatability of edibles in Bekon's tasting. Never affects paws.</li>
+<li><strong>Balls 🎾 (0–3)</strong> - acceptance of non-edibles in usage tests. Never affects paws.</li>
 </ul>
-<p>Veterinary diets are rated in their own category. Raw foods without completeness proof and pathogen control are capped at 2 paws. Reviews without a hands-on section are clearly marked "label-based" — testing adds photos and measurements, it never changes the score.</p>
-<h2 id="testy">How we test — and why Bekon doesn't eat everything</h2>
-<div class="answer">Every tested product is bought by us and photo-documented. Foods: kibble measurement, smell, texture; tasting means a few kibbles as a treat — never a diet change (a safe transition takes 7–10 days). Bekon's verdicts never affect the 0–100 score. Opened test bags go to a local shelter.</div>
-<h2>Health zone — special rules</h2>
+<p>Veterinary diets are rated in their own category. Raw foods without completeness proof and pathogen control are capped at 2 paws. Reviews without a hands-on section are clearly marked "label-based" - testing adds photos and measurements, it never changes the score.</p>
+<h2 id="testy">How we test - and why Bekon doesn't eat everything</h2>
+<div class="answer">Every tested product is bought by us and photo-documented. Foods: kibble measurement, smell, texture; tasting means a few kibbles as a treat - never a diet change (a safe transition takes 7–10 days). Bekon's verdicts never affect the 0–100 score. Opened test bags go to a local shelter.</div>
+<h2>Health zone - special rules</h2>
 <div class="legalbox">Prescription veterinary medicines are never ranked or affiliate-linked (POM-V in the UK, Rx in the US). The Health zone is educational only, with veterinary review.</div>`;
   return { url, html: page({ title: m.lang === 'pl' ? 'Metodologia oceny | DogRanking' : 'Rating methodology | DogRanking', desc: m.lang === 'pl' ? 'Jawny algorytm: 4 filary, 100 punktów, łapki 1–5. Karmy w suchej masie i zł/1000 kcal.' : 'Transparent algorithm: 4 pillars, 100 points, paw ratings 1–5. Dog food on dry matter and cost per 1,000 kcal.', canonical: url, body, jsonld: [ORG], mkt, alts }) };
 }
@@ -1459,14 +1459,14 @@ function aboutPage(mkt) {
   }];
   const dogs = m.lang === 'pl' ? [
     ['Amerykański pitbull', 'Nauczył mnie, że za groźną etykietą może kryć się najczulsze serce.'],
-    ['Doberman', 'Elegancki atleta — potrzebował paliwa zupełnie innego niż kanapowy leniuch.'],
-    ['Biały owczarek szwajcarski', 'Wrażliwy żołądek. To przy nim pierwszy raz naprawdę przeczytałem skład karmy — i nie zrozumiałem z niego nic.'],
-    ['Dwa mieszańce', 'Przygarnięte przez rodzinę. Psy „z niespodzianką” — bez rodowodu i bez instrukcji obsługi.'],
+    ['Doberman', 'Elegancki atleta - potrzebował paliwa zupełnie innego niż kanapowy leniuch.'],
+    ['Biały owczarek szwajcarski', 'Wrażliwy żołądek. To przy nim pierwszy raz naprawdę przeczytałem skład karmy - i nie zrozumiałem z niego nic.'],
+    ['Dwa mieszańce', 'Przygarnięte przez rodzinę. Psy „z niespodzianką” - bez rodowodu i bez instrukcji obsługi.'],
     ['Bekon · pudel miniaturowy · 2,5 roku', 'Obecny szef. Apetyt godny imienia. Testuje wszystko, o czym tu piszemy.']
   ] : [
     ['American Pit Bull', 'Taught me that the scariest label can hide the softest heart.'],
-    ['Dobermann', 'A sleek athlete — he needed completely different fuel than a couch potato.'],
-    ['White Swiss Shepherd', 'A sensitive stomach. He made me read a dog food label properly for the first time — and understand none of it.'],
+    ['Dobermann', 'A sleek athlete - he needed completely different fuel than a couch potato.'],
+    ['White Swiss Shepherd', 'A sensitive stomach. He made me read a dog food label properly for the first time - and understand none of it.'],
     ['Two rescue mutts', 'Taken in by my family. Dogs with no pedigree and no manual.'],
     ['Bekon · miniature poodle · 2.5 yrs', 'Current boss. An appetite worthy of his name ("Bekon" = Bacon). Taste-tests everything reviewed here.']
   ];
@@ -1474,20 +1474,20 @@ function aboutPage(mkt) {
 <p class="crumb"><a href="${href(url, 'pl/')}">DogRanking PL</a> › O nas</p>
 <div class="eyebrow">O nas</div>
 <h1>Sześć psów, <em style="color:var(--terra)">jedna lekcja</em></h1>
-<p class="lead" style="font-style:italic">Nazywam się Filip i przez całe życie towarzyszyły mi psy — bardzo różne psy.</p>
+<p class="lead" style="font-style:italic">Nazywam się Filip i przez całe życie towarzyszyły mi psy - bardzo różne psy.</p>
 <table>${dogs.map(d => `<tr><td><strong>${d[0]}</strong></td><td>${d[1]}</td></tr>`).join('')}</table>
 <div class="answer"><strong>Sześć psów, sześć różnych żołądków, sześć różnych potrzeb. I jedna wspólna lekcja: na opakowaniu karmy najważniejsze jest to, co napisano najdrobniejszym drukiem. Ten portal czyta to za Ciebie.</strong></div>
 <p>Nie sprzedajemy karmy. Sprawdzamy ją. A Bekon degustuje. Wszystkie oceny powstają wg jawnej <a href="${href(url, 'pl/metodologia/')}">metodologii</a>, a o tym, jak zarabiamy, piszemy wprost na stronie <a href="${href(url, 'pl/zasady/')}">Zasady i finansowanie</a>.</p>
-<p class="meta">Konsultacja weterynaryjna treści zdrowotnych: w trakcie nawiązywania współpracy — do tego czasu treści zdrowotne mają charakter wyłącznie edukacyjny.</p>` : `
+<p class="meta">Konsultacja weterynaryjna treści zdrowotnych: w trakcie nawiązywania współpracy - do tego czasu treści zdrowotne mają charakter wyłącznie edukacyjny.</p>` : `
 <p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › About</p>
 <div class="eyebrow">About</div>
 <h1>Six dogs, <em style="color:var(--terra)">one lesson</em></h1>
-<p class="lead" style="font-style:italic">My name is Filip, and dogs have been part of my life for as long as I can remember — very different dogs.</p>
+<p class="lead" style="font-style:italic">My name is Filip, and dogs have been part of my life for as long as I can remember - very different dogs.</p>
 <table>${dogs.map(d => `<tr><td><strong>${d[0]}</strong></td><td>${d[1]}</td></tr>`).join('')}</table>
 <div class="answer"><strong>Six dogs, six different stomachs, six different needs. One lesson: the most important thing on a bag of dog food is written in the smallest print. This site reads it for you.</strong></div>
 <p>We don't sell dog food. We check it. Bekon does the tasting. Every rating follows our transparent <a href="${href(url, mkt + '/methodology/')}">methodology</a>, and we explain exactly how we earn on the <a href="${href(url, mkt + '/principles/')}">Principles & funding</a> page.</p>
 <p class="meta">Hands-on tests are currently performed on the Polish market (where Bekon lives); UK/US reviews are label-based and clearly marked as such until local testing begins.</p>`;
-  return { url, html: page({ title: m.lang === 'pl' ? 'O nas — sześć psów, jedna lekcja | DogRanking' : 'About us — six dogs, one lesson | DogRanking', desc: m.lang === 'pl' ? 'Kim jesteśmy i dlaczego czytamy etykiety karm. Historia sześciu psów i pudla Bekona — głównego testera DogRanking.' : 'Who we are and why we read dog food labels. The story of six dogs and Bekon the miniature poodle — DogRanking’s chief taste-tester.', canonical: url, body, jsonld, mkt, alts }) };
+  return { url, html: page({ title: m.lang === 'pl' ? 'O nas - sześć psów, jedna lekcja | DogRanking' : 'About us - six dogs, one lesson | DogRanking', desc: m.lang === 'pl' ? 'Kim jesteśmy i dlaczego czytamy etykiety karm. Historia sześciu psów i pudla Bekona - głównego testera DogRanking.' : 'Who we are and why we read dog food labels. The story of six dogs and Bekon the miniature poodle - DogRanking’s chief taste-tester.', canonical: url, body, jsonld, mkt, alts }) };
 }
 
 /* ---------- Zasady i finansowanie (E-E-A-T: polityki) ---------- */
@@ -1500,38 +1500,38 @@ function principlesPage(mkt) {
 <div class="eyebrow">Przejrzystość</div>
 <h1>Zasady i finansowanie</h1>
 <h2>Jak zarabiamy?</h2>
-<div class="answer">DogRanking utrzymuje się z linków afiliacyjnych: gdy kupisz produkt przez link „Gdzie kupić”, sklep płaci nam prowizję — Twoja cena się nie zmienia. Każdy taki link jest oznaczony (rel="sponsored"), a przy każdej liście produktów znajdziesz jawną informację o afiliacji.</div>
+<div class="answer">DogRanking utrzymuje się z linków afiliacyjnych: gdy kupisz produkt przez link „Gdzie kupić”, sklep płaci nam prowizję - Twoja cena się nie zmienia. Każdy taki link jest oznaczony (rel="sponsored"), a przy każdej liście produktów znajdziesz jawną informację o afiliacji.</div>
 <h2>Dlaczego prowizje nie wpływają na oceny?</h2>
 <ul class="pc">
-<li><strong>Kolejność prac:</strong> punktacja 0–100 powstaje z analizy składu, norm i danych producenta — zanim sprawdzimy, gdzie produkt można kupić i czy sklep ma program partnerski.</li>
+<li><strong>Kolejność prac:</strong> punktacja 0–100 powstaje z analizy składu, norm i danych producenta - zanim sprawdzimy, gdzie produkt można kupić i czy sklep ma program partnerski.</li>
 <li><strong>Brak płatnych miejsc:</strong> producent nie może kupić pozycji w rankingu, recenzji ani „łapek”. Nie publikujemy treści sponsorowanych w rankingach.</li>
-<li><strong>Wiele sklepów:</strong> przy produktach linkujemy do co najmniej dwóch sprzedawców, gdy to możliwe — także tych bez prowizji.</li>
-<li><strong>Egzemplarze testowe kupujemy sami</strong> — nie przyjmujemy darmowych produktów od producentów do recenzji punktowanych.</li>
+<li><strong>Wiele sklepów:</strong> przy produktach linkujemy do co najmniej dwóch sprzedawców, gdy to możliwe - także tych bez prowizji.</li>
+<li><strong>Egzemplarze testowe kupujemy sami</strong> - nie przyjmujemy darmowych produktów od producentów do recenzji punktowanych.</li>
 </ul>
 <h2>Polityka korekt</h2>
 <p>Mylimy się? Popraw nas. Każda merytoryczna korekta jest nanoszona z adnotacją i datą w changelogu strony, której dotyczy. Zgłoszenia: przez formularz kontaktowy (w przygotowaniu) lub profil w social mediach.</p>
 <h2>Treści zdrowotne</h2>
 <div class="legalbox">Nie rankingujemy leków weterynaryjnych na receptę i nie linkujemy do nich zakupowo (Prawo farmaceutyczne). Treści o zdrowiu mają charakter edukacyjny i nie zastępują porady lekarza weterynarii.</div>
 <h2>Skala wiarygodności źródeł A/B/C/D</h2>
-<p>Artykuły w zakładce Wiedza oznaczamy siłą dowodów: <span class="grade gA">A</span> mocne (zaślepione RCT/metaanalizy, pomiary kliniczne), <span class="grade gB">B</span> umiarkowane (dobre badania kontrolowane/kohortowe), <span class="grade gC">C</span> słabe/wschodzące (ankiety, przekroje, finansowanie kierunkowe), <span class="grade gD">D</span> niewystarczające/marketingowe. Ankieta właścicieli to maksymalnie C — niezależnie od wielkości próby.</p>` : `
+<p>Artykuły w zakładce Wiedza oznaczamy siłą dowodów: <span class="grade gA">A</span> mocne (zaślepione RCT/metaanalizy, pomiary kliniczne), <span class="grade gB">B</span> umiarkowane (dobre badania kontrolowane/kohortowe), <span class="grade gC">C</span> słabe/wschodzące (ankiety, przekroje, finansowanie kierunkowe), <span class="grade gD">D</span> niewystarczające/marketingowe. Ankieta właścicieli to maksymalnie C - niezależnie od wielkości próby.</p>` : `
 <p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › Principles & funding</p>
 <div class="eyebrow">Transparency</div>
 <h1>Principles & funding</h1>
 <h2>How do we earn?</h2>
-<div class="answer">DogRanking is funded by affiliate links: when you buy through a "Where to buy" link, the shop pays us a commission — your price does not change. Every such link is marked (rel="sponsored"), and every product list carries a clear affiliate disclosure.</div>
+<div class="answer">DogRanking is funded by affiliate links: when you buy through a "Where to buy" link, the shop pays us a commission - your price does not change. Every such link is marked (rel="sponsored"), and every product list carries a clear affiliate disclosure.</div>
 <h2>Why commissions cannot influence ratings</h2>
 <ul class="pc">
-<li><strong>Order of work:</strong> the 0–100 score is finalised from recipe analysis, standards and manufacturer data — before we check where a product is sold or whether the shop runs an affiliate programme.</li>
+<li><strong>Order of work:</strong> the 0–100 score is finalised from recipe analysis, standards and manufacturer data - before we check where a product is sold or whether the shop runs an affiliate programme.</li>
 <li><strong>No paid placements:</strong> manufacturers cannot buy a ranking position, a review or paws. We do not publish sponsored content inside rankings.</li>
-<li><strong>Multiple sellers:</strong> we link to at least two retailers where possible — including ones that pay us nothing.</li>
-<li><strong>We buy test samples ourselves</strong> — we do not accept free products from manufacturers for scored reviews.</li>
+<li><strong>Multiple sellers:</strong> we link to at least two retailers where possible - including ones that pay us nothing.</li>
+<li><strong>We buy test samples ourselves</strong> - we do not accept free products from manufacturers for scored reviews.</li>
 </ul>
 <h2>Corrections policy</h2>
 <p>Got something wrong? Tell us. Every substantive correction is applied with a note and date in the page's changelog.</p>
 <h2>Health content</h2>
 <div class="legalbox">We never rank prescription veterinary medicines or affiliate-link to them. Health content is educational and does not replace veterinary advice.</div>
 <h2>Evidence grades A/B/C/D</h2>
-<p>Knowledge articles carry an evidence grade: <span class="grade gA">A</span> strong (blinded RCTs/meta-analyses, clinical measures), <span class="grade gB">B</span> moderate (good controlled/cohort studies), <span class="grade gC">C</span> weak/emerging (surveys, cross-sectional, directional funding), <span class="grade gD">D</span> insufficient/marketing. Owner surveys cap at C — regardless of sample size.</p>`;
+<p>Knowledge articles carry an evidence grade: <span class="grade gA">A</span> strong (blinded RCTs/meta-analyses, clinical measures), <span class="grade gB">B</span> moderate (good controlled/cohort studies), <span class="grade gC">C</span> weak/emerging (surveys, cross-sectional, directional funding), <span class="grade gD">D</span> insufficient/marketing. Owner surveys cap at C - regardless of sample size.</p>`;
   return { url, html: page({ title: m.lang === 'pl' ? 'Zasady i finansowanie | DogRanking' : 'Principles & funding | DogRanking', desc: m.lang === 'pl' ? 'Jak zarabia DogRanking i dlaczego prowizje nie wpływają na oceny. Polityka afiliacyjna, korekt i treści zdrowotnych.' : 'How DogRanking earns and why commissions cannot influence ratings. Affiliate, corrections and health-content policies.', canonical: url, body, jsonld: [ORG], mkt, alts }) };
 }
 
@@ -1552,12 +1552,12 @@ function knowledgeHub() {
 <p class="crumb"><a href="${href(url, 'pl/')}">DogRanking PL</a> › Wiedza</p>
 <div class="eyebrow">Baza wiedzy</div>
 <h1>Co mówią badania <em style="color:var(--terra)">o karmieniu psów</em></h1>
-<p class="lead">Czytamy normy FEDIAF, śledztwa FDA i metaanalizy — i przekładamy je na decyzje przy półce sklepowej. Każdy artykuł kończy się źródłami i ma ocenę siły dowodów.</p>
+<p class="lead">Czytamy normy FEDIAF, śledztwa FDA i metaanalizy - i przekładamy je na decyzje przy półce sklepowej. Każdy artykuł kończy się źródłami i ma ocenę siły dowodów.</p>
 <div class="card"><strong>Skala wiarygodności:</strong> <span class="grade gA">A</span> mocne dowody (RCT/metaanalizy) · <span class="grade gB">B</span> umiarkowane (badania kontrolowane/kohortowe) · <span class="grade gC">C</span> słabe/wschodzące (ankiety, przekroje) · <span class="grade gD">D</span> marketing bez badań. Tego nie robi żaden inny portal o karmach.</div>
 <div class="catgrid">
 ${ARTS.map(a => artCard(a, url)).join('\n')}
 </div>`;
-  return { url, html: page({ title: 'Wiedza: badania o karmieniu psów (z oceną dowodów) | DogRanking', desc: 'Normy FEDIAF, śledztwo FDA ws. DCM, metaanalizy omega-3 — przełożone na decyzje przy półce. Każdy artykuł z oceną siły dowodów A/B/C/D.', canonical: url, body, jsonld, mkt: 'pl' }) };
+  return { url, html: page({ title: 'Wiedza: badania o karmieniu psów (z oceną dowodów) | DogRanking', desc: 'Normy FEDIAF, śledztwo FDA ws. DCM, metaanalizy omega-3 - przełożone na decyzje przy półce. Każdy artykuł z oceną siły dowodów A/B/C/D.', canonical: url, body, jsonld, mkt: 'pl' }) };
 }
 function articlePage(a) {
   const url = `/pl/wiedza/${a.id}/`;
@@ -1584,7 +1584,7 @@ function articlePage(a) {
 <p class="lead-a">${a.lead}</p>
 <div class="body">${a.body.map(p => `<p>${p}</p>`).join('')}</div>
 <div class="src"><strong>Źródła:</strong> ${a.src}</div>
-<div class="protocol" style="margin-top:24px"><strong>Wykorzystaj to w praktyce:</strong> sprawdź <a href="${href(url, 'pl/karmy/')}" style="color:inherit;font-weight:700">ranking karm dostępnych w Polsce →</a> ${/strączkow|dcm|grain|groch/i.test(a.title + a.teaser) ? 'i odfiltruj receptury ze strączkowymi w panelu „Dopasuj do swojego psa".' : 'i dopasuj karmę do wieku, rozmiaru i zdrowia swojego psa.'} Jak liczymy oceny — zob. <a href="${href(url, 'pl/metodologia/')}" style="color:inherit;font-weight:700">metodologia</a>.</div>
+<div class="protocol" style="margin-top:24px"><strong>Wykorzystaj to w praktyce:</strong> sprawdź <a href="${href(url, 'pl/karmy/')}" style="color:inherit;font-weight:700">ranking karm dostępnych w Polsce →</a> ${/strączkow|dcm|grain|groch/i.test(a.title + a.teaser) ? 'i odfiltruj receptury ze strączkowymi w panelu „Dopasuj do swojego psa".' : 'i dopasuj karmę do wieku, rozmiaru i zdrowia swojego psa.'} Jak liczymy oceny - zob. <a href="${href(url, 'pl/metodologia/')}" style="color:inherit;font-weight:700">metodologia</a>.</div>
 </div>`;
   return { url, html: page({ title: `${a.title} | DogRanking Wiedza`, desc: a.teaser.slice(0, 155), canonical: url, body, jsonld, mkt: 'pl' }) };
 }
@@ -1601,20 +1601,20 @@ const BEKON_STR = {
   pl: {
     crumbHome: 'DogRanking PL', crumb: 'Bekon',
     eyebrow: 'Bekon · pudel miniaturowy', h1pre: 'Całe życie Bekona,', h1em: 'chwila po chwili',
-    lead: 'Bekon to nie tylko maskotka i główny degustator DogRanking — to ważna część mojego życia. Tu zbieram najważniejsze momenty od pierwszego dnia, ze zdjęciami i historiami.',
-    title: 'Bekon — oś czasu życia | DogRanking', desc: 'Historia Bekona, pudla miniaturowego i głównego testera DogRanking — najważniejsze chwile od szczeniaka, ze zdjęciami.',
-    avatarAlt: 'Bekon — pudel miniaturowy', videoBadge: 'WIDEO',
+    lead: 'Bekon to nie tylko maskotka i główny degustator DogRanking - to ważna część mojego życia. Tu zbieram najważniejsze momenty od pierwszego dnia, ze zdjęciami i historiami.',
+    title: 'Bekon - oś czasu życia | DogRanking', desc: 'Historia Bekona, pudla miniaturowego i głównego testera DogRanking - najważniejsze chwile od szczeniaka, ze zdjęciami.',
+    avatarAlt: 'Bekon - pudel miniaturowy', videoBadge: 'WIDEO',
     facts: [['🎂', 'ur. 16 grudnia 2023'], ['🐩', 'pudel miniaturowy'], ['🥣', 'szef testów DogRanking']],
-    endNote: 'Ciąg dalszy nastąpi — kolejne chwile dopiszę tutaj.'
+    endNote: 'Ciąg dalszy nastąpi - kolejne chwile dopiszę tutaj.'
   },
   en: {
     crumbHome: 'DogRanking', crumb: 'Bekon',
     eyebrow: 'Bekon · miniature poodle', h1pre: "Bekon's whole life,", h1em: 'moment by moment',
-    lead: "Bekon is more than the mascot and chief taster of DogRanking — he's an important part of my life. Here I collect the milestones from day one, with photos and stories.",
-    title: 'Bekon — life timeline | DogRanking', desc: "The story of Bekon, a miniature poodle and DogRanking's chief tester — milestones from puppyhood, with photos.",
-    avatarAlt: 'Bekon — miniature poodle', videoBadge: 'VIDEO',
+    lead: "Bekon is more than the mascot and chief taster of DogRanking - he's an important part of my life. Here I collect the milestones from day one, with photos and stories.",
+    title: 'Bekon - life timeline | DogRanking', desc: "The story of Bekon, a miniature poodle and DogRanking's chief tester - milestones from puppyhood, with photos.",
+    avatarAlt: 'Bekon - miniature poodle', videoBadge: 'VIDEO',
     facts: [['🎂', 'born 16 Dec 2023'], ['🐩', 'miniature poodle'], ['🥣', "DogRanking's chief taster"]],
-    endNote: 'To be continued — more moments will be added right here.'
+    endNote: 'To be continued - more moments will be added right here.'
   }
 };
 function bekonPage(mkt) {
@@ -1697,7 +1697,7 @@ function calcPage(mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang]; const C = S.calc;
   const url = `/${mkt}/${C.slug}/`;
   const foods = ((PRODUCTS[mkt] || {}).karmy || []).filter(f => f.kcal && (f.priceKg || f.priceZlKg))
-    .map(f => ({ n: f.name + (f.flavor ? ' — ' + f.flavor : ''), kcal: f.kcal, price: f.priceKg || f.priceZlKg }))
+    .map(f => ({ n: f.name + (f.flavor ? ' - ' + f.flavor : ''), kcal: f.kcal, price: f.priceKg || f.priceZlKg }))
     .sort((a, b) => a.n.localeCompare(b.n));
   const moneySym = mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$');
   const methodPath = `${mkt}/${m.lang === 'pl' ? 'metodologia' : 'methodology'}/`;
@@ -1753,7 +1753,7 @@ function calcPage(mkt) {
 
 /* ---------- intro: wybór rynku ---------- */
 /* STRONA STARTOWA = czysta BRAMKA wyboru kraju.
-   Samodzielny dokument BEZ nagłówka/nawigacji/stopki — jedyne wyjście dalej to wybór rynku. */
+   Samodzielny dokument BEZ nagłówka/nawigacji/stopki - jedyne wyjście dalej to wybór rynku. */
 function rootPage() {
   const P = { pl: href('/', 'pl/'), uk: href('/', 'uk/'), us: href('/', 'us/') };
   const html = `<!DOCTYPE html>
@@ -1762,8 +1762,8 @@ function rootPage() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
-<title>DogRanking — niezależne oceny produktów dla psów · dog product ratings</title>
-<meta name="description" content="Niezależne oceny karm i produktów dla psów. Rozpoznajemy Twój kraj i pokazujemy rynek lokalny. Independent dog product ratings — PL · UK · US.">
+<title>DogRanking - niezależne oceny produktów dla psów · dog product ratings</title>
+<meta name="description" content="Niezależne oceny karm i produktów dla psów. Rozpoznajemy Twój kraj i pokazujemy rynek lokalny. Independent dog product ratings - PL · UK · US.">
 ${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}<link rel="canonical" href="${SITE}/">
 <link rel="alternate" hreflang="pl-PL" href="${SITE}/pl/">
 <link rel="alternate" hreflang="en-GB" href="${SITE}/uk/">
@@ -1833,7 +1833,7 @@ ${STAGING ? '<meta name="robots" content="noindex,nofollow">' : ''}
 }
 
 /* ---------- robots / llms / sitemap ---------- */
-const ROBOTS = `# Strategia: CHCEMY być cytowani przez AI — allow dla wszystkich botów
+const ROBOTS = `# Strategia: CHCEMY być cytowani przez AI - allow dla wszystkich botów
 User-agent: *
 Allow: /
 
@@ -1854,12 +1854,12 @@ Allow: /
 
 Sitemap: ${SITE}/sitemap.xml
 `;
-const LLMS = `# DogRanking — independent dog product ratings (PL / UK / US)
+const LLMS = `# DogRanking - independent dog product ratings (PL / UK / US)
 
 > Transparent 100-point algorithm, paw ratings 1–5. Dog food scored on dry-matter
 > composition vs FEDIAF/AAFCO thresholds, manufacturer credibility per WSAVA criteria,
 > and cost per 1,000 kcal (the only fair measure across dry/wet/fresh formats).
-> Separate product databases per market — availability, prices and shops are local.
+> Separate product databases per market - availability, prices and shops are local.
 > Prescription veterinary medicines are never ranked (educational content only).
 
 ## Markets
@@ -1906,7 +1906,7 @@ for (const mkt of Object.keys(MARKETS)) {
       if (!p.test) continue;
       const dir = path.join(OUT, 'assets', mkt, catSlug, p.slug);
       fs.mkdirSync(dir, { recursive: true });
-      for (const s of PHOTO_SLOTS(catSlug === 'karmy')) fs.writeFileSync(path.join(dir, `${s.file}.svg`), placeholderSVG(s.label.split(' — ')[0]));
+      for (const s of PHOTO_SLOTS(catSlug === 'karmy')) fs.writeFileSync(path.join(dir, `${s.file}.svg`), placeholderSVG(s.label.split(' - ')[0]));
     }
   }
 }
@@ -1936,4 +1936,4 @@ fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sitemap(pages.map(p => p.url)));
 const total = Object.values(PRODUCTS).reduce((a, m) => a + Object.values(m).reduce((b, v) => b + v.length, 0), 0);
 console.log(`OK: ${pages.length} stron · 3 rynki · ${CATS.length} kategorii/rynek · ${total} produktów → dist/`);
 
-// redesign v1 (terakota+oliwka, fale, Fraunces/Caveat) — 1733Z
+// redesign v1 (terakota+oliwka, fale, Fraunces/Caveat) - 1733Z
