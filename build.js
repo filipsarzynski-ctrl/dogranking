@@ -426,6 +426,37 @@ footer a{color:var(--gold)}
 .rvmsg{font-family:var(--f-sans);font-size:.92rem;margin-top:12px;padding:11px 14px;border-radius:12px;display:none}
 .rvmsg.ok{display:block;background:#EAF0E6;border:1px solid #C9D6BF;color:#3F5934}
 .rvmsg.err{display:block;background:#F8EEE9;border:1px solid #E5CDC2;color:#7A4633}
+/* ===== ranking: siatka kafelków (styl nomad list) ===== */
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin:18px 0}
+.rcard{position:relative;display:flex;flex-direction:column;border-radius:var(--r-lg);overflow:hidden;background:var(--card);border:1px solid #E6DAC5;box-shadow:0 10px 26px -20px rgba(62,14,22,.5);text-decoration:none;color:var(--ink);transition:transform .16s,box-shadow .16s}
+.rcard:hover{transform:translateY(-4px);box-shadow:0 26px 44px -24px rgba(62,14,22,.5);border-color:var(--terra)}
+.rc-img{position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,#FBF6EC,#EAD9BC);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rc-img.has-photo{background-size:cover;background-position:center}
+.rc-img .pkg,.rc-img svg{width:auto;height:64%}
+.rc-rank{position:absolute;top:9px;left:13px;font-family:var(--f-serif);font-weight:700;font-size:1.55rem;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.55);z-index:3;line-height:1}
+.rc-badge{position:absolute;top:11px;right:12px;z-index:3;font-family:var(--f-sans);font-size:.64rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:rgba(62,14,22,.82);color:#F2E8D5;padding:3px 9px;border-radius:99px}
+.rc-body{padding:13px 15px 15px;display:flex;flex-direction:column;gap:5px;flex:1}
+.rc-name{font-family:var(--f-serif);font-weight:600;font-size:1.05rem;line-height:1.18}
+.rc-paws{line-height:0}
+.rc-stats{font-family:var(--f-sans);font-size:.82rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 12px;margin-top:auto;padding-top:4px}
+.rc-stats b{color:var(--ink);font-weight:600}
+.rc-go{font-family:var(--f-sans);font-size:.8rem;font-weight:600;color:var(--terra);margin-top:7px}
+.rc-hover{position:absolute;left:0;right:0;top:0;bottom:0;background:linear-gradient(180deg,rgba(62,14,22,.93),rgba(40,5,10,.96));color:#F2E8D5;padding:15px 16px;display:flex;flex-direction:column;justify-content:center;gap:8px;opacity:0;transition:opacity .18s;pointer-events:none;z-index:4}
+.rcard:hover .rc-hover{opacity:1}
+.rc-hover .h{font-family:var(--f-sans);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#D9A441;margin-bottom:1px}
+.rc-bar{display:grid;grid-template-columns:82px 1fr 32px;align-items:center;gap:8px;font-family:var(--f-sans);font-size:.74rem}
+.rc-bar .t{color:#E7D2C0;white-space:nowrap}
+.rc-bar .track{height:7px;background:rgba(255,255,255,.16);border-radius:4px;overflow:hidden}
+.rc-bar .track i{display:block;height:100%;background:var(--gold);border-radius:4px}
+.rc-bar .v{text-align:right;color:#fff;font-weight:600}
+.rc-match{margin-top:5px;font-family:var(--f-sans);font-size:.8rem;color:#fff}
+.rc-match .mbar{height:7px;background:rgba(255,255,255,.18);border-radius:4px;margin-top:4px;overflow:hidden}
+.rc-match .mbar i{display:block;height:100%;background:var(--gold)}
+.rc-match.bad b{color:#F0B8A6}
+.rcard.blocked{opacity:.62}
+.rcard.blocked .rc-img{filter:grayscale(.6)}
+.rc-warn{font-family:var(--f-sans);font-size:.74rem;color:#F0B8A6;margin-top:2px}
+@media(hover:none){.rc-hover{display:none}}
 `;
 
 /* ---------- CSS strony głównej (landing, wg zaakceptowanego prototypu bordo) ---------- */
@@ -914,6 +945,40 @@ function rankRows(products, cat, mkt, fromUrl) {
 </a>`).join('');
 }
 
+/* ---------- zdjęcia produktów (własne/licencjonowane) → static/produkty/<slug>.webp ---------- */
+const PROD_IMG_DIR = path.join(__dirname, 'static', 'produkty');
+function prodImg(p) {
+  if (!fs.existsSync(PROD_IMG_DIR)) return '';
+  for (const ext of ['webp', 'jpg', 'jpeg', 'png']) {
+    if (fs.existsSync(path.join(PROD_IMG_DIR, p.slug + '.' + ext))) return 'produkty/' + p.slug + '.' + ext;
+  }
+  return '';
+}
+const PILL_LBL = { pl: ['Skład', 'Normy', 'Producent', 'Dodatki'], en: ['Composition', 'Standards', 'Maker', 'Extras'] };
+const PILL_MAX = [35, 25, 25, 15];
+
+/* ---------- ranking: kafelki (styl nomad list) ---------- */
+function rankCards(products, cat, mkt, fromUrl) {
+  const m = MARKETS[mkt]; const S = STR[m.lang]; const isFood = cat.slug === 'karmy';
+  const sorted = [...products].sort((a, b) => b.score - a.score);
+  return sorted.map((p, i) => {
+    const link = href(fromUrl, `${mkt}/${cSlug(cat, mkt)}/${p.slug}/`);
+    const img = prodImg(p); const imgUrl = img ? href(fromUrl, img) : '';
+    const imgAttr = imgUrl ? ` class="rc-img has-photo" style="background-image:url('${imgUrl}')"` : ' class="rc-img"';
+    const fallback = imgUrl ? '' : pkgThumb(p, 'pkg');
+    const stats = [`<span>${p.type}</span>`];
+    if (p.proteinDM) stats.push(`<span><b>${p.proteinDM}%</b> ${S.protein.toLowerCase()} DM</span>`);
+    if (per1000(p)) stats.push(`<span><b>~${m.money(per1000(p))}</b> / 1000 kcal</span>`);
+    const pills = (p.pillars || []).map((v, k) => `<div class="rc-bar"><span class="t">${PILL_LBL[m.lang][k]}</span><span class="track"><i style="width:${Math.round(v / PILL_MAX[k] * 100)}%"></i></span><span class="v">${v}</span></div>`).join('');
+    return `<a class="rcard${isFood ? ' food' : ''}" href="${link}">
+  <div${imgAttr}><span class="rc-rank">${String(i + 1).padStart(2, '0')}</span><span class="rc-badge">${p.test ? S.testedByUs : S.labelBased}</span>${fallback}
+    <div class="rc-hover"><div class="h">${S.pillarsH}</div>${pills}</div>
+  </div>
+  <div class="rc-body"><div class="rc-name">${p.name}</div><div class="rc-paws">${pawsTxt(p.score, m.lang)}</div><div class="rc-stats">${stats.join('')}</div><div class="rc-go">${p.test ? S.seeReview : S.seeReviewLabel} →</div></div>
+</a>`;
+  }).join('');
+}
+
 /* ---------- powiązane artykuły z Wiedzy (tylko PL, karmy) ---------- */
 function relatedKnowledge(p, cat, mkt, url) {
   if (mkt !== 'pl' || cat.slug !== 'karmy') return '';
@@ -946,13 +1011,14 @@ function matchAttrs(p) {
   const grainFree = /bez zbóż|grain-free|bezzboż/.test(txt);
   const epaDha = (p.pros || []).some(x => /epa|dha/i.test(x));
   const life = /wszystkie etapy|all life stages/i.test(p.life || '') ? 'all' : (/szczen|puppy/i.test(p.life || '') ? 'puppy' : 'adult');
-  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, po: poultry ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life, th: pkgThumb(p) };
+  return { s: p.slug, n: p.name, fl: p.flavor || '', t: p.type, sc: p.score, pd: p.proteinDM, fd: p.fatDM, pr: per1000(p) || 0, test: p.test ? 1 : 0, ch: chicken ? 1 : 0, po: poultry ? 1 : 0, lg: legumesHigh ? 1 : 0, ed: epaDha ? 1 : 0, life, th: pkgThumb(p, 'pkg'), pl: p.pillars || [] };
 }
-function foodMatchPanel(products, mkt) {
+function foodMatchPanel(products, cat, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang]; const P = S.prof;
-  const data = products.map(matchAttrs);
+  const url = `/${mkt}/${cSlug(cat, mkt)}/`;
+  const data = products.map(p => { const a = matchAttrs(p); const im = prodImg(p); a.img = im ? href(url, im) : ''; return a; });
   const sel = (id, opts) => `<div class="pf-g"><label>${P[id]}</label><select id="pf-${id}">${opts.map(o => `<option value="${o[0]}">${o[1]}</option>`).join('')}</select></div>`;
-  const jsTexts = JSON.stringify({ matchLbl: P.matchLbl, blocked: P.blocked, money: mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$'), prot: S.protein.toLowerCase(), tested: S.testedByUs, label: S.labelBased, see: S.seeReview, seeL: S.seeReviewLabel, paws: '', wAllergy: P.wAllergy, wAllergyP: P.wAllergyP, wPanc: P.wPanc, wPup: P.wPup, wKidney: P.wKidney, wLegume: P.wLegume });
+  const jsTexts = JSON.stringify({ matchLbl: P.matchLbl, blocked: P.blocked, money: mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$'), prot: S.protein.toLowerCase(), tested: S.testedByUs, label: S.labelBased, see: S.seeReview, seeL: S.seeReviewLabel, pill: PILL_LBL[m.lang], pmax: PILL_MAX, pillarsH: S.pillarsH, wAllergy: P.wAllergy, wAllergyP: P.wAllergyP, wPanc: P.wPanc, wPup: P.wPup, wKidney: P.wKidney, wLegume: P.wLegume });
   // funkcja rysująca łapki w JS (te same kształty co serwerowe)
   return `
 <div class="profile">
@@ -993,17 +1059,18 @@ function foodMatchPanel(products, mkt) {
     var list=pool.map(function(f){return {f:f,m:calc(f,P)};});
     list.sort(function(a,b){if(!!a.m.b!==!!b.m.b)return a.m.b?1:-1; if(a.m.b)return b.f.sc-a.f.sc; return (b.m.pct-a.m.pct)||(b.f.sc-a.f.sc);});
     var html=list.map(function(it,i){var f=it.f,mm=it.m;
-      var meta=f.t+(f.pd?' · '+T.prot+' '+f.pd+'% DM':'')+(f.pr?' · ~'+f.pr+' '+T.money+' / 1000 kcal':'')+(f.fl?' · '+f.fl:'');
+      var stats='<span>'+f.t+'</span>'+(f.pd?'<span><b>'+f.pd+'%</b> '+T.prot+' DM</span>':'')+(f.pr?'<span><b>~'+f.pr+'</b> '+T.money+' / 1000 kcal</span>':'');
+      var pills=(f.pl||[]).map(function(v,k){return '<div class="rc-bar"><span class="t">'+T.pill[k]+'</span><span class="track"><i style="width:'+Math.round(v/T.pmax[k]*100)+'%"></i></span><span class="v">'+v+'</span></div>';}).join('');
       var match = mm.b
-        ? '<div class="match bad"><b style="color:var(--terra)">✕ '+T.blocked+'</b></div>'
-        : '<div class="match'+(mm.pct<55?' bad':'')+'"><b>'+T.matchLbl+': '+mm.pct+'%</b><div class="mbar"><i style="width:'+mm.pct+'%"></i></div></div>';
-      var warn=(mm.b?[mm.b]:mm.w).map(function(x){return '<div class="warnline">⚠ '+x+'</div>';}).join('');
-      return '<a class="rankrow food'+(mm.b?' blocked':'')+'" href="'+f.s+'/">'
-        +'<span class="num">'+String(i+1).padStart(2,'0')+'</span>'
-        +'<span class="pkgcell">'+f.th+'</span>'
-        +'<span><strong>'+f.n+'</strong><br><span class="meta">'+meta+' · '+(f.test?T.tested:T.label)+'</span>'+match+warn+'</span>'
-        +'<span>'+paws(f.sc)+'</span>'
-        +'<span class="gobtn">'+(f.test?T.see:T.seeL)+'</span></a>';
+        ? '<div class="rc-match bad"><b>✕ '+T.blocked+'</b></div>'
+        : '<div class="rc-match"><b>'+T.matchLbl+': '+mm.pct+'%</b><div class="mbar"><i style="width:'+mm.pct+'%"></i></div></div>';
+      var warn=(mm.b?[mm.b]:mm.w).map(function(x){return '<div class="rc-warn">⚠ '+x+'</div>';}).join('');
+      var imgDiv=f.img?'<div class="rc-img has-photo" style="background-image:url(\''+f.img+'\')">':'<div class="rc-img">';
+      var fb=f.img?'':f.th;
+      return '<a class="rcard food'+(mm.b?' blocked':'')+'" href="'+f.s+'/">'
+        +imgDiv+'<span class="rc-rank">'+String(i+1).padStart(2,'0')+'</span><span class="rc-badge">'+(f.test?T.tested:T.label)+'</span>'+fb
+        +'<div class="rc-hover"><div class="h">'+T.pillarsH+'</div>'+pills+match+warn+'</div></div>'
+        +'<div class="rc-body"><div class="rc-name">'+f.n+'</div><div class="rc-paws">'+paws(f.sc)+'</div><div class="rc-stats">'+stats+'</div><div class="rc-go">'+(f.test?T.see:T.seeL)+' →</div></div></a>';
     }).join('');
     document.getElementById('ranklist').innerHTML=html;
     document.getElementById('pf-legend').style.display='block';
@@ -1040,8 +1107,8 @@ function categoryHub(cat, mkt) {
     content = `
 <h2 id="ranking">${S.rankingH}</h2>
 <p class="meta">${S.updated}: ${TODAY} · ${S.metaRank(products.length)}</p>
-${foodMatchPanel(products, mkt)}
-<div id="ranklist">${rankRows(products, cat, mkt, url)}</div>
+${foodMatchPanel(products, cat, mkt)}
+<div id="ranklist" class="rgrid">${rankCards(products, cat, mkt, url)}</div>
 <h2>${S.formsH}</h2>
 <div class="answer">${S.formsTxt}</div>
 <table><tr><th>${S.formCol}</th><th>${S.formNoteCol}</th></tr>${FOOD_FORMS[m.lang].map(f => `<tr><td><strong>${f[0]}</strong></td><td>${f[1]}</td></tr>`).join('')}</table>
@@ -1050,7 +1117,7 @@ ${foodMatchPanel(products, mkt)}
     content = `
 <h2 id="ranking">${S.betaH}</h2>
 <p class="meta">${S.updated}: ${TODAY}</p>
-${rankRows(products, cat, mkt, url)}`;
+<div class="rgrid">${rankCards(products, cat, mkt, url)}</div>`;
   } else if (cat.status === 'edu' && cat.slug === 'zdrowie') {
     content = m.lang === 'pl' ? `
 <div class="legalbox"><strong>Dlaczego nie rankingujemy leków?</strong> Tabletki przeciwkleszczowe (Bravecto, NexGard, Simparica) to w Polsce leki na receptę, a reklama publiczna leków Rp. jest zakazana (Prawo farmaceutyczne, rozp. UE 2019/6). W tej strefie znajdziesz wyłącznie materiały edukacyjne o substancjach czynnych - bez ocen, bez łapek i bez linków zakupowych do leków. Decyzję zawsze podejmuj z lekarzem weterynarii.</div>
