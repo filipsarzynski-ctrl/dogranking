@@ -973,12 +973,26 @@ function rankRows(products, cat, mkt, fromUrl) {
 
 /* ---------- zdjęcia produktów (własne/licencjonowane) → static/produkty/<slug>.webp ---------- */
 const PROD_IMG_DIR = path.join(__dirname, 'static', 'produkty');
-function prodImg(p) {
+function prodVariant(slug, v) { // v: '1' jasne, '2' bordo
   if (!fs.existsSync(PROD_IMG_DIR)) return '';
   for (const ext of ['webp', 'jpg', 'jpeg', 'png']) {
-    if (fs.existsSync(path.join(PROD_IMG_DIR, p.slug + '.' + ext))) return 'produkty/' + p.slug + '.' + ext;
+    if (fs.existsSync(path.join(PROD_IMG_DIR, slug + '-' + v + '.' + ext))) return 'produkty/' + slug + '-' + v + '.' + ext;
   }
   return '';
+}
+function prodVariants(slug) {
+  let a = prodVariant(slug, '1'), b = prodVariant(slug, '2');
+  if (!a && !b) { // fallback: pojedyncze <slug>.<ext>
+    for (const ext of ['webp', 'jpg', 'jpeg', 'png']) {
+      if (fs.existsSync(path.join(PROD_IMG_DIR, slug + '.' + ext))) { a = 'produkty/' + slug + '.' + ext; break; }
+    }
+  }
+  return { i1: a, i2: b };
+}
+// naprzemiennie: parzysta pozycja → jasne (1), nieparzysta → bordo (2); fallback na dostępne
+function pickProdImg(slug, i) {
+  const { i1, i2 } = prodVariants(slug);
+  return (i % 2 === 0) ? (i1 || i2) : (i2 || i1);
 }
 const PILL_LBL = { pl: ['Skład', 'Normy', 'Producent', 'Dodatki'], en: ['Composition', 'Standards', 'Maker', 'Extras'] };
 const PILL_MAX = [35, 25, 25, 15];
@@ -989,7 +1003,7 @@ function rankCards(products, cat, mkt, fromUrl) {
   const sorted = [...products].sort((a, b) => b.score - a.score);
   return sorted.map((p, i) => {
     const link = href(fromUrl, `${mkt}/${cSlug(cat, mkt)}/${p.slug}/`);
-    const img = prodImg(p); const imgUrl = img ? href(fromUrl, img) : '';
+    const img = pickProdImg(p.slug, i); const imgUrl = img ? href(fromUrl, img) : '';
     const imgAttr = imgUrl ? ` class="rc-img has-photo" style="background-image:url('${imgUrl}')"` : ' class="rc-img"';
     const fallback = imgUrl ? '' : pkgThumb(p, 'pkg');
     const stats = [`<span>${p.type}</span>`];
@@ -1047,7 +1061,7 @@ function matchAttrs(p) {
 function foodMatchPanel(products, cat, mkt) {
   const m = MARKETS[mkt]; const S = STR[m.lang]; const P = S.prof;
   const url = `/${mkt}/${cSlug(cat, mkt)}/`;
-  const data = products.map(p => { const a = matchAttrs(p); const im = prodImg(p); a.img = im ? href(url, im) : ''; return a; });
+  const data = products.map(p => { const a = matchAttrs(p); const v = prodVariants(p.slug); a.i1 = v.i1 ? href(url, v.i1) : ''; a.i2 = v.i2 ? href(url, v.i2) : ''; return a; });
   const sel = (id, opts) => `<div class="pf-g"><label>${P[id]}</label><select id="pf-${id}">${opts.map(o => `<option value="${o[0]}">${o[1]}</option>`).join('')}</select></div>`;
   const jsTexts = JSON.stringify({ matchLbl: P.matchLbl, blocked: P.blocked, money: mkt === 'pl' ? 'zł' : (mkt === 'uk' ? '£' : '$'), prot: S.protein.toLowerCase(), tested: S.testedByUs, label: S.labelBased, see: S.seeReview, seeL: S.seeReviewLabel, pill: PILL_LBL[m.lang], pmax: PILL_MAX, pillarsH: S.pillarsH, people: m.lang === 'pl' ? 'Ocena ludzi' : "People's", pnote: m.lang === 'pl' ? 'wg pozostałych kryteriów' : 'from other criteria', wAllergy: P.wAllergy, wAllergyP: P.wAllergyP, wPanc: P.wPanc, wPup: P.wPup, wKidney: P.wKidney, wLegume: P.wLegume });
   // funkcja rysująca łapki w JS (te same kształty co serwerowe)
@@ -1099,8 +1113,9 @@ function foodMatchPanel(products, cat, mkt) {
         ? '<div class="rc-match bad"><b>✕ '+T.blocked+'</b></div>'
         : '<div class="rc-match"><b>'+T.matchLbl+': '+mm.pct+'%</b><div class="mbar"><i style="width:'+mm.pct+'%"></i></div></div>';
       var warn=(mm.b?[mm.b]:mm.w).map(function(x){return '<div class="rc-warn">⚠ '+x+'</div>';}).join('');
-      var imgDiv=f.img?'<div class="rc-img has-photo" style="background-image:url(\''+f.img+'\')">':'<div class="rc-img">';
-      var fb=f.img?'':f.th;
+      var im=(i%2===0)?(f.i1||f.i2):(f.i2||f.i1);
+      var imgDiv=im?'<div class="rc-img has-photo" style="background-image:url(\''+im+'\')">':'<div class="rc-img">';
+      var fb=im?'':f.th;
       return '<a class="rcard food'+(mm.b?' blocked':'')+'" href="'+f.s+'/" data-slug="'+f.s+'">'
         +imgDiv+'<span class="rc-rank">'+String(i+1).padStart(2,'0')+'</span><span class="rc-badge">'+(f.test?T.tested:T.label)+'</span>'+fb
         +'<div class="rc-hover"><div class="h">'+T.pillarsH+'</div>'+pills+people+match+warn+'</div></div>'
