@@ -327,6 +327,18 @@ footer a{color:var(--gold)}
 .pkgbig{width:104px;height:auto;flex:0 0 auto;filter:drop-shadow(0 8px 16px rgba(34,29,21,.12))}
 @media(max-width:560px){.phead{gap:12px}.pkgbig{width:74px}}
 @media(max-width:430px){.phead{flex-direction:column;gap:10px}.pkgbig{width:64px}}
+/* hero produktu: realne zdjecie + galeria */
+.phero{display:flex;gap:32px;align-items:flex-start;margin:6px 0 16px}
+.phero-media{flex:0 0 330px;width:330px}
+.phero-photo{aspect-ratio:4/3;border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(150deg,#5a1620,#3E0E16);display:flex;align-items:center;justify-content:center;box-shadow:0 20px 46px -24px rgba(0,0,0,.7);border:1px solid rgba(242,232,213,.14)}
+.phero-photo img{width:100%;height:100%;object-fit:cover}
+.phero-photo .pkg{width:58%;height:auto}
+.pgallery{display:flex;gap:9px;margin-top:9px}
+.pgallery .gthumb{flex:1;aspect-ratio:4/3;border-radius:13px;overflow:hidden;background:linear-gradient(150deg,#5a1620,#3E0E16);border:1px solid rgba(242,232,213,.16);cursor:pointer;transition:border-color .15s,transform .15s}
+.pgallery .gthumb:hover{border-color:var(--gold);transform:translateY(-2px)}
+.pgallery .gthumb img{width:100%;height:100%;object-fit:cover}
+.phero-main{min-width:0;flex:1}
+@media(max-width:680px){.phero{flex-direction:column;gap:16px}.phero-media{flex-basis:auto;width:100%;max-width:380px}}
 .pawwrap{position:relative;display:inline-block;line-height:0;vertical-align:middle}
 .paw{width:20px;height:20px;display:inline-block;margin-right:3px;fill:#DCD2BD}
 .pawbase{white-space:nowrap}
@@ -485,6 +497,22 @@ body.rank-dark{background:#340b12}
 .rank-dark .rcard{border-color:rgba(242,232,213,.16)}
 .rank-dark .protocol,.rank-dark .legalbox,.rank-dark .pending{border-left-color:var(--gold);color:#C9A98C}
 .rank-dark .protocol strong,.rank-dark .legalbox strong{color:#F8EFDD}
+.rank-dark .card{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.16);color:#EBD9C2;box-shadow:none}
+.rank-dark .card strong{color:#F8EFDD}
+.rank-dark .pc.good li::before{color:#9FCB8E}
+.rank-dark .disclosure{color:#C9A98C;border-left-color:rgba(242,232,213,.22)}
+.rank-dark .gallery figure{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.16)}
+.rank-dark .gallery figcaption{color:#C9A98C;border-top-color:rgba(242,232,213,.12)}
+.rank-dark .shops a{color:#fff}
+.rank-dark .dualrate .rt{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.16)}
+.rank-dark .dualrate .rt .lbl,.rank-dark .dualrate .rt .sub{color:#C9A98C}
+.rank-dark .dualrate .rt .big{color:var(--gold)}
+.rank-dark .dualrate .rt.exp .big{color:#F8EFDD}
+.rank-dark .rvform{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.16)}
+.rank-dark .rvform .hint,.rank-dark .rvform label,.rank-dark .rvform .filehint,.rank-dark .rvform .consent{color:#C9A98C}
+.rank-dark .rvform input[type=text],.rank-dark .rvform input[type=email],.rank-dark .rvform textarea,.rank-dark .rvform select{background:#4a121c;border-color:rgba(242,232,213,.28);color:#F2E8D5}
+.rank-dark .rvcard{background:rgba(255,255,255,.05);border-color:rgba(242,232,213,.16)}
+.rank-dark .rvhead .when,.rank-dark .rvmeta,.rank-dark .rvempty{color:#C9A98C}
 `;
 
 /* ---------- CSS strony głównej (landing, wg zaakceptowanego prototypu bordo) ---------- */
@@ -902,7 +930,9 @@ function productPage(p, cat, mkt) {
   const k1000 = isFood ? per1000(p) : null;
   const hasTest = !!p.test;
   const slots = PHOTO_SLOTS(isFood);
-  const imgs = hasTest ? slots.map(s => `${SITE}/assets/${mkt}/${cat.slug}/${p.slug}/${s.file}.svg`) : [];
+  const galleryImgs = ['1', '2', '3', '4'].map(v => prodVariant(p.slug, v)).filter(Boolean);
+  if (!galleryImgs.length) { const pv = prodVariants(p.slug); if (pv.i1) galleryImgs.push(pv.i1); }
+  const imgs = galleryImgs.map(im => `${SITE}/${im}`);
 
   const jsonld = [ORG, Object.assign({
     '@context': 'https://schema.org', '@type': 'Product',
@@ -954,9 +984,6 @@ ${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('\n')}
     testSection = `
 <h2>${S.testH}</h2>
 <p class="meta">${S.testDate}: ${t.date} · ${t.uwagi}</p>
-<div class="gallery">
-${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.slug}/${s.file}.svg`)}" alt="${p.name} - ${s.label}" loading="lazy" width="800" height="600"><figcaption>${s.label}</figcaption></figure>`).join('\n')}
-</div>
 <table>
 <tr><th>${S.measure}</th><th>${S.value}</th></tr>${rows}
 <tr><td>${isFood ? S.bekonRowFood : S.bekonRowOther}</td><td><span class="paws">${bekonIcon.repeat(t.bekon)}${'·'.repeat(3 - t.bekon)}</span> ${t.bekon}/3 - ${t.bekonNote}</td></tr>
@@ -966,14 +993,22 @@ ${slots.map(s => `<figure><img src="${href(url, `assets/${mkt}/${cat.slug}/${p.s
     testSection = `<div class="pending">📋 ${S.testPending}</div>`;
   }
 
-  const headInner = `<div class="phead-main">
+  const headInner = `<div class="phero-main">
 <div class="eyebrow">${S.review} · ${cName(cat, mkt)} · ${p.type}</div>
 <h1>${p.name} - ${S.reviewTitle}</h1>
 <p class="meta">${S.rated}: ${pawsTxt(p.score, m.lang)} <strong>${p.score}/100 · ${scoreLbl(p.score, m.lang)}</strong> · ${S.updated}: ${TODAY}${p.verified ? '' : ` · <span class="badge">${S.demo}</span>`}${REVIEWS.enabled ? ` · <a class="crating" data-crating href="#opinie">★ <span class="cval">–</span> <span class="ccount"></span></a>` : ''}</p>
 </div>`;
+  const mainImg = galleryImgs[0] || '';
+  const heroPhoto = mainImg
+    ? `<div class="phero-photo"><img id="pmain" src="${href(url, mainImg)}" alt="${p.name}" width="800" height="600"></div>`
+    : `<div class="phero-photo">${pkgThumb(p, 'pkg')}</div>`;
+  const heroThumbs = galleryImgs.length > 1
+    ? `<div class="pgallery">${galleryImgs.map((im, idx) => `<span class="gthumb"><img src="${href(url, im)}" alt="${p.name} - ${idx + 1}" loading="lazy" onclick="var m=document.getElementById('pmain');if(m)m.src=this.src"></span>`).join('')}</div>`
+    : '';
+  const phero = `<div class="phero"><div class="phero-media">${heroPhoto}${heroThumbs}</div>${headInner}</div>`;
   const body = `
 <p class="crumb"><a href="${href(url, mkt + '/')}">DogRanking ${mkt.toUpperCase()}</a> › <a href="${href(url, `${mkt}/${cSlug(cat, mkt)}/`)}">${cName(cat, mkt)}</a> › ${p.name}</p>
-${isFood ? `<div class="phead">${pkgThumb(p, 'pkgbig')}${headInner}</div>` : headInner}
+${phero}
 
 <h2>${S.goodChoice(p.name)}</h2>
 <div class="answer">${p.verdict}</div>
@@ -996,7 +1031,7 @@ ${relatedKnowledge(p, cat, mkt, url)}
 <p class="shops">${p.shops.map(s => `<a href="${s.u}" rel="sponsored nofollow" target="_blank">${s.n} →</a>`).join('')}</p>
 <p class="disclosure">${S.disclosure}</p>`;
 
-  return { url, html: page({ title: `${p.name} - ${S.reviewTitle} (${TODAY.slice(0, 4)}) | DogRanking`, desc: p.verdict.slice(0, 155), canonical: url, body, jsonld, mkt }) };
+  return { url, html: page({ title: `${p.name} - ${S.reviewTitle} (${TODAY.slice(0, 4)}) | DogRanking`, desc: p.verdict.slice(0, 155), canonical: url, body, jsonld, mkt, bodyClass: 'rank-dark' }) };
 }
 
 /* ---------- ranking rows ---------- */
